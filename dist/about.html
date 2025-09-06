@@ -21,7 +21,8 @@
    <meta property="og:url" content="">
    <meta property="og:type" content="website">
    <!-- Styles -->
-   <link rel="stylesheet" href="css/style.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20250906180841" />
+   <link rel="stylesheet" href="css/style.min.css?_v=20250906180841">
    <title>О нас</title>
 </head>
 
@@ -45,7 +46,7 @@
                </div>
             </div>
             <div class="fv-about__circle">
-               <img src="img/circle.png" width="1700" height="1700" alt="circle">
+               <picture><source srcset="img/circle.webp" type="image/webp"><img src="img/circle.png" width="1700" height="1700" alt="circle"></picture>
             </div>
             <div class="fv-about__subtitle">
                <p>Мы не будем заигрывать с банальностями и писать красивые речи. Давайте говорить честно и открыто.</p>
@@ -61,7 +62,7 @@
                         <b>Душа Artellect</b> это мы : Елена Соловьева и Андрей Баранов.
                      </div>
                      <div class="fv-about__card-photo">
-                        <img src="img/about/team-1.png" width="315" height="327" alt="Команда">
+                        <picture><source srcset="img/about/team-1.webp" type="image/webp"><img src="img/about/team-1.png" width="315" height="327" alt="Команда"></picture>
                      </div>
                      <div class="fv-about__card-candles">
                         <img src="img/icons/candles.svg" width="39" height="24" alt="icon">
@@ -96,7 +97,7 @@
                         Но главное в <b>Artellect</b> — это наша <b>команда</b>
                      </div>
                      <div class="fv-about__card-photo">
-                        <img src="img/about/team-2.png" width="315" height="327" alt="Команда">
+                        <picture><source srcset="img/about/team-2.webp" type="image/webp"><img src="img/about/team-2.png" width="315" height="327" alt="Команда"></picture>
                      </div>
                      <div class="fv-about__card-candles">
                         <img src="img/icons/candles.svg" width="39" height="24" alt="icon">
@@ -124,12 +125,413 @@
             </div>
          </div>
       </section>
+
+      <section class="fv-mission">
+         <div class="fv-mission__body container">
+            <h2 class="fv-mission__title section-title">Наша миссия</h2>
+            <div class="fv-mission__image">
+               <picture><source srcset="img/about/orden.webp" type="image/webp"><img src="img/about/orden.png" width="210" height="230" alt="orden"></picture>
+            </div>
+            <div class="fv-mission__cards">
+               <div class="fv-mission__card border-gradient">
+                  <div class="fv-mission__card-info">
+                     <div class="fv-mission__card-name">Мы не просто выполняем маркетинговые задачи.</div>
+                     <p class="fv-mission__card-text">Наша цель — изменить представление о возможностях маркетинга. Мы
+                        помогаем бизнесу расти, внедряем инновационные инструменты и воплощаем самые смелые идеи.</p>
+                  </div>
+                  <div class="fv-mission__card-icon">
+                     <img src="img/about/shapes-1.svg" width="119" height="101" alt="icon">
+                  </div>
+               </div>
+               <div class="fv-mission__card border-gradient">
+                  <div class="fv-mission__card-info">
+                     <div class="fv-mission__card-name">Artellect — это не просто маркетинговое агентство.</div>
+                     <p class="fv-mission__card-text">Мы партнеры в развитии бизнеса. Мы работаем не на клиентов, а
+                        вместе с ними. Когда вы приходите к нам, вы получаете не просто услуги, а команду, которая
+                        болеет за ваш успех.
+                     </p>
+                  </div>
+                  <div class="fv-mission__card-icon">
+                     <img src="img/about/shapes-2.svg" width="119" height="135" alt="icon">
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="fv-mission__bg">
+            <picture>
+               <source media="(max-width: 767px)" srcset="img/about/abstract-mob.png">
+               <img src="img/about/abstract.png" width="1920" height="1080" alt="abstract">
+            </picture>
+         </div>
+      </section>
+
+      <section class="art-work">
+         <div class="art-work__body container">
+            <h2 class="art-work__title section-title">Как мы работаем</h2>
+            <div class="art-work__blocks">
+               <div class="art-work__block border-gradient">
+                  <div class="art-work__float-image">
+                     <img src="img/about/working-1.gif" width="145" height="145" alt="gif" loading="lazy">
+                  </div>
+                  <div class="art-work__subtitle">Маркетинг без результата: в чём настоящая проблема</div>
+                  <div class="art-work__descr">
+                     За годы работы в маркетинге, бизнесе, аналитике и финансах мы поняли, что стандартные
+                     маркетинговые услуги не решают ключевых проблем компаний.
+                  </div>
+                  <div class="clearfix"></div>
+                  <ul class="art-work__text">
+                     <li>
+                        <img src="img/icons/marker-red.svg" width="24" height="24" alt="mark">
+                        <span>Они не гарантируют поток клиентов, а лишь привлекают трафик.</span>
+                     </li>
+                     <li>
+                        <img src="img/icons/marker-red.svg" width="24" height="24" alt="mark">
+                        <span>Они не снимают нагрузку с руководителей — маркетинг требует управления и глубокой
+                           вовлеченности.</span>
+                     </li>
+                     <li>
+                        <img src="img/icons/marker-red.svg" width="24" height="24" alt="mark">
+                        <span>Они не дают ответ на вопрос: «Какой канал приносит максимальную отдачу и куда стоит
+                           инвестировать больше?»</span>
+                     </li>
+                     <li>
+                        <img src="img/icons/marker-red.svg" width="24" height="24" alt="mark">
+                        <span>Они не интегрируются с отделом продаж, оставляя процесс разрозненным.</span>
+                     </li>
+                  </ul>
+               </div>
+               <div class="art-work__block border-gradient">
+                  <div class="art-work__float-image">
+                     <img src="img/about/working-2.gif" width="145" height="145" alt="gif" loading="lazy">
+                  </div>
+                  <div class="art-work__subtitle">Как мы превращаем маркетинг
+                     в точку роста</div>
+                  <div class="art-work__descr">Мы берем на себя весь процесс привлечения клиентов,
+                     чтобы вы могли сосредоточиться на развитии своего бизнеса.</div>
+                  <div class="clearfix"></div>
+                  <ul class="art-work__text">
+                     <li>
+                        <img src="img/icons/lighthing.svg" width="24" height="24" alt="mark">
+                        <span>Создаем маркетинговые воронки, которые ведут клиента прямо к вам.</span>
+                     </li>
+                     <li>
+                        <img src="img/icons/lighthing.svg" width="24" height="24" alt="mark">
+                        <span>Проектом управляет не просто проджект, а опытный маркетолог, который глубоко погружается в
+                           ваш бизнес.</span>
+                     </li>
+                     <li>
+                        <img src="img/icons/lighthing.svg" width="24" height="24" alt="mark">
+                        <span>В каждом проекте используется сквозная аналитика, позволяющая точно определить, куда
+                           уходит бюджет и где максимальная
+                           эффективность.</span>
+                     </li>
+                     <li>
+                        <img src="img/icons/lighthing.svg" width="24" height="24" alt="mark">
+                        <span>Автоматизируем продажи, объединяя маркетинг и отдел продаж в единую систему CRM для
+                           увеличения конверсии.</span>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div class="art-work__cards">
+               <div class="art-work__card border-gradient">
+                  <div class="art-work__card-info">
+                     <div class="art-work__card-text">
+                        <div class="art-work__card-title">Мы понимаем, что у бизнеса разные потребности на разных
+                           стадиях роста, поэтому предлагаем три уровня маркетинговых решений:</div>
+                        <div class="art-work__card-levels">
+                           <div class="art-work__card-level active" data-level="1">
+                              <button class="art-work__card-level-btn border-gradient border-rainbow">Базовые
+                                 воронки</button>
+                              <div class="art-work__card-level-text">
+                                 <p><span></span> для стартапов и небольших компаний. <br></p>
+                                 <img src="img/about/level-1.gif" width="280" height="280" alt="gif">
+                              </div>
+                           </div>
+                           <div class="art-work__card-level" data-level="2">
+                              <button class="art-work__card-level-btn border-gradient border-rainbow">Комплексные
+                                 воронки </button>
+                              <div class="art-work__card-level-text">
+                                 <p><span></span> для стартапов и небольших компаний.<br></p>
+                                 <img src="img/about/level-2.gif" width="280" height="280" alt="gif">
+                              </div>
+                           </div>
+                           <div class="art-work__card-level" data-level="3">
+                              <button class="art-work__card-level-btn border-gradient border-rainbow">Системный
+                                 маркетинг</button>
+                              <div class="art-work__card-level-text">
+                                 <p><span></span> для стартапов и небольших компаний.<br></p>
+                                 <img src="img/about/level-3.gif" width="280" height="280" alt="gif">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="art-work__card-images">
+                        <div class="art-work__card-image border-gradient" data-level="1">
+                           <img src="img/about/level-1.gif" width="331" height="331" alt="gif" loading="lazy">
+                        </div>
+                        <div class="art-work__card-image border-gradient" data-level="2">
+                           <img src="img/about/level-2.gif" width="331" height="331" alt="gif" loading="lazy">
+                        </div>
+                        <div class="art-work__card-image border-gradient" data-level="3">
+                           <img src="img/about/level-3.gif" width="331" height="331" alt="gif" loading="lazy">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="art-work__card-about">
+                     <div class="art-work__card-descriptions">
+                        <div class="art-work__card-description" data-level="1">
+                           <p>В каждом из них заложен анализ конкурентов, аудитории, unit-экономики
+                              и подключение сквозной аналитики. И, конечно, за ваш проект отвечает профессиональный
+                              маркетолог, руководящий командой специалистов.</p>
+                           <p>Дополнительно мы предлагаем решения по цифровизации бизнеса и внедрению глубокой аналитики
+                              данных, чтобы маркетинг работал максимально эффективно. Если у вас медицинская клиника — у
+                              нас есть глубокая экспертиза в медицинском маркетинге.
+                           </p>
+                        </div>
+                        <div class="art-work__card-description" data-level="2">
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam numquam consectetur
+                              deleniti ut provident officia inventore, modi culpa tempora atque quam illo debitis, animi
+                              quibusdam in harum eius voluptatem quod?</p>
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam numquam consectetur
+                              deleniti ut provident officia inventore, modi culpa tempora atque quam illo debitis, animi
+                              quibusdam in harum eius voluptatem quod?
+                           </p>
+                        </div>
+                        <div class="art-work__card-description" data-level="3">
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam numquam consectetur
+                              deleniti ut provident officia inventore, modi culpa tempora atque quam illo debitis, animi
+                              quibusdam in harum eius voluptatem quod?</p>
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam numquam consectetur
+                              deleniti ut provident officia inventore, modi culpa tempora atque quam illo debitis, animi
+                              quibusdam in harum eius voluptatem quod?
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="art-work__card border-gradient">
+                  <div class="art-work__card-info">
+                     <div class="art-work__card-video border-gradient">
+                        <div class="art-work__card-agitation">
+                           <div class="art-work__card-agitation-gif">
+                              <img src="img/about/agitation.gif" width="74" height="74" alt="gif">
+                           </div>
+                           <p>Присоединяйтесь к <br>
+                              <img src="img/logo-text.svg" width="236" height="42" alt="artellect logo">
+                           </p>
+                        </div>
+                        <picture><source srcset="img/about/video-poster.webp" type="image/webp"><img src="img/about/video-poster.png" width="757" height="426" alt="video"></picture>
+                     </div>
+                  </div>
+                  <div class="art-work__card-about">
+                     Мы не просто предоставляем услуги — мы помогаем бизнесу расти, внедрять передовые технологии и
+                     управлять маркетингом на высоком уровне. <br>
+                     Работа с нами — это инвестиция в уверенный рост и развитие вашего бизнеса.
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="art-team">
+         <div class="art-team__body container">
+            <h2 class="art-team__title section-title">Команда Artellect</h2>
+            <div class="art-team__slider swiper full-width">
+               <div class="art-team__slider-wrapper swiper-wrapper">
+                  <a href="" class="art-team__slide swiper-slide border-gradient">
+                     <div class="art-team__slide-photo">
+                        <picture><source srcset="img/about/teammate-1.webp" type="image/webp"><img src="img/about/teammate-1.png" width="311" height="366" alt="член команды"></picture>
+                        <div class="art-team__slide-photo-bg">
+                           <img src="img/about/teammate-bg.gif" width="408" height="366" alt="gif">
+                        </div>
+                     </div>
+                     <div class="art-team__slide-link">
+                        <img src="img/rot-text.svg" width="120" height="120" alt="Подробнее">
+                        <div class="art-team__slide-link-icon">
+                           <svg>
+                              <use xlink:href="#icon-arrow-right"></use>
+                           </svg>
+                        </div>
+                     </div>
+                     <div class="art-team__slide-logo">
+                        <img src="img/logo-icon.svg" width="24" height="24" alt="artellect logo">
+                     </div>
+                     <div class="art-team__slide-info border-gradient border-rainbow">
+                        <div class="art-team__slide-name">Андрей Баранов</div>
+                        <div class="art-team__slide-role">[ Руководитель агенства (СЕО), cоосновтель ]</div>
+                     </div>
+                  </a>
+                  <a href="" class="art-team__slide swiper-slide border-gradient">
+                     <div class="art-team__slide-photo">
+                        <picture><source srcset="img/about/teammate-2.webp" type="image/webp"><img src="img/about/teammate-2.png" width="311" height="366" alt="член команды"></picture>
+                        <div class="art-team__slide-photo-bg">
+                           <img src="img/about/teammate-bg.gif" width="408" height="366" alt="gif">
+                        </div>
+                     </div>
+                     <div class="art-team__slide-link">
+                        <img src="img/rot-text.svg" width="120" height="120" alt="Подробнее">
+                        <div class="art-team__slide-link-icon">
+                           <svg>
+                              <use xlink:href="#icon-arrow-right"></use>
+                           </svg>
+                        </div>
+                     </div>
+                     <div class="art-team__slide-logo">
+                        <img src="img/logo-icon.svg" width="24" height="24" alt="artellect logo">
+                     </div>
+                     <div class="art-team__slide-info border-gradient border-rainbow">
+                        <div class="art-team__slide-name">Андрей Баранов</div>
+                        <div class="art-team__slide-role">[ Руководитель агенства (СЕО), cоосновтель ]</div>
+                     </div>
+                  </a>
+                  <a href="" class="art-team__slide swiper-slide border-gradient">
+                     <div class="art-team__slide-photo">
+                        <picture><source srcset="img/about/teammate-3.webp" type="image/webp"><img src="img/about/teammate-3.png" width="311" height="366" alt="член команды"></picture>
+                        <div class="art-team__slide-photo-bg">
+                           <img src="img/about/teammate-bg.gif" width="408" height="366" alt="gif">
+                        </div>
+                     </div>
+                     <div class="art-team__slide-link">
+                        <img src="img/rot-text.svg" width="120" height="120" alt="Подробнее">
+                        <div class="art-team__slide-link-icon">
+                           <svg>
+                              <use xlink:href="#icon-arrow-right"></use>
+                           </svg>
+                        </div>
+                     </div>
+                     <div class="art-team__slide-logo">
+                        <img src="img/logo-icon.svg" width="24" height="24" alt="artellect logo">
+                     </div>
+                     <div class="art-team__slide-info border-gradient border-rainbow">
+                        <div class="art-team__slide-name">Андрей Баранов</div>
+                        <div class="art-team__slide-role">[ Руководитель агенства (СЕО), cоосновтель ]</div>
+                     </div>
+                  </a>
+                  <a href="" class="art-team__slide swiper-slide border-gradient">
+                     <div class="art-team__slide-photo">
+                        <picture><source srcset="img/about/teammate-1.webp" type="image/webp"><img src="img/about/teammate-1.png" width="311" height="366" alt="член команды"></picture>
+                        <div class="art-team__slide-photo-bg">
+                           <img src="img/about/teammate-bg.gif" width="408" height="366" alt="gif">
+                        </div>
+                     </div>
+                     <div class="art-team__slide-link">
+                        <img src="img/rot-text.svg" width="120" height="120" alt="Подробнее">
+                        <div class="art-team__slide-link-icon">
+                           <svg>
+                              <use xlink:href="#icon-arrow-right"></use>
+                           </svg>
+                        </div>
+                     </div>
+                     <div class="art-team__slide-logo">
+                        <img src="img/logo-icon.svg" width="24" height="24" alt="artellect logo">
+                     </div>
+                     <div class="art-team__slide-info border-gradient border-rainbow">
+                        <div class="art-team__slide-name">Андрей Баранов</div>
+                        <div class="art-team__slide-role">[ Руководитель агенства (СЕО), cоосновтель ]</div>
+                     </div>
+                  </a>
+                  <a href="" class="art-team__slide swiper-slide border-gradient">
+                     <div class="art-team__slide-photo">
+                        <picture><source srcset="img/about/teammate-2.webp" type="image/webp"><img src="img/about/teammate-2.png" width="311" height="366" alt="член команды"></picture>
+                        <div class="art-team__slide-photo-bg">
+                           <img src="img/about/teammate-bg.gif" width="408" height="366" alt="gif">
+                        </div>
+                     </div>
+                     <div class="art-team__slide-link">
+                        <img src="img/rot-text.svg" width="120" height="120" alt="Подробнее">
+                        <div class="art-team__slide-link-icon">
+                           <svg>
+                              <use xlink:href="#icon-arrow-right"></use>
+                           </svg>
+                        </div>
+                     </div>
+                     <div class="art-team__slide-logo">
+                        <img src="img/logo-icon.svg" width="24" height="24" alt="artellect logo">
+                     </div>
+                     <div class="art-team__slide-info border-gradient border-rainbow">
+                        <div class="art-team__slide-name">Андрей Баранов</div>
+                        <div class="art-team__slide-role">[ Руководитель агенства (СЕО), cоосновтель ]</div>
+                     </div>
+                  </a>
+                  <a href="" class="art-team__slide swiper-slide border-gradient">
+                     <div class="art-team__slide-photo">
+                        <picture><source srcset="img/about/teammate-3.webp" type="image/webp"><img src="img/about/teammate-3.png" width="311" height="366" alt="член команды"></picture>
+                        <div class="art-team__slide-photo-bg">
+                           <img src="img/about/teammate-bg.gif" width="408" height="366" alt="gif">
+                        </div>
+                     </div>
+                     <div class="art-team__slide-link">
+                        <img src="img/rot-text.svg" width="120" height="120" alt="Подробнее">
+                        <div class="art-team__slide-link-icon">
+                           <svg>
+                              <use xlink:href="#icon-arrow-right"></use>
+                           </svg>
+                        </div>
+                     </div>
+                     <div class="art-team__slide-logo">
+                        <img src="img/logo-icon.svg" width="24" height="24" alt="artellect logo">
+                     </div>
+                     <div class="art-team__slide-info border-gradient border-rainbow">
+                        <div class="art-team__slide-name">Андрей Баранов</div>
+                        <div class="art-team__slide-role">[ Руководитель агенства (СЕО), cоосновтель ]</div>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="art-team__buttons">
+               <a href="" class="button-decore">Стать частью команды</a>
+               <div class="art-team__slider-panel">
+                  <div class="art-team__slider-pagination slider-pagination"></div>
+                  <div class="art-team__slider-buttons">
+                     <button type="button" class="art-team__slider-prev slider-prev border-gradient">
+                        <svg>
+                           <use xlink:href="#icon-arrow-left"></use>
+                        </svg>
+                     </button>
+                     <button type="button" class="art-team__slider-next slider-next border-gradient">
+                        <svg>
+                           <use xlink:href="#icon-arrow-right"></use>
+                        </svg>
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
    </main>
-   <div class="main-bg">
-      <img src="img/main-bg.png" alt="">
-   </div>
+
+   <div class="main-bg"><picture><source srcset="img/main-bg.webp" type="image/webp"><img src="img/main-bg.png" alt=""></picture></div>
    <div class="bg-noize"></div>
-   <script src="js/app.js"></script>
+   <svg viewBox="0 0 33 30" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+   style="display: none;">
+   <svg fill="none" viewBox="0 0 24 25" id="icon-arrow-left" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd"
+         d="M14.75 13.4H7.373l5.696 5.696L12 20.15l-7.5-7.5 7.5-7.5 1.07 1.054L7.372 11.9H15.5l-.75 1.5Zm2-1.5h2.75v1.5H16l.75-1.5Z"
+         fill="currentColor" />
+   </svg>
+   <svg fill="none" viewBox="0 0 24 25" id="icon-arrow-right" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd"
+         d="M9.25 13.4h7.377l-5.696 5.696L12 20.15l7.5-7.5-7.5-7.5-1.07 1.054 5.697 5.696H8.5l.75 1.5Zm-2-1.5H4.5v1.5H8l-.75-1.5Z"
+         fill="currentColor" />
+   </svg>
+   <svg fill="none" viewBox="0 0 33 18" id="icon-list" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 0h23v4H10V0ZM0 7h33v4H0V7ZM16 14h17v4H16v-4Z" fill="currentColor" />
+   </svg>
+   <svg fill="none" viewBox="0 0 22 22" id="icon-phone" xmlns="http://www.w3.org/2000/svg">
+      <path
+         d="M18.401 19.724s-1.43.908-1.792 1.186c-.579.402-1.186.523-1.917.37-.07-.015-.145-.03-.214-.05-1.373-.378-2.551-1.187-3.423-1.849a21.137 21.137 0 0 1-5.775-6.807c-1.193-2.24-1.887-4.227-2.193-6.267-.19-1.246-.16-2.18.091-3.014.162-.533.468-.94.938-1.243L6.05.8c.274-.165.543-.23.781-.18.295.061.497.288.615.467l.011.017c.23.324.444.655.667 1.007.114.179.232.358.35.543l1.01 1.533c.392.596.296 1.05-.305 1.439-.164.106-.324.213-.487.315-.478.316-.104.075-.589.352-.01.007-.021.01-.028.018-.487.315-.495.72-.467 1.002l.005.045c.164.867.473 1.717.995 2.76l.004.007c.958 1.847 2.06 3.361 3.364 4.617.166.16.342.3.51.431.15.12.293.231.411.343.017.013.033.031.05.044.142.112.284.18.438.213.39.081.684-.109.78-.171l1.11-.718c.194-.124.487-.262.782-.2.29.06.49.291.602.48l.008.01 2.038 3.096c.382.574-.303 1.453-.303 1.453Z"
+         fill="currentColor" />
+   </svg>
+   <svg fill="none" viewBox="0 0 30 30" id="icon-telegram" xmlns="http://www.w3.org/2000/svg">
+      <path d="m12.496 18-.488 4.84s-.204 1.484 1.384 0a43.073 43.073 0 0 1 3.108-2.626" fill="currentColor" />
+      <path
+         d="m9.409 16.492-4.968-1.606s-.594-.239-.403-.78c.04-.112.119-.207.356-.37 1.101-.762 20.377-7.634 20.377-7.634s.544-.181.865-.06a.47.47 0 0 1 .32.345c.034.143.049.289.043.435-.002.127-.017.244-.029.428-.117 1.879-3.63 15.9-3.63 15.9s-.21.821-.964.85a1.39 1.39 0 0 1-1.005-.386c-1.478-1.261-6.586-4.666-7.714-5.415a.214.214 0 0 1-.093-.151c-.016-.08.07-.177.07-.177s8.895-7.842 9.131-8.665c.019-.064-.05-.095-.143-.067-.591.215-10.832 6.63-11.962 7.338a.55.55 0 0 1-.251.015Z"
+         fill="currentColor" />
+   </svg>
+</svg>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20250906180841"></script>
+   <script src="js/app.js?_v=20250906180841"></script>
 </body>
 
 </html>

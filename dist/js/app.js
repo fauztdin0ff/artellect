@@ -143,14 +143,112 @@ __webpack_require__.r(__webpack_exports__);
 
 _modules_functions_js__WEBPACK_IMPORTED_MODULE_0__.isWebp();
 
-//сюда же можно импортировать и другие модули, например swiper:
-/* import Swiper, { Navigation, Pagination } from 'swiper'; */
+/*---------------------------------------------------------------------------
 
-/* const swiper = new Swiper('.swiper', {
-   // configure Swiper to use modules
-   modules: [Navigation, Pagination],
-   ...
- }); */
+---------------------------------------------------------------------------*/
+document.addEventListener("DOMContentLoaded", () => {
+   const cards = document.querySelectorAll(".art-work__card");
+
+   if (cards.length === 0) return;
+
+   cards.forEach(card => {
+      const levels = card.querySelectorAll(".art-work__card-level");
+      const images = card.querySelectorAll(".art-work__card-image");
+      const descriptions = card.querySelectorAll(".art-work__card-description");
+
+      if (levels.length === 0 || images.length === 0 || descriptions.length === 0) return;
+
+      levels[0].classList.add("active");
+      images[0].classList.add("active");
+      descriptions[0].classList.add("reveal-ltr");
+
+      levels.forEach(level => {
+         const btn = level.querySelector(".art-work__card-level-btn");
+         if (!btn) return;
+
+         btn.addEventListener("click", () => {
+            const levelValue = level.dataset.level;
+
+            levels.forEach(el => el.classList.remove("active"));
+            images.forEach(img => img.classList.remove("active"));
+            descriptions.forEach(desc => desc.classList.remove("reveal-ltr"));
+
+            level.classList.add("active");
+
+            const image = card.querySelector(`.art-work__card-image[data-level="${levelValue}"]`);
+            const description = card.querySelector(`.art-work__card-description[data-level="${levelValue}"]`);
+
+            if (image) image.classList.add("active");
+            if (description) description.classList.add("reveal-ltr");
+         });
+      });
+   });
+});
+
+
+/*------------------------------
+Команда слайдер
+---------------------------*/
+const teamSlider = document.querySelector(".art-team__slider");
+
+if (teamSlider) {
+   const teamSwiper = new Swiper(teamSlider, {
+      slidesPerView: 'auto',
+      loop: false,
+      pagination: {
+         el: '.art-team__slider-pagination',
+         clickable: false,
+      },
+      navigation: {
+         nextEl: '.art-team__slider-next',
+         prevEl: '.art-team__slider-prev',
+      },
+   });
+}
+
+/*---------------------------------------------------------------------------
+Team slider cursor
+---------------------------------------------------------------------------*/
+const slides = document.querySelectorAll('.art-team__slide');
+const allLinks = document.querySelectorAll('.art-team__slide-link');
+
+slides.forEach(slide => {
+   const link = slide.querySelector('.art-team__slide-link');
+   let rect = null;
+   let mouseX = 0, mouseY = 0;
+   let isActive = false;
+   let rafId;
+
+   function animate() {
+      if (!isActive) return;
+      link.style.transform = `translate(${mouseX}px, ${mouseY}px)`;
+      rafId = requestAnimationFrame(animate);
+   }
+
+   slide.addEventListener('mouseenter', () => {
+      allLinks.forEach(l => (l.style.display = 'none'));
+
+      link.style.display = 'block';
+
+      rect = slide.getBoundingClientRect();
+      isActive = true;
+      animate();
+   });
+
+   slide.addEventListener('mousemove', e => {
+      if (!rect) return;
+      mouseX = e.clientX - rect.left;
+      mouseY = e.clientY - rect.top;
+   });
+
+   slide.addEventListener('mouseleave', () => {
+      link.style.display = 'none';
+      rect = null;
+      isActive = false;
+      cancelAnimationFrame(rafId);
+   });
+});
+
 })();
 
 /******/ })()
