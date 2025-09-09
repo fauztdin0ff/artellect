@@ -187,7 +187,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 /*------------------------------
-Команда слайдер
+Team slider
 ---------------------------*/
 const teamSlider = document.querySelector(".art-team__slider");
 
@@ -247,6 +247,288 @@ slides.forEach(slide => {
       isActive = false;
       cancelAnimationFrame(rafId);
    });
+});
+
+/*---------------------------------------------------------------------------
+Support card
+---------------------------------------------------------------------------*/
+const atropos1 = Atropos({
+   el: '.my-atropos',
+   activeOffset: 40,
+   shadow: true,
+   shadowOffset: 40,
+   shadowScale: 1,
+   highlight: false,
+});
+
+let atropos2 = null;
+let caseAtroposInstances = [];
+
+function initAtropos() {
+   if (window.innerWidth >= 1000) {
+      // my-atropos2
+      if (!atropos2) {
+         atropos2 = Atropos({
+            el: '.my-atropos2',
+            activeOffset: 20,
+            shadow: true,
+            shadowOffset: 40,
+            shadowScale: 1,
+            highlight: false,
+         });
+      }
+
+      // case-atropos (много карточек)
+      if (caseAtroposInstances.length === 0) {
+         document.querySelectorAll('.case-atropos').forEach(card => {
+            const instance = Atropos({
+               el: card,
+               activeOffset: 40,
+               shadow: true,
+               shadowOffset: 10,
+               shadowScale: 1,
+               highlight: false,
+               rotateXMax: 5,
+               rotateYMax: 5,
+            });
+            caseAtroposInstances.push(instance);
+         });
+      }
+
+   } else {
+      // Отключаем my-atropos2
+      if (atropos2) {
+         atropos2.destroy();
+         atropos2 = null;
+      }
+
+      // Отключаем case-atropos
+      if (caseAtroposInstances.length > 0) {
+         caseAtroposInstances.forEach(instance => instance.destroy());
+         caseAtroposInstances = [];
+      }
+   }
+}
+
+initAtropos();
+window.addEventListener('resize', initAtropos);
+
+
+/*------------------------------
+Popups
+---------------------------*/
+document.addEventListener("DOMContentLoaded", function () {
+   const openButtons = document.querySelectorAll('.open-popup');
+
+   if (openButtons && openButtons.length > 0) {
+      openButtons.forEach(button => {
+         if (!button) return;
+
+         button.addEventListener('click', function () {
+            const popupId = this.dataset.popup;
+            if (!popupId) return;
+
+            const popup = document.getElementById(popupId);
+            if (popup) {
+               popup.classList.add('show');
+               document.body.style.overflow = 'hidden';
+            }
+         });
+      });
+   }
+
+   document.addEventListener('click', function (e) {
+      const openPopup = document.querySelector('.popup.show');
+
+      if (!openPopup) return;
+
+      const isCloseBtn = e.target.closest('.popup__close');
+      const isInsideBody = e.target.closest('.popup__body');
+      const isPopupArea = e.target.closest('.popup');
+
+      if (isCloseBtn || (!isInsideBody && isPopupArea)) {
+         openPopup.classList.remove('show');
+         document.body.style.overflow = '';
+      }
+   });
+});
+
+
+
+/*------------------------------
+Phone mask
+---------------------------*/
+window.addEventListener("DOMContentLoaded", function () {
+   [].forEach.call(document.querySelectorAll('input.tel-mask'), function (input) {
+      var keyCode;
+      function mask(event) {
+         event.keyCode && (keyCode = event.keyCode);
+         var pos = this.selectionStart;
+         if (pos < 3) event.preventDefault();
+         var matrix = "+7 (___) ___ __ __",
+            i = 0,
+            def = matrix.replace(/\D/g, ""),
+            val = this.value.replace(/\D/g, ""),
+            new_value = matrix.replace(/[_\d]/g, function (a) {
+               return i < val.length ? val.charAt(i++) : a
+            });
+         i = new_value.indexOf("_");
+         if (i != -1) {
+            i < 5 && (i = 3);
+            new_value = new_value.slice(0, i)
+         }
+         var reg = matrix.substr(0, this.value.length).replace(/_+/g,
+            function (a) {
+               return "\\d{1," + a.length + "}"
+            }).replace(/[+()]/g, "\\$&");
+         reg = new RegExp("^" + reg + "$");
+         if (!reg.test(this.value) || this.value.length < 5 || keyCode > 47 && keyCode < 58) {
+            this.value = new_value;
+         }
+         if (event.type == "blur" && this.value.length < 5) {
+            this.value = "";
+         }
+      }
+
+      input.addEventListener("input", mask, false);
+      input.addEventListener("focus", mask, false);
+      input.addEventListener("blur", mask, false);
+      input.addEventListener("keydown", mask, false);
+   });
+});
+
+
+/*---------------------------------------------------------------------------
+Cases slider
+---------------------------------------------------------------------------*/
+/*------------------------------
+Команда слайдер
+---------------------------*/
+const casesSlider = document.querySelector(".art-cases__slider");
+
+if (casesSlider) {
+   const casesSwiper = new Swiper(casesSlider, {
+      slidesPerView: 'auto',
+      loop: false,
+      pagination: {
+         el: '.art-cases__slider-pagination',
+         clickable: false,
+      },
+      navigation: {
+         nextEl: '.art-cases__slider-next',
+         prevEl: '.art-cases__slider-prev',
+      },
+   });
+}
+
+
+/*---------------------------------------------------------------------------
+Dropdown
+---------------------------------------------------------------------------*/
+document.addEventListener("DOMContentLoaded", () => {
+   const dropdowns = document.querySelectorAll(".theme-dropdown");
+
+   if (dropdowns.length > 0) {
+      dropdowns.forEach(dropdown => {
+         const button = dropdown.querySelector(".theme-dropdown__button");
+         const list = dropdown.querySelector(".theme-dropdown__list");
+
+         if (button && list) {
+            list.querySelectorAll("li").forEach((item, index) => {
+               item.style.setProperty("--delay", `${index * 0.05}s`);
+            });
+
+            button.addEventListener("click", (e) => {
+               e.stopPropagation();
+               dropdowns.forEach(d => {
+                  if (d !== dropdown) {
+                     d.querySelector(".theme-dropdown__button")?.classList.remove("active");
+                     d.querySelector(".theme-dropdown__list")?.classList.remove("show");
+                  }
+               });
+
+               button.classList.toggle("active");
+               list.classList.toggle("show");
+            });
+         }
+      });
+
+      document.addEventListener("click", (e) => {
+         dropdowns.forEach(dropdown => {
+            if (!dropdown.contains(e.target)) {
+               dropdown.querySelector(".theme-dropdown__button")?.classList.remove("active");
+               dropdown.querySelector(".theme-dropdown__list")?.classList.remove("show");
+            }
+         });
+      });
+   }
+});
+
+/*---------------------------------------------------------------------------
+Filter
+---------------------------------------------------------------------------*/
+document.addEventListener("DOMContentLoaded", () => {
+   const form = document.querySelector("#filter-form");
+   const selectedContainer = document.querySelector(".art-filters__selected-items");
+   const resetButton = document.querySelector(".art-filters__reset button[type=reset]");
+   const selectedTitle = document.querySelector(".art-filters__selected-title");
+
+   if (!form || !selectedContainer || !resetButton || !selectedTitle) return;
+
+   function updateVisibility() {
+      const hasItems = selectedContainer.children.length > 0;
+      resetButton.style.display = hasItems ? "" : "none";
+      selectedTitle.style.display = hasItems ? "" : "none";
+   }
+
+   function createSelectedItem(name, input) {
+      const item = document.createElement("div");
+      item.classList.add("art-filters__selected-item");
+      item.innerHTML = `
+      ${name}
+      <span class="art-filters__selected-icon"></span>
+    `;
+
+      item.addEventListener("click", () => {
+         input.checked = false;
+         item.remove();
+         updateVisibility();
+      });
+
+      return item;
+   }
+
+   form.querySelectorAll("input[type=checkbox][data-name]").forEach(input => {
+      input.addEventListener("change", () => {
+         const name = input.dataset.name;
+
+         if (input.checked) {
+            const exists = [...selectedContainer.querySelectorAll(".art-filters__selected-item")]
+               .some(item => item.textContent.trim() === name);
+            if (!exists) {
+               selectedContainer.appendChild(createSelectedItem(name, input));
+            }
+         } else {
+            selectedContainer.querySelectorAll(".art-filters__selected-item").forEach(item => {
+               if (item.textContent.trim() === name) {
+                  item.remove();
+               }
+            });
+         }
+
+         updateVisibility();
+      });
+   });
+
+   resetButton.addEventListener("click", () => {
+      selectedContainer.innerHTML = "";
+      form.querySelectorAll("input[type=checkbox]").forEach(input => {
+         input.checked = false;
+      });
+      updateVisibility();
+   });
+
+   updateVisibility();
 });
 
 })();
