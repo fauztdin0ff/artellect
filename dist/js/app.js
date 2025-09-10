@@ -401,9 +401,6 @@ window.addEventListener("DOMContentLoaded", function () {
 /*---------------------------------------------------------------------------
 Cases slider
 ---------------------------------------------------------------------------*/
-/*------------------------------
-Команда слайдер
----------------------------*/
 const casesSlider = document.querySelector(".art-cases__slider");
 
 if (casesSlider) {
@@ -530,6 +527,56 @@ document.addEventListener("DOMContentLoaded", () => {
 
    updateVisibility();
 });
+
+
+
+/*---------------------------------------------------------------------------
+blog slider
+---------------------------------------------------------------------------*/
+const blogSlider = document.querySelector(".art-actuals__slider");
+
+if (blogSlider) {
+   const blogSwiper = new Swiper(blogSlider, {
+      slidesPerView: 'auto',
+      loop: false,
+      pagination: {
+         el: '.art-actuals__pagination',
+         clickable: false,
+      },
+      navigation: {
+         nextEl: '.art-actuals__next',
+         prevEl: '.art-actuals__prev',
+      },
+   });
+}
+
+/*---------------------------------------------------------------------------
+Subscribe icons anim
+---------------------------------------------------------------------------*/
+function initSocialHover() {
+   if (window.innerWidth <= 1000) return;
+
+   const socials = document.querySelectorAll('.art-subscribe__social');
+   if (!socials.length) return;
+
+   socials.forEach(link => {
+      const img = link.querySelector('img');
+      if (!img) return;
+
+      link.addEventListener('mousemove', e => {
+         const rect = link.getBoundingClientRect();
+         const x = e.clientX - rect.left - rect.width / 2;
+         const y = e.clientY - rect.top - rect.height / 2;
+
+         img.style.transform = `translate(${x / 6}px, ${y / 6}px)`;
+      });
+
+      link.addEventListener('mouseleave', () => {
+         img.style.transform = 'translate(0,0)';
+      });
+   });
+}
+initSocialHover();
 
 })();
 
