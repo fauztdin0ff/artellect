@@ -578,6 +578,43 @@ function initSocialHover() {
 }
 initSocialHover();
 
+/*---------------------------------------------------------------------------
+Symbols counter
+---------------------------------------------------------------------------*/
+document.addEventListener("DOMContentLoaded", () => {
+   const textarea = document.querySelector(".symbols-counter");
+   const counter = document.querySelector(".symbols-value");
+
+   if (textarea && counter) {
+      const maxLength = textarea.getAttribute("maxlength");
+
+      textarea.addEventListener("input", () => {
+         const remaining = maxLength - textarea.value.length;
+         counter.textContent = remaining;
+      });
+   }
+});
+
+
+/*---------------------------------------------------------------------------
+Cases slider
+---------------------------------------------------------------------------*/
+const articlesSlider = document.querySelector(".more-articles__slider");
+
+if (articlesSlider) {
+   const articlesSwiper = new Swiper(articlesSlider, {
+      slidesPerView: 'auto',
+      loop: false,
+      pagination: {
+         el: '.more-articles__slider-pagination',
+         clickable: false,
+      },
+      navigation: {
+         nextEl: '.more-articles__slider-next',
+         prevEl: '.more-articles__slider-prev',
+      },
+   });
+}
 })();
 
 /******/ })()
