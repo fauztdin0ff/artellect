@@ -615,6 +615,48 @@ if (articlesSlider) {
       },
    });
 }
+
+/*---------------------------------------------------------------------------
+Flip card
+---------------------------------------------------------------------------*/
+const cards = document.querySelectorAll('.ads-benefits__card');
+
+if (cards.length > 0) {
+   cards.forEach(card => {
+      const inner = card.querySelector('.ads-benefits__inner');
+      let rotation = 0;
+
+      card.addEventListener('mouseenter', () => {
+         rotation += 180;
+         inner.style.transform = `rotateY(${rotation}deg)`;
+      });
+
+      card.addEventListener('mouseleave', () => {
+         rotation += 180;
+         inner.style.transform = `rotateY(${rotation}deg)`;
+      });
+   });
+}
+
+
+
+
+/*---------------------------------------------------------------------------
+Benefits slider
+---------------------------------------------------------------------------*/
+const benefitsSlider = document.querySelector(".ads-benefits__slider");
+
+if (benefitsSlider) {
+   const benefitsSwiper = new Swiper(benefitsSlider, {
+      slidesPerView: 'auto',
+      loop: false,
+      navigation: {
+         nextEl: '.ads-benefits__slider-next',
+         prevEl: '.ads-benefits__slider-prev',
+      },
+   });
+}
+
 })();
 
 /******/ })()
