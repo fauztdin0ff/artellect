@@ -21,9 +21,9 @@
    <meta property="og:url" content="">
    <meta property="og:type" content="website">
    <!-- Styles -->
-   <link href="https://cdn.jsdelivr.net/npm/atropos@2.0.2/atropos.min.css" rel="stylesheet">
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-   <link rel="stylesheet" href="css/style.min.css">
+   <link href="https://cdn.jsdelivr.net/npm/atropos@2.0.2/atropos.min.css?_v=20250912215818" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20250912215818" />
+   <link rel="stylesheet" href="css/style.min.css?_v=20250912215818">
    <title>Контекстная реклама</title>
 </head>
 
@@ -54,7 +54,7 @@
                   </div>
                   <div class="ads-hero__card-main">
                      <div class="ads-hero__card-image">
-                        <img src="img/context-ads/adv.png" width="336" height="271" alt="hand image">
+                        <picture><source srcset="img/context-ads/adv.webp" type="image/webp"><img src="img/context-ads/adv.png" width="336" height="271" alt="hand image"></picture>
                      </div>
                   </div>
                </div>
@@ -137,7 +137,7 @@
                      запросом, тематикой сайта, содержанием страниц и интересами пользователя.
                   </div>
                   <div class="ads-explanation__bg">
-                     <img src="img/context-ads/screen.png" width="426" height="400" alt="img">
+                     <picture><source srcset="img/context-ads/screen.webp" type="image/webp"><img src="img/context-ads/screen.png" width="426" height="400" alt="img"></picture>
                   </div>
                </div>
                <div class="ads-explanation__card">
@@ -315,15 +315,369 @@
                </div>
             </div>
             <div class="ads-calculator__tabs">
-               <div class="ads-calculator__tab" data-calc-tab="1">По нагрузке на отдел продаж</div>
+               <div class="ads-calculator__tab active" data-calc-tab="1">По нагрузке на отдел продаж</div>
                <div class="ads-calculator__tab" data-calc-tab="2">По желаемому бюджету</div>
                <div class="ads-calculator__tab" data-calc-tab="3">По желаемой выручке</div>
+            </div>
+            <div class="ads-calculator__block active" data-calc-block="1">
+               <div class="ads-calculator__card">
+                  <div class="ads-calculator__subtitle">Вводные данные:</div>
+                  <div class="ads-calculator__row">
+                     <div class="ads-calculator__area">
+                        <div class="ads-calculator__label">Сколько лидов (обращений) сможете обработать?
+                           <span class="tips">
+                              <span class="tips__btn">?</span>
+                              <span class="tips__message">Подсказка</span>
+                           </span>
+                        </div>
+                        <input type="number" class="ads-calculator__input" inputmode="numeric"
+                           placeholder="Укажите кол-во">
+                     </div>
+                  </div>
+                  <div class="ads-calculator__row">
+                     <div class="ads-calculator__area">
+                        <div class="ads-calculator__label">Средняя маржинальность:
+                           <span class="tips">
+                              <span class="tips__btn">?</span>
+                              <span class="tips__message">Подсказка</span>
+                           </span>
+                        </div>
+                        <input type="number" class="ads-calculator__input" inputmode="numeric"
+                           placeholder="Укажите в процентах">
+                     </div>
+                     <div class="ads-calculator__area">
+                        <div class="ads-calculator__label">Средний чек:
+                           <span class="tips">
+                              <span class="tips__btn">?</span>
+                              <span class="tips__message">Подсказка</span>
+                           </span>
+                        </div>
+                        <input type="number" class="ads-calculator__input" inputmode="numeric"
+                           placeholder="Укажите сумму в рублях">
+                     </div>
+                  </div>
+                  <div class="ads-calculator__row">
+                     <div class="ads-calculator__area">
+                        <div class="ads-calculator__label">Коэффициент рентабельности маркетинга (ROMI):
+                           <span class="tips">
+                              <span class="tips__btn">?</span>
+                              <span class="tips__message">Подсказка</span>
+                           </span>
+                        </div>
+                        <input type="number" class="ads-calculator__input" inputmode="numeric"
+                           placeholder="Укажите в процентах">
+                     </div>
+                  </div>
+                  <div class="ads-calculator__row">
+                     <div class="ads-calculator__area">
+                        <div class="ads-calculator__label">Средняя конверсия из обращения в продажу (%):
+                           <span class="tips">
+                              <span class="tips__btn">?</span>
+                              <span class="tips__message">Подсказка</span>
+                           </span>
+                        </div>
+                        <input type="number" class="ads-calculator__input" inputmode="numeric"
+                           placeholder="Укажите в процентах">
+                     </div>
+                  </div>
+                  <div class="ads-calculator__card-bg">
+                     <picture><source srcset="img/calc-bg-sm.webp" type="image/webp"><img src="img/calc-bg-sm.png" width="690" height="500" alt="bg"></picture>
+                  </div>
+               </div>
+               <div class="ads-calculator__results disabled">
+                  <div class="ads-calculator__subtitle">Результат расчёта:</div>
+                  <div class="ads-calculator__result">
+                     <p>Бюджет на маркетинг в месяц: <span>— ₽</span></p>
+                     <span class="tips">
+                        <span class="tips__btn">?</span>
+                        <span class="tips__message">Подсказка</span>
+                     </span>
+                  </div>
+                  <div class="ads-calculator__result">
+                     <p>Допустимая стоимость клиента (CAC): <span>— ₽</span></p>
+                     <span class="tips">
+                        <span class="tips__btn">?</span>
+                        <span class="tips__message">Подсказка</span>
+                     </span>
+                  </div>
+                  <div class="ads-calculator__result">
+                     <p>Допустимая стоимость лида (CPL): <span>— ₽</span></p>
+                     <span class="tips">
+                        <span class="tips__btn">?</span>
+                        <span class="tips__message">Подсказка</span>
+                     </span>
+                  </div>
+                  <div class="ads-calculator__result">
+                     <p>Необходимое кол-во клиентов/месяц: <span>— ₽</span></p>
+                     <span class="tips">
+                        <span class="tips__btn">?</span>
+                        <span class="tips__message">Подсказка</span>
+                     </span>
+                  </div>
+                  <div class="ads-calculator__result">
+                     <p>Выручка в месяц: <span>— ₽</span></p>
+                     <span class="tips">
+                        <span class="tips__btn">?</span>
+                        <span class="tips__message">Подсказка</span>
+                     </span>
+                  </div>
+                  <div class="ads-calculator__result">
+                     <p>Валовая прибыль: <span>— ₽</span></p>
+                     <span class="tips">
+                        <span class="tips__btn">?</span>
+                        <span class="tips__message">Подсказка</span>
+                     </span>
+                  </div>
+                  <button type="button" class="button-decore">Узнайте как получить этот результат!</button>
+                  <div class="ads-calculator__results-bg">
+                     <picture><source srcset="img/calc-bg-sm-mob.webp" type="image/webp"><img src="img/calc-bg-sm-mob.png" width="510" height="604" alt="bg"></picture>
+                  </div>
+               </div>
+               <div class="ads-calculator__block-bg">
+                  <picture><source srcset="img/calc-bg.webp" type="image/webp"><img src="img/calc-bg.png" width="1200" height="550" alt="bg"></picture>
+               </div>
+            </div>
+            <div class="ads-calculator__block" data-calc-block="2">
+               <div class="ads-calculator__card">
+                  <div class="ads-calculator__subtitle">Вводные данные:</div>
+                  <div class="ads-calculator__row">
+                     <div class="ads-calculator__area">
+                        <div class="ads-calculator__label">Сколько лидов (обращений) сможете обработать?
+                           <span class="tips">
+                              <span class="tips__btn">?</span>
+                              <span class="tips__message">Подсказка</span>
+                           </span>
+                        </div>
+                        <input type="number" class="ads-calculator__input" inputmode="numeric"
+                           placeholder="Укажите кол-во">
+                     </div>
+                  </div>
+                  <div class="ads-calculator__row">
+                     <div class="ads-calculator__area">
+                        <div class="ads-calculator__label">Средняя маржинальность:
+                           <span class="tips">
+                              <span class="tips__btn">?</span>
+                              <span class="tips__message">Подсказка</span>
+                           </span>
+                        </div>
+                        <input type="number" class="ads-calculator__input" inputmode="numeric"
+                           placeholder="Укажите в процентах">
+                     </div>
+                     <div class="ads-calculator__area">
+                        <div class="ads-calculator__label">Средний чек:
+                           <span class="tips">
+                              <span class="tips__btn">?</span>
+                              <span class="tips__message">Подсказка</span>
+                           </span>
+                        </div>
+                        <input type="number" class="ads-calculator__input" inputmode="numeric"
+                           placeholder="Укажите сумму в рублях">
+                     </div>
+                  </div>
+                  <div class="ads-calculator__row">
+                     <div class="ads-calculator__area">
+                        <div class="ads-calculator__label">Коэффициент рентабельности маркетинга (ROMI):
+                           <span class="tips">
+                              <span class="tips__btn">?</span>
+                              <span class="tips__message">Подсказка</span>
+                           </span>
+                        </div>
+                        <input type="number" class="ads-calculator__input" inputmode="numeric"
+                           placeholder="Укажите в процентах">
+                     </div>
+                  </div>
+                  <div class="ads-calculator__row">
+                     <div class="ads-calculator__area">
+                        <div class="ads-calculator__label">Средняя конверсия из обращения в продажу (%):
+                           <span class="tips">
+                              <span class="tips__btn">?</span>
+                              <span class="tips__message">Подсказка</span>
+                           </span>
+                        </div>
+                        <input type="number" class="ads-calculator__input" inputmode="numeric"
+                           placeholder="Укажите в процентах">
+                     </div>
+                  </div>
+                  <div class="ads-calculator__card-bg">
+                     <picture><source srcset="img/calc-bg-sm.webp" type="image/webp"><img src="img/calc-bg-sm.png" width="690" height="500" alt="bg"></picture>
+                  </div>
+               </div>
+               <div class="ads-calculator__results disabled">
+                  <div class="ads-calculator__subtitle">Результат расчёта:</div>
+                  <div class="ads-calculator__result">
+                     <p>Бюджет на маркетинг в месяц: <span>— ₽</span></p>
+                     <span class="tips">
+                        <span class="tips__btn">?</span>
+                        <span class="tips__message">Подсказка</span>
+                     </span>
+                  </div>
+                  <div class="ads-calculator__result">
+                     <p>Допустимая стоимость клиента (CAC): <span>— ₽</span></p>
+                     <span class="tips">
+                        <span class="tips__btn">?</span>
+                        <span class="tips__message">Подсказка</span>
+                     </span>
+                  </div>
+                  <div class="ads-calculator__result">
+                     <p>Допустимая стоимость лида (CPL): <span>— ₽</span></p>
+                     <span class="tips">
+                        <span class="tips__btn">?</span>
+                        <span class="tips__message">Подсказка</span>
+                     </span>
+                  </div>
+                  <div class="ads-calculator__result">
+                     <p>Необходимое кол-во клиентов/месяц: <span>— ₽</span></p>
+                     <span class="tips">
+                        <span class="tips__btn">?</span>
+                        <span class="tips__message">Подсказка</span>
+                     </span>
+                  </div>
+                  <div class="ads-calculator__result">
+                     <p>Выручка в месяц: <span>— ₽</span></p>
+                     <span class="tips">
+                        <span class="tips__btn">?</span>
+                        <span class="tips__message">Подсказка</span>
+                     </span>
+                  </div>
+                  <div class="ads-calculator__result">
+                     <p>Валовая прибыль: <span>— ₽</span></p>
+                     <span class="tips">
+                        <span class="tips__btn">?</span>
+                        <span class="tips__message">Подсказка</span>
+                     </span>
+                  </div>
+                  <button type="button" class="button-decore">Узнайте как получить этот результат!</button>
+                  <div class="ads-calculator__results-bg">
+                     <picture><source srcset="img/calc-bg-sm-mob.webp" type="image/webp"><img src="img/calc-bg-sm-mob.png" width="510" height="604" alt="bg"></picture>
+                  </div>
+               </div>
+               <div class="ads-calculator__block-bg">
+                  <picture><source srcset="img/calc-bg.webp" type="image/webp"><img src="img/calc-bg.png" width="1200" height="550" alt="bg"></picture>
+               </div>
+            </div>
+            <div class="ads-calculator__block" data-calc-block="3">
+               <div class="ads-calculator__card">
+                  <div class="ads-calculator__subtitle">Вводные данные:</div>
+                  <div class="ads-calculator__row">
+                     <div class="ads-calculator__area">
+                        <div class="ads-calculator__label">Сколько лидов (обращений) сможете обработать?
+                           <span class="tips">
+                              <span class="tips__btn">?</span>
+                              <span class="tips__message">Подсказка</span>
+                           </span>
+                        </div>
+                        <input type="number" class="ads-calculator__input" inputmode="numeric"
+                           placeholder="Укажите кол-во">
+                     </div>
+                  </div>
+                  <div class="ads-calculator__row">
+                     <div class="ads-calculator__area">
+                        <div class="ads-calculator__label">Средняя маржинальность:
+                           <span class="tips">
+                              <span class="tips__btn">?</span>
+                              <span class="tips__message">Подсказка</span>
+                           </span>
+                        </div>
+                        <input type="number" class="ads-calculator__input" inputmode="numeric"
+                           placeholder="Укажите в процентах">
+                     </div>
+                     <div class="ads-calculator__area">
+                        <div class="ads-calculator__label">Средний чек:
+                           <span class="tips">
+                              <span class="tips__btn">?</span>
+                              <span class="tips__message">Подсказка</span>
+                           </span>
+                        </div>
+                        <input type="number" class="ads-calculator__input" inputmode="numeric"
+                           placeholder="Укажите сумму в рублях">
+                     </div>
+                  </div>
+                  <div class="ads-calculator__row">
+                     <div class="ads-calculator__area">
+                        <div class="ads-calculator__label">Коэффициент рентабельности маркетинга (ROMI):
+                           <span class="tips">
+                              <span class="tips__btn">?</span>
+                              <span class="tips__message">Подсказка</span>
+                           </span>
+                        </div>
+                        <input type="number" class="ads-calculator__input" inputmode="numeric"
+                           placeholder="Укажите в процентах">
+                     </div>
+                  </div>
+                  <div class="ads-calculator__row">
+                     <div class="ads-calculator__area">
+                        <div class="ads-calculator__label">Средняя конверсия из обращения в продажу (%):
+                           <span class="tips">
+                              <span class="tips__btn">?</span>
+                              <span class="tips__message">Подсказка</span>
+                           </span>
+                        </div>
+                        <input type="number" class="ads-calculator__input" inputmode="numeric"
+                           placeholder="Укажите в процентах">
+                     </div>
+                  </div>
+                  <div class="ads-calculator__card-bg">
+                     <picture><source srcset="img/calc-bg-sm.webp" type="image/webp"><img src="img/calc-bg-sm.png" width="690" height="500" alt="bg"></picture>
+                  </div>
+               </div>
+               <div class="ads-calculator__results disabled">
+                  <div class="ads-calculator__subtitle">Результат расчёта:</div>
+                  <div class="ads-calculator__result">
+                     <p>Бюджет на маркетинг в месяц: <span>— ₽</span></p>
+                     <span class="tips">
+                        <span class="tips__btn">?</span>
+                        <span class="tips__message">Подсказка</span>
+                     </span>
+                  </div>
+                  <div class="ads-calculator__result">
+                     <p>Допустимая стоимость клиента (CAC): <span>— ₽</span></p>
+                     <span class="tips">
+                        <span class="tips__btn">?</span>
+                        <span class="tips__message">Подсказка</span>
+                     </span>
+                  </div>
+                  <div class="ads-calculator__result">
+                     <p>Допустимая стоимость лида (CPL): <span>— ₽</span></p>
+                     <span class="tips">
+                        <span class="tips__btn">?</span>
+                        <span class="tips__message">Подсказка</span>
+                     </span>
+                  </div>
+                  <div class="ads-calculator__result">
+                     <p>Необходимое кол-во клиентов/месяц: <span>— ₽</span></p>
+                     <span class="tips">
+                        <span class="tips__btn">?</span>
+                        <span class="tips__message">Подсказка</span>
+                     </span>
+                  </div>
+                  <div class="ads-calculator__result">
+                     <p>Выручка в месяц: <span>— ₽</span></p>
+                     <span class="tips">
+                        <span class="tips__btn">?</span>
+                        <span class="tips__message">Подсказка</span>
+                     </span>
+                  </div>
+                  <div class="ads-calculator__result">
+                     <p>Валовая прибыль: <span>— ₽</span></p>
+                     <span class="tips">
+                        <span class="tips__btn">?</span>
+                        <span class="tips__message">Подсказка</span>
+                     </span>
+                  </div>
+                  <button type="button" class="button-decore">Узнайте как получить этот результат!</button>
+                  <div class="ads-calculator__results-bg">
+                     <picture><source srcset="img/calc-bg-sm-mob.webp" type="image/webp"><img src="img/calc-bg-sm-mob.png" width="510" height="604" alt="bg"></picture>
+                  </div>
+               </div>
+               <div class="ads-calculator__block-bg">
+                  <picture><source srcset="img/calc-bg.webp" type="image/webp"><img src="img/calc-bg.png" width="1200" height="550" alt="bg"></picture>
+               </div>
             </div>
          </div>
       </section>
    </main>
 
-   <div class="main-bg"><img src="img/main-bg.png" alt=""></div>
+   <div class="main-bg"><picture><source srcset="img/main-bg.webp" type="image/webp"><img src="img/main-bg.png" alt=""></picture></div>
    <div class="bg-noize"></div>
    <div class="discount-popup popup" id="discountPopup">
    <div class="discount-popup__body popup__body">
@@ -357,7 +711,7 @@
                      </div>
                   </form>
                   <div class="request-card__bg">
-                     <img src="img/card-bg-dark.png" width="1126" height="524" alt="card bg">
+                     <picture><source srcset="img/card-bg-dark.webp" type="image/webp"><img src="img/card-bg-dark.png" width="1126" height="524" alt="card bg"></picture>
                   </div>
                </div>
             </div>
@@ -426,9 +780,9 @@
          fill="currentColor" />
    </svg>
 </svg>
-   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/atropos@2.0.2/atropos.min.js"></script>
-   <script src="js/app.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20250912215818"></script>
+   <script src="https://cdn.jsdelivr.net/npm/atropos@2.0.2/atropos.min.js?_v=20250912215818"></script>
+   <script src="js/app.js?_v=20250912215818"></script>
 </body>
 
 </html>

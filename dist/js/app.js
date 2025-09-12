@@ -657,6 +657,62 @@ if (benefitsSlider) {
    });
 }
 
+
+/*---------------------------------------------------------------------------
+Tips
+---------------------------------------------------------------------------*/
+document.addEventListener("DOMContentLoaded", () => {
+   const tips = document.querySelectorAll(".tips");
+
+   tips.forEach((tip) => {
+      const btn = tip.querySelector(".tips__btn");
+      const msg = tip.querySelector(".tips__message");
+
+      tip.addEventListener("mouseenter", () => {
+         msg.classList.add("show");
+      });
+
+      tip.addEventListener("mouseleave", () => {
+         msg.classList.remove("show");
+      });
+
+      btn.addEventListener("click", (e) => {
+         e.stopPropagation();
+         msg.classList.toggle("show");
+      });
+   });
+
+   document.addEventListener("click", () => {
+      document.querySelectorAll(".tips__message.show").forEach((msg) => {
+         msg.classList.remove("show");
+      });
+   });
+});
+
+
+/*---------------------------------------------------------------------------
+Calculator tabs
+---------------------------------------------------------------------------*/
+document.addEventListener("DOMContentLoaded", () => {
+   const tabs = document.querySelectorAll(".ads-calculator__tab");
+   const blocks = document.querySelectorAll(".ads-calculator__block");
+
+   if (tabs.length && blocks.length) {
+      tabs.forEach(tab => {
+         tab.addEventListener("click", () => {
+            const target = tab.getAttribute("data-calc-tab");
+
+            tabs.forEach(t => t.classList.remove("active"));
+            blocks.forEach(b => b.classList.remove("active"));
+
+            tab.classList.add("active");
+            const activeBlock = document.querySelector(`.ads-calculator__block[data-calc-block="${target}"]`);
+            if (activeBlock) activeBlock.classList.add("active");
+         });
+      });
+   }
+});
+
 })();
 
 /******/ })()
