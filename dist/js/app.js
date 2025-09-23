@@ -186,26 +186,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-/*------------------------------
-Team slider
----------------------------*/
-const teamSlider = document.querySelector(".art-team__slider");
-
-if (teamSlider) {
-   const teamSwiper = new Swiper(teamSlider, {
-      slidesPerView: 'auto',
-      loop: false,
-      pagination: {
-         el: '.art-team__slider-pagination',
-         clickable: false,
-      },
-      navigation: {
-         nextEl: '.art-team__slider-next',
-         prevEl: '.art-team__slider-prev',
-      },
-   });
-}
-
 /*---------------------------------------------------------------------------
 Team slider cursor
 ---------------------------------------------------------------------------*/
@@ -398,26 +378,6 @@ window.addEventListener("DOMContentLoaded", function () {
 });
 
 
-/*---------------------------------------------------------------------------
-Cases slider
----------------------------------------------------------------------------*/
-const casesSlider = document.querySelector(".art-cases__slider");
-
-if (casesSlider) {
-   const casesSwiper = new Swiper(casesSlider, {
-      slidesPerView: 'auto',
-      loop: false,
-      pagination: {
-         el: '.art-cases__slider-pagination',
-         clickable: false,
-      },
-      navigation: {
-         nextEl: '.art-cases__slider-next',
-         prevEl: '.art-cases__slider-prev',
-      },
-   });
-}
-
 
 /*---------------------------------------------------------------------------
 Dropdown
@@ -530,25 +490,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-/*---------------------------------------------------------------------------
-blog slider
----------------------------------------------------------------------------*/
-const blogSlider = document.querySelector(".art-actuals__slider");
-
-if (blogSlider) {
-   const blogSwiper = new Swiper(blogSlider, {
-      slidesPerView: 'auto',
-      loop: false,
-      pagination: {
-         el: '.art-actuals__pagination',
-         clickable: false,
-      },
-      navigation: {
-         nextEl: '.art-actuals__next',
-         prevEl: '.art-actuals__prev',
-      },
-   });
-}
 
 /*---------------------------------------------------------------------------
 Subscribe icons anim
@@ -597,26 +538,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 /*---------------------------------------------------------------------------
-Cases slider
----------------------------------------------------------------------------*/
-const articlesSlider = document.querySelector(".more-articles__slider");
-
-if (articlesSlider) {
-   const articlesSwiper = new Swiper(articlesSlider, {
-      slidesPerView: 'auto',
-      loop: false,
-      pagination: {
-         el: '.more-articles__slider-pagination',
-         clickable: false,
-      },
-      navigation: {
-         nextEl: '.more-articles__slider-next',
-         prevEl: '.more-articles__slider-prev',
-      },
-   });
-}
-
-/*---------------------------------------------------------------------------
 Flip card
 ---------------------------------------------------------------------------*/
 const cards = document.querySelectorAll('.ads-benefits__card');
@@ -638,24 +559,6 @@ if (cards.length > 0) {
    });
 }
 
-
-
-
-/*---------------------------------------------------------------------------
-Benefits slider
----------------------------------------------------------------------------*/
-const benefitsSlider = document.querySelector(".ads-benefits__slider");
-
-if (benefitsSlider) {
-   const benefitsSwiper = new Swiper(benefitsSlider, {
-      slidesPerView: 'auto',
-      loop: false,
-      navigation: {
-         nextEl: '.ads-benefits__slider-next',
-         prevEl: '.ads-benefits__slider-prev',
-      },
-   });
-}
 
 
 /*---------------------------------------------------------------------------
@@ -711,6 +614,498 @@ document.addEventListener("DOMContentLoaded", () => {
          });
       });
    }
+});
+
+
+/*---------------------------------------------------------------------------
+Mario
+---------------------------------------------------------------------------*/
+document.addEventListener("DOMContentLoaded", () => {
+   const slider = document.querySelector(".ads-efficiency__slider");
+   const marioPerson = document.querySelector(".mario__person");
+   const coins = document.querySelectorAll(".mario__coin");
+
+   if (slider && marioPerson && coins.length) {
+      let rect = slider.getBoundingClientRect();
+      let marioX = rect.width / 2;
+      let targetX = marioX;
+
+      // --- Десктоп: бег за курсором ---
+      if (window.innerWidth >= 1000) {
+         slider.addEventListener("mousemove", (e) => {
+            rect = slider.getBoundingClientRect();
+            targetX = e.clientX - rect.left;
+         });
+
+         function animate() {
+            const speed = 0.04;
+            marioX += (targetX - marioX) * speed;
+            marioPerson.style.left = marioX + "px";
+            marioPerson.style.transform = targetX > marioX ? "scaleX(1)" : "scaleX(-1)";
+
+            // проверка на сбор монет
+            coins.forEach((coin) => {
+               if (!coin.classList.contains("collected")) {
+                  const coinRect = coin.getBoundingClientRect();
+                  const sliderRect = slider.getBoundingClientRect();
+                  const coinX = coinRect.left - sliderRect.left + coinRect.width / 2;
+
+                  if (Math.abs(marioX - coinX) < 20) {
+                     coin.classList.add("collected");
+                  }
+               }
+            });
+
+            requestAnimationFrame(animate);
+         }
+
+         animate();
+      }
+
+      // --- Мобайл: бег по слайдам ---
+      if (window.innerWidth < 1000 && efficiencySwiper) {
+         marioPerson.style.transition = "left 0.8s ease, transform 0.2s linear";
+
+         let coinsCollected = false;
+
+         efficiencySwiper.on("slideNextTransitionStart", () => {
+            marioPerson.style.transform = "scaleX(1)";
+            marioPerson.style.left = "70%";
+
+            if (!coinsCollected) {
+               coins.forEach((coin) => coin.classList.add("collected"));
+               coinsCollected = true;
+            }
+         });
+
+         efficiencySwiper.on("slidePrevTransitionStart", () => {
+            marioPerson.style.transform = "scaleX(-1)";
+            marioPerson.style.left = "30%";
+
+            if (!coinsCollected) {
+               coins.forEach((coin) => coin.classList.add("collected"));
+               coinsCollected = true;
+            }
+         });
+      }
+   }
+});
+
+
+/*---------------------------------------------------------------------------
+Move screenshots
+---------------------------------------------------------------------------*/
+document.addEventListener("DOMContentLoaded", () => {
+   const screenshots = document.querySelector(".ads-preview__screenshots");
+   const values = document.querySelectorAll(".ads-preview__value");
+   const keys = document.querySelectorAll(".ads-preview__key");
+
+   function moveValues() {
+      if (window.innerWidth > 1200 && screenshots) {
+         values.forEach(v => screenshots.appendChild(v));
+      } else {
+         values.forEach(v => {
+            const parentBlock = document.querySelector(`.ads-preview__block .ads-preview__key[data-id="${v.dataset.id}"]`)?.parentElement;
+            if (parentBlock && !parentBlock.contains(v)) {
+               parentBlock.appendChild(v);
+            }
+         });
+      }
+   }
+   moveValues();
+   window.addEventListener("resize", moveValues);
+
+   function setActive(id, multiple) {
+      const key = document.querySelector(`.ads-preview__key[data-id="${id}"]`);
+      const value = document.querySelector(`.ads-preview__value[data-id="${id}"]`);
+      if (!key || !value) return;
+
+      if (multiple) {
+         key.classList.toggle("active");
+         value.classList.toggle("active");
+      } else {
+         keys.forEach(k => k.classList.remove("active"));
+         values.forEach(v => v.classList.remove("active"));
+         key.classList.add("active");
+         value.classList.add("active");
+      }
+   }
+
+   keys.forEach(key => {
+      key.addEventListener("click", () => {
+         const multiple = window.innerWidth <= 1200;
+         setActive(key.dataset.id, multiple);
+      });
+   });
+
+   if (window.innerWidth > 1200 && keys.length) {
+      setActive(keys[0].dataset.id, false);
+   }
+});
+
+/*---------------------------------------------------------------------------
+Team cards
+---------------------------------------------------------------------------*/
+document.addEventListener("DOMContentLoaded", () => {
+   const cards = document.querySelectorAll(".ads-team__card");
+
+   function toggleCardActive() {
+      if (window.innerWidth <= 980) {
+         cards.forEach(card => {
+            card.addEventListener("click", () => {
+               card.classList.toggle("active");
+            });
+         });
+      } else {
+         cards.forEach(card => {
+            card.classList.remove("active");
+            const clone = card.cloneNode(true);
+            card.replaceWith(clone);
+         });
+      }
+   }
+
+   toggleCardActive();
+   window.addEventListener("resize", toggleCardActive);
+});
+
+
+
+/*------------------------------
+Faq
+---------------------------*/
+document.addEventListener("DOMContentLoaded", () => {
+   const faqItems = document.querySelectorAll(".art-faq__item");
+
+   if (!faqItems || faqItems.length === 0) return;
+
+   faqItems.forEach((item) => {
+      if (!item) return;
+
+      const question = item.querySelector(".art-faq__question");
+      const answer = item.querySelector(".art-faq__answer");
+
+      if (!question || !answer) return;
+
+      const toggleFaqItem = () => {
+         const isActive = item.classList.contains("active");
+
+         faqItems.forEach((el) => {
+            const elAnswer = el.querySelector(".art-faq__answer");
+            if (elAnswer) {
+               el.classList.remove("active");
+               elAnswer.style.maxHeight = null;
+            }
+         });
+
+         if (!isActive) {
+            item.classList.add("active");
+            answer.style.maxHeight = answer.scrollHeight + 32 + "px";
+         }
+      };
+
+      question.addEventListener("click", toggleFaqItem);
+   });
+});
+
+
+
+/*---------------------------------------------------------------------------
+Move stages values
+---------------------------------------------------------------------------*/
+document.addEventListener("DOMContentLoaded", () => {
+   const screenshots = document.querySelector(".ya-stages__values");
+   const values = document.querySelectorAll(".ya-stages__value");
+   const keys = document.querySelectorAll(".ya-stages__key");
+
+   function moveValues() {
+      if (window.innerWidth > 1200 && screenshots) {
+         values.forEach(v => screenshots.appendChild(v));
+      } else {
+         values.forEach(v => {
+            const parentBlock = document.querySelector(`.ya-stages__block .ya-stages__key[data-id="${v.dataset.id}"]`)?.parentElement;
+            if (parentBlock && !parentBlock.contains(v)) {
+               parentBlock.appendChild(v);
+            }
+         });
+      }
+   }
+   moveValues();
+   window.addEventListener("resize", moveValues);
+
+   function setActive(id, multiple) {
+      const key = document.querySelector(`.ya-stages__key[data-id="${id}"]`);
+      const value = document.querySelector(`.ya-stages__value[data-id="${id}"]`);
+      if (!key || !value) return;
+
+      if (multiple) {
+         key.classList.toggle("active");
+         value.classList.toggle("active");
+      } else {
+         keys.forEach(k => k.classList.remove("active"));
+         values.forEach(v => v.classList.remove("active"));
+         key.classList.add("active");
+         value.classList.add("active");
+      }
+   }
+
+   keys.forEach(key => {
+      key.addEventListener("click", () => {
+         const multiple = window.innerWidth <= 1200;
+         setActive(key.dataset.id, multiple);
+      });
+   });
+
+   if (window.innerWidth > 1200 && keys.length) {
+      setActive(keys[0].dataset.id, false);
+   }
+});
+
+/*---------------------------------------------------------------------------
+Sliders
+---------------------------------------------------------------------------*/
+function initSwiper(selector, options, fractionSelector = null) {
+   const slider = document.querySelector(selector);
+   if (!slider) return null;
+
+   const fraction = fractionSelector ? document.querySelector(fractionSelector) : null;
+
+   return new Swiper(slider, {
+      ...options,
+      on: {
+         init: function () {
+            if (fraction) {
+               fraction.textContent = `${this.realIndex + 1}/${this.slides.length}`;
+            }
+         },
+         slideChange: function () {
+            if (fraction) {
+               fraction.textContent = `${this.realIndex + 1}/${this.slides.length}`;
+            }
+         }
+      }
+   });
+}
+
+/* ---------------- Stages + Testimonials ---------------- */
+initSwiper(".ads-stages__slider", {
+   slidesPerView: 1,
+   spaceBetween: 24,
+   loop: false,
+   speed: 800,
+   parallax: true,
+   effect: "creative",
+   creativeEffect: {
+      prev: { shadow: false, translate: ["-20%", 0, -1] },
+      next: { translate: ["100%", 0, 0] },
+   },
+   navigation: {
+      nextEl: ".ads-stages__slider-next",
+      prevEl: ".ads-stages__slider-prev",
+   },
+}, ".ads-stages__fraction");
+
+initSwiper(".art-testimonials__slider", {
+   slidesPerView: 1,
+   spaceBetween: 24,
+   loop: false,
+   speed: 800,
+   parallax: true,
+   effect: "creative",
+   creativeEffect: {
+      prev: { shadow: false, translate: ["-20%", 0, -1] },
+      next: { translate: ["100%", 0, 0] },
+   },
+   navigation: {
+      nextEl: ".art-testimonials__slider-next",
+      prevEl: ".art-testimonials__slider-prev",
+   },
+}, ".art-testimonials__fraction");
+
+
+/* ---------------- Team + Cases + Blog + Articles ---------------- */
+initSwiper(".art-team__slider", {
+   slidesPerView: "auto",
+   loop: false,
+   pagination: {
+      el: ".art-team__slider-pagination",
+      clickable: false,
+   },
+   navigation: {
+      nextEl: ".art-team__slider-next",
+      prevEl: ".art-team__slider-prev",
+   },
+});
+
+initSwiper(".art-cases__slider", {
+   slidesPerView: "auto",
+   loop: false,
+   pagination: {
+      el: ".art-cases__slider-pagination",
+      clickable: false,
+   },
+   navigation: {
+      nextEl: ".art-cases__slider-next",
+      prevEl: ".art-cases__slider-prev",
+   },
+});
+
+initSwiper(".art-actuals__slider", {
+   slidesPerView: "auto",
+   loop: false,
+   pagination: {
+      el: ".art-actuals__pagination",
+      clickable: false,
+   },
+   navigation: {
+      nextEl: ".art-actuals__next",
+      prevEl: ".art-actuals__prev",
+   },
+});
+
+initSwiper(".more-articles__slider", {
+   slidesPerView: "auto",
+   loop: false,
+   pagination: {
+      el: ".more-articles__slider-pagination",
+      clickable: false,
+   },
+   navigation: {
+      nextEl: ".more-articles__slider-next",
+      prevEl: ".more-articles__slider-prev",
+   },
+});
+
+
+/* ---------------- Benefits + Efficiency ---------------- */
+initSwiper(".ads-benefits__slider", {
+   slidesPerView: "auto",
+   loop: false,
+   navigation: {
+      nextEl: ".ads-benefits__slider-next",
+      prevEl: ".ads-benefits__slider-prev",
+   },
+});
+
+initSwiper(".ads-efficiency__slider", {
+   slidesPerView: "auto",
+   loop: false,
+   navigation: {
+      nextEl: ".ads-efficiency__slider-next",
+      prevEl: ".ads-efficiency__slider-prev",
+   },
+});
+
+
+/* ---------------- Yandex Benefit ---------------- */
+initSwiper(".ya-benefit__slider", {
+   slidesPerView: 1,
+   spaceBetween: 24,
+   loop: false,
+   navigation: {
+      nextEl: ".ya-benefit__slider-next",
+      prevEl: ".ya-benefit__slider-prev",
+   },
+});
+
+
+/* ---------------- Call center ---------------- */
+initSwiper(".em-callcenter__slider", {
+   slidesPerView: 1,
+   spaceBetween: 24,
+   loop: false,
+   navigation: {
+      nextEl: ".em-callcenter__slider-next",
+      prevEl: ".em-callcenter__slider-prev",
+   },
+   pagination: {
+      el: ".em-callcenter__slider-pagination",
+   },
+});
+
+/* ---------------- Galleries ---------------- */
+const fancyOptions = {
+   Thumbs: { autoStart: false },
+   Toolbar: { display: ["close"] },
+   dragToClose: true,
+};
+
+Fancybox.bind('[data-fancybox]', fancyOptions);
+
+const analysBlocks = document.querySelectorAll(".em-analysis__content");
+
+analysBlocks.forEach(block => {
+   const slider = block.querySelector(".em-analysis__slider");
+   if (!slider) return;
+
+   const swiper = new Swiper(slider, {
+      slidesPerView: 1,
+      spaceBetween: 24,
+      loop: false,
+      navigation: {
+         nextEl: block.querySelector(".em-analysis__slider-next"),
+         prevEl: block.querySelector(".em-analysis__slider-prev"),
+      },
+      pagination: {
+         el: block.querySelector(".em-analysis__slider-pagination"),
+      },
+   });
+
+   const fullscreenBtn = block.querySelector(".em-analysis__slide-fullscreen");
+
+   if (fullscreenBtn) {
+      fullscreenBtn.addEventListener("click", () => {
+         const items = [...block.querySelectorAll("[data-fancybox]")];
+         const currentIndex = swiper.realIndex;
+
+         Fancybox.show(
+            items.map(el => ({
+               src: el.getAttribute("href"),
+               thumb: el.querySelector("img")?.src,
+               type: "image",
+            })),
+            {
+               ...fancyOptions,
+               startIndex: currentIndex,
+            }
+         );
+      });
+   }
+});
+
+
+/*---------------------------------------------------------------------------
+Analys cards
+---------------------------------------------------------------------------*/
+document.addEventListener("DOMContentLoaded", () => {
+   const cards = document.querySelectorAll(".em-analysis__card");
+
+   function initCards() {
+      if (window.innerWidth <= 1200) {
+         cards.forEach(card => {
+            card.addEventListener("click", onCardClick);
+         });
+      } else {
+         cards.forEach(card => {
+            card.removeEventListener("click", onCardClick);
+            card.classList.remove("active");
+         });
+      }
+   }
+
+   function onCardClick(e) {
+      const clicked = e.currentTarget;
+
+      if (clicked.classList.contains("active")) {
+         clicked.classList.remove("active");
+      } else {
+         cards.forEach(c => c.classList.remove("active"));
+         clicked.classList.add("active");
+      }
+   }
+
+   initCards();
+
 });
 
 })();
