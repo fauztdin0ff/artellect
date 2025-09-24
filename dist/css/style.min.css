@@ -1176,6 +1176,7 @@ Gradients
   background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
+  font-weight: 600;
 }
 
 .rainbow-text {
@@ -9370,12 +9371,13 @@ Chalenge
 .em-challenges__card-text .gradient-text {
   font-weight: 600;
 }
+.em-challenges__card-text b {
+  color: #fff;
+  font-weight: 600;
+}
 @media (width < 767px) {
   .em-challenges__card-text {
     font-size: 14px;
-  }
-  .em-challenges__card-text b {
-    color: #fff;
   }
 }
 .em-challenges__card-image {
@@ -9431,5 +9433,397 @@ Chalenge
   .em-challenges__slogan-text img {
     width: 139px;
     height: 24px;
+  }
+}
+
+/*---------------------------------------------------------------------------
+Results
+---------------------------------------------------------------------------*/
+.em-results__body .em-title {
+  margin-bottom: 24px;
+}
+.em-results__main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  margin-bottom: 24px;
+}
+.em-results__main .em-results__card:first-child {
+  padding: 0;
+  border-radius: 0;
+  background: none;
+  display: flex;
+  flex-direction: column;
+}
+@media (width < 1300px) {
+  .em-results__main {
+    gap: 24px;
+  }
+}
+@media (width < 767px) {
+  .em-results__main {
+    grid-template-columns: 1fr;
+  }
+}
+.em-results__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+@media (width < 1300px) {
+  .em-results__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (width < 767px) {
+  .em-results__cards {
+    grid-template-columns: 1fr;
+  }
+}
+.em-results__card {
+  padding: 48px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+@media (width < 980px) {
+  .em-results__card {
+    padding: 24px;
+  }
+}
+.em-results__subtitle {
+  padding: 48px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.04);
+  font-size: 24px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+@media (width < 980px) {
+  .em-results__subtitle {
+    padding: 24px;
+  }
+}
+@media (width < 767px) {
+  .em-results__subtitle {
+    font-size: 18px;
+  }
+}
+.em-results__card-name {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+@media (width < 767px) {
+  .em-results__card-name {
+    font-size: 18px;
+  }
+}
+.em-results__card-descr {
+  font-size: 18px;
+  color: #ccc;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+  margin-bottom: 24px;
+}
+@media (width < 767px) {
+  .em-results__card-descr {
+    font-size: 14px;
+  }
+}
+.em-results__values .d-flex {
+  display: flex;
+  gap: 16px;
+}
+@media (width < 980px) {
+  .em-results__values .d-flex {
+    display: block;
+  }
+}
+.em-results__value {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.em-results__value:not(:last-child) {
+  margin-bottom: 24px;
+}
+.em-results__value.-before .em-results__value-track {
+  background: linear-gradient(132.85deg, rgb(0, 144, 196), rgb(0, 122, 130) 100%);
+  position: relative;
+}
+.em-results__value.-before .em-results__value-track::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  background: linear-gradient(132.85deg, rgb(0, 144, 196), rgb(0, 122, 130) 100%);
+  filter: blur(4px);
+}
+@media (width < 767px) {
+  .em-results__value.-before .em-results__value-track {
+    max-width: 50%;
+  }
+}
+.em-results__value.-affter .em-results__value-track {
+  background: linear-gradient(171.41deg, rgb(134, 253, 210), rgb(244, 233, 135) 100%);
+  position: relative;
+}
+.em-results__value.-affter .em-results__value-track::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  background: linear-gradient(171.41deg, rgb(134, 253, 210), rgb(244, 233, 135) 100%);
+  filter: blur(4px);
+}
+@media (width < 767px) {
+  .em-results__value.-affter .em-results__value-track {
+    width: 100% !important;
+  }
+}
+@media (width < 767px) {
+  .em-results__value {
+    width: 100% !important;
+  }
+}
+.em-results__value-label {
+  font-size: 18px;
+}
+.em-results__value-label:not(:last-child) {
+  font-weight: 600;
+}
+@media (width < 767px) {
+  .em-results__value-label {
+    font-size: 16px;
+  }
+}
+.em-results__value-track {
+  height: 8px;
+  border-radius: 100px;
+}
+.em-results__card-att {
+  margin-top: 24px;
+  font-size: 16px;
+  color: #ccc;
+}
+@media (width < 767px) {
+  .em-results__card-att {
+    font-size: 14px;
+  }
+}
+.em-results__screen {
+  margin-top: 24px;
+}
+.em-results__screen-image img {
+  border-radius: 10px;
+}
+
+.compensate-for-scrollbar {
+  padding-right: 0 !important;
+}
+
+/*---------------------------------------------------------------------------
+Расходы
+---------------------------------------------------------------------------*/
+.em-expenses__descr {
+  padding: 24px 48px;
+  border-left: 1px solid rgba(255, 255, 255, 0.24);
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.em-expenses__descr p:first-child {
+  color: #ccc;
+}
+@media (width < 767px) {
+  .em-expenses__descr {
+    padding: 24px;
+    font-size: 14px;
+  }
+}
+.em-expenses__cards {
+  display: flex;
+  gap: 24px;
+}
+@media (width < 1200px) {
+  .em-expenses__cards {
+    flex-direction: column;
+  }
+}
+.em-expenses__card {
+  padding: 24px;
+  flex: 1;
+  border-left: 1px solid rgba(255, 255, 255, 0.24);
+  display: flex;
+  flex-direction: column;
+}
+@media (width < 1200px) {
+  .em-expenses__card {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+    border-left: none;
+  }
+}
+.em-expenses__card-name {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+@media (width < 767px) {
+  .em-expenses__card-name {
+    font-size: 18px;
+  }
+}
+.em-expenses__card-text {
+  font-size: 18px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  color: #ccc;
+}
+.em-expenses__card-text p:not(:last-child) {
+  margin-bottom: 24px;
+}
+.em-expenses__card-text img {
+  margin-bottom: 24px;
+}
+@media (width < 767px) {
+  .em-expenses__card-text {
+    font-size: 14px;
+  }
+}
+.em-expenses__card-more {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
+.em-expenses__card-more.opened {
+  max-height: unset;
+}
+.em-expenses__card-button {
+  text-align: center;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: underline;
+  text-decoration-thickness: from-font;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #ccc;
+  margin-top: auto;
+}
+@media (hover: hover) {
+  .em-expenses__card-button:hover {
+    background: rgba(255, 255, 255, 0.14);
+  }
+}
+@media (width < 1200px) {
+  .em-expenses__card-button {
+    height: 38px;
+  }
+}
+@media (width < 767px) {
+  .em-expenses__card-button {
+    font-size: 14px;
+    height: 33px;
+  }
+}
+
+.dotted-list li {
+  position: relative;
+  padding-left: 24px;
+  line-height: normal;
+}
+.dotted-list li:not(:last-child) {
+  margin-bottom: 16px;
+}
+.dotted-list li::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: calc(50% - 3px);
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: radial-gradient(#57e6ff 0%, #4d6fff 100%);
+}
+
+/*---------------------------------------------------------------------------
+Review
+---------------------------------------------------------------------------*/
+.em-review__body {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+.em-review__body .em-title {
+  flex: 0 1 50%;
+}
+@media (width < 1200px) {
+  .em-review__body {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+.em-review__card {
+  flex: 0 1 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px 48px;
+  background: rgba(255, 255, 255, 0.024);
+  backdrop-filter: blur(80px);
+  border-radius: 10px;
+}
+.em-review__card .qoute-icon-end {
+  margin-left: auto;
+}
+@media (width < 767px) {
+  .em-review__card {
+    padding: 24px;
+  }
+}
+.em-review__card-text {
+  font-size: 18px;
+}
+.em-review__card-text p:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+/*---------------------------------------------------------------------------
+Заключение
+---------------------------------------------------------------------------*/
+.em-conclusion__body {
+  padding: 80px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.24);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+.em-conclusion__body p {
+  max-width: 1412px;
+}
+@media (width < 767px) {
+  .em-conclusion__body {
+    font-size: 18px;
   }
 }

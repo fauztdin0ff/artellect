@@ -1108,6 +1108,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
+
+/*---------------------------------------------------------------------------
+Long text
+---------------------------------------------------------------------------*/
+document.querySelectorAll('.em-expenses__card').forEach(card => {
+   const btn = card.querySelector('.em-expenses__card-button');
+   const more = card.querySelector('.em-expenses__card-more');
+
+   if (btn && more) {
+      btn.addEventListener('click', () => {
+         if (more.classList.contains('opened')) {
+            more.style.maxHeight = '0px';
+            more.classList.remove('opened');
+            btn.textContent = 'Раскрыть';
+         } else {
+            more.style.maxHeight = more.scrollHeight + 'px';
+            more.classList.add('opened');
+            btn.textContent = 'Скрыть';
+         }
+      });
+   }
+});
+
 })();
 
 /******/ })()
