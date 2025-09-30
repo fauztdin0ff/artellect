@@ -1023,6 +1023,37 @@ initSwiper(".em-callcenter__slider", {
    },
 });
 
+
+/* ---------------- Art marketing ---------------- */
+initSwiper(".art-marketing__slider", {
+   slidesPerView: "auto",
+   loop: false,
+   navigation: {
+      nextEl: ".art-marketing__slider-next",
+      prevEl: ".art-marketing__slider-prev",
+   },
+});
+
+//click
+document.addEventListener("DOMContentLoaded", () => {
+   const slides = document.querySelectorAll(".art-marketing__slide");
+
+   slides.forEach(slide => {
+      slide.addEventListener("click", () => {
+         if (window.innerWidth < 980) {
+            if (slide.classList.contains("active")) {
+               slide.classList.remove("active");
+            } else {
+               slides.forEach(s => s.classList.remove("active"));
+               slide.classList.add("active");
+            }
+         }
+      });
+   });
+});
+
+
+
 /* ---------------- Galleries ---------------- */
 const fancyOptions = {
    Thumbs: { autoStart: false },
@@ -1130,6 +1161,31 @@ document.querySelectorAll('.em-expenses__card').forEach(card => {
       });
    }
 });
+
+
+function initServiceCards() {
+   document.querySelectorAll('.art-services__card').forEach(card => {
+      const desc = card.querySelector('.art-services__wrapper');
+      const btn = card.querySelector('.art-services__description-more');
+
+      if (!desc || !btn) return;
+
+      if (desc.scrollHeight > desc.clientHeight) {
+         btn.style.display = 'block';
+      } else {
+         btn.style.display = 'none';
+      }
+
+      btn.addEventListener('click', () => {
+         desc.classList.toggle('expanded');
+         btn.textContent = desc.classList.contains('expanded')
+            ? 'Свернуть'
+            : 'Развернуть';
+      });
+   });
+}
+
+initServiceCards();
 
 })();
 

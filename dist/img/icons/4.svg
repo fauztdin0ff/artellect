@@ -1,0 +1,20 @@
+<svg width="112" height="143" viewBox="0 0 112 143" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Градиент для обводки -->
+    <linearGradient id="gradient-stroke-4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF5001">
+        <animate attributeName="stop-color" 
+                 values="#FF5001;#FFB801;#FF69B4;#8A2BE2;#C71585;#32CD32;#FF5001" 
+                 dur="10s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#FFB801">
+        <animate attributeName="stop-color" 
+                 values="#FFB801;#FF69B4;#8A2BE2;#C71585;#32CD32;#FF5001;#FFB801" 
+                 dur="10s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+  </defs>
+
+  <path d="M94.5 0.699951V88.2996H111.5V110.1H94.5V141.7H69.5V110.1H0.5V91.6335L0.600586 91.4998L68.6006 0.900146L68.75 0.699951H94.5ZM26.001 88.2996H69.5V30.3005L26.001 88.2996Z" 
+        stroke="url(#gradient-stroke-4)" stroke-width="2" fill="none"/>
+</svg>
