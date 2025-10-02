@@ -232,6 +232,7 @@ slides.forEach(slide => {
 /*---------------------------------------------------------------------------
 Support card
 ---------------------------------------------------------------------------*/
+// atropos
 const atropos1 = Atropos({
    el: '.my-atropos',
    activeOffset: 40,
@@ -241,24 +242,25 @@ const atropos1 = Atropos({
    highlight: false,
 });
 
-let atropos2 = null;
+let atropos2Instances = [];
 let caseAtroposInstances = [];
 
 function initAtropos() {
    if (window.innerWidth >= 1000) {
-      // my-atropos2
-      if (!atropos2) {
-         atropos2 = Atropos({
-            el: '.my-atropos2',
-            activeOffset: 20,
-            shadow: true,
-            shadowOffset: 40,
-            shadowScale: 1,
-            highlight: false,
+      if (atropos2Instances.length === 0) {
+         document.querySelectorAll('.my-atropos2').forEach(el => {
+            const instance = Atropos({
+               el: el,
+               activeOffset: 20,
+               shadow: true,
+               shadowOffset: 40,
+               shadowScale: 1,
+               highlight: false,
+            });
+            atropos2Instances.push(instance);
          });
       }
 
-      // case-atropos (много карточек)
       if (caseAtroposInstances.length === 0) {
          document.querySelectorAll('.case-atropos').forEach(card => {
             const instance = Atropos({
@@ -276,13 +278,11 @@ function initAtropos() {
       }
 
    } else {
-      // Отключаем my-atropos2
-      if (atropos2) {
-         atropos2.destroy();
-         atropos2 = null;
+      if (atropos2Instances.length > 0) {
+         atropos2Instances.forEach(instance => instance.destroy());
+         atropos2Instances = [];
       }
 
-      // Отключаем case-atropos
       if (caseAtroposInstances.length > 0) {
          caseAtroposInstances.forEach(instance => instance.destroy());
          caseAtroposInstances = [];
