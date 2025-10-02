@@ -1023,6 +1023,17 @@ initSwiper(".em-callcenter__slider", {
    },
 });
 
+/* ---------------- Clients ---------------- */
+initSwiper(".art-clients__slider", {
+   slidesPerView: 'auto',
+   spaceBetween: 24,
+   loop: true,
+   speed: 2000,
+   autoplay: {
+      delay: 0,
+      disableOnInteraction: false,
+   },
+});
 
 /* ---------------- Art marketing ---------------- */
 initSwiper(".art-marketing__slider", {
