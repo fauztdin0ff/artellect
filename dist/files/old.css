@@ -246,7 +246,7 @@ h1 {
    top: 24px;
    left: 26%;
    z-index: 200;
-   background: url('/images/xclose_w.png') center center no-repeat;
+   background: url('https://artellect-agency.ru//images/xclose_w.png') center center no-repeat;
    cursor: pointer;
 }
 
@@ -295,7 +295,7 @@ h1 {
    width: 17px;
    height: 18px;
    overflow: hidden;
-   background: url('/images/goup_btn.png') center center no-repeat;
+   background: url('https://artellect-agency.ru//images/goup_btn.png') center center no-repeat;
    background-size: 17px 18px;
    position: fixed;
    bottom: 72px;
@@ -351,7 +351,7 @@ section {
    width: 48px;
    height: 48px;
    border: 2px solid #ff5001;
-   background: rgba(0, 0, 0, 0.8) url('/images/xclose.png') center center no-repeat;
+   background: rgba(0, 0, 0, 0.8) url('https://artellect-agency.ru//images/xclose.png') center center no-repeat;
    background-size: 24px 24px;
    position: absolute;
    top: 56px;
@@ -405,7 +405,7 @@ section {
    width: 48px;
    height: 48px;
    border: 2px solid #ff5001;
-   background: transparent url('/images/xclose.png') center center no-repeat;
+   background: transparent url('https://artellect-agency.ru//images/xclose.png') center center no-repeat;
    background-size: 24px 24px;
    position: absolute;
    top: 56px;
@@ -423,7 +423,7 @@ section {
    top: calc(50% - 275px);
    left: calc(50% - 600px);
    text-align: left;
-   background: url('/images/main_menu_cont_bg.png') left top no-repeat;
+   background: url('https://artellect-agency.ru//images/main_menu_cont_bg.png') left top no-repeat;
    background-size: 1200px 550px;
 }
 
@@ -446,7 +446,7 @@ section {
    height: 52px;
    margin-top: 90px;
    margin-bottom: 88px;
-   background: url('/images/screen_footer_block_logo.png') 0 0 no-repeat;
+   background: url('https://artellect-agency.ru//images/screen_footer_block_logo.png') 0 0 no-repeat;
    background-size: 166px 52px;
    position: relative;
    z-index: 12;
@@ -569,7 +569,7 @@ a.screen_footer_block_col2_item {
    height: 52px;
    float: left;
    margin-right: 13px;
-   background: url('/images/logo_a.png') center left no-repeat;
+   background: url('https://artellect-agency.ru//images/logo_a.png') center left no-repeat;
    -webkit-background-size: contain;
    -moz-background-size: contain;
    -o-background-size: contain;
@@ -589,7 +589,7 @@ a.screen_footer_block_col2_item {
    margin-top: 20px;
    float: left;
    margin-right: 18px;
-   background: url('/images/logo_txt.png') center center no-repeat;
+   background: url('https://artellect-agency.ru//images/logo_txt.png') center center no-repeat;
    -webkit-background-size: contain;
    -moz-background-size: contain;
    -o-background-size: contain;
@@ -615,7 +615,7 @@ a.screen_footer_block_col2_item {
 
 #top_screen_contacts_block_phone {
    padding-left: 18px;
-   background: url('/images/phone_ico.png') left center no-repeat;
+   background: url('https://artellect-agency.ru//images/phone_ico.png') left center no-repeat;
    background-size: 15px 19px;
    font-size: 14px;
    line-height: 22px;
@@ -634,13 +634,13 @@ a.screen_footer_block_col2_item {
 }
 
 .top_screen_contacts_block_worktime_on {
-   background: url('/images/online.png') left center no-repeat;
+   background: url('https://artellect-agency.ru//images/online.png') left center no-repeat;
    padding-left: 18px;
    background-size: 10px 10px;
 }
 
 .top_screen_contacts_block_worktime_off {
-   background: url('/images/offline.png') left center no-repeat;
+   background: url('https://artellect-agency.ru//images/offline.png') left center no-repeat;
    padding-left: 18px;
    background-size: 10px 10px;
 }
@@ -671,7 +671,7 @@ a.screen_footer_block_col2_item {
    position: absolute;
    top: 0;
    right: 9px;
-   background: url('/images/city_arr_down.png') center center no-repeat;
+   background: url('https://artellect-agency.ru//images/city_arr_down.png') center center no-repeat;
    -webkit-background-size: contain;
    -moz-background-size: contain;
    -o-background-size: contain;
@@ -686,7 +686,7 @@ a.screen_footer_block_col2_item {
    float: right;
    margin-top: 56px;
    margin-right: 5.6vw;
-   background: url('/images/menu_btn.png') top center no-repeat;
+   background: url('https://artellect-agency.ru//images/menu_btn.png') top center no-repeat;
    -webkit-background-size: contain;
    -moz-background-size: contain;
    -o-background-size: contain;
@@ -726,7 +726,7 @@ a.top_screen_block_soc_item,
 
 #top_screen_block_soc_item_tg {
    height: 18px;
-   background: url('/images/tg_ico.png') top center no-repeat;
+   background: url('https://artellect-agency.ru//images/tg_ico.png') top center no-repeat;
    -webkit-background-size: contain;
    -moz-background-size: contain;
    -o-background-size: contain;
@@ -736,7 +736,7 @@ a.top_screen_block_soc_item,
 
 #top_screen_block_soc_item_wa {
    height: 21px;
-   background: url('/images/wa_ico.png') top center no-repeat;
+   background: url('https://artellect-agency.ru//images/wa_ico.png') top center no-repeat;
    -webkit-background-size: contain;
    -moz-background-size: contain;
    -o-background-size: contain;
@@ -774,7 +774,7 @@ a.main_first_screen_ini_block_soc_item,
 
 #main_first_screen_ini_block_soc_item_tg {
    height: 18px;
-   background: url('/images/tg_ico.png') top center no-repeat;
+   background: url('https://artellect-agency.ru//images/tg_ico.png') top center no-repeat;
    -webkit-background-size: contain;
    -moz-background-size: contain;
    -o-background-size: contain;
@@ -783,7 +783,7 @@ a.main_first_screen_ini_block_soc_item,
 
 #main_first_screen_ini_block_soc_item_wa {
    height: 21px;
-   background: url('/images/wa_ico.png') top center no-repeat;
+   background: url('https://artellect-agency.ru//images/wa_ico.png') top center no-repeat;
    -webkit-background-size: contain;
    -moz-background-size: contain;
    -o-background-size: contain;
@@ -832,21 +832,21 @@ a.main_first_screen_ini_block_soc_item,
 #main_first_screen_block_progressbar_block {
    width: 283px;
    height: 49px;
-   background: url('/images/main_first_screen_block_progressbar_block.png') left center no-repeat;
+   background: url('https://artellect-agency.ru//images/main_first_screen_block_progressbar_block.png') left center no-repeat;
    background-size: 283px 49px;
 }
 
 #main_first_screen_block_progressbar_block_sel {
    width: 200px;
    height: 49px;
-   background: url('/images/main_first_screen_block_progressbar_block_sel.png') left center no-repeat;
+   background: url('https://artellect-agency.ru//images/main_first_screen_block_progressbar_block_sel.png') left center no-repeat;
    background-size: 283px 49px;
 }
 
 #main_first_screen_block_progressbar_block_lines {
    width: 80px;
    height: 142px;
-   background: url('/images/main_first_screen_block_progressbar_block_lines.png') left bottom no-repeat;
+   background: url('https://artellect-agency.ru//images/main_first_screen_block_progressbar_block_lines.png') left bottom no-repeat;
    background-size: 369px 142px;
    position: absolute;
    top: 0;
@@ -897,7 +897,7 @@ a.main_first_screen_ini_block_soc_item,
    font-size: 18px;
    text-decoration: underline;
    padding-right: 48px;
-   background: url('/images/arr_more_or.png') right center no-repeat;
+   background: url('https://artellect-agency.ru//images/arr_more_or.png') right center no-repeat;
    background-size: 28px 22px;
    z-index: 10;
 }
@@ -923,7 +923,7 @@ a.main_first_screen_ini_block_soc_item,
    top: 0;
    left: 0;
    z-index: 4;
-   background: url('/images/main_first_screen_ini_bg.png') top left no-repeat;
+   background: url('https://artellect-agency.ru//images/main_first_screen_ini_bg.png') top left no-repeat;
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
@@ -946,7 +946,7 @@ a.main_first_screen_ini_block_soc_item,
    top: -10vh;
    left: -10vw;
    z-index: 6;
-   background: url('/images/main_first_screen_ini_bg_plus.png') top 20px left 20px;
+   background: url('https://artellect-agency.ru//images/main_first_screen_ini_bg_plus.png') top 20px left 20px;
    background-size: 200px 150px;
    opacity: 0.1;
 }
@@ -968,7 +968,7 @@ a.main_first_screen_ini_block_soc_item,
    top: 140px;
    right: calc(5.6vw + 20px);
    z-index: 6;
-   background: url('/images/main_first_screen_ini_block_video__.png') top left no-repeat;
+   background: url('https://artellect-agency.ru//images/main_first_screen_ini_block_video__.png') top left no-repeat;
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
@@ -982,7 +982,7 @@ a.main_first_screen_ini_block_soc_item,
    top: 0;
    left: 0;
    z-index: 7;
-   background: url('/images/main_first_screen_ini_block_video_circle_01.png') center center no-repeat;
+   background: url('https://artellect-agency.ru//images/main_first_screen_ini_block_video_circle_01.png') center center no-repeat;
    -webkit-background-size: contain;
    -moz-background-size: contain;
    -o-background-size: contain;
@@ -999,7 +999,7 @@ a.main_first_screen_ini_block_soc_item,
    top: -8px;
    left: -8px;
    z-index: 7;
-   background: url('/images/main_first_screen_ini_block_video_circle_02.png') center center no-repeat;
+   background: url('https://artellect-agency.ru//images/main_first_screen_ini_block_video_circle_02.png') center center no-repeat;
    -webkit-background-size: contain;
    -moz-background-size: contain;
    -o-background-size: contain;
@@ -1016,7 +1016,7 @@ a.main_first_screen_ini_block_soc_item,
    top: -30px;
    left: -30px;
    z-index: 7;
-   background: url('/images/main_first_screen_ini_block_video_circle_03.png') center center no-repeat;
+   background: url('https://artellect-agency.ru//images/main_first_screen_ini_block_video_circle_03.png') center center no-repeat;
    -webkit-background-size: contain;
    -moz-background-size: contain;
    -o-background-size: contain;
@@ -1033,7 +1033,7 @@ a.main_first_screen_ini_block_soc_item,
    top: -60px;
    left: -60px;
    z-index: 7;
-   background: url('/images/main_first_screen_ini_block_video_circle_04.png') center center no-repeat;
+   background: url('https://artellect-agency.ru//images/main_first_screen_ini_block_video_circle_04.png') center center no-repeat;
    -webkit-background-size: contain;
    -moz-background-size: contain;
    -o-background-size: contain;
@@ -1050,7 +1050,7 @@ a.main_first_screen_ini_block_soc_item,
    top: -75px;
    left: -75px;
    z-index: 7;
-   background: url('/images/main_first_screen_ini_block_video_circle_05.png') center center no-repeat;
+   background: url('https://artellect-agency.ru//images/main_first_screen_ini_block_video_circle_05.png') center center no-repeat;
    -webkit-background-size: contain;
    -moz-background-size: contain;
    -o-background-size: contain;
@@ -1067,7 +1067,7 @@ a.main_first_screen_ini_block_soc_item,
    top: -120px;
    left: -120px;
    z-index: 7;
-   background: url('/images/main_first_screen_ini_block_video_circle_06.png') center center no-repeat;
+   background: url('https://artellect-agency.ru//images/main_first_screen_ini_block_video_circle_06.png') center center no-repeat;
    -webkit-background-size: contain;
    -moz-background-size: contain;
    -o-background-size: contain;
@@ -1084,7 +1084,7 @@ a.main_first_screen_ini_block_soc_item,
    top: -130px;
    left: -130px;
    z-index: 7;
-   background: url('/images/main_first_screen_ini_block_video_circle_07.png') center center no-repeat;
+   background: url('https://artellect-agency.ru//images/main_first_screen_ini_block_video_circle_07.png') center center no-repeat;
    -webkit-background-size: contain;
    -moz-background-size: contain;
    -o-background-size: contain;
@@ -1101,7 +1101,7 @@ a.main_first_screen_ini_block_soc_item,
    top: -130px;
    left: -130px;
    z-index: 7;
-   background: url('/images/main_first_screen_ini_block_video_circle_08.png') center center no-repeat;
+   background: url('https://artellect-agency.ru//images/main_first_screen_ini_block_video_circle_08.png') center center no-repeat;
    -webkit-background-size: contain;
    -moz-background-size: contain;
    -o-background-size: contain;
@@ -1118,7 +1118,7 @@ a.main_first_screen_ini_block_soc_item,
    top: -140px;
    left: -140px;
    z-index: 7;
-   background: url('/images/main_first_screen_ini_block_video_circle_09.png') center center no-repeat;
+   background: url('https://artellect-agency.ru//images/main_first_screen_ini_block_video_circle_09.png') center center no-repeat;
    -webkit-background-size: contain;
    -moz-background-size: contain;
    -o-background-size: contain;
@@ -1245,7 +1245,7 @@ a.main_first_screen_ini_block_soc_item,
 #main_numbers_screen_block_lines_01 {
    width: 956px;
    height: 121px;
-   background: url('/images/main_numbers_screen_block_lines_01.png') left center no-repeat;
+   background: url('https://artellect-agency.ru//images/main_numbers_screen_block_lines_01.png') left center no-repeat;
    background-size: 956px 121px;
    margin-left: 0;
    position: absolute;
@@ -1256,7 +1256,7 @@ a.main_first_screen_ini_block_soc_item,
 #main_numbers_screen_block_lines_02 {
    width: 956px;
    height: 121px;
-   background: url('/images/main_numbers_screen_block_lines_02.png') left center no-repeat;
+   background: url('https://artellect-agency.ru//images/main_numbers_screen_block_lines_02.png') left center no-repeat;
    background-size: 956px 121px;
    margin-left: 0;
    position: absolute;
@@ -1267,7 +1267,7 @@ a.main_first_screen_ini_block_soc_item,
 #main_numbers_screen_block_lines_03 {
    width: 956px;
    height: 121px;
-   background: url('/images/main_numbers_screen_block_lines_03.png') left center no-repeat;
+   background: url('https://artellect-agency.ru//images/main_numbers_screen_block_lines_03.png') left center no-repeat;
    background-size: 956px 121px;
    margin-left: 0;
    position: absolute;
@@ -1278,7 +1278,7 @@ a.main_first_screen_ini_block_soc_item,
 #main_numbers_screen_block_lines_04 {
    width: 956px;
    height: 121px;
-   background: url('/images/main_numbers_screen_block_lines_04.png') left center no-repeat;
+   background: url('https://artellect-agency.ru//images/main_numbers_screen_block_lines_04.png') left center no-repeat;
    background-size: 956px 121px;
    margin-left: 0;
    position: absolute;
@@ -1425,7 +1425,7 @@ a.main_first_screen_ini_block_soc_item,
    display: inline-block;
    width: 20px;
    height: 63px;
-   background: url('/images/main_numbers_screen_block_deco_precornerrects.png') right top no-repeat;
+   background: url('https://artellect-agency.ru//images/main_numbers_screen_block_deco_precornerrects.png') right top no-repeat;
    background-size: 20px 14px;
 }
 
@@ -1433,7 +1433,7 @@ a.main_first_screen_ini_block_soc_item,
    display: inline-block;
    width: 744px;
    height: 63px;
-   background: url('/images/main_numbers_screen_block_deco_graph.png') left center no-repeat;
+   background: url('https://artellect-agency.ru//images/main_numbers_screen_block_deco_graph.png') left center no-repeat;
    background-size: 744px 63px;
    margin-left: 4px;
 }
@@ -1442,7 +1442,7 @@ a.main_first_screen_ini_block_soc_item,
    display: inline-block;
    width: 122px;
    height: 63px;
-   background: url('/images/main_numbers_screen_block_deco_dash.png') left center no-repeat;
+   background: url('https://artellect-agency.ru//images/main_numbers_screen_block_deco_dash.png') left center no-repeat;
    background-size: 122px 63px;
    margin-left: 9px;
 }
@@ -1451,7 +1451,7 @@ a.main_first_screen_ini_block_soc_item,
    display: inline-block;
    width: 181px;
    height: 63px;
-   background: url('/images/main_numbers_screen_block_deco_stats.png') left center no-repeat;
+   background: url('https://artellect-agency.ru//images/main_numbers_screen_block_deco_stats.png') left center no-repeat;
    background-size: 181px 63px;
    margin-top: 9px;
 }
@@ -1467,7 +1467,7 @@ a.main_first_screen_ini_block_soc_item,
 #main_andrey_quote_screen_portrait {
    width: 564px;
    height: 750px;
-   background: url('/images/main_andrey_quote_screen_portrait.png') left bottom no-repeat;
+   background: url('https://artellect-agency.ru//images/main_andrey_quote_screen_portrait.png') left bottom no-repeat;
    background-size: 564px 750px;
    position: absolute;
    left: calc(19vw - 318px);
@@ -1483,7 +1483,7 @@ a.main_first_screen_ini_block_soc_item,
 #main_andrey_quote_screen_cont_quote {
    width: 916px;
    height: 400px;
-   background: url('/images/main_andrey_quote_screen_cont_quote_bubble.png') right top no-repeat;
+   background: url('https://artellect-agency.ru//images/main_andrey_quote_screen_cont_quote_bubble.png') right top no-repeat;
    background-size: 829px 400px;
    position: relative;
    top: 240px;
@@ -1497,7 +1497,7 @@ a.main_first_screen_ini_block_soc_item,
    line-height: 36px;
    padding-left: 212px;
    padding-top: 90px;
-   background: url('/images/quote_l_or.png') top 48px left 156px no-repeat;
+   background: url('https://artellect-agency.ru//images/quote_l_or.png') top 48px left 156px no-repeat;
    background-size: 41px 39px;
 }
 
@@ -1507,7 +1507,7 @@ a.main_first_screen_ini_block_soc_item,
    color: #78d1ff;
    font-size: 24px;
    line-height: 36px;
-   background: url('/images/quote_r_or.png') top right no-repeat;
+   background: url('https://artellect-agency.ru//images/quote_r_or.png') top right no-repeat;
    background-size: 41px 39px;
    padding-top: 56px;
    margin-top: -18px;
@@ -1524,7 +1524,7 @@ a.main_first_screen_ini_block_soc_item,
    font-size: 18px;
    text-decoration: underline;
    padding-right: 48px;
-   background: url('/images/arr_more_or.png') right center no-repeat;
+   background: url('https://artellect-agency.ru//images/arr_more_or.png') right center no-repeat;
    background-size: 28px 22px;
    z-index: 10;
 }
@@ -1595,7 +1595,7 @@ a.main_first_screen_ini_block_soc_item,
    ;
    top: 0;
    left: 0;
-   background: url('/images/main_services_screen_block_list_cont_line.png') left 512px top no-repeat;
+   background: url('https://artellect-agency.ru//images/main_services_screen_block_list_cont_line.png') left 512px top no-repeat;
    background-size: 942px 1083px;
    z-index: 12;
    position: absolute;
@@ -1607,7 +1607,7 @@ a.main_first_screen_ini_block_soc_item,
    height: 342px;
    top: 300px;
    left: 300px;
-   background: url('/images/main_services_screen_block_list_cont_circle_a.png') center center no-repeat;
+   background: url('https://artellect-agency.ru//images/main_services_screen_block_list_cont_circle_a.png') center center no-repeat;
    background-size: 942px 942px;
    z-index: 13;
    position: absolute;
@@ -1624,7 +1624,7 @@ a.main_first_screen_ini_block_soc_item,
    height: 942px;
    top: calc(50% - 471px);
    left: 536px;
-   background: url('/images/main_services_screen_block_list_cont_circle_1.png') center center no-repeat;
+   background: url('https://artellect-agency.ru//images/main_services_screen_block_list_cont_circle_1.png') center center no-repeat;
    background-size: 942px 942px;
    z-index: 10;
    position: absolute;
@@ -1635,7 +1635,7 @@ a.main_first_screen_ini_block_soc_item,
    height: 942px;
    top: calc(50% - 471px);
    left: 536px;
-   background: url('/images/main_services_screen_block_list_cont_circle_2.png') center center no-repeat;
+   background: url('https://artellect-agency.ru//images/main_services_screen_block_list_cont_circle_2.png') center center no-repeat;
    background-size: 942px 942px;
    z-index: 10;
    position: absolute;
@@ -1646,7 +1646,7 @@ a.main_first_screen_ini_block_soc_item,
    height: 942px;
    top: calc(50% - 471px);
    left: 536px;
-   background: url('/images/main_services_screen_block_list_cont_circle_0.png') center center no-repeat;
+   background: url('https://artellect-agency.ru//images/main_services_screen_block_list_cont_circle_0.png') center center no-repeat;
    background-size: 942px 942px;
    z-index: 12;
    position: absolute;
@@ -1763,7 +1763,7 @@ a.main_first_screen_ini_block_soc_item,
    display: none;
    width: 48px;
    height: 48px;
-   background: #ff5001 url('/images/xclose.png') center center no-repeat;
+   background: #ff5001 url('https://artellect-agency.ru//images/xclose.png') center center no-repeat;
    background-size: 24px 24px;
    position: absolute;
    top: 208px;
@@ -1789,7 +1789,7 @@ a.main_first_screen_ini_block_soc_item,
    font-size: 18px;
    text-decoration: underline;
    padding-right: 48px;
-   background: url('/images/arr_more_or.png') right center no-repeat;
+   background: url('https://artellect-agency.ru//images/arr_more_or.png') right center no-repeat;
    background-size: 28px 22px;
    z-index: 10;
 }
@@ -1801,7 +1801,7 @@ a.main_first_screen_ini_block_soc_item,
    bottom: 0;
    left: 0;
    z-index: 4;
-   background: url('/images/main_services_screen_block_bg.jpg') right center no-repeat;
+   background: url('https://artellect-agency.ru//images/main_services_screen_block_bg.jpg') right center no-repeat;
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
@@ -1874,7 +1874,7 @@ a.main_first_screen_ini_block_soc_item,
    width: 24px;
    height: 125px;
    margin-left: calc(5.6vw - 24px);
-   background: url('/images/main_numbers_screen_block_deco_precornerrects.png') left top no-repeat;
+   background: url('https://artellect-agency.ru//images/main_numbers_screen_block_deco_precornerrects.png') left top no-repeat;
    background-size: 20px 14px;
    float: left;
    opacity: .4;
@@ -1890,7 +1890,7 @@ a.main_first_screen_ini_block_soc_item,
    width: 58px;
    height: 58px;
    border: 1px solid #3c749b;
-   background: url('/images/arr_up_or.png') center center no-repeat;
+   background: url('https://artellect-agency.ru//images/arr_up_or.png') center center no-repeat;
    background-size: 27px 17px;
    cursor: pointer;
 }
@@ -1900,7 +1900,7 @@ a.main_first_screen_ini_block_soc_item,
    height: 58px;
    border: 1px solid #3c749b;
    border-top: 0;
-   background: url('/images/arr_down_or.png') center center no-repeat;
+   background: url('https://artellect-agency.ru//images/arr_down_or.png') center center no-repeat;
    background-size: 27px 17px;
    cursor: pointer;
 }
@@ -2005,7 +2005,7 @@ a.main_first_screen_ini_block_soc_item,
    top: 0;
    right: -108px;
    z-index: 8;
-   background: url('/images/main_geo_screen_block_map.png') 0 0 no-repeat;
+   background: url('https://artellect-agency.ru//images/main_geo_screen_block_map.png') 0 0 no-repeat;
    background-size: 1147px 635px;
 }
 
@@ -2013,7 +2013,7 @@ a.main_first_screen_ini_block_soc_item,
    display: none;
    width: 875px;
    height: 157px;
-   background: url('/images/main_geo_screen_block_map_graph.png') 0 0 no-repeat;
+   background: url('https://artellect-agency.ru//images/main_geo_screen_block_map_graph.png') 0 0 no-repeat;
    background-size: 875px 157px;
    margin-left: 19vw;
 }
@@ -2023,7 +2023,7 @@ a.main_first_screen_ini_block_soc_item,
    line-height: 36px;
    width: 492px;
    margin-left: calc(19vw - 24px);
-   background: url('/images/main_numbers_screen_block_deco_precornerrects.png') left top 8px no-repeat;
+   background: url('https://artellect-agency.ru//images/main_numbers_screen_block_deco_precornerrects.png') left top 8px no-repeat;
    background-size: 20px 14px;
    padding-left: 24px;
    position: relative;
@@ -2039,7 +2039,7 @@ a.main_first_screen_ini_block_soc_item,
    top: -100px;
    left: 0;
    z-index: 8;
-   background: url('/images/wmap.svg') top center no-repeat;
+   background: url('https://artellect-agency.ru//images/wmap.svg') top center no-repeat;
    background-size: contain;
    opacity: 0.1;
 }
@@ -2056,8 +2056,8 @@ a.main_first_screen_ini_block_soc_item,
    background-repeat: no-repeat;
    background-size: 1147px 635px;
    background-position: top center;
-   -webkit-mask-image: url('/images/wmap.svg');
-   mask-image: url('/images/wmap.svg');
+   -webkit-mask-image: url('https://artellect-agency.ru//images/wmap.svg');
+   mask-image: url('https://artellect-agency.ru//images/wmap.svg');
    -webkit-mask-repeat: no-repeat;
    mask-repeat: no-repeat;
    mask-size: contain;
@@ -2101,7 +2101,7 @@ a.main_first_screen_ini_block_soc_item,
    height: 46px;
    position: relative;
    cursor: pointer;
-   background: url('/images/main_calc_screen_block_tabs_item.png') center center no-repeat;
+   background: url('https://artellect-agency.ru//images/main_calc_screen_block_tabs_item.png') center center no-repeat;
    background-size: 280px 46px;
    margin-bottom: 18px;
    line-height: 44px;
@@ -2111,7 +2111,7 @@ a.main_first_screen_ini_block_soc_item,
 
 .main_calc_screen_block_tabs_item_sel {
    color: #ff5001;
-   background: url('/images/main_calc_screen_block_tabs_item_sel.png') center center no-repeat;
+   background: url('https://artellect-agency.ru//images/main_calc_screen_block_tabs_item_sel.png') center center no-repeat;
    background-size: 280px 46px;
    pointer-events: none;
 }
@@ -2129,7 +2129,7 @@ a.main_first_screen_ini_block_soc_item,
    top: 18px;
    left: 18px;
    z-index: 10;
-   background: url('/images/main_calc_screen_block_cont_bg.png') left top no-repeat;
+   background: url('https://artellect-agency.ru//images/main_calc_screen_block_cont_bg.png') left top no-repeat;
    background-size: 1200px 550px;
 }
 
@@ -2142,7 +2142,7 @@ a.main_first_screen_ini_block_soc_item,
    top: 0;
    left: 0;
    z-index: 20;
-   background: url('/images/main_calc_screen_block_cont_win_form.png') left top no-repeat;
+   background: url('https://artellect-agency.ru//images/main_calc_screen_block_cont_win_form.png') left top no-repeat;
    background-size: 690px 500px;
 }
 
@@ -2350,7 +2350,7 @@ a.main_first_screen_ini_block_soc_item,
    line-height: 72px;
    color: #09206a;
    text-align: center;
-   background: url('/images/main_bonus_screen_block_btn.png') 0 0 no-repeat;
+   background: url('https://artellect-agency.ru//images/main_bonus_screen_block_btn.png') 0 0 no-repeat;
    background-size: 468px 77px;
    margin-top: 36px;
    cursor: pointer;
@@ -2365,7 +2365,7 @@ a.main_first_screen_ini_block_soc_item,
    line-height: 72px;
    color: #09206a;
    text-align: center;
-   background: url('/images/main_bonus_screen_block_btn.png') 0 0 no-repeat;
+   background: url('https://artellect-agency.ru//images/main_bonus_screen_block_btn.png') 0 0 no-repeat;
    background-size: 468px 77px;
    margin-top: 36px;
    cursor: pointer;
@@ -2394,7 +2394,7 @@ a.main_first_screen_ini_block_soc_item,
    top: 18px;
    left: 18px;
    z-index: 10;
-   background: url('/images/main_calc_screen_block_cont_bg.png') left top no-repeat;
+   background: url('https://artellect-agency.ru//images/main_calc_screen_block_cont_bg.png') left top no-repeat;
    background-size: 1200px 550px;
 }
 
@@ -2407,7 +2407,7 @@ a.main_first_screen_ini_block_soc_item,
    top: 0;
    left: 0;
    z-index: 20;
-   background: url('/images/main_calc_screen_block_cont_win_form.png') left top no-repeat;
+   background: url('https://artellect-agency.ru//images/main_calc_screen_block_cont_win_form.png') left top no-repeat;
    background-size: 690px 500px;
 }
 
@@ -2613,7 +2613,7 @@ a.main_first_screen_ini_block_soc_item,
    line-height: 72px;
    color: #09206a;
    text-align: center;
-   background: url('/images/main_bonus_screen_block_btn.png') 0 0 no-repeat;
+   background: url('https://artellect-agency.ru//images/main_bonus_screen_block_btn.png') 0 0 no-repeat;
    background-size: 468px 77px;
    margin-top: 36px;
    cursor: pointer;
@@ -2628,7 +2628,7 @@ a.main_first_screen_ini_block_soc_item,
    line-height: 72px;
    color: #09206a;
    text-align: center;
-   background: url('/images/main_bonus_screen_block_btn.png') 0 0 no-repeat;
+   background: url('https://artellect-agency.ru//images/main_bonus_screen_block_btn.png') 0 0 no-repeat;
    background-size: 468px 77px;
    margin-top: 36px;
    cursor: pointer;
@@ -2657,7 +2657,7 @@ a.main_first_screen_ini_block_soc_item,
    top: 18px;
    left: 18px;
    z-index: 10;
-   background: url('/images/main_calc_screen_block_cont_bg.png') left top no-repeat;
+   background: url('https://artellect-agency.ru//images/main_calc_screen_block_cont_bg.png') left top no-repeat;
    background-size: 1200px 550px;
 }
 
@@ -2670,7 +2670,7 @@ a.main_first_screen_ini_block_soc_item,
    top: 0;
    left: 0;
    z-index: 20;
-   background: url('/images/main_calc_screen_block_cont_win_form.png') left top no-repeat;
+   background: url('https://artellect-agency.ru//images/main_calc_screen_block_cont_win_form.png') left top no-repeat;
    background-size: 690px 500px;
 }
 
@@ -2876,7 +2876,7 @@ a.main_first_screen_ini_block_soc_item,
    line-height: 72px;
    color: #09206a;
    text-align: center;
-   background: url('/images/main_bonus_screen_block_btn.png') 0 0 no-repeat;
+   background: url('https://artellect-agency.ru//images/main_bonus_screen_block_btn.png') 0 0 no-repeat;
    background-size: 468px 77px;
    margin-top: 36px;
    cursor: pointer;
@@ -2891,7 +2891,7 @@ a.main_first_screen_ini_block_soc_item,
    line-height: 72px;
    color: #09206a;
    text-align: center;
-   background: url('/images/main_bonus_screen_block_btn.png') 0 0 no-repeat;
+   background: url('https://artellect-agency.ru//images/main_bonus_screen_block_btn.png') 0 0 no-repeat;
    background-size: 468px 77px;
    margin-top: 36px;
    cursor: pointer;
@@ -2916,7 +2916,7 @@ a.main_first_screen_ini_block_soc_item,
 #main_pavel_quote_screen_portrait {
    width: 564px;
    height: 650px;
-   background: url('/images/main_pavel_quote_screen_portrait.png') left top no-repeat;
+   background: url('https://artellect-agency.ru//images/main_pavel_quote_screen_portrait.png') left top no-repeat;
    background-size: 564px 750px;
    position: absolute;
    left: calc(19vw - 318px);
@@ -2930,7 +2930,7 @@ a.main_first_screen_ini_block_soc_item,
 #main_pavel_quote_screen_cont_quote {
    width: 916px;
    height: 400px;
-   background: url('/images/main_andrey_quote_screen_cont_quote_bubble.png') right top no-repeat;
+   background: url('https://artellect-agency.ru//images/main_andrey_quote_screen_cont_quote_bubble.png') right top no-repeat;
    background-size: 829px 400px;
    position: relative;
    top: 210px;
@@ -2943,7 +2943,7 @@ a.main_first_screen_ini_block_soc_item,
    line-height: 36px;
    padding-left: 212px;
    padding-top: 72px;
-   background: url('/images/quote_l_or.png') top 24px left 148px no-repeat;
+   background: url('https://artellect-agency.ru//images/quote_l_or.png') top 24px left 148px no-repeat;
    background-size: 41px 39px;
    margin-top: 36px;
 }
@@ -2954,7 +2954,7 @@ a.main_first_screen_ini_block_soc_item,
    color: #78d1ff;
    font-size: 24px;
    line-height: 36px;
-   background: url('/images/quote_r_or.png') top right no-repeat;
+   background: url('https://artellect-agency.ru//images/quote_r_or.png') top right no-repeat;
    background-size: 41px 39px;
    padding-top: 72px;
    margin-top: -18px;
@@ -2970,7 +2970,7 @@ a.main_first_screen_ini_block_soc_item,
    font-size: 18px;
    text-decoration: underline;
    padding-right: 48px;
-   background: url('/images/arr_more_or.png') right center no-repeat;
+   background: url('https://artellect-agency.ru//images/arr_more_or.png') right center no-repeat;
    background-size: 28px 22px;
 }
 
@@ -3021,7 +3021,7 @@ a.main_first_screen_ini_block_soc_item,
    margin-left: -18px;
    position: relative;
    z-index: 12;
-   background: url('/images/main_whyus_screen_block_afterheader.png') 0 0 no-repeat;
+   background: url('https://artellect-agency.ru//images/main_whyus_screen_block_afterheader.png') 0 0 no-repeat;
    background-size: 317px 97px;
    margin-top: 38px;
    padding-top: 73px;
@@ -3040,7 +3040,7 @@ a.main_first_screen_ini_block_soc_item,
    height: 57px;
    margin-left: 5.6vw;
    opacity: 0.8;
-   background: url('/images/main_whyus_screen_block_pretxt_graph.png') 0 0 no-repeat;
+   background: url('https://artellect-agency.ru//images/main_whyus_screen_block_pretxt_graph.png') 0 0 no-repeat;
    background-size: 524px 57px;
    margin-top: -57px;
    margin-bottom: 18px;
@@ -3127,42 +3127,42 @@ a.main_first_screen_ini_block_soc_item,
 }
 
 #main_whyus_screen_block_list_container_cont_item_1_ico {
-   background: url('/images/main_whyus_screen_block_list_container_cont_item_1.png') 0 0 no-repeat;
+   background: url('https://artellect-agency.ru//images/main_whyus_screen_block_list_container_cont_item_1.png') 0 0 no-repeat;
    background-size: 112px 130px;
 }
 
 #main_whyus_screen_block_list_container_cont_item_2_ico {
-   background: url('/images/main_whyus_screen_block_list_container_cont_item_2.png') 0 0 no-repeat;
+   background: url('https://artellect-agency.ru//images/main_whyus_screen_block_list_container_cont_item_2.png') 0 0 no-repeat;
    background-size: 112px 130px;
 }
 
 #main_whyus_screen_block_list_container_cont_item_3_ico {
-   background: url('/images/main_whyus_screen_block_list_container_cont_item_3.png') 0 0 no-repeat;
+   background: url('https://artellect-agency.ru//images/main_whyus_screen_block_list_container_cont_item_3.png') 0 0 no-repeat;
    background-size: 112px 130px;
 }
 
 #main_whyus_screen_block_list_container_cont_item_4_ico {
-   background: url('/images/main_whyus_screen_block_list_container_cont_item_4.png') 0 0 no-repeat;
+   background: url('https://artellect-agency.ru//images/main_whyus_screen_block_list_container_cont_item_4.png') 0 0 no-repeat;
    background-size: 112px 130px;
 }
 
 #main_whyus_screen_block_list_container_cont_item_5_ico {
-   background: url('/images/main_whyus_screen_block_list_container_cont_item_5.png') 0 0 no-repeat;
+   background: url('https://artellect-agency.ru//images/main_whyus_screen_block_list_container_cont_item_5.png') 0 0 no-repeat;
    background-size: 112px 130px;
 }
 
 #main_whyus_screen_block_list_container_cont_item_6_ico {
-   background: url('/images/main_whyus_screen_block_list_container_cont_item_6.png') 0 0 no-repeat;
+   background: url('https://artellect-agency.ru//images/main_whyus_screen_block_list_container_cont_item_6.png') 0 0 no-repeat;
    background-size: 112px 130px;
 }
 
 #main_whyus_screen_block_list_container_cont_item_7_ico {
-   background: url('/images/main_whyus_screen_block_list_container_cont_item_7.png') 0 0 no-repeat;
+   background: url('https://artellect-agency.ru//images/main_whyus_screen_block_list_container_cont_item_7.png') 0 0 no-repeat;
    background-size: 112px 130px;
 }
 
 #main_whyus_screen_block_list_container_cont_item_8_ico {
-   background: url('/images/main_whyus_screen_block_list_container_cont_item_8.png') 0 0 no-repeat;
+   background: url('https://artellect-agency.ru//images/main_whyus_screen_block_list_container_cont_item_8.png') 0 0 no-repeat;
    background-size: 112px 130px;
 }
 
@@ -3174,7 +3174,7 @@ a.main_first_screen_ini_block_soc_item,
    z-index: 20;
    top: 0;
    left: 300px;
-   background: url('/images/main_whyus_screen_block_list_container_fullinfo.png') 0 0 no-repeat;
+   background: url('https://artellect-agency.ru//images/main_whyus_screen_block_list_container_fullinfo.png') 0 0 no-repeat;
    background-size: 340px 434px;
    pointer-events: none;
 }
@@ -3226,7 +3226,7 @@ a.main_first_screen_ini_block_soc_item,
    top: 0;
    left: 0;
    z-index: 4;
-   background: url('/images/main_bonus_screen_block.png') center center no-repeat;
+   background: url('https://artellect-agency.ru//images/main_bonus_screen_block.png') center center no-repeat;
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
@@ -3237,7 +3237,7 @@ a.main_first_screen_ini_block_soc_item,
    width: 827px;
    height: 390px;
    margin-left: calc(50% - 413px);
-   background: url('/images/main_bonus_screen_block_wcont.png') 0 0 no-repeat;
+   background: url('https://artellect-agency.ru//images/main_bonus_screen_block_wcont.png') 0 0 no-repeat;
    background-size: 827px 390px;
    position: relative;
    z-index: 9;
@@ -3293,7 +3293,7 @@ a.main_first_screen_ini_block_soc_item,
    line-height: 72px;
    color: #09206a;
    text-align: center;
-   background: url('/images/main_bonus_screen_block_btn.png') 0 0 no-repeat;
+   background: url('https://artellect-agency.ru//images/main_bonus_screen_block_btn.png') 0 0 no-repeat;
    background-size: 468px 77px;
    position: absolute;
    bottom: 56px;
@@ -3311,7 +3311,7 @@ a.main_first_screen_ini_block_soc_item,
    position: relative;
    z-index: 10;
    padding-bottom: 124px;
-   background: #092758 url('/images/main_differences_screen_block.jpg') bottom center no-repeat;
+   background: #092758 url('https://artellect-agency.ru//images/main_differences_screen_block.jpg') bottom center no-repeat;
    -webkit-background-size: contain;
    -moz-background-size: contain;
    -o-background-size: contain;
@@ -3352,7 +3352,7 @@ a.main_first_screen_ini_block_soc_item,
    width: 756px;
    height: 95px;
    float: left;
-   background: url('/images/main_differences_screen_block_header_graph.png') bottom left no-repeat;
+   background: url('https://artellect-agency.ru//images/main_differences_screen_block_header_graph.png') bottom left no-repeat;
    background-size: 756px 63px;
    margin-left: 9px;
    opacity: 0.5;
@@ -3376,7 +3376,7 @@ a.main_first_screen_ini_block_soc_item,
    width: 56px;
    height: 75px;
    float: left;
-   background: url('/images/vs.png') bottom left no-repeat;
+   background: url('https://artellect-agency.ru//images/vs.png') bottom left no-repeat;
    background-size: 56px 75px;
    margin: 0 9px 0 9px;
 }
@@ -3406,7 +3406,7 @@ a.main_first_screen_ini_block_soc_item,
    position: absolute;
    width: calc(50vw - 5.6vw + 170px - 37.8vw);
    height: 100%;
-   background: url('/images/main_differences_screen_block_table_item_col1.png') center center no-repeat;
+   background: url('https://artellect-agency.ru//images/main_differences_screen_block_table_item_col1.png') center center no-repeat;
    background-size: 42px 31px;
    left: calc((50vw + 170px) - (50vw - 5.6vw + 170px - 37.8vw));
 }
@@ -3415,7 +3415,7 @@ a.main_first_screen_ini_block_soc_item,
    position: absolute;
    width: calc(50vw - 5.6vw + 170px - 37.8vw);
    height: 100%;
-   background: url('/images/main_differences_screen_block_table_item_col2.png') center center no-repeat;
+   background: url('https://artellect-agency.ru//images/main_differences_screen_block_table_item_col2.png') center center no-repeat;
    background-size: 34px 34px;
    left: calc((50vw + 170px));
 }
@@ -3426,7 +3426,7 @@ a.main_first_screen_ini_block_soc_item,
    position: absolute;
    top: 108px;
    left: calc(50% + 170px - 2px);
-   background: url('/images/main_differences_screen_block_table_sepa.png') center center no-repeat;
+   background: url('https://artellect-agency.ru//images/main_differences_screen_block_table_sepa.png') center center no-repeat;
    -webkit-background-size: contain;
    -moz-background-size: contain;
    -o-background-size: contain;
@@ -3440,7 +3440,7 @@ a.main_first_screen_ini_block_soc_item,
    top: 730px;
    left: calc(50% + 170px - 698px);
    z-index: 13;
-   background: url('/images/main_differences_screen_block_img_txt.png') center center no-repeat;
+   background: url('https://artellect-agency.ru//images/main_differences_screen_block_img_txt.png') center center no-repeat;
    -webkit-background-size: contain;
    -moz-background-size: contain;
    -o-background-size: contain;
@@ -3454,7 +3454,7 @@ a.main_first_screen_ini_block_soc_item,
    bottom: 48px;
    left: calc(50% + 170px - 698px);
    z-index: 11;
-   background: url('/images/main_differences_screen_block_img.png') center center no-repeat;
+   background: url('https://artellect-agency.ru//images/main_differences_screen_block_img.png') center center no-repeat;
    -webkit-background-size: contain;
    -moz-background-size: contain;
    -o-background-size: contain;
@@ -3474,7 +3474,7 @@ a.main_first_screen_ini_block_soc_item,
 #main_misha_quote_screen_portrait {
    width: 443px;
    height: 441px;
-   background: url('/images/main_pavel_quote_screen_portrait.png') left bottom no-repeat;
+   background: url('https://artellect-agency.ru//images/main_pavel_quote_screen_portrait.png') left bottom no-repeat;
    background-size: 443px 441px;
    position: absolute;
    left: calc(19vw - 318px);
@@ -3488,7 +3488,7 @@ a.main_first_screen_ini_block_soc_item,
 #main_misha_quote_screen_cont_quote {
    width: 916px;
    height: 400px;
-   background: url('/images/main_andrey_quote_screen_cont_quote_bubble.png') right top no-repeat;
+   background: url('https://artellect-agency.ru//images/main_andrey_quote_screen_cont_quote_bubble.png') right top no-repeat;
    background-size: 829px 400px;
    position: relative;
    top: 17px;
@@ -3501,7 +3501,7 @@ a.main_first_screen_ini_block_soc_item,
    line-height: 36px;
    padding-left: 190px;
    padding-top: 72px;
-   background: url('/images/quote_l_or.png') top 24px left 148px no-repeat;
+   background: url('https://artellect-agency.ru//images/quote_l_or.png') top 24px left 148px no-repeat;
    background-size: 41px 39px;
    margin-top: 72px;
    text-align: center;
@@ -3513,7 +3513,7 @@ a.main_first_screen_ini_block_soc_item,
    color: #78d1ff;
    font-size: 24px;
    line-height: 36px;
-   background: url('/images/quote_r_or.png') top right no-repeat;
+   background: url('https://artellect-agency.ru//images/quote_r_or.png') top right no-repeat;
    background-size: 41px 39px;
    padding-top: 72px;
    margin-top: -18px;
@@ -3529,7 +3529,7 @@ a.main_first_screen_ini_block_soc_item,
    font-size: 18px;
    text-decoration: underline;
    padding-right: 48px;
-   background: url('/images/arr_more_or.png') right center no-repeat;
+   background: url('https://artellect-agency.ru//images/arr_more_or.png') right center no-repeat;
    background-size: 28px 22px;
 }
 
@@ -3563,7 +3563,7 @@ a.main_first_screen_ini_block_soc_item,
    top: 0;
    position: absolute;
    z-index: 11;
-   background: url('/images/screen_steps_block_topbg.png') top left repeat-x;
+   background: url('https://artellect-agency.ru//images/screen_steps_block_topbg.png') top left repeat-x;
    background-size: 25px 100px;
    opacity: 0.6;
 }
@@ -3590,37 +3590,37 @@ a.main_first_screen_ini_block_soc_item,
 }
 
 #main_steps_screen_block_list_container_cont_item_1 {
-   background: url('/images/bullet_01.png') left 14px top no-repeat;
+   background: url('https://artellect-agency.ru//images/bullet_01.png') left 14px top no-repeat;
    background-size: 54px 80px;
 }
 
 #main_steps_screen_block_list_container_cont_item_2 {
-   background: url('/images/bullet_02.png') left 4px top no-repeat;
+   background: url('https://artellect-agency.ru//images/bullet_02.png') left 4px top no-repeat;
    background-size: 65px 80px;
 }
 
 #main_steps_screen_block_list_container_cont_item_3 {
-   background: url('/images/bullet_03.png') left 4px top no-repeat;
+   background: url('https://artellect-agency.ru//images/bullet_03.png') left 4px top no-repeat;
    background-size: 63px 83px;
 }
 
 #main_steps_screen_block_list_container_cont_item_4 {
-   background: url('/images/bullet_04.png') left 2px top no-repeat;
+   background: url('https://artellect-agency.ru//images/bullet_04.png') left 2px top no-repeat;
    background-size: 66px 81px;
 }
 
 #main_steps_screen_block_list_container_cont_item_5 {
-   background: url('/images/bullet_05.png') left 4px top no-repeat;
+   background: url('https://artellect-agency.ru//images/bullet_05.png') left 4px top no-repeat;
    background-size: 63px 82px;
 }
 
 #main_steps_screen_block_list_container_cont_item_6 {
-   background: url('/images/bullet_06.png') left 2px top no-repeat;
+   background: url('https://artellect-agency.ru//images/bullet_06.png') left 2px top no-repeat;
    background-size: 64px 83px;
 }
 
 #main_steps_screen_block_list_container_cont_item_7 {
-   background: url('/images/bullet_07.png') left 14px top no-repeat;
+   background: url('https://artellect-agency.ru//images/bullet_07.png') left 14px top no-repeat;
    background-size: 58px 81px;
 }
 
@@ -3639,7 +3639,7 @@ a.main_first_screen_ini_block_soc_item,
    bottom: 0;
    left: 0;
    z-index: 8;
-   background: url('/images/main_steps_screen_block_graph.jpg') center center no-repeat;
+   background: url('https://artellect-agency.ru//images/main_steps_screen_block_graph.jpg') center center no-repeat;
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
@@ -3653,7 +3653,7 @@ a.main_first_screen_ini_block_soc_item,
    top: 240px;
    left: calc(50% - 600px);
    z-index: 9;
-   background: url('/images/main_steps_screen_block_graph_money.png') center center no-repeat;
+   background: url('https://artellect-agency.ru//images/main_steps_screen_block_graph_money.png') center center no-repeat;
    -webkit-background-size: contain;
    -moz-background-size: contain;
    -o-background-size: contain;
@@ -3671,7 +3671,7 @@ a.main_first_screen_ini_block_soc_item,
 #main_steps_screen_block_graph_kpi {
    width: 150px;
    height: 400px;
-   background: url('/images/main_steps_screen_block_graph_kpi0.png') 0 0 no-repeat;
+   background: url('https://artellect-agency.ru//images/main_steps_screen_block_graph_kpi0.png') 0 0 no-repeat;
    background-size: 136px 364px;
    margin-top: 14vw;
    margin-left: calc(5.6vw - 40px);
@@ -3786,7 +3786,7 @@ a.main_first_screen_ini_block_soc_item,
    width: 48px;
    height: 48px;
    border: 2px solid #ff5001;
-   background: transparent url('/images/xclose.png') center center no-repeat;
+   background: transparent url('https://artellect-agency.ru//images/xclose.png') center center no-repeat;
    background-size: 24px 24px;
    position: absolute;
    top: 56px;
@@ -3803,7 +3803,7 @@ a.main_first_screen_ini_block_soc_item,
    position: relative;
    margin-left: calc(50% - 413px);
    margin-top: calc(50vh - 190px);
-   background: url('/images/main_form_screen_block_wcont.png') 0 0 no-repeat;
+   background: url('https://artellect-agency.ru//images/main_form_screen_block_wcont.png') 0 0 no-repeat;
    background-size: 821px 385px;
 }
 
@@ -3885,7 +3885,7 @@ a.main_first_screen_ini_block_soc_item,
    line-height: 72px;
    color: #09206a;
    text-align: center;
-   background: url('/images/main_form_screen_block_btn.png') 0 0 no-repeat;
+   background: url('https://artellect-agency.ru//images/main_form_screen_block_btn.png') 0 0 no-repeat;
    background-size: 366px 78px;
    position: absolute;
    bottom: 24px;
@@ -3904,7 +3904,7 @@ a.main_first_screen_ini_block_soc_item,
    line-height: 72px;
    color: #09206a;
    text-align: center;
-   background: url('/images/main_form_screen_block_btn.png') 0 0 no-repeat;
+   background: url('https://artellect-agency.ru//images/main_form_screen_block_btn.png') 0 0 no-repeat;
    background-size: 366px 78px;
    position: absolute;
    bottom: 24px;
@@ -3938,7 +3938,7 @@ a.main_first_screen_ini_block_soc_item,
    position: relative;
    z-index: 10;
    padding-top: 36px;
-   background: url('/images/main_form_screen_block.png') center center no-repeat;
+   background: url('https://artellect-agency.ru//images/main_form_screen_block.png') center center no-repeat;
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
@@ -3950,7 +3950,7 @@ a.main_first_screen_ini_block_soc_item,
    height: 385px;
    position: relative;
    margin-left: calc(50% - 413px);
-   background: url('/images/main_form_screen_block_wcont.png') 0 0 no-repeat;
+   background: url('https://artellect-agency.ru//images/main_form_screen_block_wcont.png') 0 0 no-repeat;
    background-size: 821px 385px;
 }
 
@@ -4032,7 +4032,7 @@ a.main_first_screen_ini_block_soc_item,
    line-height: 72px;
    color: #09206a;
    text-align: center;
-   background: url('/images/main_form_screen_block_btn.png') 0 0 no-repeat;
+   background: url('https://artellect-agency.ru//images/main_form_screen_block_btn.png') 0 0 no-repeat;
    background-size: 366px 78px;
    position: absolute;
    bottom: 24px;
@@ -4051,7 +4051,7 @@ a.main_first_screen_ini_block_soc_item,
    line-height: 72px;
    color: #09206a;
    text-align: center;
-   background: url('/images/main_form_screen_block_btn.png') 0 0 no-repeat;
+   background: url('https://artellect-agency.ru//images/main_form_screen_block_btn.png') 0 0 no-repeat;
    background-size: 366px 78px;
    position: absolute;
    bottom: 24px;
@@ -4317,7 +4317,7 @@ a.main_first_screen_ini_block_soc_item,
 #main_funnel_screen_block_cont {
    width: 1064px;
    height: 818px;
-   background: url('/images/main_funnel_bg.png') left bottom no-repeat;
+   background: url('https://artellect-agency.ru//images/main_funnel_bg.png') left bottom no-repeat;
    background-size: 1064px 818px;
    margin-left: calc(50% - 532px);
    text-align: center;
@@ -4437,7 +4437,7 @@ a.main_first_screen_ini_block_soc_item,
 #main_elena_quote_screen_portrait {
    width: 564px;
    height: 650px;
-   background: url('/images/main_elena_quote_screen_portrait.png') left top no-repeat;
+   background: url('https://artellect-agency.ru//images/main_elena_quote_screen_portrait.png') left top no-repeat;
    background-size: 564px 750px;
    position: absolute;
    left: calc(19vw - 318px);
@@ -4451,7 +4451,7 @@ a.main_first_screen_ini_block_soc_item,
 #main_elena_quote_screen_cont_quote {
    width: 916px;
    height: 400px;
-   background: url('/images/main_andrey_quote_screen_cont_quote_bubble.png') right top no-repeat;
+   background: url('https://artellect-agency.ru//images/main_andrey_quote_screen_cont_quote_bubble.png') right top no-repeat;
    background-size: 829px 400px;
    position: relative;
    top: 17px;
@@ -4464,7 +4464,7 @@ a.main_first_screen_ini_block_soc_item,
    line-height: 36px;
    padding-left: 212px;
    padding-top: 72px;
-   background: url('/images/quote_l_or.png') top 24px left 148px no-repeat;
+   background: url('https://artellect-agency.ru//images/quote_l_or.png') top 24px left 148px no-repeat;
    background-size: 41px 39px;
    margin-top: 36px;
 }
@@ -4475,7 +4475,7 @@ a.main_first_screen_ini_block_soc_item,
    color: #78d1ff;
    font-size: 24px;
    line-height: 36px;
-   background: url('/images/quote_r_or.png') top right no-repeat;
+   background: url('https://artellect-agency.ru//images/quote_r_or.png') top right no-repeat;
    background-size: 41px 39px;
    padding-top: 72px;
    margin-top: -18px;
@@ -4491,7 +4491,7 @@ a.main_first_screen_ini_block_soc_item,
    font-size: 18px;
    text-decoration: underline;
    padding-right: 48px;
-   background: url('/images/arr_more_or.png') right center no-repeat;
+   background: url('https://artellect-agency.ru//images/arr_more_or.png') right center no-repeat;
    background-size: 28px 22px;
 }
 
@@ -4515,7 +4515,7 @@ a.main_first_screen_ini_block_soc_item,
    z-index: 10;
    top: 0;
    left: 0;
-   background: url('/images/main_howwedo_screen_block_bg.png') 0 0 no-repeat;
+   background: url('https://artellect-agency.ru//images/main_howwedo_screen_block_bg.png') 0 0 no-repeat;
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
@@ -4538,7 +4538,7 @@ a.main_first_screen_ini_block_soc_item,
    top: -10vh;
    left: -10vw;
    z-index: 11;
-   background: url('/images/main_howwedo_screen_block_bg_net_cont.png') top 20px left 20px;
+   background: url('https://artellect-agency.ru//images/main_howwedo_screen_block_bg_net_cont.png') top 20px left 20px;
    background-size: 150px 150px;
    opacity: 0.1;
 }
@@ -4562,7 +4562,7 @@ a.main_first_screen_ini_block_soc_item,
 
 #main_howwedo_screen_block_bg_icons_ico_1 {
    display: block;
-   background: url('/images/main_howwedo_screen_block_list_container_cont_item_ico_1.png') top right no-repeat;
+   background: url('https://artellect-agency.ru//images/main_howwedo_screen_block_list_container_cont_item_ico_1.png') top right no-repeat;
    -webkit-background-size: contain;
    -moz-background-size: contain;
    -o-background-size: contain;
@@ -4570,7 +4570,7 @@ a.main_first_screen_ini_block_soc_item,
 }
 
 #main_howwedo_screen_block_bg_icons_ico_2 {
-   background: url('/images/main_howwedo_screen_block_list_container_cont_item_ico_2.png') top right no-repeat;
+   background: url('https://artellect-agency.ru//images/main_howwedo_screen_block_list_container_cont_item_ico_2.png') top right no-repeat;
    -webkit-background-size: contain;
    -moz-background-size: contain;
    -o-background-size: contain;
@@ -4578,7 +4578,7 @@ a.main_first_screen_ini_block_soc_item,
 }
 
 #main_howwedo_screen_block_bg_icons_ico_3 {
-   background: url('/images/main_howwedo_screen_block_list_container_cont_item_ico.png') top right no-repeat;
+   background: url('https://artellect-agency.ru//images/main_howwedo_screen_block_list_container_cont_item_ico.png') top right no-repeat;
    -webkit-background-size: contain;
    -moz-background-size: contain;
    -o-background-size: contain;
@@ -4586,7 +4586,7 @@ a.main_first_screen_ini_block_soc_item,
 }
 
 #main_howwedo_screen_block_bg_icons_ico_4 {
-   background: url('/images/main_howwedo_screen_block_list_container_cont_item_ico_4.png') center right no-repeat;
+   background: url('https://artellect-agency.ru//images/main_howwedo_screen_block_list_container_cont_item_ico_4.png') center right no-repeat;
    -webkit-background-size: contain;
    -moz-background-size: contain;
    -o-background-size: contain;
@@ -4594,7 +4594,7 @@ a.main_first_screen_ini_block_soc_item,
 }
 
 #main_howwedo_screen_block_bg_icons_ico_5 {
-   background: url('/images/main_howwedo_screen_block_list_container_cont_item_ico_5.png') top right no-repeat;
+   background: url('https://artellect-agency.ru//images/main_howwedo_screen_block_list_container_cont_item_ico_5.png') top right no-repeat;
    -webkit-background-size: contain;
    -moz-background-size: contain;
    -o-background-size: contain;
@@ -4602,7 +4602,7 @@ a.main_first_screen_ini_block_soc_item,
 }
 
 #main_howwedo_screen_block_bg_icons_ico_6 {
-   background: url('/images/main_howwedo_screen_block_list_container_cont_item_ico_6.png') top right no-repeat;
+   background: url('https://artellect-agency.ru//images/main_howwedo_screen_block_list_container_cont_item_ico_6.png') top right no-repeat;
    -webkit-background-size: contain;
    -moz-background-size: contain;
    -o-background-size: contain;
@@ -4610,7 +4610,7 @@ a.main_first_screen_ini_block_soc_item,
 }
 
 #main_howwedo_screen_block_bg_icons_ico_7 {
-   background: url('/images/main_howwedo_screen_block_list_container_cont_item_ico_7.png') top right no-repeat;
+   background: url('https://artellect-agency.ru//images/main_howwedo_screen_block_list_container_cont_item_ico_7.png') top right no-repeat;
    -webkit-background-size: contain;
    -moz-background-size: contain;
    -o-background-size: contain;
@@ -4618,7 +4618,7 @@ a.main_first_screen_ini_block_soc_item,
 }
 
 #main_howwedo_screen_block_bg_icons_ico_8 {
-   background: url('/images/main_howwedo_screen_block_list_container_cont_item_ico_8.png') top right no-repeat;
+   background: url('https://artellect-agency.ru//images/main_howwedo_screen_block_list_container_cont_item_ico_8.png') top right no-repeat;
    -webkit-background-size: contain;
    -moz-background-size: contain;
    -o-background-size: contain;
@@ -4626,7 +4626,7 @@ a.main_first_screen_ini_block_soc_item,
 }
 
 #main_howwedo_screen_block_bg_icons_ico_9 {
-   background: url('/images/main_howwedo_screen_block_list_container_cont_item_ico_9.png') top right no-repeat;
+   background: url('https://artellect-agency.ru//images/main_howwedo_screen_block_list_container_cont_item_ico_9.png') top right no-repeat;
    -webkit-background-size: contain;
    -moz-background-size: contain;
    -o-background-size: contain;
@@ -4634,7 +4634,7 @@ a.main_first_screen_ini_block_soc_item,
 }
 
 #main_howwedo_screen_block_bg_icons_ico_10 {
-   background: url('/images/main_howwedo_screen_block_list_container_cont_item_ico_10.png') top right no-repeat;
+   background: url('https://artellect-agency.ru//images/main_howwedo_screen_block_list_container_cont_item_ico_10.png') top right no-repeat;
    -webkit-background-size: contain;
    -moz-background-size: contain;
    -o-background-size: contain;
@@ -4642,7 +4642,7 @@ a.main_first_screen_ini_block_soc_item,
 }
 
 #main_howwedo_screen_block_bg_icons_ico_11 {
-   background: url('/images/main_howwedo_screen_block_list_container_cont_item_ico_11.png') top right no-repeat;
+   background: url('https://artellect-agency.ru//images/main_howwedo_screen_block_list_container_cont_item_ico_11.png') top right no-repeat;
    -webkit-background-size: contain;
    -moz-background-size: contain;
    -o-background-size: contain;
@@ -4650,7 +4650,7 @@ a.main_first_screen_ini_block_soc_item,
 }
 
 #main_howwedo_screen_block_bg_icons_ico_12 {
-   background: url('/images/main_howwedo_screen_block_list_container_cont_item_ico_12.png') top right no-repeat;
+   background: url('https://artellect-agency.ru//images/main_howwedo_screen_block_list_container_cont_item_ico_12.png') top right no-repeat;
    -webkit-background-size: contain;
    -moz-background-size: contain;
    -o-background-size: contain;
@@ -4658,7 +4658,7 @@ a.main_first_screen_ini_block_soc_item,
 }
 
 #main_howwedo_screen_block_bg_icons_ico_13 {
-   background: url('/images/main_howwedo_screen_block_list_container_cont_item_ico_13.png') top right no-repeat;
+   background: url('https://artellect-agency.ru//images/main_howwedo_screen_block_list_container_cont_item_ico_13.png') top right no-repeat;
    -webkit-background-size: contain;
    -moz-background-size: contain;
    -o-background-size: contain;
@@ -4701,7 +4701,7 @@ a.main_first_screen_ini_block_soc_item,
    height: 250px;
    margin: 0 4.8vw 0 4.8vw;
    float: left;
-   background: url('/images/main_howwedo_screen_block_list_container_cont_item_ico.png') top center no-repeat;
+   background: url('https://artellect-agency.ru//images/main_howwedo_screen_block_list_container_cont_item_ico.png') top center no-repeat;
    -webkit-background-size: contain;
    -moz-background-size: contain;
    -o-background-size: contain;
@@ -4724,7 +4724,7 @@ a.main_first_screen_ini_block_soc_item,
 }
 
 #main_howwedo_screen_block_list_container_cont_item_ico_1 {
-   background: url('/images/main_howwedo_screen_block_list_container_cont_item_ico_1.png') top right no-repeat;
+   background: url('https://artellect-agency.ru//images/main_howwedo_screen_block_list_container_cont_item_ico_1.png') top right no-repeat;
    -webkit-background-size: contain;
    -moz-background-size: contain;
    -o-background-size: contain;
@@ -4732,7 +4732,7 @@ a.main_first_screen_ini_block_soc_item,
 }
 
 #main_howwedo_screen_block_list_container_cont_item_ico_2 {
-   background: url('/images/main_howwedo_screen_block_list_container_cont_item_ico_2.png') top right no-repeat;
+   background: url('https://artellect-agency.ru//images/main_howwedo_screen_block_list_container_cont_item_ico_2.png') top right no-repeat;
    -webkit-background-size: contain;
    -moz-background-size: contain;
    -o-background-size: contain;
@@ -4740,7 +4740,7 @@ a.main_first_screen_ini_block_soc_item,
 }
 
 #main_howwedo_screen_block_list_container_cont_item_ico_3 {
-   background: url('/images/main_howwedo_screen_block_list_container_cont_item_ico.png') top right no-repeat;
+   background: url('https://artellect-agency.ru//images/main_howwedo_screen_block_list_container_cont_item_ico.png') top right no-repeat;
    -webkit-background-size: contain;
    -moz-background-size: contain;
    -o-background-size: contain;
@@ -4748,7 +4748,7 @@ a.main_first_screen_ini_block_soc_item,
 }
 
 #main_howwedo_screen_block_list_container_cont_item_ico_4 {
-   background: url('/images/main_howwedo_screen_block_list_container_cont_item_ico_4.png') top right no-repeat;
+   background: url('https://artellect-agency.ru//images/main_howwedo_screen_block_list_container_cont_item_ico_4.png') top right no-repeat;
    -webkit-background-size: contain;
    -moz-background-size: contain;
    -o-background-size: contain;
@@ -4756,7 +4756,7 @@ a.main_first_screen_ini_block_soc_item,
 }
 
 #main_howwedo_screen_block_list_container_cont_item_ico_5 {
-   background: url('/images/main_howwedo_screen_block_list_container_cont_item_ico_5.png') top right no-repeat;
+   background: url('https://artellect-agency.ru//images/main_howwedo_screen_block_list_container_cont_item_ico_5.png') top right no-repeat;
    -webkit-background-size: contain;
    -moz-background-size: contain;
    -o-background-size: contain;
@@ -4764,7 +4764,7 @@ a.main_first_screen_ini_block_soc_item,
 }
 
 #main_howwedo_screen_block_list_container_cont_item_ico_6 {
-   background: url('/images/main_howwedo_screen_block_list_container_cont_item_ico_6.png') top right no-repeat;
+   background: url('https://artellect-agency.ru//images/main_howwedo_screen_block_list_container_cont_item_ico_6.png') top right no-repeat;
    -webkit-background-size: contain;
    -moz-background-size: contain;
    -o-background-size: contain;
@@ -4772,7 +4772,7 @@ a.main_first_screen_ini_block_soc_item,
 }
 
 #main_howwedo_screen_block_list_container_cont_item_ico_7 {
-   background: url('/images/main_howwedo_screen_block_list_container_cont_item_ico_7.png') top right no-repeat;
+   background: url('https://artellect-agency.ru//images/main_howwedo_screen_block_list_container_cont_item_ico_7.png') top right no-repeat;
    -webkit-background-size: contain;
    -moz-background-size: contain;
    -o-background-size: contain;
@@ -4780,7 +4780,7 @@ a.main_first_screen_ini_block_soc_item,
 }
 
 #main_howwedo_screen_block_list_container_cont_item_ico_8 {
-   background: url('/images/main_howwedo_screen_block_list_container_cont_item_ico_8.png') top right no-repeat;
+   background: url('https://artellect-agency.ru//images/main_howwedo_screen_block_list_container_cont_item_ico_8.png') top right no-repeat;
    -webkit-background-size: contain;
    -moz-background-size: contain;
    -o-background-size: contain;
@@ -4788,7 +4788,7 @@ a.main_first_screen_ini_block_soc_item,
 }
 
 #main_howwedo_screen_block_list_container_cont_item_ico_9 {
-   background: url('/images/main_howwedo_screen_block_list_container_cont_item_ico_9.png') top right no-repeat;
+   background: url('https://artellect-agency.ru//images/main_howwedo_screen_block_list_container_cont_item_ico_9.png') top right no-repeat;
    -webkit-background-size: contain;
    -moz-background-size: contain;
    -o-background-size: contain;
@@ -4796,7 +4796,7 @@ a.main_first_screen_ini_block_soc_item,
 }
 
 #main_howwedo_screen_block_list_container_cont_item_ico_10 {
-   background: url('/images/main_howwedo_screen_block_list_container_cont_item_ico_10.png') top right no-repeat;
+   background: url('https://artellect-agency.ru//images/main_howwedo_screen_block_list_container_cont_item_ico_10.png') top right no-repeat;
    -webkit-background-size: contain;
    -moz-background-size: contain;
    -o-background-size: contain;
@@ -4804,7 +4804,7 @@ a.main_first_screen_ini_block_soc_item,
 }
 
 #main_howwedo_screen_block_list_container_cont_item_ico_11 {
-   background: url('/images/main_howwedo_screen_block_list_container_cont_item_ico_11.png') top right no-repeat;
+   background: url('https://artellect-agency.ru//images/main_howwedo_screen_block_list_container_cont_item_ico_11.png') top right no-repeat;
    -webkit-background-size: contain;
    -moz-background-size: contain;
    -o-background-size: contain;
@@ -4812,7 +4812,7 @@ a.main_first_screen_ini_block_soc_item,
 }
 
 #main_howwedo_screen_block_list_container_cont_item_ico_12 {
-   background: url('/images/main_howwedo_screen_block_list_container_cont_item_ico_12.png') top right no-repeat;
+   background: url('https://artellect-agency.ru//images/main_howwedo_screen_block_list_container_cont_item_ico_12.png') top right no-repeat;
    -webkit-background-size: contain;
    -moz-background-size: contain;
    -o-background-size: contain;
@@ -4820,7 +4820,7 @@ a.main_first_screen_ini_block_soc_item,
 }
 
 #main_howwedo_screen_block_list_container_cont_item_ico_13 {
-   background: url('/images/main_howwedo_screen_block_list_container_cont_item_ico_13.png') top right no-repeat;
+   background: url('https://artellect-agency.ru//images/main_howwedo_screen_block_list_container_cont_item_ico_13.png') top right no-repeat;
    -webkit-background-size: contain;
    -moz-background-size: contain;
    -o-background-size: contain;
@@ -4897,7 +4897,7 @@ a.main_first_screen_ini_block_soc_item,
    width: 58px;
    height: 58px;
    border: 1px solid #3c749b;
-   background: url('/images/arr_left_or.png') center center no-repeat;
+   background: url('https://artellect-agency.ru//images/arr_left_or.png') center center no-repeat;
    background-size: 17px 27px;
    cursor: pointer;
    float: left;
@@ -4908,7 +4908,7 @@ a.main_first_screen_ini_block_soc_item,
    height: 58px;
    border: 1px solid #3c749b;
    border-left: 0;
-   background: url('/images/arr_right_or.png') center center no-repeat;
+   background: url('https://artellect-agency.ru//images/arr_right_or.png') center center no-repeat;
    background-size: 17px 27px;
    cursor: pointer;
    float: left;
@@ -4962,7 +4962,7 @@ a.main_first_screen_ini_block_soc_item,
    width: 58px;
    height: 58px;
    border: 1px solid #3c749b;
-   background: url('/images/arr_left_or.png') center center no-repeat;
+   background: url('https://artellect-agency.ru//images/arr_left_or.png') center center no-repeat;
    background-size: 17px 27px;
    cursor: pointer;
    float: left;
@@ -4973,7 +4973,7 @@ a.main_first_screen_ini_block_soc_item,
    height: 58px;
    border: 1px solid #3c749b;
    border-left: 0;
-   background: url('/images/arr_right_or.png') center center no-repeat;
+   background: url('https://artellect-agency.ru//images/arr_right_or.png') center center no-repeat;
    background-size: 17px 27px;
    cursor: pointer;
    float: left;
@@ -4997,7 +4997,7 @@ a.main_first_screen_ini_block_soc_item,
    width: 200px;
    height: 58px;
    border: 1px solid #3c749b;
-   background: rgba(8, 37, 77, 0.2) url('/images/arr_down_or.png') right 12px center no-repeat;
+   background: rgba(8, 37, 77, 0.2) url('https://artellect-agency.ru//images/arr_down_or.png') right 12px center no-repeat;
    background-size: 27px 17px;
    cursor: pointer;
    padding-right: 64px;
@@ -5012,7 +5012,7 @@ a.main_first_screen_ini_block_soc_item,
    width: 200px;
    height: 58px;
    border: 1px solid #3c749b;
-   background: rgba(8, 37, 77, 0.2) url('/images/arr_down_or.png') right 12px center no-repeat;
+   background: rgba(8, 37, 77, 0.2) url('https://artellect-agency.ru//images/arr_down_or.png') right 12px center no-repeat;
    background-size: 27px 17px;
    cursor: pointer;
    padding-right: 64px;
@@ -5030,7 +5030,7 @@ a.main_first_screen_ini_block_soc_item,
    top: 0px;
    left: 0px;
    z-index: 9;
-   background: url('/images/main_cases_screen_block_list_subcontainer.png') top center no-repeat;
+   background: url('https://artellect-agency.ru//images/main_cases_screen_block_list_subcontainer.png') top center no-repeat;
    background-size: 1280px 496px;
 }
 
@@ -5158,7 +5158,7 @@ a.main_first_screen_ini_block_soc_item,
    height: 608px;
    position: relative;
    z-index: 10;
-   background: url('/images/main_bonus_screen_block0.png') top center no-repeat;
+   background: url('https://artellect-agency.ru//images/main_bonus_screen_block0.png') top center no-repeat;
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
@@ -5195,7 +5195,7 @@ a.main_first_screen_ini_block_soc_item,
 .main_cases_screen_block_list_container_cont_item_win {
    width: 820px;
    height: 392px;
-   background: url('/images/main_cases_screen_block_list_container_cont_item.png') top 62px center no-repeat;
+   background: url('https://artellect-agency.ru//images/main_cases_screen_block_list_container_cont_item.png') top 62px center no-repeat;
    background-size: 820px 392px;
    position: relative;
    padding-top: 62px;
@@ -5210,7 +5210,7 @@ a.main_first_screen_ini_block_soc_item,
 .main_cases_screen_block_list_container_cont_item_preico {
    height: 15px;
    margin-top: 48px;
-   background: url('/images/main_cases_screen_block_list_container_cont_item_preico.png') left 40px bottom no-repeat;
+   background: url('https://artellect-agency.ru//images/main_cases_screen_block_list_container_cont_item_preico.png') left 40px bottom no-repeat;
    background-size: 260px 15px;
 }
 
@@ -5218,7 +5218,7 @@ a.main_first_screen_ini_block_soc_item,
    width: 276px;
    height: 249px;
    margin-left: 24px;
-   background: url('/images/main_cases_screen_block_list_container_cont_item_thumb.png') center center no-repeat;
+   background: url('https://artellect-agency.ru//images/main_cases_screen_block_list_container_cont_item_thumb.png') center center no-repeat;
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
@@ -5243,7 +5243,7 @@ a.main_first_screen_ini_block_soc_item,
 .main_cases_screen_block_list_container_cont_item_txt li {
    margin-bottom: 9px;
    padding-left: 18px;
-   background: url('/images/bullet.png') left top 8px no-repeat;
+   background: url('https://artellect-agency.ru//images/bullet.png') left top 8px no-repeat;
    background-size: 9px 9px;
 }
 
@@ -5258,7 +5258,7 @@ a.main_first_screen_ini_block_soc_item,
    font-size: 18px;
    text-decoration: underline;
    padding-right: 48px;
-   background: url('/images/arr_more_or.png') right center no-repeat;
+   background: url('https://artellect-agency.ru//images/arr_more_or.png') right center no-repeat;
    background-size: 28px 22px;
    z-index: 10;
 }
@@ -5273,7 +5273,7 @@ a.main_first_screen_ini_block_soc_item,
    font-size: 18px;
    text-decoration: underline;
    padding-right: 48px;
-   background: url('/images/arr_more_or.png') right center no-repeat;
+   background: url('https://artellect-agency.ru//images/arr_more_or.png') right center no-repeat;
    background-size: 28px 22px;
    z-index: 10;
 }
@@ -5285,7 +5285,7 @@ a.main_first_screen_ini_block_soc_item,
    z-index: 5;
    top: -186px;
    left: 0;
-   background: url('/images/main_cases_screen_block_bg.png') center center no-repeat;
+   background: url('https://artellect-agency.ru//images/main_cases_screen_block_bg.png') center center no-repeat;
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
@@ -5335,7 +5335,7 @@ a.main_first_screen_ini_block_soc_item,
 #main_quiz_screen_block_aftertxt {
    width: 600px;
    margin-left: calc(50% - 300px);
-   background: url('/images/main_quiz_screen_block_aftertxt1.png') 0 0 no-repeat;
+   background: url('https://artellect-agency.ru//images/main_quiz_screen_block_aftertxt1.png') 0 0 no-repeat;
    background-size: 247px 18px;
    text-align: center;
 }
@@ -5371,7 +5371,7 @@ a.main_first_screen_ini_block_soc_item,
    right: 0;
    width: calc(50% - 300px);
    height: 100%;
-   background: url('/images/main_quiz_screen_block_r.png') top left no-repeat;
+   background: url('https://artellect-agency.ru//images/main_quiz_screen_block_r.png') top left no-repeat;
    background-size: 600px 823px;
 }
 
@@ -5383,7 +5383,7 @@ a.main_first_screen_ini_block_soc_item,
    left: 0;
    width: calc(50% - 300px);
    height: 100%;
-   background: url('/images/main_quiz_screen_block_l.png') top right no-repeat;
+   background: url('https://artellect-agency.ru//images/main_quiz_screen_block_l.png') top right no-repeat;
    background-size: 600px 823px;
 }
 
@@ -5394,7 +5394,7 @@ a.main_first_screen_ini_block_soc_item,
    top: 100px;
    position: absolute;
    z-index: 16;
-   background: url('/images/main_quiz_screen_block_quest.png') center center no-repeat;
+   background: url('https://artellect-agency.ru//images/main_quiz_screen_block_quest.png') center center no-repeat;
    -webkit-background-size: contain;
    -moz-background-size: contain;
    -o-background-size: contain;
@@ -5410,7 +5410,7 @@ a.main_first_screen_ini_block_soc_item,
    top: 100px;
    position: absolute;
    z-index: 16;
-   background: url('/images/main_quiz_screen_block_quest.png') center center no-repeat;
+   background: url('https://artellect-agency.ru//images/main_quiz_screen_block_quest.png') center center no-repeat;
    -webkit-background-size: contain;
    -moz-background-size: contain;
    -o-background-size: contain;
@@ -5423,7 +5423,7 @@ a.main_first_screen_ini_block_soc_item,
    height: 385px;
    position: relative;
    margin-left: calc(50% - 413px);
-   background: url('/images/main_robo_screen_block_wcont.png') 0 0 no-repeat;
+   background: url('https://artellect-agency.ru//images/main_robo_screen_block_wcont.png') 0 0 no-repeat;
    background-size: 821px 385px;
    z-index: 12;
 }
@@ -5476,7 +5476,7 @@ a.main_first_screen_ini_block_soc_item,
    min-width: 824px;
    width: calc(100vw - 19vw + 4px - 5.6vw - 125px);
    height: 236px;
-   background: url('/images/main_certs_screen_block.png') left 398px top 95px no-repeat;
+   background: url('https://artellect-agency.ru//images/main_certs_screen_block.png') left 398px top 95px no-repeat;
    background-size: 1083px 47px;
 }
 
@@ -5487,7 +5487,7 @@ a.main_first_screen_ini_block_soc_item,
    line-height: 56px;
    margin-bottom: 36px;
    font-weight: 700;
-   background: url('/images/main_numbers_screen_block_deco_precornerrects.png') left top 14px no-repeat;
+   background: url('https://artellect-agency.ru//images/main_numbers_screen_block_deco_precornerrects.png') left top 14px no-repeat;
    background-size: 20px 14px;
    padding-left: 24px;
 }
@@ -5499,7 +5499,7 @@ a.main_first_screen_ini_block_soc_item,
    width: 125px;
    height: 120px;
    padding-left: 156px;
-   background: url('/images/main_certs_screen_block_2.png') left 104px top -12px no-repeat;
+   background: url('https://artellect-agency.ru//images/main_certs_screen_block_2.png') left 104px top -12px no-repeat;
    background-size: 49px 47px;
    z-index: 20;
 }
@@ -5508,7 +5508,7 @@ a.main_first_screen_ini_block_soc_item,
    width: 58px;
    height: 58px;
    border: 1px solid #3c749b;
-   background: url('/images/arr_left_or.png') center center no-repeat;
+   background: url('https://artellect-agency.ru//images/arr_left_or.png') center center no-repeat;
    background-size: 17px 27px;
    cursor: pointer;
    float: left;
@@ -5519,7 +5519,7 @@ a.main_first_screen_ini_block_soc_item,
    height: 58px;
    border: 1px solid #3c749b;
    border-left: 0;
-   background: url('/images/arr_right_or.png') center center no-repeat;
+   background: url('https://artellect-agency.ru//images/arr_right_or.png') center center no-repeat;
    background-size: 17px 27px;
    cursor: pointer;
    float: left;
@@ -5614,7 +5614,7 @@ a.main_first_screen_ini_block_soc_item,
    border-top: 1px solid rgba(0, 187, 253, 0.5);
    border-bottom: 1px solid rgba(0, 187, 253, 0.5);
    float: left;
-   background: url('/images/main_reviews_screen_block_list_txt_container_cont_item.png') top 3px left no-repeat;
+   background: url('https://artellect-agency.ru//images/main_reviews_screen_block_list_txt_container_cont_item.png') top 3px left no-repeat;
    background-size: 645px 28px;
 }
 
@@ -5657,7 +5657,7 @@ a.main_first_screen_ini_block_soc_item,
    width: 58px;
    height: 58px;
    border: 1px solid #3c749b;
-   background: url('/images/arr_left_or.png') center center no-repeat;
+   background: url('https://artellect-agency.ru//images/arr_left_or.png') center center no-repeat;
    background-size: 17px 27px;
    cursor: pointer;
    float: left;
@@ -5668,7 +5668,7 @@ a.main_first_screen_ini_block_soc_item,
    height: 58px;
    border: 1px solid #3c749b;
    border-left: 0;
-   background: url('/images/arr_right_or.png') center center no-repeat;
+   background: url('https://artellect-agency.ru//images/arr_right_or.png') center center no-repeat;
    background-size: 17px 27px;
    cursor: pointer;
    float: left;
@@ -5684,7 +5684,7 @@ a.main_first_screen_ini_block_soc_item,
 #videoreviews_block {
    width: 1200px;
    height: 260px;
-   background: url('/images/videoreviewsbg.png') top center no-repeat;
+   background: url('https://artellect-agency.ru//images/videoreviewsbg.png') top center no-repeat;
    position: relative;
    margin-left: calc(50% - 600px);
    background-size: 1164px 260px;
@@ -5731,7 +5731,7 @@ a.main_first_screen_ini_block_soc_item,
 #videoreviews_block_ctrls_prev {
    width: 58px;
    height: 58px;
-   background: url('/images/arr_left_or.png') center center no-repeat;
+   background: url('https://artellect-agency.ru//images/arr_left_or.png') center center no-repeat;
    background-size: 17px 27px;
    cursor: pointer;
    position: absolute;
@@ -5744,7 +5744,7 @@ a.main_first_screen_ini_block_soc_item,
 #videoreviews_block_ctrls_next {
    width: 58px;
    height: 58px;
-   background: url('/images/arr_right_or.png') center center no-repeat;
+   background: url('https://artellect-agency.ru//images/arr_right_or.png') center center no-repeat;
    background-size: 17px 27px;
    cursor: pointer;
    position: absolute;
@@ -5774,7 +5774,7 @@ a.main_first_screen_ini_block_soc_item,
    margin-left: calc(19vw - 24px);
    min-width: 824px;
    width: calc(100vw - 19vw - 19vw);
-   background: url('/images/main_clients_screen_block.png') left 304px top 111px no-repeat;
+   background: url('https://artellect-agency.ru//images/main_clients_screen_block.png') left 304px top 111px no-repeat;
    background-size: 2667px 20px;
 }
 
@@ -5784,7 +5784,7 @@ a.main_first_screen_ini_block_soc_item,
    line-height: 56px;
    margin-bottom: 36px;
    font-weight: 700;
-   background: url('/images/main_numbers_screen_block_deco_precornerrects.png') left top 14px no-repeat;
+   background: url('https://artellect-agency.ru//images/main_numbers_screen_block_deco_precornerrects.png') left top 14px no-repeat;
    background-size: 20px 14px;
    padding-left: 24px;
 }
@@ -5828,7 +5828,7 @@ a.main_first_screen_ini_block_soc_item,
    top: 0;
    position: absolute;
    z-index: 11;
-   background: url('/images/main_form_screen_block.png') center center no-repeat;
+   background: url('https://artellect-agency.ru//images/main_form_screen_block.png') center center no-repeat;
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
@@ -5840,7 +5840,7 @@ a.main_first_screen_ini_block_soc_item,
    height: 385px;
    position: relative;
    margin-left: calc(50% - 413px);
-   background: url('/images/main_form_screen_block_wcont.png') 0 0 no-repeat;
+   background: url('https://artellect-agency.ru//images/main_form_screen_block_wcont.png') 0 0 no-repeat;
    background-size: 821px 385px;
    z-index: 12;
 }
@@ -5923,7 +5923,7 @@ a.main_first_screen_ini_block_soc_item,
    line-height: 78px;
    color: #09206a;
    text-align: center;
-   background: url('/images/main_form_screen_block_btn.png') 0 0 no-repeat;
+   background: url('https://artellect-agency.ru//images/main_form_screen_block_btn.png') 0 0 no-repeat;
    background-size: 366px 78px;
    position: absolute;
    bottom: 24px;
@@ -5944,7 +5944,7 @@ a.main_first_screen_ini_block_soc_item,
    line-height: 78px;
    color: #09206a;
    text-align: center;
-   background: url('/images/main_form_screen_block_btn.png') 0 0 no-repeat;
+   background: url('https://artellect-agency.ru//images/main_form_screen_block_btn.png') 0 0 no-repeat;
    background-size: 366px 78px;
    position: absolute;
    bottom: 24px;
@@ -6029,7 +6029,7 @@ a.main_first_screen_ini_block_soc_item,
    font-size: 24px;
    line-height: 36px;
    cursor: pointer;
-   background: url('/images/arr_right_or.png') left top 6px no-repeat;
+   background: url('https://artellect-agency.ru//images/arr_right_or.png') left top 6px no-repeat;
    background-size: 17px 27px;
    padding-left: 36px;
 }
@@ -6048,7 +6048,7 @@ a.main_first_screen_ini_block_soc_item,
 }
 
 .main_faq_screen_block_list_item_sel .main_faq_screen_block_list_item_q {
-   background: url('/images/arr_down_or.png') left top 11px no-repeat;
+   background: url('https://artellect-agency.ru//images/arr_down_or.png') left top 11px no-repeat;
    background-size: 27px 17px;
 }
 
@@ -6080,7 +6080,7 @@ a.main_first_screen_ini_block_soc_item,
    top: 100px;
    position: absolute;
    z-index: 16;
-   background: url('/images/main_prefooter_robo_screen_block_phone.png') center center no-repeat;
+   background: url('https://artellect-agency.ru//images/main_prefooter_robo_screen_block_phone.png') center center no-repeat;
    -webkit-background-size: contain;
    -moz-background-size: contain;
    -o-background-size: contain;
@@ -6096,7 +6096,7 @@ a.main_first_screen_ini_block_soc_item,
    top: 0;
    position: absolute;
    z-index: 11;
-   background: url('/images/main_form_screen_block.png') center center no-repeat;
+   background: url('https://artellect-agency.ru//images/main_form_screen_block.png') center center no-repeat;
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
@@ -6108,7 +6108,7 @@ a.main_first_screen_ini_block_soc_item,
    height: 385px;
    position: relative;
    margin-left: calc(50% - 413px);
-   background: url('/images/main_robo_screen_block_wcont.png') 0 0 no-repeat;
+   background: url('https://artellect-agency.ru//images/main_robo_screen_block_wcont.png') 0 0 no-repeat;
    background-size: 821px 385px;
    z-index: 12;
 }
@@ -6191,7 +6191,7 @@ a.main_first_screen_ini_block_soc_item,
    bottom: 0;
    position: absolute;
    z-index: 11;
-   background: url('/images/screen_footer_block_bg.png') bottom left repeat-x;
+   background: url('https://artellect-agency.ru//images/screen_footer_block_bg.png') bottom left repeat-x;
    background-size: 25px 100px;
 }
 
@@ -6213,7 +6213,7 @@ a.main_first_screen_ini_block_soc_item,
    height: 52px;
    margin-top: 140px;
    margin-bottom: 70px;
-   background: url('/images/screen_footer_block_logo.png') 0 0 no-repeat;
+   background: url('https://artellect-agency.ru//images/screen_footer_block_logo.png') 0 0 no-repeat;
    background-size: 166px 52px;
    position: relative;
    z-index: 12;
@@ -6427,7 +6427,7 @@ a.screen_footer_block_col2_item {
    top: 0;
    position: absolute;
    z-index: 11;
-   background: url('/images/screen_steps_block_topbg.png') top left repeat-x;
+   background: url('https://artellect-agency.ru//images/screen_steps_block_topbg.png') top left repeat-x;
    background-size: 25px 100px;
    opacity: 0.6;
 }

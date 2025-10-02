@@ -1198,6 +1198,78 @@ function initServiceCards() {
 
 initServiceCards();
 
+
+/*---------------------------------------------------------------------------
+Hud anim
+---------------------------------------------------------------------------*/
+document.addEventListener("DOMContentLoaded", () => {
+   const hud = document.querySelector(".hero__graphic.hud");
+
+   if (!hud) return;
+
+   hud.addEventListener("mousemove", (e) => {
+      if (window.innerWidth <= 980) return;
+      if (window.scrollY >= 1080) return;
+
+      const curxposproc = (e.pageX / window.innerWidth) * 100;
+      const curyposproc = (e.pageY / window.innerHeight) * 100;
+
+      // --- Круги ---
+      const circles = [
+         { sel: ".hud__circle-2", coef: 16, rotate: (deg) => deg },
+         { sel: ".hud__circle-3", coef: 60, rotate: (deg) => -(deg * 1.3) },
+         { sel: ".hud__circle-4", coef: 120, rotate: (deg) => -(deg / 2) },
+         { sel: ".hud__circle-5", coef: 150, rotate: (deg) => deg / 4 },
+         { sel: ".hud__circle-6", coef: 240, rotate: (deg) => -(deg * 1.3) },
+         { sel: ".hud__circle-7", coef: 260, rotate: (deg) => deg },
+         { sel: ".hud__circle-8", coef: 260, rotate: (deg) => -deg },
+         { sel: ".hud__circle-9", coef: 280, rotate: (deg) => deg },
+      ];
+
+      circles.forEach((c) => {
+         const el = hud.querySelector(c.sel);
+         if (!el) return;
+
+         const x = (c.coef / 100) * curxposproc;
+         const y = (c.coef / 100) * curyposproc;
+         el.style.marginLeft = x + "px";
+         el.style.marginTop = y + "px";
+
+         const degree = (360 / 100) * curxposproc;
+         el.style.transform = `rotate(${c.rotate(degree)}deg)`;
+      });
+
+      // --- Тексты ---
+      const texts = [
+         { sel: ".hud__label-1", coef: 280 },
+         { sel: ".hud__label-2", coef: 20 },
+         { sel: ".hud__label-3", coef: 60 },
+         { sel: ".hud__label-4", coef: 40 },
+         { sel: ".hud__label-5", coef: 100 },
+         { sel: ".hud__label-6", coef: 100 },
+      ];
+
+      texts.forEach((t) => {
+         const el = hud.querySelector(t.sel);
+         if (!el) return;
+         const x = (t.coef / 100) * curxposproc;
+         const y = (t.coef / 100) * curyposproc;
+         el.style.marginLeft = x + "px";
+         el.style.marginTop = y + "px";
+      });
+
+      // --- Фон ---
+      const bg = document.querySelector(".hero__bg");
+      if (bg) {
+         const x = (20 / 100) * -curxposproc;
+         const y = (20 / 100) * -curyposproc;
+         bg.style.marginLeft = x + "px";
+         bg.style.marginTop = y + "px";
+      }
+   });
+});
+
+
 })();
 
 /******/ })()
