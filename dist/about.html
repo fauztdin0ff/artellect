@@ -21,10 +21,10 @@
    <meta property="og:url" content="">
    <meta property="og:type" content="website">
    <!-- Styles -->
-   <link href="https://cdn.jsdelivr.net/npm/atropos@2.0.2/atropos.min.css?_v=20251002232537" rel="stylesheet">
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20251002232537" />
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css?_v=20251002232537">
-   <link rel="stylesheet" href="css/style.min.css?_v=20251002232537">
+   <link href="https://cdn.jsdelivr.net/npm/atropos@2.0.2/atropos.min.css?_v=20251004120741" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20251004120741" />
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css?_v=20251004120741">
+   <link rel="stylesheet" href="css/style.min.css?_v=20251004120741">
    <title>О нас</title>
 </head>
 
@@ -38,25 +38,34 @@
                <span class="breadcrumbs__separator">/</span>
                <span class="breadcrumbs__current">О компании</span>
             </div>
-            <h1 class="fv-about__page-name page-name">О компании</h1>
-            <div class="fv-about__logo">
-               <div class="fv-about__logo-icon">
-                  <img src="img/logo-icon.svg" width="41" height="42" alt="artellect logo">
+            <div class="fv-about__content">
+               <h1 class="fv-about__page-name page-name">О компании</h1>
+               <div class="fv-about__logo">
+                  <div class="fv-about__logo-icon">
+                     <img src="img/logo-icon.svg" width="41" height="42" alt="artellect logo">
+                  </div>
+                  <div class="fv-about__logo-text">
+                     <img src="img/logo-text.svg" width="838" height="146" alt="artellect logo">
+                  </div>
                </div>
-               <div class="fv-about__logo-text">
-                  <img src="img/logo-text.svg" width="838" height="146" alt="artellect logo">
+               <div class="fv-about__circle">
+                  <picture><source srcset="img/circle.webp" type="image/webp"><img src="img/circle.png" width="1700" height="1700" alt="circle"></picture>
+               </div>
+               <div class="fv-about__subtitle">
+                  <p>Мы не будем заигрывать с банальностями и писать красивые речи. Давайте говорить честно и открыто.
+                  </p>
+                  <p>
+                     Мы — команда профессионалов, увлеченных своим делом,
+                     и именно это делает Artellect особенным
+                  </p>
                </div>
             </div>
-            <div class="fv-about__circle">
-               <picture><source srcset="img/circle.webp" type="image/webp"><img src="img/circle.png" width="1700" height="1700" alt="circle"></picture>
-            </div>
-            <div class="fv-about__subtitle">
-               <p>Мы не будем заигрывать с банальностями и писать красивые речи. Давайте говорить честно и открыто.</p>
-               <p>
-                  Мы — команда профессионалов, увлеченных своим делом,
-                  и именно это делает Artellect особенным
-               </p>
-            </div>
+         </div>
+      </section>
+
+      <section class="fv-about-more">
+         <div class="fv-about-more__body container">
+
             <div class="fv-about__team">
                <div class="fv-about__card">
                   <div class="fv-about__card-info">
@@ -598,10 +607,15 @@
          fill="currentColor" />
    </svg>
 </svg>
-   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20251002232537"></script>
-   <script src="https://cdn.jsdelivr.net/npm/atropos@2.0.2/atropos.min.js?_v=20251002232537"></script>
-   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js?_v=20251002232537"></script>
-   <script src="js/app.js?_v=20251002232537"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20251004120741"></script>
+   <script src="https://cdn.jsdelivr.net/npm/atropos@2.0.2/atropos.min.js?_v=20251004120741"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js?_v=20251004120741"></script>
+
+   <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js?_v=20251004120741"></script>
+   <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js?_v=20251004120741"></script>
+
+
+   <script src="js/app.js?_v=20251004120741"></script>
 </body>
 
 </html>

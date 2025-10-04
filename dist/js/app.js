@@ -616,6 +616,18 @@ document.addEventListener("DOMContentLoaded", () => {
    }
 });
 
+/*---------------------------------------------------------------------------
+Eff slider
+---------------------------------------------------------------------------*/
+const efficiencySwiper = initSwiper(".ads-efficiency__slider", {
+   slidesPerView: "auto",
+   loop: false,
+   navigation: {
+      nextEl: ".ads-efficiency__slider-next",
+      prevEl: ".ads-efficiency__slider-prev",
+   },
+});
+
 
 /*---------------------------------------------------------------------------
 Mario
@@ -987,15 +999,6 @@ initSwiper(".ads-benefits__slider", {
    },
 });
 
-initSwiper(".ads-efficiency__slider", {
-   slidesPerView: "auto",
-   loop: false,
-   navigation: {
-      nextEl: ".ads-efficiency__slider-next",
-      prevEl: ".ads-efficiency__slider-prev",
-   },
-});
-
 
 /* ---------------- Yandex Benefit ---------------- */
 initSwiper(".ya-benefit__slider", {
@@ -1267,6 +1270,99 @@ document.addEventListener("DOMContentLoaded", () => {
          bg.style.marginTop = y + "px";
       }
    });
+});
+
+/*---------------------------------------------------------------------------
+About anim
+---------------------------------------------------------------------------*/
+/* document.addEventListener("DOMContentLoaded", () => {
+   gsap.registerPlugin(ScrollTrigger);
+
+   const tl = gsap.timeline({
+      scrollTrigger: {
+         trigger: ".fv-about__body",
+         start: "top top",
+         end: "+=1000",
+         scrub: true,
+         pin: true,
+      }
+   });
+
+   // логотип-текст (scale вместо width)
+   tl.to(".fv-about__logo-text", {
+      scale: 0.7, // подбери нужное значение
+      y: '20vh',
+      transformOrigin: "center center",
+      ease: "none"
+   }, 0);
+
+   // иконка логотипа
+   tl.to(".fv-about__logo-icon", {
+      y: '20vh',
+      ease: "none"
+   }, 0);
+
+   // круг (scale + поворот)
+   tl.to(".fv-about__circle", {
+      scale: 0.5,   // подбери чтобы вместо width:430px совпадало
+      rotate: 30,
+      y: '20vh',
+      transformOrigin: "center center",
+      ease: "none"
+   }, 0);
+
+   // заголовок
+   tl.fromTo(".fv-about__page-name",
+      { opacity: 0, y: 0 },
+      { opacity: 1, y: '20vh', ease: "none" },
+      0
+   );
+});
+ */
+
+
+document.addEventListener("DOMContentLoaded", () => {
+   if (window.innerWidth < 980) return;
+
+   const section = document.querySelector(".fv-about");
+   const content = document.querySelector(".fv-about__content");
+   const logoText = document.querySelector(".fv-about__logo-text");
+   const circle = document.querySelector(".fv-about__circle");
+   const circleImage = document.querySelector(".fv-about__circle img");
+   const pageName = document.querySelector(".fv-about__page-name");
+   const logoIcon = document.querySelector(".fv-about__logo-icon");
+
+   if (!section || !logoText || !circle || !circleImage || !pageName || !logoIcon) return;
+
+   const logoEnd = 838;
+   const circleEnd = 430;
+   const logoStart = logoText.offsetWidth;
+   const circleStart = circle.offsetWidth;
+
+   function updateAnimation() {
+      const rect = section.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+
+      let progress = 1 - (rect.bottom - windowHeight) / (section.offsetHeight - windowHeight);
+      progress = Math.min(Math.max(progress, 0), 1);
+
+      const logoWidth = logoStart + (logoEnd - logoStart) * progress;
+      const logoY = 20 * progress;
+
+      logoText.style.width = logoWidth + "px";
+      content.style.marginTop = logoY + "vh";
+
+      const circleWidth = circleStart - (circleStart - circleEnd) * progress;
+      circle.style.width = circleWidth + "px";
+
+      const circleRotate = 30 * progress;
+      circleImage.style.transform = `rotate(${circleRotate}deg)`;
+
+      pageName.style.opacity = progress;
+      pageName.style.marginTop = logoY + "vh";
+   }
+   window.addEventListener("scroll", updateAnimation);
+   updateAnimation();
 });
 
 
