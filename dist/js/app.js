@@ -227,20 +227,31 @@ slides.forEach(slide => {
 /*---------------------------------------------------------------------------
 Support card
 ---------------------------------------------------------------------------*/
-// atropos
-const atropos1 = Atropos({
-   el: '.my-atropos',
-   activeOffset: 40,
-   shadow: true,
-   shadowOffset: 40,
-   shadowScale: 1,
-   highlight: false,
-});
-
+let atropos1 = null;
 let atropos2Instances = [];
 let caseAtroposInstances = [];
 
 function initAtropos() {
+
+   if (window.innerWidth < 1000) {
+      if (atropos1) {
+         atropos1.destroy();
+         atropos1 = null;
+      }
+   } else {
+      if (!atropos1) {
+         atropos1 = Atropos({
+            el: '.my-atropos',
+            activeOffset: 40,
+            shadow: true,
+            shadowOffset: 40,
+            shadowScale: 1,
+            highlight: false,
+         });
+      }
+   }
+
+   // --- my-atropos2 ---
    if (window.innerWidth >= 1000) {
       if (atropos2Instances.length === 0) {
          document.querySelectorAll('.my-atropos2').forEach(el => {
@@ -271,7 +282,6 @@ function initAtropos() {
             caseAtroposInstances.push(instance);
          });
       }
-
    } else {
       if (atropos2Instances.length > 0) {
          atropos2Instances.forEach(instance => instance.destroy());
@@ -287,7 +297,6 @@ function initAtropos() {
 
 initAtropos();
 window.addEventListener('resize', initAtropos);
-
 
 /*------------------------------
 Popups
@@ -540,17 +549,21 @@ const cards = document.querySelectorAll('.ads-benefits__card');
 if (cards.length > 0) {
    cards.forEach(card => {
       const inner = card.querySelector('.ads-benefits__inner');
-      let rotation = 0;
 
-      card.addEventListener('mouseenter', () => {
-         rotation += 180;
-         inner.style.transform = `rotateY(${rotation}deg)`;
-      });
-
-      card.addEventListener('mouseleave', () => {
-         rotation += 180;
-         inner.style.transform = `rotateY(${rotation}deg)`;
-      });
+      if (window.innerWidth >= 1024) {
+         card.addEventListener('mouseenter', () => {
+            inner.style.transform = 'rotateY(180deg)';
+         });
+         card.addEventListener('mouseleave', () => {
+            inner.style.transform = 'rotateY(0deg)';
+         });
+      } else {
+         let rotation = 0;
+         card.addEventListener('click', () => {
+            rotation += 180;
+            inner.style.transform = `rotateY(${rotation}deg)`;
+         });
+      }
    });
 }
 
@@ -561,31 +574,43 @@ Tips
 ---------------------------------------------------------------------------*/
 document.addEventListener("DOMContentLoaded", () => {
    const tips = document.querySelectorAll(".tips");
+   const isTouch = window.matchMedia("(hover: none)").matches;
 
    tips.forEach((tip) => {
       const btn = tip.querySelector(".tips__btn");
       const msg = tip.querySelector(".tips__message");
 
-      tip.addEventListener("mouseenter", () => {
-         msg.classList.add("show");
-      });
+      // --- только для ПК ---
+      if (!isTouch) {
+         tip.addEventListener("mouseenter", () => {
+            closeAllTips(msg);
+            msg.classList.add("show");
+         });
 
-      tip.addEventListener("mouseleave", () => {
-         msg.classList.remove("show");
-      });
+         tip.addEventListener("mouseleave", () => {
+            msg.classList.remove("show");
+         });
+      }
 
       btn.addEventListener("click", (e) => {
          e.stopPropagation();
-         msg.classList.toggle("show");
+         const isOpen = msg.classList.contains("show");
+
+         closeAllTips();
+         if (!isOpen) msg.classList.add("show");
       });
    });
 
-   document.addEventListener("click", () => {
-      document.querySelectorAll(".tips__message.show").forEach((msg) => {
-         msg.classList.remove("show");
+   // --- закрытие при клике вне подсказок ---
+   document.addEventListener("click", () => closeAllTips());
+
+   function closeAllTips(except) {
+      document.querySelectorAll(".tips__message.show").forEach((m) => {
+         if (m !== except) m.classList.remove("show");
       });
-   });
+   }
 });
+
 
 
 /*---------------------------------------------------------------------------
