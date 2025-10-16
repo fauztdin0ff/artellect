@@ -5,6 +5,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
    <meta name="format-detection" content="telephone=no">
+   <meta name="robots" content="noindex, nofollow">
    <!-- Favicon -->
    <link rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png">
    <link rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png">
@@ -12,8 +13,8 @@
    <link rel="icon" type="image/png" sizes="512x512" href="img/fav/android-chrome-512x512.png">
    <link rel="apple-touch-icon" sizes="180x180" href="img/fav/apple-touch-icon.png">
    <link rel="icon" type="image/x-icon" href="img/fav/favicon.ico">
-   <!--<meta name="msapplication-TileColor" content="#000000">
-   <meta name="theme-color" content="#000000">-->
+   <meta name="msapplication-TileColor" content="#000000">
+   <meta name="theme-color" content="#000000">
    <!-- Meta Description -->
    <meta name="description" content="">
    <meta property="og:title" content="">
@@ -21,10 +22,10 @@
    <meta property="og:url" content="">
    <meta property="og:type" content="website">
    <!-- Styles -->
-   <link href="https://cdn.jsdelivr.net/npm/atropos@2.0.2/atropos.min.css?_v=20251004174523" rel="stylesheet">
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20251004174523" />
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css?_v=20251004174523">
-   <link rel="stylesheet" href="css/style.min.css?_v=20251004174523">
+   <link href="https://cdn.jsdelivr.net/npm/atropos@2.0.2/atropos.min.css?_v=20251016110348" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20251016110348" />
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css?_v=20251016110348">
+   <link rel="stylesheet" href="css/style.min.css?_v=20251016110348">
    <title>Яндекс директ</title>
 </head>
 
@@ -91,8 +92,7 @@
                   <div class="swiper-wrapper">
                      <div class="ya-benefit__slide swiper-slide">
                         <div class="ya-benefit__num gradient-text">01</div>
-                        <div class="ya-benefit__text">Первые позиции в поисковой выдаче Яндекс (с пометкой «реклама») по
-                           составленному списку поисковых запросов</div>
+                        <div class="ya-benefit__text">Целевой трафик за короткое время</div>
                      </div>
                      <div class="ya-benefit__slide swiper-slide">
                         <div class="ya-benefit__num gradient-text">02</div>
@@ -101,13 +101,14 @@
                      </div>
                      <div class="ya-benefit__slide swiper-slide">
                         <div class="ya-benefit__num gradient-text">03</div>
-                        <div class="ya-benefit__text">Первые позиции в поисковой выдаче Яндекс (с пометкой «реклама») по
-                           составленному списку поисковых запросов</div>
+                        <div class="ya-benefit__text">Расход бюджета по выбранной стратегии продвижения: оплата за
+                           показы, клики или даже целевые действия на вашем сайте</div>
                      </div>
                      <div class="ya-benefit__slide swiper-slide">
                         <div class="ya-benefit__num gradient-text">04</div>
-                        <div class="ya-benefit__text">Первые позиции в поисковой выдаче Яндекс (с пометкой «реклама») по
-                           составленному списку поисковых запросов</div>
+                        <div class="ya-benefit__text">Тонкая настройка: можно задать время показа объявлений, регионы,
+                           показ определенному сегменту посетителей, в том
+                           числе, вашего сайта и многое другое</div>
                      </div>
                   </div>
                </div>
@@ -131,7 +132,6 @@
 
       <section class="section-form">
          <div class="section-form__body container">
-            <h2 class="section-form__title section-title">Альтернативный вариант формы</h2>
             <div class="atropos my-atropos2">
                <div class="atropos-scale">
                   <div class="atropos-rotate">
@@ -182,11 +182,11 @@
                      аналитикии, используя свою проверенную методику, умеем проходить модерацию даже в сложных нишах.
                   </div>
                </div>
-               <div class="ya-advantages__slogan border-gradient">
-                  <p><b>Artellect</b> – маркетинговое агентство,
+               <h3 class="ya-advantages__slogan border-gradient">
+                  <p>Artellect – маркетинговое агентство,
                      специалисты которого сертифицированы Яндексом</p>
                   <picture><source srcset="img/ya-direct/yandex.webp" type="image/webp"><img src="img/ya-direct/yandex.png" width="119" height="118" alt="yandex logo"></picture>
-               </div>
+               </h3>
             </div>
             <div class="ya-advantages__items">
                <div class="ya-advantages__item">
@@ -202,7 +202,8 @@
                         Если у вас уже есть рекламные кампании, то проведем их аудит по желанию.
                      </div>
                      <div class="ya-advantages__button">
-                        <a href="" class="button-gradient"><span>Заказать аудит</span></a>
+                        <button type="button" class="button-gradient open-popup" data-popup="orderPopup"><span>Заказать
+                              аудит</span></button>
                      </div>
                   </div>
                </div>
@@ -218,7 +219,8 @@
                         аудиториями и площадками.
                      </div>
                      <div class="ya-advantages__button">
-                        <a href="" class="button-gradient"><span>Заказать аудит</span></a>
+                        <button type="button" class="button-gradient open-popup" data-popup="orderPopup"><span>Заказать
+                              аудит</span></button>
                      </div>
                   </div>
                </div>
@@ -236,7 +238,8 @@
                         инвестиций в маркетинг, проще говоря, полученной прибылью.
                      </div>
                      <div class="ya-advantages__button">
-                        <a href="" class="button-gradient"><span>Заказать аудит</span></a>
+                        <button type="button" class="button-gradient open-popup" data-popup="orderPopup"><span>Заказать
+                              аудит</span></button>
                      </div>
                   </div>
                </div>
@@ -251,7 +254,8 @@
                         обязательств, сроков и цен. Заблаговременно договариваемся
                         о стоимости услуг. Никаких скрытых платежей.</div>
                      <div class="ya-advantages__button">
-                        <a href="" class="button-gradient"><span>Заказать аудит</span></a>
+                        <button type="button" class="button-gradient open-popup" data-popup="orderPopup"><span>Заказать
+                              аудит</span></button>
                      </div>
                   </div>
                </div>
@@ -323,10 +327,43 @@
                            <div class="ya-stages__value" data-id="2">
                               <div class="ya-stages__value-title">Создание рекламных кампаний</div>
                               <div class="ya-stages__value-text">
-                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta nesciunt eligendi unde
-                                 laborum hic tempora ad odio et id! Reprehenderit modi est eius aliquid cumque ipsa
-                                 fugiat
-                                 ad, incidunt sapiente?
+                                 <ul>
+                                    <li>
+                                       Подбираем семантику для рекламных кампаний, ключевые слова и фразы, которые
+                                       вводят, когда ищут такие же или
+                                       аналогичные товары и услуги.
+                                    </li>
+                                    <li>
+                                       Составляем списки минус-слов, чтобы не расходовать бюджет на “мусорные” запросы и
+                                       нецелевых посетителей
+                                    </li>
+                                    <li>
+                                       Проводим кластеризацию полученных запросов для эффективного распределения бюджета
+                                       между горячими, теплыми, холодными и
+                                       околотематическими ключами
+                                    </li>
+                                    <li>
+                                       Пишем релевантные заголовки для объявлений, составляем привлекающие внимание
+                                       описания для лучшей кликабельности и
+                                       максимального количества визитов на сайт из поисковой выдачи.
+                                    </li>
+                                    <li>
+                                       Используем все возможности настройки рекламы в Директе: быстрые ссылки,
+                                       уточнения,
+                                       цены, виртуальные визитки и т.д.
+                                    </li>
+                                    <li>
+                                       Выбираем необходимые типы кампаний, соответствующие целям бизнеса в данный момент
+                                       (охватная кампания, реклама на
+                                       поиске и/или в сетях (РСЯ) с оплатой за переходы или целевые действия, товарные
+                                       кампании и т.д.)
+                                    </li>
+                                    <li>
+                                       Опционально можем подготовить и внедрить техническое задание по доработке целевой
+                                       страницы с точки зрения увеличения
+                                       ее потенциальной конверсии в квалифицированный лид
+                                    </li>
+                                 </ul>
                               </div>
                            </div>
                         </div>
@@ -346,13 +383,31 @@
                            <div class="ya-stages__value" data-id="3">
                               <div class="ya-stages__value-title">Настройка рекламных кампаний</div>
                               <div class="ya-stages__value-text">
-                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis dolorum pariatur
-                                    nam
-                                    voluptatibus quo dignissimos, rerum perspiciatis veniam animi deleniti cum fugit,
-                                    repellendus ratione amet quos ipsum perferendis adipisci enim?</p>
-                                 <p>Ut quidem optio ducimus necessitatibus possimus eos! Temporibus distinctio, possimus
-                                    culpa nostrum reiciendis obcaecati. Porro, iusto, nam animi iure eum, esse eaque
-                                    voluptate dolor ratione veritatis sint iste aliquid aperiam.</p>
+                                 <ul>
+                                    <li>
+                                       По запросу согласовываем уже подготовленные рекламные материалы с вами и, если
+                                       необходимо, оперативно корректируем в
+                                       зависимости от дополнительных пожеланий.
+                                    </li>
+                                    <li>
+                                       Ставим ограничения по бюджету, гео-таргетингу, времени показов, корректируем
+                                       коэффициенты ставок на целевую аудиторию,
+                                       устройства, пол и возраст.
+                                    </li>
+                                    <li> Выбираем необходимую стратегию показа для той или иной кампании</li>
+                                    <li>
+                                       Пишем техническое задание для корректного отслеживания необходимых целей на
+                                       целевой странице. При необходимости сами
+                                       внедряем все скрипты на сайте
+                                    </li>
+                                    <li>
+                                       Опционально предлагаем поставить динамический коллтрекинг (отслеживание звонков
+                                       до ключевого слова), защиту от
+                                       скликивания вашей рекламы, подготовить продающие графические баннеры, настроить
+                                       A/B и/или мультитестирование целевых
+                                       страниц
+                                    </li>
+                                 </ul>
                               </div>
                            </div>
                         </div>
@@ -372,12 +427,49 @@
                            <div class="ya-stages__value" data-id="4">
                               <div class="ya-stages__value-title">Ведение и сопровождение</div>
                               <div class="ya-stages__value-text">
-                                 <ol>
-                                    <li>Lorem ipsum dolor sit amet.</li>
-                                    <li>Lorem ipsum dolor sit amet.</li>
-                                    <li>Lorem ipsum dolor sit amet.</li>
-                                    <li>Lorem ipsum dolor sit amet.</li>
-                                 </ol>
+                                 <ul>
+                                    <li>
+                                       Контроль статистики посещений сайта, бесперебойной работы рекламы и отслеживание
+                                       бюджета на регулярной основе.
+                                    </li>
+                                    <li>
+                                       Оптимизация рекламных стратегий в зависимости от текущей ситуации (обновление
+                                       ставок, корректировка стоимости целевого
+                                       действия, перераспределение бюджета, внесение коэффициентов для работы с целевой
+                                       аудиторией по сегментам Яндекс Метрики,
+                                       полу, возрасту, гео и т.д.)
+                                    </li>
+                                    <li>
+                                       Мониторинг эффективности ключевых запросов, добавление дополнительных минус-слов
+                                       в
+                                       случае необходимости.
+                                    </li>
+                                    <li>
+                                       Контроль статуса “Мало показов” для своевременного избежания отключения групп
+                                       объявлений
+                                    </li>
+                                    <li>
+                                       Корректировка текстов и заголовков объявлений, а также их сплит-тестирование для
+                                       повышения CTR (коэффициента
+                                       кликабельности).
+                                    </li>
+                                    <li>
+                                       Добавление новых ключевых фраз и отключение неработающих на основе получаемой
+                                       статистики.
+                                    </li>
+                                    <li>
+                                       Помимо сугубо технической работы наши специалисты всегда выделяют время на
+                                       креативный подход к делу и находят новые
+                                       точки роста вашей рекламной активности в Яндекс.Директ. У нас всегда много идей
+                                       для
+                                       выхода даже из, казалось бы,
+                                       безвыходной ситуации
+                                    </li>
+                                    <li>
+                                       Регулярное формирование отчетов по рекламным кампаниям с пояснениями и дальнейшим
+                                       планом действий.
+                                    </li>
+                                 </ul>
                               </div>
                            </div>
                         </div>
@@ -418,51 +510,61 @@
                      <div class="ads-preview__block">
                         <div class="ads-preview__key border-gradient" data-id="1">
                            <span class="ads-preview__num">1</span>
-                           Точное вхождение ключевого в заголовок позволит <strong>понизить цену клика</strong>
+                           Точное вхождение ключевого слова в заголовок позволит <strong>понизить цену клика</strong>
                         </div>
                         <div class="ads-preview__value" data-id="1">
                            <span class="ads-preview__num">1</span>
-                           <picture><source srcset="img/context-ads/screen-1.webp" type="image/webp"><img src="img/context-ads/screen-1.png" width="861" height="419" alt="скрин"></picture>
+                           <picture><source srcset="img/context-ads/screen-1.webp" type="image/webp"><img src="img/context-ads/screen-1.png" width="861" height="419" alt="скрин" loading="lazy"></picture>
                         </div>
                      </div>
                      <div class="ads-preview__block">
                         <div class="ads-preview__key border-gradient" data-id="2">
                            <span class="ads-preview__num">2</span>
-                           Текст объявления, <strong>усливает интерес аудитории</strong>
+                           Текст объявления, <strong>усиливает интерес</strong> аудитории
                         </div>
                         <div class="ads-preview__value" data-id="2">
                            <span class="ads-preview__num">2</span>
-                           <picture><source srcset="img/context-ads/screen-1.webp" type="image/webp"><img src="img/context-ads/screen-1.png" width="861" height="419" alt="скрин"></picture>
+                           <picture><source srcset="img/context-ads/screen-2.webp" type="image/webp"><img src="img/context-ads/screen-2.png" width="861" height="419" alt="скрин" loading="lazy"></picture>
                         </div>
                      </div>
                      <div class="ads-preview__block">
                         <div class="ads-preview__key border-gradient" data-id="3">
                            <span class="ads-preview__num">3</span>
-                           Контакты делают объявление <strong>более информативным</strong>
+                           Контакты делают объявления <strong>более информативными</strong>
                         </div>
                         <div class="ads-preview__value" data-id="3">
                            <span class="ads-preview__num">3</span>
-                           <picture><source srcset="img/context-ads/screen-1.webp" type="image/webp"><img src="img/context-ads/screen-1.png" width="861" height="419" alt="скрин"></picture>
+                           <picture><source srcset="img/context-ads/screen-3.webp" type="image/webp"><img src="img/context-ads/screen-3.png" width="861" height="419" alt="скрин" loading="lazy"></picture>
                         </div>
                      </div>
                      <div class="ads-preview__block">
                         <div class="ads-preview__key border-gradient" data-id="4">
                            <span class="ads-preview__num">4</span>
-                           Увеличенный формат заголовка делает его <strong>более объемным</strong>
+                           Увеличенный формат заголовка делает объявление <strong>более объемным</strong>
                         </div>
                         <div class="ads-preview__value" data-id="4">
                            <span class="ads-preview__num">4</span>
-                           <picture><source srcset="img/context-ads/screen-1.webp" type="image/webp"><img src="img/context-ads/screen-1.png" width="861" height="419" alt="скрин"></picture>
+                           <picture><source srcset="img/context-ads/screen-4.webp" type="image/webp"><img src="img/context-ads/screen-4.png" width="861" height="419" alt="скрин" loading="lazy"></picture>
                         </div>
                      </div>
                      <div class="ads-preview__block">
                         <div class="ads-preview__key border-gradient" data-id="5">
                            <span class="ads-preview__num">5</span>
-                           Точное вхождение ключевого в заголовок позволит <strong>понизить цену клика</strong>
+                           Дополнительные преимущества <strong>подогревают аудиторию</strong>
                         </div>
                         <div class="ads-preview__value" data-id="5">
                            <span class="ads-preview__num">5</span>
-                           <picture><source srcset="img/context-ads/screen-1.webp" type="image/webp"><img src="img/context-ads/screen-1.png" width="861" height="419" alt="скрин"></picture>
+                           <picture><source srcset="img/context-ads/screen-5.webp" type="image/webp"><img src="img/context-ads/screen-5.png" width="861" height="419" alt="скрин" loading="lazy"></picture>
+                        </div>
+                     </div>
+                     <div class="ads-preview__block">
+                        <div class="ads-preview__key border-gradient" data-id="6">
+                           <span class="ads-preview__num">6</span>
+                           Быстрые ссылки <strong>визуально увеличивают</strong> объявление
+                        </div>
+                        <div class="ads-preview__value" data-id="6">
+                           <span class="ads-preview__num">6</span>
+                           <picture><source srcset="img/context-ads/screen-6.webp" type="image/webp"><img src="img/context-ads/screen-6.png" width="861" height="419" alt="скрин"></picture>
                         </div>
                      </div>
                   </div>
@@ -526,12 +628,14 @@
                </div>
                <div class="ya-price__card border-gradient">
                   <div class="ya-price__card-num gradient-text">02</div>
-                  <div class="ya-price__card-text">Охвата ключевых фраз и количества рекламных кампаний: чем их больше,
+                  <div class="ya-price__card-text">От охвата ключевых фраз и количества рекламных кампаний: чем их
+                     больше,
                      тем бюджет должен быть выше</div>
                </div>
                <div class="ya-price__card border-gradient">
                   <div class="ya-price__card-num gradient-text">03</div>
-                  <div class="ya-price__card-text">Желаемого количества переходов на сайт или целевых действий на нем.
+                  <div class="ya-price__card-text">От желаемого количества переходов на сайт или целевых действий на
+                     нем.
                   </div>
                </div>
                <div class="ya-price__card border-gradient">
@@ -542,7 +646,8 @@
                </div>
             </div>
             <div class="ya-price__button">
-               <button type="button" class="button-gradient"><span>Узнать стоимость</span></button>
+               <button type="button" class="button-gradient open-popup" data-popup="resultsPopup"><span>Узнать
+                     стоимость</span></button>
             </div>
             <div class="ya-price__description">
                <b>Яндекс.Директ</b> - это уже не просто реклама на поиске или в сетях с оплатой за переход. В данный
@@ -574,14 +679,8 @@
                   <div class="ads-team__card-name">Маркетолог</div>
                   <div class="ads-team__card-text">
                      <p class="ads-team__card-subtitle">Маркетолог</p>
-                     <p class="ads-team__card-descr">Исследует целевую аудиторию, состояние рынка и конкурентов.
-                        Составляет отчеты и разрабатывает
-                        стратегии продвижения,
-                        которые будут приносить наибольшую прибыль. Маркетолог изучает потребности покупателей, чтобы
-                        Ваш продукт был максимально привлекательным для потенциальных клиентов. Руководит командой,
-                        отвечает за реализацию поставленных целей, выполнение проекта в сроки, коммуникацию с заказчиком
-                        и оптимизацию бизнес-процессов. В обязанности маркетолога также входит планирование, мониторинг,
-                        контроль и делегирование.</p>
+                     <p class="ads-team__card-descr">Руководит командой, отвечает за реализацию поставленных целей,
+                        сроки, коммуникацию с заказчиком</p>
                   </div>
                </div>
                <div class="ads-team__card border-gradient">
@@ -591,17 +690,28 @@
                   <div class="ads-team__card-icon">
                      <img src="img/logo-icon.svg" width="24" height="24" alt="icon">
                   </div>
-                  <div class="ads-team__card-name">Специалист по контекстной рекламе</div>
+                  <div class="ads-team__card-name">Тимлид</div>
                   <div class="ads-team__card-text">
-                     <p class="ads-team__card-subtitle">Специалист по контекстной рекламе</p>
+                     <p class="ads-team__card-subtitle">Тимлид</p>
                      <p class="ads-team__card-descr">Исследует целевую аудиторию, состояние рынка и конкурентов.
-                        Составляет отчеты и разрабатывает
-                        стратегии продвижения,
-                        которые будут приносить наибольшую прибыль. Маркетолог изучает потребности покупателей, чтобы
-                        Ваш продукт был максимально привлекательным для потенциальных клиентов. Руководит командой,
-                        отвечает за реализацию поставленных целей, выполнение проекта в сроки, коммуникацию с заказчиком
-                        и оптимизацию бизнес-процессов. В обязанности маркетолога также входит планирование, мониторинг,
-                        контроль и делегирование.</p>
+                        Составляет отчеты и разрабатывает стратегии продвижения,
+                        которые будут приносить наибольшую прибыль. Оценивает риски и постоянно следит за соблюдением
+                        требований по качеству
+                        выполняемых работ</p>
+                  </div>
+               </div>
+               <div class="ads-team__card border-gradient">
+                  <div class="ads-team__card-image">
+                     <picture><source srcset="img/context-ads/art-4.webp" type="image/webp"><img src="img/context-ads/art-4.png" width="586" height="338" alt="art image"></picture>
+                  </div>
+                  <div class="ads-team__card-icon">
+                     <img src="img/logo-icon.svg" width="24" height="24" alt="icon">
+                  </div>
+                  <div class="ads-team__card-name">Специалист по Яндекс Директ</div>
+                  <div class="ads-team__card-text">
+                     <p class="ads-team__card-subtitle">Специалист по Яндекс Директ</p>
+                     <p class="ads-team__card-descr">Планирует, настраивает, запускает, ведет и оптимизирует рекламные
+                        кампании в Директе</p>
                   </div>
                </div>
                <div class="ads-team__card border-gradient">
@@ -614,34 +724,10 @@
                   <div class="ads-team__card-name">Копирайтер</div>
                   <div class="ads-team__card-text">
                      <p class="ads-team__card-subtitle">Копирайтер</p>
-                     <p class="ads-team__card-descr">Исследует целевую аудиторию, состояние рынка и конкурентов.
-                        Составляет отчеты и разрабатывает
-                        стратегии продвижения,
-                        которые будут приносить наибольшую прибыль. Маркетолог изучает потребности покупателей, чтобы
-                        Ваш продукт был максимально привлекательным для потенциальных клиентов. Руководит командой,
-                        отвечает за реализацию поставленных целей, выполнение проекта в сроки, коммуникацию с заказчиком
-                        и оптимизацию бизнес-процессов. В обязанности маркетолога также входит планирование, мониторинг,
-                        контроль и делегирование.</p>
-                  </div>
-               </div>
-               <div class="ads-team__card border-gradient">
-                  <div class="ads-team__card-image">
-                     <picture><source srcset="img/context-ads/art-4.webp" type="image/webp"><img src="img/context-ads/art-4.png" width="586" height="338" alt="art image"></picture>
-                  </div>
-                  <div class="ads-team__card-icon">
-                     <img src="img/logo-icon.svg" width="24" height="24" alt="icon">
-                  </div>
-                  <div class="ads-team__card-name">Веб-аналитик</div>
-                  <div class="ads-team__card-text">
-                     <p class="ads-team__card-subtitle">Веб-аналитик</p>
-                     <p class="ads-team__card-descr">Исследует целевую аудиторию, состояние рынка и конкурентов.
-                        Составляет отчеты и разрабатывает
-                        стратегии продвижения,
-                        которые будут приносить наибольшую прибыль. Маркетолог изучает потребности покупателей, чтобы
-                        Ваш продукт был максимально привлекательным для потенциальных клиентов. Руководит командой,
-                        отвечает за реализацию поставленных целей, выполнение проекта в сроки, коммуникацию с заказчиком
-                        и оптимизацию бизнес-процессов. В обязанности маркетолога также входит планирование, мониторинг,
-                        контроль и делегирование.</p>
+                     <p class="ads-team__card-descr">Пишет рекламные продающие тексты, слоганы и офферы. Также
+                        копирайтер генерирует идеи для продвижения вашего бренда,
+                        придумывает креативные названия, привлекающие внимание заголовки, направленные на целевую
+                        аудиторию.</p>
                   </div>
                </div>
                <div class="ads-team__card border-gradient">
@@ -651,17 +737,12 @@
                   <div class="ads-team__card-icon">
                      <img src="img/logo-icon.svg" width="24" height="24" alt="icon">
                   </div>
-                  <div class="ads-team__card-name">Дизайнер</div>
+                  <div class="ads-team__card-name">Веб-аналитик</div>
                   <div class="ads-team__card-text">
-                     <p class="ads-team__card-subtitle">Дизайнер</p>
-                     <p class="ads-team__card-descr">Исследует целевую аудиторию, состояние рынка и конкурентов.
-                        Составляет отчеты и разрабатывает
-                        стратегии продвижения,
-                        которые будут приносить наибольшую прибыль. Маркетолог изучает потребности покупателей, чтобы
-                        Ваш продукт был максимально привлекательным для потенциальных клиентов. Руководит командой,
-                        отвечает за реализацию поставленных целей, выполнение проекта в сроки, коммуникацию с заказчиком
-                        и оптимизацию бизнес-процессов. В обязанности маркетолога также входит планирование, мониторинг,
-                        контроль и делегирование.</p>
+                     <p class="ads-team__card-subtitle">Веб-аналитик</p>
+                     <p class="ads-team__card-descr">Собирает и анализирует ретроспективные данные, поведенческие
+                        факторы и предлагает оптимальные решения для увеличения
+                        трафика и конверсии на сайте</p>
                   </div>
                </div>
                <div class="ads-team__card border-gradient">
@@ -671,17 +752,11 @@
                   <div class="ads-team__card-icon">
                      <img src="img/logo-icon.svg" width="24" height="24" alt="icon">
                   </div>
-                  <div class="ads-team__card-name">Специалист контроля качества</div>
+                  <div class="ads-team__card-name">Дизайнер</div>
                   <div class="ads-team__card-text">
-                     <p class="ads-team__card-subtitle">Специалист контроля качества</p>
-                     <p class="ads-team__card-descr">Исследует целевую аудиторию, состояние рынка и конкурентов.
-                        Составляет отчеты и разрабатывает
-                        стратегии продвижения,
-                        которые будут приносить наибольшую прибыль. Маркетолог изучает потребности покупателей, чтобы
-                        Ваш продукт был максимально привлекательным для потенциальных клиентов. Руководит командой,
-                        отвечает за реализацию поставленных целей, выполнение проекта в сроки, коммуникацию с заказчиком
-                        и оптимизацию бизнес-процессов. В обязанности маркетолога также входит планирование, мониторинг,
-                        контроль и делегирование.</p>
+                     <p class="ads-team__card-subtitle">Дизайнер</p>
+                     <p class="ads-team__card-descr">Создает эффектные баннеры, креативы, может создать и/или доработать
+                        дизайн посадочных страниц</p>
                   </div>
                </div>
             </div>
@@ -727,81 +802,64 @@
             <div class="art-faq__items">
                <div class="art-faq__item">
                   <div class="art-faq__question">
-                     Может ли контекстная реклама стоить недорого?
+                     Может ли контекстная реклама Яндекс Директ стоить недорого?
                   </div>
-                  <div class="art-faq__answer">
-                     Контекстная реклама должна быть не дорогой или дешевой , а оптимальной с точки зрения прибыли для
+                  <div class="art-faq__answer">Реклама в поисковой выдаче в Яндексе должна быть не дорогой или дешевой ,
+                     а оптимальной с точки зрения прибыли для
                      вашего бизнеса. К примеру, средний чек составляет 20 000 р, маржинальность 50%, то есть, 10 000 р.
-                     Выделять на маркетинг вы готовы 40% от маржи. А это значит, что стоимость привлеченного клиента не
-                     должна быть больше 4 000 р. Зная показатели онлайн-конверсии с сайта и офлайн конверсии от отдела
-                     продаж, мы сможем определить оптимальную цену клика и рекламный бюджет, при котором стоимость
-                     привлечения клиента (CPL) будет максимально выгодной.
-                  </div>
+                     Выделять на маркетинг
+                     вы готовы 40% от маржи. А это значит, что стоимость привлеченного клиента не должна быть больше 4
+                     000 р. Зная показатели
+                     онлайн-конверсии с сайта и офлайн конверсии от отдела продаж, мы сможем определить оптимальную цену
+                     клика и рекламный
+                     бюджет, при котором стоимость привлечения клиента (CPL) будет максимально выгодной</div>
                </div>
                <div class="art-faq__item">
                   <div class="art-faq__question">
                      По каким KPI будет оцениваться эффективность работ?
                   </div>
                   <div class="art-faq__answer">
-                     Контекстная реклама должна быть не дорогой или дешевой , а оптимальной с точки зрения прибыли для
-                     вашего бизнеса. К примеру, средний чек составляет 20 000 р, маржинальность 50%, то есть, 10 000 р.
-                     Выделять на маркетинг вы готовы 40% от маржи. А это значит, что стоимость привлеченного клиента не
-                     должна быть больше 4 000 р. Зная показатели онлайн-конверсии с сайта и офлайн конверсии от отдела
-                     продаж, мы сможем определить оптимальную цену клика и рекламный бюджет, при котором стоимость
-                     привлечения клиента (CPL) будет максимально выгодной.
+                     <p>KPI маркетолог определит и установит вместе с вами.</p>
+                     <p>Чаще всего это:</p>
+                     <ul>
+                        <li>CPC (Cost-Per-Click) - стоимость клика</li>
+                        <li>CTR (Click-Through Rate) — показатель кликабельности</li>
+                        <li>CPL (Cost Per Lead) стоимость привлечения лида</li>
+                        <li>CAC (Customer Acquisition Cost) стоимость привлечения клиента</li>
+                        <li>LPO (Leads generated Per Offer) — количество лидов от конкретного вида рекламы</li>
+                        <li>ROMI (Return on Marketing Investment) - окупаемость (возврат) инвестиций в маркетинг</li>
+                     </ul>
                   </div>
                </div>
                <div class="art-faq__item">
                   <div class="art-faq__question">
-                     По каким KPI будет оцениваться эффективность работ?
+                     Сколько времени потребуется для старта?
                   </div>
-                  <div class="art-faq__answer">
-                     Контекстная реклама должна быть не дорогой или дешевой , а оптимальной с точки зрения прибыли для
-                     вашего бизнеса. К примеру, средний чек составляет 20 000 р, маржинальность 50%, то есть, 10 000 р.
-                     Выделять на маркетинг вы готовы 40% от маржи. А это значит, что стоимость привлеченного клиента не
-                     должна быть больше 4 000 р. Зная показатели онлайн-конверсии с сайта и офлайн конверсии от отдела
-                     продаж, мы сможем определить оптимальную цену клика и рекламный бюджет, при котором стоимость
-                     привлечения клиента (CPL) будет максимально выгодной.
-                  </div>
+                  <div class="art-faq__answer">Для начала сотрудничества потребуется около 3 дней на создание КП,
+                     подготовки договора и счета. После начальной оплаты
+                     сразу стартуем</div>
                </div>
                <div class="art-faq__item">
                   <div class="art-faq__question">
                      Какие отчеты вы предоставляете?
                   </div>
-                  <div class="art-faq__answer">
-                     Контекстная реклама должна быть не дорогой или дешевой , а оптимальной с точки зрения прибыли для
-                     вашего бизнеса. К примеру, средний чек составляет 20 000 р, маржинальность 50%, то есть, 10 000 р.
-                     Выделять на маркетинг вы готовы 40% от маржи. А это значит, что стоимость привлеченного клиента не
-                     должна быть больше 4 000 р. Зная показатели онлайн-конверсии с сайта и офлайн конверсии от отдела
-                     продаж, мы сможем определить оптимальную цену клика и рекламный бюджет, при котором стоимость
-                     привлечения клиента (CPL) будет максимально выгодной.
-                  </div>
+                  <div class="art-faq__answer">У Вас будет доступ в Дашборд в онлайн-режиме. В конце отчетного периода
+                     мы предоставляем перечень проведенных работ,
+                     протестированных гипотез, выводы и предложения по улучшению</div>
                </div>
                <div class="art-faq__item">
                   <div class="art-faq__question">
-                     На чьем аккаунте будут вестись рекламные кампании?
+                     На чьем аккаунте будут вестись рекламные кампании в Директе?
                   </div>
-                  <div class="art-faq__answer">
-                     Контекстная реклама должна быть не дорогой или дешевой , а оптимальной с точки зрения прибыли для
-                     вашего бизнеса. К примеру, средний чек составляет 20 000 р, маржинальность 50%, то есть, 10 000 р.
-                     Выделять на маркетинг вы готовы 40% от маржи. А это значит, что стоимость привлеченного клиента не
-                     должна быть больше 4 000 р. Зная показатели онлайн-конверсии с сайта и офлайн конверсии от отдела
-                     продаж, мы сможем определить оптимальную цену клика и рекламный бюджет, при котором стоимость
-                     привлечения клиента (CPL) будет максимально выгодной.
-                  </div>
+                  <div class="art-faq__answer">Мы настраиваем рекламу на индивидуальных агентских аккаунтах, к которым у
+                     вас есть прямой доступ</div>
                </div>
                <div class="art-faq__item">
                   <div class="art-faq__question">
-                     Возможно ли, что заявок не будет?
+                     Возможно ли, что заявок с Директа не будет?
                   </div>
-                  <div class="art-faq__answer">
-                     Контекстная реклама должна быть не дорогой или дешевой , а оптимальной с точки зрения прибыли для
-                     вашего бизнеса. К примеру, средний чек составляет 20 000 р, маржинальность 50%, то есть, 10 000 р.
-                     Выделять на маркетинг вы готовы 40% от маржи. А это значит, что стоимость привлеченного клиента не
-                     должна быть больше 4 000 р. Зная показатели онлайн-конверсии с сайта и офлайн конверсии от отдела
-                     продаж, мы сможем определить оптимальную цену клика и рекламный бюджет, при котором стоимость
-                     привлечения клиента (CPL) будет максимально выгодной.
-                  </div>
+                  <div class="art-faq__answer">Теоретически это возможно, но за годы практики у нас такого не было ни
+                     разу</div>
                </div>
             </div>
          </div>
@@ -1050,8 +1108,8 @@
                   <div class="swiper-wrapper">
                      <div class="art-testimonials__slide swiper-slide">
                         <div class="art-testimonials__image">
-                           <a data-fancybox="testimonial-gallery" href="img/context-ads/certificate.png">
-                              <picture><source srcset="img/context-ads/certificate.webp" type="image/webp"><img src="img/context-ads/certificate.png" width="231" height="300" alt="сертификат"></picture>
+                           <a data-fancybox="testimonial-gallery" href="img/context-ads/testimonial-1.png">
+                              <picture><source srcset="img/context-ads/testimonial-1.webp" type="image/webp"><img src="img/context-ads/testimonial-1.png" width="231" height="300" alt="сертификат"></picture>
                            </a>
                         </div>
                         <div class="art-testimonials__info">
@@ -1072,45 +1130,44 @@
                      </div>
                      <div class="art-testimonials__slide swiper-slide">
                         <div class="art-testimonials__image">
-                           <a data-fancybox="testimonial-gallery" href="img/context-ads/certificate.png">
-                              <picture><source srcset="img/context-ads/certificate.webp" type="image/webp"><img src="img/context-ads/certificate.png" width="231" height="300" alt="сертификат"></picture>
+                           <a data-fancybox="testimonial-gallery" href="img/context-ads/testimonial-2.png">
+                              <picture><source srcset="img/context-ads/testimonial-2.webp" type="image/webp"><img src="img/context-ads/testimonial-2.png" width="231" height="300" alt="сертификат"></picture>
                            </a>
                         </div>
                         <div class="art-testimonials__info">
-                           <div class="art-testimonials__name">Ханисенко Б. Ю.</div>
-                           <div class="art-testimonials__role">Генеральный директор ООО "Бьюти Концепт"</div>
+                           <div class="art-testimonials__name">Савкин И. Н.</div>
+                           <div class="art-testimonials__role">Генеральный директор ООО "Эмеркон"</div>
                            <div class="art-testimonials__text">
-                              Настоящим письмом выражаем нашу искреннюю благодарность и признательность компании
-                              Artellet за
-                              длительное и плодотворное сотрудничество. Мы высоко ценим установившиеся между нами
-                              партнерские
-                              отношения и взаимопонимание. За последние три года в результате нашей совместной работы у
-                              нас резко
-                              повысилась проходимость клиентов и мы можем смело рекомендовать Вас потенциальным
-                              партнерам. Желаем
-                              Вам дальнейших успехов в работе и достижения поставленных целей!
-                           </div>
-                        </div>
-                     </div>
-                     <div class="art-testimonials__slide swiper-slide">
-                        <div class="art-testimonials__image">
-                           <a data-fancybox="testimonial-gallery" href="img/context-ads/certificate.png">
-                              <picture><source srcset="img/context-ads/certificate.webp" type="image/webp"><img src="img/context-ads/certificate.png" width="231" height="300" alt="сертификат"></picture>
-                           </a>
-                        </div>
-                        <div class="art-testimonials__info">
-                           <div class="art-testimonials__name">Ханисенко Б. Ю.</div>
-                           <div class="art-testimonials__role">Генеральный директор ООО "Бьюти Концепт"</div>
-                           <div class="art-testimonials__text">
-                              Настоящим письмом выражаем нашу искреннюю благодарность и признательность компании
-                              Artellet за
-                              длительное и плодотворное сотрудничество. Мы высоко ценим установившиеся между нами
-                              партнерские
-                              отношения и взаимопонимание. За последние три года в результате нашей совместной работы у
-                              нас резко
-                              повысилась проходимость клиентов и мы можем смело рекомендовать Вас потенциальным
-                              партнерам. Желаем
-                              Вам дальнейших успехов в работе и достижения поставленных целей!
+                              <p>
+                                 Выражаем благодарность компании Artellect за годы
+                                 плодотворного сотрудничества.
+                              </p>
+
+                              <p>
+                                 На протяжении 4 лет мы использовали комплексное продвижение маркетинга в cepe digital,
+                                 включающее в себя разработку
+                                 стратегии маркетинга, разработку сайтов, контекстную рекламу, SE0 продвижение,
+                                 продвижение
+                                 в отраслевых каталогах и на
+                                 картах, веб-аналитику и работу с социальными сетями.
+                              </p>
+
+                              <p>
+                                 Сотрудники компании не ограничились только маркетингом и помогли нам внедритьCRM,
+                                 организовать бизнес-процессы по обработке обращений, обучили колл-центр, а также
+                                 помогли с отстройкой финансовой
+                                 учетной политики и правильной визуализацией наших бизнес-показателей</p>
+
+                              <p>
+                                 Мы постоянно на связи с маркетологом проекта, который отвечает нам и в будни, и в
+                                 выходные.
+                              </p>
+
+                              <p>
+                                 От лица компании ООО"Эмеркон" я рекомендую команду Artellect к сотрудничеству, как
+                                 надежного и профессионального
+                                 партнера.
+                              </p>
                            </div>
                         </div>
                      </div>
@@ -1167,6 +1224,88 @@
                               персональных данных</a>
                         </p>
                         <button type="submit" class="button-decore" data-atropos-offset="10">Отправить</button>
+                     </div>
+                  </form>
+                  <div class="request-card__bg">
+                     <picture><source srcset="img/card-bg-dark.webp" type="image/webp"><img src="img/card-bg-dark.png" width="1126" height="524" alt="card bg"></picture>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+<div class="discount-popup popup" id="resultsPopup">
+   <div class="discount-popup__body popup__body">
+      <div class="atropos my-atropos2">
+         <div class="atropos-scale">
+            <div class="atropos-rotate">
+               <div class="atropos-inner request-card">
+                  <div class="request-card__title" data-atropos-offset="4">
+                     <span class="gradient-text">Заполните заявку</span> и мы свяжемся с вами
+                  </div>
+                  <div class="request-card__subtitle">
+                     Закажите наш аудит<br>
+                     Мы досконально проанализируем ваши рекламные кампании и дадим рекомендации
+                  </div>
+                  <form class="request-card__form">
+                     <div class="request-card__form-row">
+                        <div class="form-area border-rainbow" data-atropos-offset="4">
+                           <input type="text" class="form-area__input" placeholder="Введите ваше имя">
+                        </div>
+                        <div class="form-area border-rainbow" data-atropos-offset="4">
+                           <input type="text" inputmode="tel" class="form-area__input tel-mask"
+                              placeholder="+7 (495) *** - ** - **">
+                        </div>
+                     </div>
+                     <div class="request-card__form-row">
+                        <p class="policy-agree">Нажимая на кнопку я даю свое информированное согласие на <a
+                              href="">обработку
+                              персональных данных</a>
+                        </p>
+                        <button type="submit" class="button-decore" data-atropos-offset="10">Отправить</button>
+                     </div>
+                  </form>
+                  <div class="request-card__bg">
+                     <picture><source srcset="img/card-bg-dark.webp" type="image/webp"><img src="img/card-bg-dark.png" width="1126" height="524" alt="card bg"></picture>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+<div class="discount-popup popup" id="orderPopup">
+   <div class="discount-popup__body popup__body">
+      <div class="atropos my-atropos2">
+         <div class="atropos-scale">
+            <div class="atropos-rotate">
+               <div class="atropos-inner request-card">
+                  <div class="request-card__title" data-atropos-offset="4">
+                     <span class="gradient-text">Заполните заявку</span> для подробного аудита
+                  </div>
+                  <div class="request-card__subtitle">
+                     Закажите наш аудит<br>
+                     Мы досконально проанализируем ваши рекламные кампании и дадим рекомендации
+                  </div>
+                  <form class="request-card__form">
+                     <div class="request-card__form-row">
+                        <div class="form-area border-rainbow" data-atropos-offset="4">
+                           <input type="text" class="form-area__input" placeholder="Введите ваше имя">
+                        </div>
+                        <div class="form-area border-rainbow" data-atropos-offset="4">
+                           <input type="text" inputmode="tel" class="form-area__input tel-mask"
+                              placeholder="+7 (495) *** - ** - **">
+                        </div>
+                     </div>
+                     <div class="request-card__form-row">
+                        <p class="policy-agree">Нажимая на кнопку я даю свое информированное согласие на <a
+                              href="">обработку
+                              персональных данных</a>
+                        </p>
+                        <button type="submit" class="button-decore" data-atropos-offset="10">Заказать аудит</button>
                      </div>
                   </form>
                   <div class="request-card__bg">
@@ -1239,10 +1378,10 @@
          fill="currentColor" />
    </svg>
 </svg>
-   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20251004174523"></script>
-   <script src="https://cdn.jsdelivr.net/npm/atropos@2.0.2/atropos.min.js?_v=20251004174523"></script>
-   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js?_v=20251004174523"></script>
-   <script src="js/app.js?_v=20251004174523"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20251016110348"></script>
+   <script src="https://cdn.jsdelivr.net/npm/atropos@2.0.2/atropos.min.js?_v=20251016110348"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js?_v=20251016110348"></script>
+   <script src="js/app.js?_v=20251016110348"></script>
 </body>
 
 </html>

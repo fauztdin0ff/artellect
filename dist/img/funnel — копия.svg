@@ -86,6 +86,14 @@
 <path d="M429 230.223C429 231.569 428.776 232.66 428.5 232.66C428.224 232.66 428 231.569 428 230.223C428 228.876 428.224 227.785 428.5 227.785C428.776 227.785 429 228.876 429 230.223Z" fill="#44D8FB"/>
 <path d="M428.5 230.571C426.567 230.571 425 230.415 425 230.223C425 230.03 426.567 229.874 428.5 229.874C430.433 229.874 432 230.03 432 230.223C432 230.415 430.433 230.571 428.5 230.571Z" fill="#44D8FB"/>
 </g>
+<g filter="url(#filter23_f_608_511)">
+<path d="M142 244.846C142 246.192 141.776 247.283 141.5 247.283C141.224 247.283 141 246.192 141 244.846C141 243.5 141.224 242.408 141.5 242.408C141.776 242.408 142 243.5 142 244.846Z" fill="#44D8FB"/>
+<path d="M141.5 245.194C139.567 245.194 138 245.038 138 244.846C138 244.653 139.567 244.497 141.5 244.497C143.433 244.497 145 244.653 145 244.846C145 245.038 143.433 245.194 141.5 245.194Z" fill="#44D8FB"/>
+</g>
+<g style="mix-blend-mode:plus-lighter">
+<path d="M429 230.223C429 231.569 428.776 232.66 428.5 232.66C428.224 232.66 428 231.569 428 230.223C428 228.876 428.224 227.785 428.5 227.785C428.776 227.785 429 228.876 429 230.223Z" fill="url(#paint15_linear_608_511)"/>
+<path d="M428.5 230.571C426.567 230.571 425 230.415 425 230.223C425 230.03 426.567 229.874 428.5 229.874C430.433 229.874 432 230.03 432 230.223C432 230.415 430.433 230.571 428.5 230.571Z" fill="url(#paint16_linear_608_511)"/>
+</g>
 <g style="mix-blend-mode:plus-lighter">
 <path d="M142 244.846C142 246.192 141.776 247.283 141.5 247.283C141.224 247.283 141 246.192 141 244.846C141 243.5 141.224 242.408 141.5 242.408C141.776 242.408 142 243.5 142 244.846Z" fill="url(#paint17_linear_608_511)"/>
 <path d="M141.5 245.194C139.567 245.194 138 245.038 138 244.846C138 244.653 139.567 244.497 141.5 244.497C143.433 244.497 145 244.653 145 244.846C145 245.038 143.433 245.194 141.5 245.194Z" fill="url(#paint18_linear_608_511)"/>
@@ -566,6 +574,230 @@
 <ellipse cx="6.5" cy="3.09686" rx="6.5" ry="3.09686" transform="matrix(-1 0 0 1 136 392.01)" fill="#62FFFF"/>
 </g>
 </g>
+<g filter="url(#filter138_f_608_511)">
+<line y1="-0.5" x2="394" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 184 711)" stroke="url(#paint79_linear_608_511)"/>
+</g>
+<line y1="-0.5" x2="394" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 184 711)" stroke="url(#paint80_linear_608_511)"/>
+<g filter="url(#filter139_f_608_511)">
+<line y1="-0.5" x2="394" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 184 711)" stroke="url(#paint81_linear_608_511)"/>
+</g>
+<line y1="-0.5" x2="394" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 184 711)" stroke="url(#paint82_linear_608_511)"/>
+<g filter="url(#filter140_f_608_511)">
+<line y1="-0.5" x2="215.977" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 334.695 844)" stroke="url(#paint83_linear_608_511)"/>
+</g>
+<line y1="-0.5" x2="215.977" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 334.695 844)" stroke="url(#paint84_linear_608_511)"/>
+<g filter="url(#filter141_f_608_511)">
+<line y1="-0.5" x2="215.977" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 334.695 844)" stroke="url(#paint85_linear_608_511)"/>
+</g>
+<line y1="-0.5" x2="215.977" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 334.695 844)" stroke="url(#paint86_linear_608_511)"/>
+<g filter="url(#filter142_f_608_511)">
+<line y1="-0.5" x2="215.977" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 257.695 387)" stroke="url(#paint87_linear_608_511)"/>
+</g>
+<line y1="-0.5" x2="215.977" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 257.695 387)" stroke="url(#paint88_linear_608_511)"/>
+<g filter="url(#filter143_f_608_511)">
+<line y1="-0.5" x2="215.977" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 257.695 387)" stroke="url(#paint89_linear_608_511)"/>
+</g>
+<line y1="-0.5" x2="215.977" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 257.695 387)" stroke="url(#paint90_linear_608_511)"/>
+<g filter="url(#filter144_f_608_511)">
+<line x1="321.328" y1="652" x2="321.328" y2="436.023" stroke="url(#paint91_linear_608_511)"/>
+</g>
+<line x1="321.328" y1="652" x2="321.328" y2="436.023" stroke="url(#paint92_linear_608_511)"/>
+<g filter="url(#filter145_f_608_511)">
+<line x1="321.328" y1="652" x2="321.328" y2="436.023" stroke="url(#paint93_linear_608_511)"/>
+</g>
+<line x1="321.328" y1="652" x2="321.328" y2="436.023" stroke="url(#paint94_linear_608_511)"/>
+<g filter="url(#filter146_f_608_511)">
+<line y1="-0.5" x2="394" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 204 691)" stroke="url(#paint95_linear_608_511)"/>
+</g>
+<line y1="-0.5" x2="394" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 204 691)" stroke="url(#paint96_linear_608_511)"/>
+<g filter="url(#filter147_f_608_511)">
+<line y1="-0.5" x2="394" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 204 691)" stroke="url(#paint97_linear_608_511)"/>
+</g>
+<line y1="-0.5" x2="394" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 204 691)" stroke="url(#paint98_linear_608_511)"/>
+<g filter="url(#filter148_f_608_511)">
+<line x1="346.156" y1="617.06" x2="346.156" y2="833.037" stroke="url(#paint99_linear_608_511)"/>
+</g>
+<line x1="346.156" y1="617.06" x2="346.156" y2="833.037" stroke="url(#paint100_linear_608_511)"/>
+<g filter="url(#filter149_f_608_511)">
+<line x1="346.156" y1="617.06" x2="346.156" y2="833.037" stroke="url(#paint101_linear_608_511)"/>
+</g>
+<line x1="346.156" y1="617.06" x2="346.156" y2="833.037" stroke="url(#paint102_linear_608_511)"/>
+<g filter="url(#filter150_f_608_511)">
+<line x1="269.156" y1="160.06" x2="269.156" y2="376.037" stroke="url(#paint103_linear_608_511)"/>
+</g>
+<line x1="269.156" y1="160.06" x2="269.156" y2="376.037" stroke="url(#paint104_linear_608_511)"/>
+<g filter="url(#filter151_f_608_511)">
+<line x1="269.156" y1="160.06" x2="269.156" y2="376.037" stroke="url(#paint105_linear_608_511)"/>
+</g>
+<line x1="269.156" y1="160.06" x2="269.156" y2="376.037" stroke="url(#paint106_linear_608_511)"/>
+<g filter="url(#filter152_f_608_511)">
+<line x1="316.766" y1="641.037" x2="316.766" y2="425.06" stroke="url(#paint107_linear_608_511)"/>
+</g>
+<line x1="316.766" y1="641.037" x2="316.766" y2="425.06" stroke="url(#paint108_linear_608_511)"/>
+<g filter="url(#filter153_f_608_511)">
+<line x1="316.766" y1="641.037" x2="316.766" y2="425.06" stroke="url(#paint109_linear_608_511)"/>
+</g>
+<line x1="316.766" y1="641.037" x2="316.766" y2="425.06" stroke="url(#paint110_linear_608_511)"/>
+<g filter="url(#filter154_f_608_511)">
+<line y1="-0.5" x2="181" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 494 458)" stroke="url(#paint111_linear_608_511)"/>
+</g>
+<line y1="-0.5" x2="181" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 494 458)" stroke="url(#paint112_linear_608_511)"/>
+<g filter="url(#filter155_f_608_511)">
+<line y1="-0.5" x2="181" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 494 458)" stroke="url(#paint113_linear_608_511)"/>
+</g>
+<line y1="-0.5" x2="181" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 494 458)" stroke="url(#paint114_linear_608_511)"/>
+<g filter="url(#filter156_f_608_511)">
+<line y1="-0.5" x2="99.2179" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 504.625 705.314)" stroke="url(#paint115_linear_608_511)"/>
+</g>
+<line y1="-0.5" x2="99.2179" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 504.625 705.314)" stroke="url(#paint116_linear_608_511)"/>
+<g filter="url(#filter157_f_608_511)">
+<line y1="-0.5" x2="99.2179" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 504.625 705.314)" stroke="url(#paint117_linear_608_511)"/>
+</g>
+<line y1="-0.5" x2="99.2179" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 504.625 705.314)" stroke="url(#paint118_linear_608_511)"/>
+<g filter="url(#filter158_f_608_511)">
+<line y1="-0.5" x2="99.2179" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 427.625 248.314)" stroke="url(#paint119_linear_608_511)"/>
+</g>
+<line y1="-0.5" x2="99.2179" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 427.625 248.314)" stroke="url(#paint120_linear_608_511)"/>
+<g filter="url(#filter159_f_608_511)">
+<line y1="-0.5" x2="99.2179" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 427.625 248.314)" stroke="url(#paint121_linear_608_511)"/>
+</g>
+<line y1="-0.5" x2="99.2179" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 427.625 248.314)" stroke="url(#paint122_linear_608_511)"/>
+<g filter="url(#filter160_f_608_511)">
+<line x1="250.5" y1="513.314" x2="250.5" y2="414.096" stroke="url(#paint123_linear_608_511)"/>
+</g>
+<line x1="250.5" y1="513.314" x2="250.5" y2="414.096" stroke="url(#paint124_linear_608_511)"/>
+<g filter="url(#filter161_f_608_511)">
+<line x1="250.5" y1="513.314" x2="250.5" y2="414.096" stroke="url(#paint125_linear_608_511)"/>
+</g>
+<line x1="250.5" y1="513.314" x2="250.5" y2="414.096" stroke="url(#paint126_linear_608_511)"/>
+<g filter="url(#filter162_f_608_511)">
+<line y1="-0.5" x2="181" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 364 568)" stroke="url(#paint127_linear_608_511)"/>
+</g>
+<line y1="-0.5" x2="181" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 364 568)" stroke="url(#paint128_linear_608_511)"/>
+<g filter="url(#filter163_f_608_511)">
+<line y1="-0.5" x2="181" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 364 568)" stroke="url(#paint129_linear_608_511)"/>
+</g>
+<line y1="-0.5" x2="181" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 364 568)" stroke="url(#paint130_linear_608_511)"/>
+<g filter="url(#filter164_f_608_511)">
+<line y1="-0.5" x2="99.2179" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 433.367 765.612)" stroke="url(#paint131_linear_608_511)"/>
+</g>
+<line y1="-0.5" x2="99.2179" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 433.367 765.612)" stroke="url(#paint132_linear_608_511)"/>
+<g filter="url(#filter165_f_608_511)">
+<line y1="-0.5" x2="99.2179" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 433.367 765.612)" stroke="url(#paint133_linear_608_511)"/>
+</g>
+<line y1="-0.5" x2="99.2179" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 433.367 765.612)" stroke="url(#paint134_linear_608_511)"/>
+<g filter="url(#filter166_f_608_511)">
+<line y1="-0.5" x2="99.2179" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 356.367 308.612)" stroke="url(#paint135_linear_608_511)"/>
+</g>
+<line y1="-0.5" x2="99.2179" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 356.367 308.612)" stroke="url(#paint136_linear_608_511)"/>
+<g filter="url(#filter167_f_608_511)">
+<line y1="-0.5" x2="99.2179" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 356.367 308.612)" stroke="url(#paint137_linear_608_511)"/>
+</g>
+<line y1="-0.5" x2="99.2179" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 356.367 308.612)" stroke="url(#paint138_linear_608_511)"/>
+<g filter="url(#filter168_f_608_511)">
+<line x1="280.203" y1="573.612" x2="280.203" y2="474.395" stroke="url(#paint139_linear_608_511)"/>
+</g>
+<line x1="280.203" y1="573.612" x2="280.203" y2="474.395" stroke="url(#paint140_linear_608_511)"/>
+<g filter="url(#filter169_f_608_511)">
+<line x1="280.203" y1="573.612" x2="280.203" y2="474.395" stroke="url(#paint141_linear_608_511)"/>
+</g>
+<line x1="280.203" y1="573.612" x2="280.203" y2="474.395" stroke="url(#paint142_linear_608_511)"/>
+<g filter="url(#filter170_f_608_511)">
+<line y1="-0.5" x2="79" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 388 464)" stroke="url(#paint143_linear_608_511)"/>
+</g>
+<line y1="-0.5" x2="79" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 388 464)" stroke="url(#paint144_linear_608_511)"/>
+<g filter="url(#filter171_f_608_511)">
+<line y1="-0.5" x2="79" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 388 464)" stroke="url(#paint145_linear_608_511)"/>
+</g>
+<line y1="-0.5" x2="79" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 388 464)" stroke="url(#paint146_linear_608_511)"/>
+<g filter="url(#filter172_f_608_511)">
+<line y1="-0.5" x2="43.305" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 446.523 708.603)" stroke="url(#paint147_linear_608_511)"/>
+</g>
+<line y1="-0.5" x2="43.305" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 446.523 708.603)" stroke="url(#paint148_linear_608_511)"/>
+<g filter="url(#filter173_f_608_511)">
+<line y1="-0.5" x2="43.305" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 446.523 708.603)" stroke="url(#paint149_linear_608_511)"/>
+</g>
+<line y1="-0.5" x2="43.305" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 446.523 708.603)" stroke="url(#paint150_linear_608_511)"/>
+<g filter="url(#filter174_f_608_511)">
+<line y1="-0.5" x2="43.305" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 369.523 251.603)" stroke="url(#paint151_linear_608_511)"/>
+</g>
+<line y1="-0.5" x2="43.305" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 369.523 251.603)" stroke="url(#paint152_linear_608_511)"/>
+<g filter="url(#filter175_f_608_511)">
+<line y1="-0.5" x2="43.305" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 369.523 251.603)" stroke="url(#paint153_linear_608_511)"/>
+</g>
+<line y1="-0.5" x2="43.305" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 369.523 251.603)" stroke="url(#paint154_linear_608_511)"/>
+<g filter="url(#filter176_f_608_511)">
+<line x1="274.719" y1="516.603" x2="274.719" y2="473.298" stroke="url(#paint155_linear_608_511)"/>
+</g>
+<line x1="274.719" y1="516.603" x2="274.719" y2="473.298" stroke="url(#paint156_linear_608_511)"/>
+<g filter="url(#filter177_f_608_511)">
+<line x1="274.719" y1="516.603" x2="274.719" y2="473.298" stroke="url(#paint157_linear_608_511)"/>
+</g>
+<line x1="274.719" y1="516.603" x2="274.719" y2="473.298" stroke="url(#paint158_linear_608_511)"/>
+<g filter="url(#filter178_f_608_511)">
+<line y1="-0.5" x2="79" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 378 404)" stroke="url(#paint159_linear_608_511)"/>
+</g>
+<line y1="-0.5" x2="79" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 378 404)" stroke="url(#paint160_linear_608_511)"/>
+<g filter="url(#filter179_f_608_511)">
+<line y1="-0.5" x2="79" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 378 404)" stroke="url(#paint161_linear_608_511)"/>
+</g>
+<line y1="-0.5" x2="79" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 378 404)" stroke="url(#paint162_linear_608_511)"/>
+<g filter="url(#filter180_f_608_511)">
+<line y1="-0.5" x2="43.305" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 441.039 290.592)" stroke="url(#paint163_linear_608_511)"/>
+</g>
+<line y1="-0.5" x2="43.305" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 441.039 290.592)" stroke="url(#paint164_linear_608_511)"/>
+<g filter="url(#filter181_f_608_511)">
+<line y1="-0.5" x2="43.305" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 441.039 290.592)" stroke="url(#paint165_linear_608_511)"/>
+</g>
+<line y1="-0.5" x2="43.305" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 441.039 290.592)" stroke="url(#paint166_linear_608_511)"/>
+<g filter="url(#filter182_f_608_511)">
+<line y1="-0.5" x2="43.305" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 364.039 747.592)" stroke="url(#paint167_linear_608_511)"/>
+</g>
+<line y1="-0.5" x2="43.305" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 364.039 747.592)" stroke="url(#paint168_linear_608_511)"/>
+<g filter="url(#filter183_f_608_511)">
+<line y1="-0.5" x2="43.305" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 364.039 747.592)" stroke="url(#paint169_linear_608_511)"/>
+</g>
+<line y1="-0.5" x2="43.305" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 364.039 747.592)" stroke="url(#paint170_linear_608_511)"/>
+<g filter="url(#filter184_f_608_511)">
+<line x1="277" y1="482.592" x2="277" y2="439.287" stroke="url(#paint171_linear_608_511)"/>
+</g>
+<line x1="277" y1="482.592" x2="277" y2="439.287" stroke="url(#paint172_linear_608_511)"/>
+<g filter="url(#filter185_f_608_511)">
+<line x1="277" y1="482.592" x2="277" y2="439.287" stroke="url(#paint173_linear_608_511)"/>
+</g>
+<line x1="277" y1="482.592" x2="277" y2="439.287" stroke="url(#paint174_linear_608_511)"/>
+<g filter="url(#filter186_f_608_511)">
+<line y1="-0.5" x2="79" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 128 648)" stroke="url(#paint175_linear_608_511)"/>
+</g>
+<line y1="-0.5" x2="79" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 128 648)" stroke="url(#paint176_linear_608_511)"/>
+<g filter="url(#filter187_f_608_511)">
+<line y1="-0.5" x2="79" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 128 648)" stroke="url(#paint177_linear_608_511)"/>
+</g>
+<line y1="-0.5" x2="79" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 128 648)" stroke="url(#paint178_linear_608_511)"/>
+<g filter="url(#filter188_f_608_511)">
+<line y1="-0.5" x2="43.305" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 304 318)" stroke="url(#paint179_linear_608_511)"/>
+</g>
+<line y1="-0.5" x2="43.305" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 304 318)" stroke="url(#paint180_linear_608_511)"/>
+<g filter="url(#filter189_f_608_511)">
+<line y1="-0.5" x2="43.305" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 304 318)" stroke="url(#paint181_linear_608_511)"/>
+</g>
+<line y1="-0.5" x2="43.305" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 304 318)" stroke="url(#paint182_linear_608_511)"/>
+<g filter="url(#filter190_f_608_511)">
+<line y1="-0.5" x2="43.305" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 227 775)" stroke="url(#paint183_linear_608_511)"/>
+</g>
+<line y1="-0.5" x2="43.305" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 227 775)" stroke="url(#paint184_linear_608_511)"/>
+<g filter="url(#filter191_f_608_511)">
+<line y1="-0.5" x2="43.305" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 227 775)" stroke="url(#paint185_linear_608_511)"/>
+</g>
+<line y1="-0.5" x2="43.305" y2="-0.5" transform="matrix(-4.37115e-08 -1 -1 4.37115e-08 227 775)" stroke="url(#paint186_linear_608_511)"/>
+<g filter="url(#filter192_f_608_511)">
+<line x1="334.125" y1="510" x2="334.125" y2="466.695" stroke="url(#paint187_linear_608_511)"/>
+</g>
+<line x1="334.125" y1="510" x2="334.125" y2="466.695" stroke="url(#paint188_linear_608_511)"/>
+<g filter="url(#filter193_f_608_511)">
+<line x1="334.125" y1="510" x2="334.125" y2="466.695" stroke="url(#paint189_linear_608_511)"/>
+</g>
+<line x1="334.125" y1="510" x2="334.125" y2="466.695" stroke="url(#paint190_linear_608_511)"/>
 <g filter="url(#filter194_f_608_511)">
 <line y1="-14.5" x2="409" y2="-14.5" transform="matrix(-4.37114e-08 -1 -1 4.37114e-08 173 630)" stroke="#8EE7FF" stroke-width="29"/>
 </g>

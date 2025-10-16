@@ -5,6 +5,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
    <meta name="format-detection" content="telephone=no">
+   <meta name="robots" content="noindex, nofollow">
    <!-- Favicon -->
    <link rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png">
    <link rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png">
@@ -12,8 +13,8 @@
    <link rel="icon" type="image/png" sizes="512x512" href="img/fav/android-chrome-512x512.png">
    <link rel="apple-touch-icon" sizes="180x180" href="img/fav/apple-touch-icon.png">
    <link rel="icon" type="image/x-icon" href="img/fav/favicon.ico">
-   <!--<meta name="msapplication-TileColor" content="#000000">
-   <meta name="theme-color" content="#000000">-->
+   <meta name="msapplication-TileColor" content="#000000">
+   <meta name="theme-color" content="#000000">
    <!-- Meta Description -->
    <meta name="description" content="">
    <meta property="og:title" content="">
@@ -21,10 +22,10 @@
    <meta property="og:url" content="">
    <meta property="og:type" content="website">
    <!-- Styles -->
-   <link href="https://cdn.jsdelivr.net/npm/atropos@2.0.2/atropos.min.css?_v=20251004174523" rel="stylesheet">
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20251004174523" />
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css?_v=20251004174523">
-   <link rel="stylesheet" href="css/style.min.css?_v=20251004174523">
+   <link href="https://cdn.jsdelivr.net/npm/atropos@2.0.2/atropos.min.css?_v=20251016110348" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20251016110348" />
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css?_v=20251016110348">
+   <link rel="stylesheet" href="css/style.min.css?_v=20251016110348">
    <title>Главная</title>
 </head>
 
@@ -213,8 +214,24 @@
                      </div>
                   </div>
                </div>
-               <div class="art-description__funnel">
-                  <picture><source srcset="img/funnel.webp" type="image/webp"><img src="img/funnel.png" width="588" height="696" alt="funnel"></picture>
+               <div class="art-description__funnel funnel">
+                  <div class="funnel__paths">
+                     <div class="funnel__path funnel__path-1">
+                        <picture><source srcset="img/home/funnel-line-sm.webp" type="image/webp"><img src="img/home/funnel-line-sm.png" width="45" height="586" alt=""></picture>
+                     </div>
+                     <div class="funnel__path funnel__path-2">
+                        <picture><source srcset="img/home/funnel-line-sm.webp" type="image/webp"><img src="img/home/funnel-line-sm.png" width="121" height="586" alt=""></picture>
+                     </div>
+                  </div>
+
+                  <picture><source srcset="img/funnel2.webp" type="image/webp"><img src="img/funnel2.png" class="funnel__main" width="588" height="696" alt="funnel"></picture>
+                  <div class="funnel__rain">
+                     <img src="img/home/rain.svg" alt="drop">
+                  </div>
+                  <div class="funnel__glow"></div>
+                  <div class="funnel__stars">
+                     <picture><source srcset="img/home/star.webp" type="image/webp"><img src="img/home/star.png" width="20" height="20" alt="star"></picture>
+                  </div>
                </div>
             </div>
             <div class="art-description__bg">
@@ -266,9 +283,9 @@
                      </div>
                   </div>
                   <div class="art-services__price">от 80.000 ₽</div>
-                  <a href="" class="art-services__example border-gradient">Пример
+                  <!-- <a href="" class="art-services__example border-gradient">Пример
                      <img src="img/icons/chevron.svg" width="14" height="24" alt="chevron">
-                  </a>
+                  </a> -->
                </div>
 
                <div class="art-services__card">
@@ -312,9 +329,9 @@
                      </div>
                   </div>
                   <div class="art-services__price">от 120.000 ₽</div>
-                  <a href="" class="art-services__example border-gradient">Пример
+                  <!-- <a href="" class="art-services__example border-gradient">Пример
                      <img src="img/icons/chevron.svg" width="14" height="24" alt="chevron">
-                  </a>
+                  </a> -->
                </div>
 
                <div class="art-services__card">
@@ -331,10 +348,6 @@
                         </li>
                         <li>
                            <img src="img/icons/check-dotted.svg" width="16" height="12" alt="check icon">
-                           2-6 каналов трафика
-                        </li>
-                        <li>
-                           <img src="img/icons/check-dotted.svg" width="16" height="12" alt="check icon">
                            глубокое взаимодействие с отделом продаж, фин. отделом
                            и продуктовой стратегией
                         </li>
@@ -344,7 +357,7 @@
                         </li>
                         <li>
                            <img src="img/icons/check-dotted.svg" width="16" height="12" alt="check icon">
-                           выстраивание BL-аналитики
+                           выстраивание BI-аналитики
                         </li>
                      </ul>
                      <div class="art-services__description">
@@ -357,9 +370,9 @@
                      <div class="art-services__target"><b>Цель маркетинга:</b> валовая прибыль</div>
                   </div>
                   <div class="art-services__price">от 250.000 ₽</div>
-                  <a href="" class="art-services__example border-gradient">Пример
+                  <!-- <a href="" class="art-services__example border-gradient">Пример
                      <img src="img/icons/chevron.svg" width="14" height="24" alt="chevron">
-                  </a>
+                  </a> -->
                </div>
 
                <div class="art-services__card">
@@ -382,7 +395,7 @@
                         </li>
                      </ul>
                      <div class="art-services__description">
-                        <p><b>Акцент</b>на креативе и поиске новых решений</p>
+                        <p><b>Акцент</b> на креативе и поиске новых решений</p>
                         <p><b>В проекте задействованы:</b> Growth Haking маркетолог, аналитик и специалисты по трафику и
                            лидогенерации</p>
                         <p><b>Кому подходит:</b> Для компаний, которые уже круто привлекают клиентов через свой
@@ -392,9 +405,9 @@
                      <div class="art-services__target"><b>Цель маркетинга:</b> индивидуальные KPI</div>
                   </div>
                   <div class="art-services__price">от 80.000 ₽</div>
-                  <a href="" class="art-services__example border-gradient">Пример
+                  <!-- <a href="" class="art-services__example border-gradient">Пример
                      <img src="img/icons/chevron.svg" width="14" height="24" alt="chevron">
-                  </a>
+                  </a> -->
                </div>
             </div>
          </div>
@@ -483,8 +496,6 @@
                         </div>
                      </div>
                   </div>
-
-
                   <div class="art-cases__slide case-preview swiper-slide border-gradient">
                      <span class="case-preview__tag art-tag">Artellect-Кейсы</span>
                      <div class="case-preview__icon">
@@ -768,10 +779,16 @@
                      <div class="art-marketing__info border-gradient">
                         <div class="art-marketing__name">Средний бизнес</div>
                         <div class="art-marketing__text">
-                           <p>Наше маркетинговое агентство работает с небольшими бюджетами, при росте и масштабировании
-                              бизнеса внедряем
-                              дополнительные инструменты, соответствующие этапу развития.</p>
-                           <p>Сэкономим до 950 000 ₽ ежемесячно + время и нервы на подбор инхаус-команды.</p>
+                           <p>
+                              Если у вас уже есть отдел маркетинга или штатный маркетолог, мы совместно разработаем
+                              систему
+                              взаимодействия и закроем
+                              узкие места. Вы получите полный внутренний и внешний контроль над digital маркетингом.
+                           </p>
+
+                           <p>Если отдел диджитал развития отсутствует, наше маркетинговое агентство Artellect станет
+                              вашим опытным b2b маркетологом
+                              на аутсорсе-</p>
                         </div>
                      </div>
                   </div>
@@ -782,10 +799,14 @@
                      <div class="art-marketing__info border-gradient">
                         <div class="art-marketing__name">Стартапы</div>
                         <div class="art-marketing__text">
-                           <p>Наше маркетинговое агентство работает с небольшими бюджетами, при росте и масштабировании
-                              бизнеса внедряем
-                              дополнительные инструменты, соответствующие этапу развития.</p>
-                           <p>Сэкономим до 950 000 ₽ ежемесячно + время и нервы на подбор инхаус-команды.</p>
+                           <p>Имеете сногсшибательную идею и хотите реализовать задумку на практике? Время покорять
+                              Олимп. Разработаем маркетинговую
+                              стратегию и поможем не «наломать дров» в самом начале пути.
+                              Кстати! У digital агентства Artellect большой запас компетенций в запуске собственных
+                              проектов! Мы покажем решения в
+                              сфере финансов и бухгалтерского учета, в подборе IT-программ для работы, налаживанию
+                              бизнес-процессов и многое другое.
+                           </p>
                         </div>
                      </div>
                   </div>
@@ -796,10 +817,11 @@
                      <div class="art-marketing__info border-gradient">
                         <div class="art-marketing__name">Эксперты</div>
                         <div class="art-marketing__text">
-                           <p>Наше маркетинговое агентство работает с небольшими бюджетами, при росте и масштабировании
-                              бизнеса внедряем
-                              дополнительные инструменты, соответствующие этапу развития.</p>
-                           <p>Сэкономим до 950 000 ₽ ежемесячно + время и нервы на подбор инхаус-команды.</p>
+                           <p>Мы работаем не только с компаниями, но и с частными экспертами. Разработаем стратегию
+                              развития личного бренда и подберем
+                              под нее подходящие каналы рекламы. Не стоит сидеть днями и ночами за курсами пугающего
+                              маркетинга, лучше потратить время
+                              на близких или повышение квалификации.</p>
                         </div>
                      </div>
                   </div>
@@ -810,10 +832,13 @@
                      <div class="art-marketing__info border-gradient">
                         <div class="art-marketing__name">Сложные ниши</div>
                         <div class="art-marketing__text">
-                           <p>Наше маркетинговое агентство работает с небольшими бюджетами, при росте и масштабировании
-                              бизнеса внедряем
-                              дополнительные инструменты, соответствующие этапу развития.</p>
-                           <p>Сэкономим до 950 000 ₽ ежемесячно + время и нервы на подбор инхаус-команды.</p>
+                           <p>У вас сложная ниша? Или Вы только так думаете? Перебрали уже множество агентств и
+                              специалистов, а они все разводят
+                              руками и говорят “в вашей нише лучше не сделать”?
+                              Мы работали с табуированной сферой* наркологии, со стриптиз клубами, займами, бадами и так
+                              далее. Мы четко знаем, как
+                              можно рекламироваться там, где, казалось бы, нельзя ничего.
+                           </p>
                         </div>
                      </div>
                   </div>
@@ -923,21 +948,24 @@
                <div class="ads-calculator__tab border-gradient border-rainbow" data-calc-tab="3">По желаемой выручке
                </div>
             </div>
+
             <div class="ads-calculator__block active" data-calc-block="1">
                <div class="ads-calculator__card border-gradient">
                   <div class="ads-calculator__subtitle">Вводные данные:</div>
                   <div class="ads-calculator__row">
-                     <div class="ads-calculator__area">
+                     <div class="ads-calculator__area no-valid">
                         <div class="ads-calculator__label gradient-text">Сколько лидов (обращений) сможете обработать?
                            <span class="tips">
                               <span class="tips__btn">?</span>
-                              <span class="tips__message">Подсказка</span>
+                              <span class="tips__message">Укажите объем лидов, который вы сможете обработать в течение
+                                 месяца</span>
                            </span>
                         </div>
                         <div class="border-gradient">
                            <input type="number" class="ads-calculator__input" inputmode="numeric"
                               placeholder="Укажите кол-во">
                         </div>
+                        <div class="ads-calculator__error-text">Неверное значение</div>
                      </div>
                   </div>
                   <div class="ads-calculator__row">
@@ -945,7 +973,7 @@
                         <div class="ads-calculator__label gradient-text">Средняя маржинальность:
                            <span class="tips">
                               <span class="tips__btn">?</span>
-                              <span class="tips__message">Подсказка</span>
+                              <span class="tips__message">Укажите среднюю рентабельность по вашей валовой прибыли</span>
                            </span>
                         </div>
                         <div class="border-gradient">
@@ -957,7 +985,8 @@
                         <div class="ads-calculator__label gradient-text">Средний чек:
                            <span class="tips">
                               <span class="tips__btn">?</span>
-                              <span class="tips__message">Подсказка</span>
+                              <span class="tips__message">Укажите среднюю сумму, которую вам приносит клиент в
+                                 месяц</span>
                            </span>
                         </div>
                         <div class="border-gradient">
@@ -971,7 +1000,8 @@
                         <div class="ads-calculator__label gradient-text">Коэффициент рентабельности маркетинга (ROMI):
                            <span class="tips">
                               <span class="tips__btn">?</span>
-                              <span class="tips__message">Подсказка</span>
+                              <span class="tips__message">Укажите желаемый процент возврата инвестиций от вложений в
+                                 маркетинг</span>
                            </span>
                         </div>
                         <div class="border-gradient">
@@ -985,7 +1015,8 @@
                         <div class="ads-calculator__label gradient-text">Средняя конверсия из обращения в продажу (%):
                            <span class="tips">
                               <span class="tips__btn">?</span>
-                              <span class="tips__message">Подсказка</span>
+                              <span class="tips__message">Какой процент обратившихся к вам людей становятся клиентами и
+                                 заказывают товар/услугу</span>
                            </span>
                         </div>
                         <div class="border-gradient">
@@ -1003,56 +1034,64 @@
                      <p>Бюджет на маркетинг в месяц: <span>— ₽</span></p>
                      <span class="tips">
                         <span class="tips__btn">?</span>
-                        <span class="tips__message">Подсказка</span>
+                        <span class="tips__message">Ориентировочный бюджет на ваш маркетинговый отдел, включая
+                           ФОТ</span>
                      </span>
                   </div>
                   <div class="ads-calculator__result">
                      <p>Допустимая стоимость клиента (CAC): <span>— ₽</span></p>
                      <span class="tips">
                         <span class="tips__btn">?</span>
-                        <span class="tips__message">Подсказка</span>
+                        <span class="tips__message">При заданных выше параметрах вы можете привлекать себе клиента не
+                           дороже указанной суммы</span>
                      </span>
                   </div>
                   <div class="ads-calculator__result">
                      <p>Допустимая стоимость лида (CPL): <span>— ₽</span></p>
                      <span class="tips">
                         <span class="tips__btn">?</span>
-                        <span class="tips__message">Подсказка</span>
+                        <span class="tips__message">При заданных выше параметрах вы можете привлекать себе заявку
+                           (обращение) не дороже указанной суммы</span>
                      </span>
                   </div>
                   <div class="ads-calculator__result">
                      <p>Необходимое кол-во клиентов/месяц: <span>— ₽</span></p>
                      <span class="tips">
                         <span class="tips__btn">?</span>
-                        <span class="tips__message">Подсказка</span>
+                        <span class="tips__message">Минимальное кол-во клиентов для обеспечения заданной выручки</span>
                      </span>
                   </div>
                   <div class="ads-calculator__result">
                      <p>Выручка в месяц: <span>— ₽</span></p>
                      <span class="tips">
                         <span class="tips__btn">?</span>
-                        <span class="tips__message">Подсказка</span>
+                        <span class="tips__message">Ориентировочная выручка, которая будет сформирована из заданных
+                           параметров</span>
                      </span>
                   </div>
                   <div class="ads-calculator__result">
                      <p>Вaловая прибыль: <span>— ₽</span></p>
                      <span class="tips">
                         <span class="tips__btn">?</span>
-                        <span class="tips__message">Подсказка</span>
+                        <span class="tips__message">Ориентировочная валовая прибыль после вычета расходов на
+                           маркетинг</span>
                      </span>
                   </div>
-                  <button type="button" class="button-decore">Узнайте как получить результат!</button>
+                  <button type="button" class="button-decore open-popup" data-popup="resultsPopup">Узнайте как получить
+                     результат!</button>
                </div>
             </div>
+
             <div class="ads-calculator__block " data-calc-block="2">
                <div class="ads-calculator__card border-gradient">
                   <div class="ads-calculator__subtitle">Вводные данные:</div>
                   <div class="ads-calculator__row">
                      <div class="ads-calculator__area">
-                        <div class="ads-calculator__label gradient-text">Сколько лидов (обращений) сможете обработать?
+                        <div class="ads-calculator__label gradient-text">Вложения в маркетинг:
                            <span class="tips">
                               <span class="tips__btn">?</span>
-                              <span class="tips__message">Подсказка</span>
+                              <span class="tips__message">Укажите объем бюджета, который вы можете потратить на
+                                 маркетинг, включая ФОТ</span>
                            </span>
                         </div>
                         <div class="border-gradient">
@@ -1060,13 +1099,12 @@
                               placeholder="Укажите кол-во">
                         </div>
                      </div>
-                  </div>
-                  <div class="ads-calculator__row">
                      <div class="ads-calculator__area">
-                        <div class="ads-calculator__label gradient-text">Средняя маржинальность:
+                        <div class="ads-calculator__label gradient-text">Средний чек:
                            <span class="tips">
                               <span class="tips__btn">?</span>
-                              <span class="tips__message">Подсказка</span>
+                              <span class="tips__message">Укажите среднюю сумму, которую вам приносит клиент в
+                                 месяц</span>
                            </span>
                         </div>
                         <div class="border-gradient">
@@ -1074,11 +1112,13 @@
                               placeholder="Укажите в процентах">
                         </div>
                      </div>
+                  </div>
+                  <div class="ads-calculator__row">
                      <div class="ads-calculator__area">
-                        <div class="ads-calculator__label gradient-text">Средний чек:
+                        <div class="ads-calculator__label gradient-text">Средняя маржинальность (%):
                            <span class="tips">
                               <span class="tips__btn">?</span>
-                              <span class="tips__message">Подсказка</span>
+                              <span class="tips__message">Укажите среднюю рентабельность по вашей валовой прибыли</span>
                            </span>
                         </div>
                         <div class="border-gradient">
@@ -1092,7 +1132,8 @@
                         <div class="ads-calculator__label gradient-text">Коэффициент рентабельности маркетинга (ROMI):
                            <span class="tips">
                               <span class="tips__btn">?</span>
-                              <span class="tips__message">Подсказка</span>
+                              <span class="tips__message">Укажите желаемый процент возврата инвестиций от вложений в
+                                 маркетинг</span>
                            </span>
                         </div>
                         <div class="border-gradient">
@@ -1106,7 +1147,9 @@
                         <div class="ads-calculator__label gradient-text">Средняя конверсия из обращения в продажу (%):
                            <span class="tips">
                               <span class="tips__btn">?</span>
-                              <span class="tips__message">Подсказка</span>
+                              <span class="tips__message">Какой процент обратившихся к вам людей становятся клиентами и
+                                 заказывают
+                                 товар/услугу</span>
                            </span>
                         </div>
                         <div class="border-gradient">
@@ -1121,59 +1164,67 @@
                <div class="ads-calculator__results border-gradient">
                   <div class="ads-calculator__subtitle">Результат расчёта:</div>
                   <div class="ads-calculator__result">
-                     <p>Бюджет на маркетинг в месяц: <span>— ₽</span></p>
+                     <p>Необходимое кол-во лидов/месяц: <span>—</span></p>
                      <span class="tips">
                         <span class="tips__btn">?</span>
-                        <span class="tips__message">Подсказка</span>
+                        <span class="tips__message">Минимальное кол-во заявок для обеспечения оптимиальной загрузки
+                           бюджета</span>
                      </span>
                   </div>
                   <div class="ads-calculator__result">
-                     <p>Допустимая стоимость клиента (CAC): <span>— ₽</span></p>
+                     <p>Необходимое кол-во клиентов/месяц: <span>—</span></p>
                      <span class="tips">
                         <span class="tips__btn">?</span>
-                        <span class="tips__message">Подсказка</span>
+                        <span class="tips__message">Нужно будет обработать клиентов при заданных параметрах</span>
                      </span>
                   </div>
                   <div class="ads-calculator__result">
                      <p>Допустимая стоимость лида (CPL): <span>— ₽</span></p>
                      <span class="tips">
                         <span class="tips__btn">?</span>
-                        <span class="tips__message">Подсказка</span>
+                        <span class="tips__message">При заданных выше параметрах вы можете привлекать себе заявку
+                           (обращение) не дороже указанной суммы</span>
                      </span>
                   </div>
                   <div class="ads-calculator__result">
-                     <p>Необходимое кол-во клиентов/месяц: <span>— ₽</span></p>
+                     <p>Допустимая стоимость клиента (CAC): <span>— ₽</span></p>
                      <span class="tips">
                         <span class="tips__btn">?</span>
-                        <span class="tips__message">Подсказка</span>
+                        <span class="tips__message">При заданных выше параметрах вы можете привлекать себе клиента не
+                           дороже указанной суммы</span>
                      </span>
                   </div>
                   <div class="ads-calculator__result">
                      <p>Выручка в месяц: <span>— ₽</span></p>
                      <span class="tips">
                         <span class="tips__btn">?</span>
-                        <span class="tips__message">Подсказка</span>
+                        <span class="tips__message">Ориентировочная выручка, которая будет сформирована из заданных
+                           параметров</span>
                      </span>
                   </div>
                   <div class="ads-calculator__result">
                      <p>Вaловая прибыль: <span>— ₽</span></p>
                      <span class="tips">
                         <span class="tips__btn">?</span>
-                        <span class="tips__message">Подсказка</span>
+                        <span class="tips__message">Ориентировочная валовая прибыль после вычета расходов на
+                           маркетинг</span>
                      </span>
                   </div>
-                  <button type="button" class="button-decore">Узнайте как получить результат!</button>
+                  <button type="button" class="button-decore open-popup" data-popup="resultsPopup">Узнайте как получить
+                     результат!</button>
                </div>
             </div>
+
             <div class="ads-calculator__block " data-calc-block="3">
                <div class="ads-calculator__card border-gradient">
                   <div class="ads-calculator__subtitle">Вводные данные:</div>
                   <div class="ads-calculator__row">
                      <div class="ads-calculator__area">
-                        <div class="ads-calculator__label gradient-text">Сколько лидов (обращений) сможете обработать?
+                        <div class="ads-calculator__label gradient-text">Выручка в месяц:
                            <span class="tips">
                               <span class="tips__btn">?</span>
-                              <span class="tips__message">Подсказка</span>
+                              <span class="tips__message">Укажите объем выручки (оборот), которую вы хотели бы получать
+                                 (минимально 100 000 р.)</span>
                            </span>
                         </div>
                         <div class="border-gradient">
@@ -1181,13 +1232,12 @@
                               placeholder="Укажите кол-во">
                         </div>
                      </div>
-                  </div>
-                  <div class="ads-calculator__row">
                      <div class="ads-calculator__area">
-                        <div class="ads-calculator__label gradient-text">Средняя маржинальность:
+                        <div class="ads-calculator__label gradient-text">Средний чек:
                            <span class="tips">
                               <span class="tips__btn">?</span>
-                              <span class="tips__message">Подсказка</span>
+                              <span class="tips__message">Укажите среднюю сумму, которую вам приносит клиент в
+                                 месяц</span>
                            </span>
                         </div>
                         <div class="border-gradient">
@@ -1195,11 +1245,13 @@
                               placeholder="Укажите в процентах">
                         </div>
                      </div>
+                  </div>
+                  <div class="ads-calculator__row">
                      <div class="ads-calculator__area">
-                        <div class="ads-calculator__label gradient-text">Средний чек:
+                        <div class="ads-calculator__label gradient-text">Средняя маржинальность (%):
                            <span class="tips">
                               <span class="tips__btn">?</span>
-                              <span class="tips__message">Подсказка</span>
+                              <span class="tips__message">Укажите среднюю рентабельность по вашей валовой прибыли</span>
                            </span>
                         </div>
                         <div class="border-gradient">
@@ -1210,10 +1262,12 @@
                   </div>
                   <div class="ads-calculator__row">
                      <div class="ads-calculator__area">
-                        <div class="ads-calculator__label gradient-text">Коэффициент рентабельности маркетинга (ROMI):
+                        <div class="ads-calculator__label gradient-text">Планируемая доля расходов на маркетинг от
+                           выручки (%):
                            <span class="tips">
                               <span class="tips__btn">?</span>
-                              <span class="tips__message">Подсказка</span>
+                              <span class="tips__message">Укажите ориентировочный процент от выручки, который вы готовы
+                                 потратить на маркетинг</span>
                            </span>
                         </div>
                         <div class="border-gradient">
@@ -1227,7 +1281,9 @@
                         <div class="ads-calculator__label gradient-text">Средняя конверсия из обращения в продажу (%):
                            <span class="tips">
                               <span class="tips__btn">?</span>
-                              <span class="tips__message">Подсказка</span>
+                              <span class="tips__message">Какой процент обратившихся к вам людей становятся клиентами и
+                                 заказывают
+                                 товар/услугу</span>
                            </span>
                         </div>
                         <div class="border-gradient">
@@ -1245,45 +1301,50 @@
                      <p>Бюджет на маркетинг в месяц: <span>— ₽</span></p>
                      <span class="tips">
                         <span class="tips__btn">?</span>
-                        <span class="tips__message">Подсказка</span>
+                        <span class="tips__message">Ориентировочный бюджет на ваш маркетинговый отдел, включая
+                           ФОТ</span>
                      </span>
                   </div>
                   <div class="ads-calculator__result">
                      <p>Допустимая стоимость клиента (CAC): <span>— ₽</span></p>
                      <span class="tips">
                         <span class="tips__btn">?</span>
-                        <span class="tips__message">Подсказка</span>
+                        <span class="tips__message">При заданных выше параметрах вы можете привлекать себе клиента не
+                           дороже указанной суммы</span>
                      </span>
                   </div>
                   <div class="ads-calculator__result">
                      <p>Допустимая стоимость лида (CPL): <span>— ₽</span></p>
                      <span class="tips">
                         <span class="tips__btn">?</span>
-                        <span class="tips__message">Подсказка</span>
+                        <span class="tips__message">При заданных выше параметрах вы можете привлекать себе заявку
+                           (обращение) не дороже указанной суммы</span>
                      </span>
                   </div>
                   <div class="ads-calculator__result">
                      <p>Необходимое кол-во клиентов/месяц: <span>— ₽</span></p>
                      <span class="tips">
                         <span class="tips__btn">?</span>
-                        <span class="tips__message">Подсказка</span>
+                        <span class="tips__message">Минимальное кол-во клиентов для обеспечения заданной выручки</span>
                      </span>
                   </div>
                   <div class="ads-calculator__result">
-                     <p>Выручка в месяц: <span>— ₽</span></p>
+                     <p>Необходимое кол-во лидов/месяц: <span>— ₽</span></p>
                      <span class="tips">
                         <span class="tips__btn">?</span>
-                        <span class="tips__message">Подсказка</span>
+                        <span class="tips__message">Минимальное кол-во заявок для обеспечения заданной выручки</span>
                      </span>
                   </div>
                   <div class="ads-calculator__result">
                      <p>Вaловая прибыль: <span>— ₽</span></p>
                      <span class="tips">
                         <span class="tips__btn">?</span>
-                        <span class="tips__message">Подсказка</span>
+                        <span class="tips__message">Ориентировочная валовая прибыль после вычета расходов на
+                           маркетинг</span>
                      </span>
                   </div>
-                  <button type="button" class="button-decore">Узнайте как получить результат!</button>
+                  <button type="button" class="button-decore open-popup" data-popup="resultsPopup">Узнайте как получить
+                     результат!</button>
                </div>
             </div>
          </div>
@@ -1302,7 +1363,8 @@
                   <div class="art-cooperation__card-info">
                      <div class="art-cooperation__card-name">Отчет в понятных цифрах
                         и показателях</div>
-                     <div class="art-cooperation__card-text">Снимем головную боль по всем точкам маркетинга</div>
+                     <div class="art-cooperation__card-text">Составляем финансовую модель, определяем показатели kpi и
+                        достигаем их день ото дня.</div>
                   </div>
                   <div class="art-cooperation__card-corner -corner-1"></div>
                   <div class="art-cooperation__card-corner -corner-2"></div>
@@ -1329,7 +1391,9 @@
                   </div>
                   <div class="art-cooperation__card-info">
                      <div class="art-cooperation__card-name">Комфорт и компетентность</div>
-                     <div class="art-cooperation__card-text">Снимем головную боль по всем точкам маркетинга</div>
+                     <div class="art-cooperation__card-text">Ваш проект будет вести профессиональный и вежливый (да-да!)
+                        digital-маркетолог, а не менеджер, который вечно “уточняет
+                        данный вопрос”</div>
                   </div>
                   <div class="art-cooperation__card-corner -corner-1"></div>
                   <div class="art-cooperation__card-corner -corner-2"></div>
@@ -1342,7 +1406,8 @@
                   </div>
                   <div class="art-cooperation__card-info">
                      <div class="art-cooperation__card-name">Кристальную прозрачность</div>
-                     <div class="art-cooperation__card-text">Снимем головную боль по всем точкам маркетинга</div>
+                     <div class="art-cooperation__card-text">Предоставим доступ к Дашборду с настроенными показателями и
+                        автоматически обновляемой аналитикой.</div>
                   </div>
                   <div class="art-cooperation__card-corner -corner-1"></div>
                   <div class="art-cooperation__card-corner -corner-2"></div>
@@ -1355,7 +1420,9 @@
                   </div>
                   <div class="art-cooperation__card-info">
                      <div class="art-cooperation__card-name">Долгосрочных партнеров</div>
-                     <div class="art-cooperation__card-text">Снимем головную боль по всем точкам маркетинга</div>
+                     <div class="art-cooperation__card-text">Мы заинтересованы в плодотворном долгосрочном
+                        сотрудничестве, и знаем, что это достигается ежедневной работой, порой
+                        рутинной, а порой творческой.</div>
                   </div>
                   <div class="art-cooperation__card-corner -corner-1"></div>
                   <div class="art-cooperation__card-corner -corner-2"></div>
@@ -1368,7 +1435,9 @@
                   </div>
                   <div class="art-cooperation__card-info">
                      <div class="art-cooperation__card-name">Конфиденциальность</div>
-                     <div class="art-cooperation__card-text">Снимем головную боль по всем точкам маркетинга</div>
+                     <div class="art-cooperation__card-text">Пароли от сайтов, хостингов, CRM хранятся в специальной
+                        системе с шифрованием, сотрудники не могут просто скопировать и
+                        передать доступ.</div>
                   </div>
                   <div class="art-cooperation__card-corner -corner-1"></div>
                   <div class="art-cooperation__card-corner -corner-2"></div>
@@ -1381,7 +1450,9 @@
                   </div>
                   <div class="art-cooperation__card-info">
                      <div class="art-cooperation__card-name">Анонимность</div>
-                     <div class="art-cooperation__card-text">Снимем головную боль по всем точкам маркетинга</div>
+                     <div class="art-cooperation__card-text">По вашему желанию, мы подпишем NDA на неразглашение
+                        информации о вашей компании и ее продуктах. Также мы можем не
+                        публиковать в открытом доступе, что вы наш клиент.</div>
                   </div>
                   <div class="art-cooperation__card-corner -corner-1"></div>
                   <div class="art-cooperation__card-corner -corner-2"></div>
@@ -1394,7 +1465,9 @@
                   </div>
                   <div class="art-cooperation__card-info">
                      <div class="art-cooperation__card-name">Знания и опыт</div>
-                     <div class="art-cooperation__card-text">Снимем головную боль по всем точкам маркетинга</div>
+                     <div class="art-cooperation__card-text">Мы с удовольствием делимся знаниями в бизнесе и в сфере
+                        digital. Поможем сформировать нужные навыки для качественного
+                        развития.</div>
                   </div>
                   <div class="art-cooperation__card-corner -corner-1"></div>
                   <div class="art-cooperation__card-corner -corner-2"></div>
@@ -1421,7 +1494,8 @@
                                     href="">обработку
                                     персональных данных</a>
                               </p>
-                              <button type="button" class="button-decore" data-atropos-offset="10">Загрузить новую
+                              <button type="button" class="button-decore open-popup" data-popup="resultsPopup"
+                                 data-atropos-offset="10">Загрузить новую
                                  реальность</button>
                            </div>
                         </div>
@@ -1591,8 +1665,8 @@
                   <div class="swiper-wrapper">
                      <div class="art-testimonials__slide swiper-slide">
                         <div class="art-testimonials__image">
-                           <a data-fancybox="testimonial-gallery" href="img/context-ads/certificate.png">
-                              <picture><source srcset="img/context-ads/certificate.webp" type="image/webp"><img src="img/context-ads/certificate.png" width="231" height="300" alt="сертификат"></picture>
+                           <a data-fancybox="testimonial-gallery" href="img/context-ads/testimonial-1.png">
+                              <picture><source srcset="img/context-ads/testimonial-1.webp" type="image/webp"><img src="img/context-ads/testimonial-1.png" width="231" height="300" alt="сертификат"></picture>
                            </a>
                         </div>
                         <div class="art-testimonials__info">
@@ -1613,45 +1687,44 @@
                      </div>
                      <div class="art-testimonials__slide swiper-slide">
                         <div class="art-testimonials__image">
-                           <a data-fancybox="testimonial-gallery" href="img/context-ads/certificate.png">
-                              <picture><source srcset="img/context-ads/certificate.webp" type="image/webp"><img src="img/context-ads/certificate.png" width="231" height="300" alt="сертификат"></picture>
+                           <a data-fancybox="testimonial-gallery" href="img/context-ads/testimonial-2.png">
+                              <picture><source srcset="img/context-ads/testimonial-2.webp" type="image/webp"><img src="img/context-ads/testimonial-2.png" width="231" height="300" alt="сертификат"></picture>
                            </a>
                         </div>
                         <div class="art-testimonials__info">
-                           <div class="art-testimonials__name">Ханисенко Б. Ю.</div>
-                           <div class="art-testimonials__role">Генеральный директор ООО "Бьюти Концепт"</div>
+                           <div class="art-testimonials__name">Савкин И. Н.</div>
+                           <div class="art-testimonials__role">Генеральный директор ООО "Эмеркон"</div>
                            <div class="art-testimonials__text">
-                              Настоящим письмом выражаем нашу искреннюю благодарность и признательность компании
-                              Artellet за
-                              длительное и плодотворное сотрудничество. Мы высоко ценим установившиеся между нами
-                              партнерские
-                              отношения и взаимопонимание. За последние три года в результате нашей совместной работы у
-                              нас резко
-                              повысилась проходимость клиентов и мы можем смело рекомендовать Вас потенциальным
-                              партнерам. Желаем
-                              Вам дальнейших успехов в работе и достижения поставленных целей!
-                           </div>
-                        </div>
-                     </div>
-                     <div class="art-testimonials__slide swiper-slide">
-                        <div class="art-testimonials__image">
-                           <a data-fancybox="testimonial-gallery" href="img/context-ads/certificate.png">
-                              <picture><source srcset="img/context-ads/certificate.webp" type="image/webp"><img src="img/context-ads/certificate.png" width="231" height="300" alt="сертификат"></picture>
-                           </a>
-                        </div>
-                        <div class="art-testimonials__info">
-                           <div class="art-testimonials__name">Ханисенко Б. Ю.</div>
-                           <div class="art-testimonials__role">Генеральный директор ООО "Бьюти Концепт"</div>
-                           <div class="art-testimonials__text">
-                              Настоящим письмом выражаем нашу искреннюю благодарность и признательность компании
-                              Artellet за
-                              длительное и плодотворное сотрудничество. Мы высоко ценим установившиеся между нами
-                              партнерские
-                              отношения и взаимопонимание. За последние три года в результате нашей совместной работы у
-                              нас резко
-                              повысилась проходимость клиентов и мы можем смело рекомендовать Вас потенциальным
-                              партнерам. Желаем
-                              Вам дальнейших успехов в работе и достижения поставленных целей!
+                              <p>
+                                 Выражаем благодарность компании Artellect за годы
+                                 плодотворного сотрудничества.
+                              </p>
+
+                              <p>
+                                 На протяжении 4 лет мы использовали комплексное продвижение маркетинга в cepe digital,
+                                 включающее в себя разработку
+                                 стратегии маркетинга, разработку сайтов, контекстную рекламу, SE0 продвижение,
+                                 продвижение
+                                 в отраслевых каталогах и на
+                                 картах, веб-аналитику и работу с социальными сетями.
+                              </p>
+
+                              <p>
+                                 Сотрудники компании не ограничились только маркетингом и помогли нам внедритьCRM,
+                                 организовать бизнес-процессы по обработке обращений, обучили колл-центр, а также
+                                 помогли с отстройкой финансовой
+                                 учетной политики и правильной визуализацией наших бизнес-показателей</p>
+
+                              <p>
+                                 Мы постоянно на связи с маркетологом проекта, который отвечает нам и в будни, и в
+                                 выходные.
+                              </p>
+
+                              <p>
+                                 От лица компании ООО"Эмеркон" я рекомендую команду Artellect к сотрудничеству, как
+                                 надежного и профессионального
+                                 партнера.
+                              </p>
                            </div>
                         </div>
                      </div>
@@ -1685,133 +1758,67 @@
                      <div class="art-clients__logo">
                         <picture><source srcset="img/partners/1.webp" type="image/webp"><img src="img/partners/1.png" width="96" height="128" alt="client logo"></picture>
                      </div>
-                     <div class="art-clients__name border-gradient">Название Название</div>
+                     <div class="art-clients__name border-gradient">Мосвоздух</div>
                   </div>
                   <div class="art-clients__slide swiper-slide border-gradient">
                      <div class="art-clients__logo">
                         <picture><source srcset="img/partners/2.webp" type="image/webp"><img src="img/partners/2.png" width="96" height="128" alt="client logo"></picture>
                      </div>
-                     <div class="art-clients__name border-gradient">Название</div>
+                     <div class="art-clients__name border-gradient">Накладные воротнички</div>
                   </div>
                   <div class="art-clients__slide swiper-slide border-gradient">
                      <div class="art-clients__logo">
                         <picture><source srcset="img/partners/3.webp" type="image/webp"><img src="img/partners/3.png" width="96" height="128" alt="client logo"></picture>
                      </div>
-                     <div class="art-clients__name border-gradient">Название</div>
+                     <div class="art-clients__name border-gradient">Citroen</div>
                   </div>
                   <div class="art-clients__slide swiper-slide border-gradient">
                      <div class="art-clients__logo">
                         <picture><source srcset="img/partners/4.webp" type="image/webp"><img src="img/partners/4.png" width="96" height="128" alt="client logo"></picture>
                      </div>
-                     <div class="art-clients__name border-gradient">Название</div>
+                     <div class="art-clients__name border-gradient">Эмеркон</div>
                   </div>
                   <div class="art-clients__slide swiper-slide border-gradient">
                      <div class="art-clients__logo">
                         <picture><source srcset="img/partners/5.webp" type="image/webp"><img src="img/partners/5.png" width="96" height="128" alt="client logo"></picture>
                      </div>
-                     <div class="art-clients__name border-gradient">Название</div>
+                     <div class="art-clients__name border-gradient">Family Smile</div>
                   </div>
                   <div class="art-clients__slide swiper-slide border-gradient">
                      <div class="art-clients__logo">
                         <picture><source srcset="img/partners/6.webp" type="image/webp"><img src="img/partners/6.png" width="96" height="128" alt="client logo"></picture>
                      </div>
-                     <div class="art-clients__name border-gradient">Название</div>
+                     <div class="art-clients__name border-gradient">Hot Collection</div>
                   </div>
                   <div class="art-clients__slide swiper-slide border-gradient">
                      <div class="art-clients__logo">
                         <picture><source srcset="img/partners/7.webp" type="image/webp"><img src="img/partners/7.png" width="96" height="128" alt="client logo"></picture>
                      </div>
-                     <div class="art-clients__name border-gradient">Название</div>
+                     <div class="art-clients__name border-gradient">Liber Vita</div>
                   </div>
                   <div class="art-clients__slide swiper-slide border-gradient">
                      <div class="art-clients__logo">
                         <picture><source srcset="img/partners/8.webp" type="image/webp"><img src="img/partners/8.png" width="96" height="128" alt="client logo"></picture>
                      </div>
-                     <div class="art-clients__name border-gradient">Название</div>
+                     <div class="art-clients__name border-gradient">Beautick</div>
                   </div>
                   <div class="art-clients__slide swiper-slide border-gradient">
                      <div class="art-clients__logo">
                         <picture><source srcset="img/partners/9.webp" type="image/webp"><img src="img/partners/9.png" width="96" height="128" alt="client logo"></picture>
                      </div>
-                     <div class="art-clients__name border-gradient">Название</div>
+                     <div class="art-clients__name border-gradient">Peugeot</div>
                   </div>
                   <div class="art-clients__slide swiper-slide border-gradient">
                      <div class="art-clients__logo">
                         <picture><source srcset="img/partners/10.webp" type="image/webp"><img src="img/partners/10.png" width="96" height="128" alt="client logo"></picture>
                      </div>
-                     <div class="art-clients__name border-gradient">Название</div>
+                     <div class="art-clients__name border-gradient">Provocateur</div>
                   </div>
                   <div class="art-clients__slide swiper-slide border-gradient">
                      <div class="art-clients__logo">
                         <picture><source srcset="img/partners/11.webp" type="image/webp"><img src="img/partners/11.png" width="96" height="128" alt="client logo"></picture>
                      </div>
-                     <div class="art-clients__name border-gradient">Название</div>
-                  </div>
-                  <div class="art-clients__slide swiper-slide border-gradient">
-                     <div class="art-clients__logo">
-                        <picture><source srcset="img/partners/1.webp" type="image/webp"><img src="img/partners/1.png" width="96" height="128" alt="client logo"></picture>
-                     </div>
-                     <div class="art-clients__name border-gradient">Название</div>
-                  </div>
-                  <div class="art-clients__slide swiper-slide border-gradient">
-                     <div class="art-clients__logo">
-                        <picture><source srcset="img/partners/2.webp" type="image/webp"><img src="img/partners/2.png" width="96" height="128" alt="client logo"></picture>
-                     </div>
-                     <div class="art-clients__name border-gradient">Название</div>
-                  </div>
-                  <div class="art-clients__slide swiper-slide border-gradient">
-                     <div class="art-clients__logo">
-                        <picture><source srcset="img/partners/3.webp" type="image/webp"><img src="img/partners/3.png" width="96" height="128" alt="client logo"></picture>
-                     </div>
-                     <div class="art-clients__name border-gradient">Название</div>
-                  </div>
-                  <div class="art-clients__slide swiper-slide border-gradient">
-                     <div class="art-clients__logo">
-                        <picture><source srcset="img/partners/4.webp" type="image/webp"><img src="img/partners/4.png" width="96" height="128" alt="client logo"></picture>
-                     </div>
-                     <div class="art-clients__name border-gradient">Название</div>
-                  </div>
-                  <div class="art-clients__slide swiper-slide border-gradient">
-                     <div class="art-clients__logo">
-                        <picture><source srcset="img/partners/5.webp" type="image/webp"><img src="img/partners/5.png" width="96" height="128" alt="client logo"></picture>
-                     </div>
-                     <div class="art-clients__name border-gradient">Название</div>
-                  </div>
-                  <div class="art-clients__slide swiper-slide border-gradient">
-                     <div class="art-clients__logo">
-                        <picture><source srcset="img/partners/6.webp" type="image/webp"><img src="img/partners/6.png" width="96" height="128" alt="client logo"></picture>
-                     </div>
-                     <div class="art-clients__name border-gradient">Название</div>
-                  </div>
-                  <div class="art-clients__slide swiper-slide border-gradient">
-                     <div class="art-clients__logo">
-                        <picture><source srcset="img/partners/7.webp" type="image/webp"><img src="img/partners/7.png" width="96" height="128" alt="client logo"></picture>
-                     </div>
-                     <div class="art-clients__name border-gradient">Название</div>
-                  </div>
-                  <div class="art-clients__slide swiper-slide border-gradient">
-                     <div class="art-clients__logo">
-                        <picture><source srcset="img/partners/8.webp" type="image/webp"><img src="img/partners/8.png" width="96" height="128" alt="client logo"></picture>
-                     </div>
-                     <div class="art-clients__name border-gradient">Название</div>
-                  </div>
-                  <div class="art-clients__slide swiper-slide border-gradient">
-                     <div class="art-clients__logo">
-                        <picture><source srcset="img/partners/9.webp" type="image/webp"><img src="img/partners/9.png" width="96" height="128" alt="client logo"></picture>
-                     </div>
-                     <div class="art-clients__name border-gradient">Название</div>
-                  </div>
-                  <div class="art-clients__slide swiper-slide border-gradient">
-                     <div class="art-clients__logo">
-                        <picture><source srcset="img/partners/10.webp" type="image/webp"><img src="img/partners/10.png" width="96" height="128" alt="client logo"></picture>
-                     </div>
-                     <div class="art-clients__name border-gradient">Название</div>
-                  </div>
-                  <div class="art-clients__slide swiper-slide border-gradient">
-                     <div class="art-clients__logo">
-                        <picture><source srcset="img/partners/11.webp" type="image/webp"><img src="img/partners/11.png" width="96" height="128" alt="client logo"></picture>
-                     </div>
-                     <div class="art-clients__name border-gradient">Название</div>
+                     <div class="art-clients__name border-gradient">The Toys</div>
                   </div>
                </div>
             </div>
@@ -1833,53 +1840,56 @@
                   <div class="art-faq__question">
                      Как мне выбрать нужные услуги?
                   </div>
-                  <div class="art-faq__answer">
-                     Контекстная реклама должна быть не дорогой или дешевой , а оптимальной с точки зрения прибыли для
-                     вашего бизнеса. К примеру, средний чек составляет 20 000 р, маржинальность 50%, то есть, 10 000 р.
-                     Выделять на маркетинг вы готовы 40% от маржи. А это значит, что стоимость привлеченного клиента не
-                     должна быть больше 4 000 р. Зная показатели онлайн-конверсии с сайта и офлайн конверсии от отдела
-                     продаж, мы сможем определить оптимальную цену клика и рекламный бюджет, при котором стоимость
-                     привлечения клиента (CPL) будет максимально выгодной.
-                  </div>
+                  <div class="art-faq__answer">Оставьте заявку на сайте или позвоните нам, после брифования маркетолог
+                     составит персональные рекомендации для вашего
+                     бизнеса.</div>
                </div>
                <div class="art-faq__item">
                   <div class="art-faq__question">
                      По каким KPI я смогу оценить работу?
                   </div>
                   <div class="art-faq__answer">
-                     Контекстная реклама должна быть не дорогой или дешевой , а оптимальной с точки зрения прибыли для
-                     вашего бизнеса. К примеру, средний чек составляет 20 000 р, маржинальность 50%, то есть, 10 000 р.
-                     Выделять на маркетинг вы готовы 40% от маржи. А это значит, что стоимость привлеченного клиента не
-                     должна быть больше 4 000 р. Зная показатели онлайн-конверсии с сайта и офлайн конверсии от отдела
-                     продаж, мы сможем определить оптимальную цену клика и рекламный бюджет, при котором стоимость
-                     привлечения клиента (CPL) будет максимально выгодной.
+                     <p>Мы применяем следующие Kpi:</p>
+                     <ul>
+                        <li>CPL (Cost Per Lead) стоимость привлечения лида</li>
+                        <li>Количество привлеченных клиентов</li>
+                        <li>CAC (Customer Acquisition Cost) стоимость привлечения клиента</li>
+                        <li>CR1 (Conversion Ratio) — коэффициент конверсии</li>
+                        <li>LPO (Leads generated Per Offer) — количество лидов от конкретного вида рекламы</li>
+                        <li>LTV (Lifetime Value) Пожизненная ценность клиента</li>
+                        <li>ROMI (Return on Marketing Investment) - окупаемость (возврат) инвестиций в маркетинг</li>
+                        <li>ROAS (return on advertising spend) - окупаемость расходов на рекламу</li>
+                        <li>ARPU (average revenue per user) - средний доход с клиента и т.д)</li>
+                        <li>CR2 (конверсия в продажу)</li>
+                        <li>Общая сумма расходов на digital маркетинг</li>
+                        <li>Выручка (gross profit)</li>
+                     </ul>
+                     <p>По желанию клиента добавляем персональные Kpi</p>
                   </div>
                </div>
                <div class="art-faq__item">
                   <div class="art-faq__question">
                      Какой рекламный канал подходит моему бизнесу?
                   </div>
-                  <div class="art-faq__answer">
-                     Контекстная реклама должна быть не дорогой или дешевой , а оптимальной с точки зрения прибыли для
-                     вашего бизнеса. К примеру, средний чек составляет 20 000 р, маржинальность 50%, то есть, 10 000 р.
-                     Выделять на маркетинг вы готовы 40% от маржи. А это значит, что стоимость привлеченного клиента не
-                     должна быть больше 4 000 р. Зная показатели онлайн-конверсии с сайта и офлайн конверсии от отдела
-                     продаж, мы сможем определить оптимальную цену клика и рекламный бюджет, при котором стоимость
-                     привлечения клиента (CPL) будет максимально выгодной.
+                  <div class="art-faq__answer">Cходу на этот вопрос может ответить только новичок в маркетинге.
+                     Профессионал знает, что под каждый бизнес подходит
+                     персональный набор рекламных каналов и офферов.</div>
+               </div>
+               <div class="art-faq__item">
+                  <div class="art-faq__question">
+                     Что такое цифровой маркетинг «под ключ»?
                   </div>
+                  <div class="art-faq__answer">Маркетинг «под ключ» - это ваш рекламный отдел на аутсорсе. Только без
+                     отчислений с ФОТ, обучения и затрат на подбор
+                     кадров, с огромной экспертизой, опытом и затратами в среднем на 950000 меньше, чем содержание
+                     штатного отдела.</div>
                </div>
                <div class="art-faq__item">
                   <div class="art-faq__question">
                      Можно ли заказать у вас отдельную услугу?
                   </div>
-                  <div class="art-faq__answer">
-                     Контекстная реклама должна быть не дорогой или дешевой , а оптимальной с точки зрения прибыли для
-                     вашего бизнеса. К примеру, средний чек составляет 20 000 р, маржинальность 50%, то есть, 10 000 р.
-                     Выделять на маркетинг вы готовы 40% от маржи. А это значит, что стоимость привлеченного клиента не
-                     должна быть больше 4 000 р. Зная показатели онлайн-конверсии с сайта и офлайн конверсии от отдела
-                     продаж, мы сможем определить оптимальную цену клика и рекламный бюджет, при котором стоимость
-                     привлечения клиента (CPL) будет максимально выгодной.
-                  </div>
+                  <div class="art-faq__answer">Конечно, это возможно. Оставьте заявку, обсудим подходящий вам вариант
+                     сотрудничества.</div>
                </div>
             </div>
          </div>
@@ -1963,6 +1973,88 @@
       </div>
    </div>
 </div>
+
+<div class="discount-popup popup" id="resultsPopup">
+   <div class="discount-popup__body popup__body">
+      <div class="atropos my-atropos2">
+         <div class="atropos-scale">
+            <div class="atropos-rotate">
+               <div class="atropos-inner request-card">
+                  <div class="request-card__title" data-atropos-offset="4">
+                     <span class="gradient-text">Заполните заявку</span> и мы свяжемся с вами
+                  </div>
+                  <div class="request-card__subtitle">
+                     Закажите наш аудит<br>
+                     Мы досконально проанализируем ваши рекламные кампании и дадим рекомендации
+                  </div>
+                  <form class="request-card__form">
+                     <div class="request-card__form-row">
+                        <div class="form-area border-rainbow" data-atropos-offset="4">
+                           <input type="text" class="form-area__input" placeholder="Введите ваше имя">
+                        </div>
+                        <div class="form-area border-rainbow" data-atropos-offset="4">
+                           <input type="text" inputmode="tel" class="form-area__input tel-mask"
+                              placeholder="+7 (495) *** - ** - **">
+                        </div>
+                     </div>
+                     <div class="request-card__form-row">
+                        <p class="policy-agree">Нажимая на кнопку я даю свое информированное согласие на <a
+                              href="">обработку
+                              персональных данных</a>
+                        </p>
+                        <button type="submit" class="button-decore" data-atropos-offset="10">Отправить</button>
+                     </div>
+                  </form>
+                  <div class="request-card__bg">
+                     <picture><source srcset="img/card-bg-dark.webp" type="image/webp"><img src="img/card-bg-dark.png" width="1126" height="524" alt="card bg"></picture>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+<div class="discount-popup popup" id="orderPopup">
+   <div class="discount-popup__body popup__body">
+      <div class="atropos my-atropos2">
+         <div class="atropos-scale">
+            <div class="atropos-rotate">
+               <div class="atropos-inner request-card">
+                  <div class="request-card__title" data-atropos-offset="4">
+                     <span class="gradient-text">Заполните заявку</span> для подробного аудита
+                  </div>
+                  <div class="request-card__subtitle">
+                     Закажите наш аудит<br>
+                     Мы досконально проанализируем ваши рекламные кампании и дадим рекомендации
+                  </div>
+                  <form class="request-card__form">
+                     <div class="request-card__form-row">
+                        <div class="form-area border-rainbow" data-atropos-offset="4">
+                           <input type="text" class="form-area__input" placeholder="Введите ваше имя">
+                        </div>
+                        <div class="form-area border-rainbow" data-atropos-offset="4">
+                           <input type="text" inputmode="tel" class="form-area__input tel-mask"
+                              placeholder="+7 (495) *** - ** - **">
+                        </div>
+                     </div>
+                     <div class="request-card__form-row">
+                        <p class="policy-agree">Нажимая на кнопку я даю свое информированное согласие на <a
+                              href="">обработку
+                              персональных данных</a>
+                        </p>
+                        <button type="submit" class="button-decore" data-atropos-offset="10">Заказать аудит</button>
+                     </div>
+                  </form>
+                  <div class="request-card__bg">
+                     <picture><source srcset="img/card-bg-dark.webp" type="image/webp"><img src="img/card-bg-dark.png" width="1126" height="524" alt="card bg"></picture>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
    <svg viewBox="0 0 33 30" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
    style="display: none;">
    <svg fill="none" viewBox="0 0 24 25" id="icon-arrow-left" xmlns="http://www.w3.org/2000/svg">
@@ -2024,10 +2116,10 @@
          fill="currentColor" />
    </svg>
 </svg>
-   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20251004174523"></script>
-   <script src="https://cdn.jsdelivr.net/npm/atropos@2.0.2/atropos.min.js?_v=20251004174523"></script>
-   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js?_v=20251004174523"></script>
-   <script src="js/app.js?_v=20251004174523"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20251016110348"></script>
+   <script src="https://cdn.jsdelivr.net/npm/atropos@2.0.2/atropos.min.js?_v=20251016110348"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js?_v=20251016110348"></script>
+   <script src="js/app.js?_v=20251016110348"></script>
 </body>
 
 </html>

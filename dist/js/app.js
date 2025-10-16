@@ -144,7 +144,7 @@ __webpack_require__.r(__webpack_exports__);
 _modules_functions_js__WEBPACK_IMPORTED_MODULE_0__.isWebp();
 
 /*---------------------------------------------------------------------------
-
+Work Cards
 ---------------------------------------------------------------------------*/
 document.addEventListener("DOMContentLoaded", () => {
    const cards = document.querySelectorAll(".art-work__card");
@@ -154,13 +154,11 @@ document.addEventListener("DOMContentLoaded", () => {
    cards.forEach(card => {
       const levels = card.querySelectorAll(".art-work__card-level");
       const images = card.querySelectorAll(".art-work__card-image");
-      const descriptions = card.querySelectorAll(".art-work__card-description");
 
-      if (levels.length === 0 || images.length === 0 || descriptions.length === 0) return;
+      if (levels.length === 0 || images.length === 0) return;
 
       levels[0].classList.add("active");
       images[0].classList.add("active");
-      descriptions[0].classList.add("reveal-ltr");
 
       levels.forEach(level => {
          const btn = level.querySelector(".art-work__card-level-btn");
@@ -171,19 +169,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
             levels.forEach(el => el.classList.remove("active"));
             images.forEach(img => img.classList.remove("active"));
-            descriptions.forEach(desc => desc.classList.remove("reveal-ltr"));
 
             level.classList.add("active");
 
             const image = card.querySelector(`.art-work__card-image[data-level="${levelValue}"]`);
-            const description = card.querySelector(`.art-work__card-description[data-level="${levelValue}"]`);
-
             if (image) image.classList.add("active");
-            if (description) description.classList.add("reveal-ltr");
          });
       });
    });
 });
+
 
 
 /*---------------------------------------------------------------------------
@@ -621,6 +616,7 @@ Eff slider
 ---------------------------------------------------------------------------*/
 const efficiencySwiper = initSwiper(".ads-efficiency__slider", {
    slidesPerView: "auto",
+   watchOverflow: true,
    loop: false,
    navigation: {
       nextEl: ".ads-efficiency__slider-next",
@@ -899,27 +895,54 @@ function initSwiper(selector, options, fractionSelector = null) {
    });
 }
 
-/* ---------------- Stages + Testimonials ---------------- */
-initSwiper(".ads-stages__slider", {
-   slidesPerView: 1,
-   spaceBetween: 24,
-   loop: false,
-   speed: 800,
-   parallax: true,
-   effect: "creative",
-   creativeEffect: {
-      prev: { shadow: false, translate: ["-20%", 0, -1] },
-      next: { translate: ["100%", 0, 0] },
-   },
-   navigation: {
-      nextEl: ".ads-stages__slider-next",
-      prevEl: ".ads-stages__slider-prev",
-   },
-}, ".ads-stages__fraction");
+/* ---------------- Stages ---------------- */
 
+document.addEventListener("DOMContentLoaded", () => {
+   const bgContainer = document.querySelector(".ads-stages__content-bg");
+   if (!bgContainer) return;
+
+   const bgImages = bgContainer.querySelectorAll("img");
+
+   const swiper = new Swiper(".ads-stages__slider", {
+      slidesPerView: 1,
+      spaceBetween: 24,
+      watchOverflow: true,
+      loop: false,
+      autoHeight: true,
+      speed: 800,
+      parallax: true,
+      effect: "creative",
+      creativeEffect: {
+         prev: { shadow: false, translate: ["-20%", 0, -1] },
+         next: { translate: ["100%", 0, 0] },
+      },
+      navigation: {
+         nextEl: ".ads-stages__slider-next",
+         prevEl: ".ads-stages__slider-prev",
+      },
+      on: {
+         init(swiper) {
+            updateActiveBg(swiper.activeIndex);
+         },
+         slideChange(swiper) {
+            updateActiveBg(swiper.activeIndex);
+         },
+      },
+   });
+
+   function updateActiveBg(index) {
+      bgImages.forEach((img, i) => {
+         img.classList.toggle("active", i === index);
+      });
+   }
+});
+
+
+/* ---------------- Testimonials ---------------- */
 initSwiper(".art-testimonials__slider", {
    slidesPerView: 1,
    spaceBetween: 24,
+   watchOverflow: true,
    loop: false,
    speed: 800,
    parallax: true,
@@ -939,6 +962,7 @@ initSwiper(".art-testimonials__slider", {
 initSwiper(".art-team__slider", {
    slidesPerView: "auto",
    loop: false,
+   watchOverflow: true,
    pagination: {
       el: ".art-team__slider-pagination",
       clickable: false,
@@ -952,6 +976,7 @@ initSwiper(".art-team__slider", {
 initSwiper(".art-cases__slider", {
    slidesPerView: "auto",
    loop: false,
+   watchOverflow: true,
    pagination: {
       el: ".art-cases__slider-pagination",
       clickable: false,
@@ -965,6 +990,7 @@ initSwiper(".art-cases__slider", {
 initSwiper(".art-actuals__slider", {
    slidesPerView: "auto",
    loop: false,
+   watchOverflow: true,
    pagination: {
       el: ".art-actuals__pagination",
       clickable: false,
@@ -978,6 +1004,7 @@ initSwiper(".art-actuals__slider", {
 initSwiper(".more-articles__slider", {
    slidesPerView: "auto",
    loop: false,
+   watchOverflow: true,
    pagination: {
       el: ".more-articles__slider-pagination",
       clickable: false,
@@ -993,6 +1020,7 @@ initSwiper(".more-articles__slider", {
 initSwiper(".ads-benefits__slider", {
    slidesPerView: "auto",
    loop: false,
+   watchOverflow: true,
    navigation: {
       nextEl: ".ads-benefits__slider-next",
       prevEl: ".ads-benefits__slider-prev",
@@ -1004,6 +1032,7 @@ initSwiper(".ads-benefits__slider", {
 initSwiper(".ya-benefit__slider", {
    slidesPerView: 1,
    spaceBetween: 24,
+   watchOverflow: true,
    loop: false,
    navigation: {
       nextEl: ".ya-benefit__slider-next",
@@ -1016,6 +1045,7 @@ initSwiper(".ya-benefit__slider", {
 initSwiper(".em-callcenter__slider", {
    slidesPerView: 1,
    spaceBetween: 24,
+   watchOverflow: true,
    loop: false,
    navigation: {
       nextEl: ".em-callcenter__slider-next",
@@ -1030,6 +1060,7 @@ initSwiper(".em-callcenter__slider", {
 initSwiper(".art-clients__slider", {
    slidesPerView: 'auto',
    spaceBetween: 24,
+   watchOverflow: true,
    loop: true,
    speed: 2000,
    autoplay: {
@@ -1042,6 +1073,7 @@ initSwiper(".art-clients__slider", {
 initSwiper(".art-marketing__slider", {
    slidesPerView: "auto",
    loop: false,
+   watchOverflow: true,
    navigation: {
       nextEl: ".art-marketing__slider-next",
       prevEl: ".art-marketing__slider-prev",
@@ -1086,6 +1118,7 @@ analysBlocks.forEach(block => {
    const swiper = new Swiper(slider, {
       slidesPerView: 1,
       spaceBetween: 24,
+      watchOverflow: true,
       loop: false,
       navigation: {
          nextEl: block.querySelector(".em-analysis__slider-next"),
@@ -1272,55 +1305,10 @@ document.addEventListener("DOMContentLoaded", () => {
    });
 });
 
+
 /*---------------------------------------------------------------------------
 About anim
 ---------------------------------------------------------------------------*/
-/* document.addEventListener("DOMContentLoaded", () => {
-   gsap.registerPlugin(ScrollTrigger);
-
-   const tl = gsap.timeline({
-      scrollTrigger: {
-         trigger: ".fv-about__body",
-         start: "top top",
-         end: "+=1000",
-         scrub: true,
-         pin: true,
-      }
-   });
-
-   // логотип-текст (scale вместо width)
-   tl.to(".fv-about__logo-text", {
-      scale: 0.7, // подбери нужное значение
-      y: '20vh',
-      transformOrigin: "center center",
-      ease: "none"
-   }, 0);
-
-   // иконка логотипа
-   tl.to(".fv-about__logo-icon", {
-      y: '20vh',
-      ease: "none"
-   }, 0);
-
-   // круг (scale + поворот)
-   tl.to(".fv-about__circle", {
-      scale: 0.5,   // подбери чтобы вместо width:430px совпадало
-      rotate: 30,
-      y: '20vh',
-      transformOrigin: "center center",
-      ease: "none"
-   }, 0);
-
-   // заголовок
-   tl.fromTo(".fv-about__page-name",
-      { opacity: 0, y: 0 },
-      { opacity: 1, y: '20vh', ease: "none" },
-      0
-   );
-});
- */
-
-
 document.addEventListener("DOMContentLoaded", () => {
    if (window.innerWidth < 980) return;
 
@@ -1365,6 +1353,106 @@ document.addEventListener("DOMContentLoaded", () => {
    updateAnimation();
 });
 
+
+/*---------------------------------------------------------------------------
+Funnel anim 
+---------------------------------------------------------------------------*/
+document.addEventListener("DOMContentLoaded", () => {
+   const funnel = document.querySelector(".funnel");
+   if (!funnel) return;
+
+   const rainContainer = funnel.querySelector(".funnel__rain");
+   const starsContainer = funnel.querySelector(".funnel__stars");
+   const paths = funnel.querySelectorAll(".funnel__path");
+   const dropSrc = rainContainer?.querySelector("img")?.getAttribute("src");
+   const starSrc = starsContainer?.querySelector("img")?.getAttribute("src");
+
+   // --- ДОЖДЬ ---
+   if (rainContainer && dropSrc) {
+      function createDrop() {
+         const drop = document.createElement("img");
+         drop.src = dropSrc;
+
+         const size = Math.random() * 5 + 1;
+         const left = Math.random() * 100;
+         const duration = Math.random() * 3.5 + 1;
+         const delay = Math.random() * 0.5;
+
+         drop.style.left = `${left}%`;
+         drop.style.width = `${size}px`;
+         drop.style.animationDuration = `${duration}s`;
+         drop.style.animationDelay = `${delay}s`;
+
+         rainContainer.appendChild(drop);
+         drop.addEventListener("animationend", () => drop.remove());
+      }
+
+      setInterval(() => {
+         const count = Math.floor(Math.random() * 3) + 1;
+         for (let i = 0; i < count; i++) createDrop();
+      }, 400);
+   }
+
+   // --- ЗВЁЗДЫ ---
+   if (starsContainer && starSrc) {
+      function createStars() {
+         const starCount = Math.floor(Math.random() * 2) + 3; // 3–4 звезды
+         for (let i = 0; i < starCount; i++) {
+            const star = document.createElement("img");
+            star.src = starSrc;
+
+            const left = Math.random() * 100;
+            const size = Math.random() * 50 + 8;
+            const duration = Math.random() * 4 + 3;
+            const delay = Math.random() * 0.5;
+
+            star.style.left = `${left}%`;
+            star.style.top = `${-Math.random() * 10}%`;
+            star.style.width = `${size}px`;
+            star.style.animationDuration = `${duration}s`;
+            star.style.animationDelay = `${delay}s`;
+
+            starsContainer.appendChild(star);
+            star.addEventListener("animationend", () => star.remove());
+         }
+      }
+
+      setInterval(() => {
+         if (Math.random() > 0.6) createStars();
+      }, 500);
+   }
+
+   // --- ПУТЬ ---
+   if (paths.length > 0) {
+      let currentIndex = 0;
+
+      function animatePath(index) {
+         const path = paths[index];
+         const duration = Math.random() * 3 + 3; // 3–6 сек
+         const overlap = duration * (Math.random() * 0.2 + 0.5); // через 50–70%
+
+         path.style.animationDuration = `${duration}s`;
+         path.style.opacity = "1";
+         path.classList.add("falling");
+
+         setTimeout(() => {
+            const nextIndex = (index + 1) % paths.length;
+            animatePath(nextIndex);
+         }, overlap * 1000);
+
+         path.addEventListener(
+            "animationend",
+            () => {
+               path.classList.remove("falling");
+               path.style.opacity = "0";
+            },
+            { once: true }
+         );
+      }
+
+      animatePath(0);
+   }
+});
 
 })();
 

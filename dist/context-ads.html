@@ -5,6 +5,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
    <meta name="format-detection" content="telephone=no">
+   <meta name="robots" content="noindex, nofollow">
    <!-- Favicon -->
    <link rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png">
    <link rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png">
@@ -12,8 +13,8 @@
    <link rel="icon" type="image/png" sizes="512x512" href="img/fav/android-chrome-512x512.png">
    <link rel="apple-touch-icon" sizes="180x180" href="img/fav/apple-touch-icon.png">
    <link rel="icon" type="image/x-icon" href="img/fav/favicon.ico">
-   <!--<meta name="msapplication-TileColor" content="#000000">
-   <meta name="theme-color" content="#000000">-->
+   <meta name="msapplication-TileColor" content="#000000">
+   <meta name="theme-color" content="#000000">
    <!-- Meta Description -->
    <meta name="description" content="">
    <meta property="og:title" content="">
@@ -21,10 +22,10 @@
    <meta property="og:url" content="">
    <meta property="og:type" content="website">
    <!-- Styles -->
-   <link href="https://cdn.jsdelivr.net/npm/atropos@2.0.2/atropos.min.css?_v=20251004174523" rel="stylesheet">
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20251004174523" />
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css?_v=20251004174523">
-   <link rel="stylesheet" href="css/style.min.css?_v=20251004174523">
+   <link href="https://cdn.jsdelivr.net/npm/atropos@2.0.2/atropos.min.css?_v=20251016110348" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20251016110348" />
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css?_v=20251016110348">
+   <link rel="stylesheet" href="css/style.min.css?_v=20251016110348">
    <title>Контекстная реклама</title>
 </head>
 
@@ -51,7 +52,8 @@
                <div class="ads-hero__card border-gradient">
                   <div class="ads-hero__card-head">
                      <p>Требуется контекстная реклама под ключ? Настроим недорого и профессионально.</p>
-                     <button type="button" class="button-gradient"><span>Запустить генератор продаж</span></button>
+                     <button type="button" class="button-gradient open-popup" data-popup="resultsPopup"><span>Запустить
+                           генератор продаж</span></button>
                   </div>
                   <div class="ads-hero__card-main">
                      <div class="ads-hero__card-image">
@@ -274,7 +276,7 @@
                            <div class="ads-benefits__card-gif">
                               <img src="img/context-ads/b-6.gif" width="274" height="180" alt="gif" loading="lazy">
                            </div>
-                           <div class="ads-benefits__card-name">Защищаем рекламу от скликивания и, расхода бюджета</div>
+                           <div class="ads-benefits__card-name">Защищаем рекламу от скликивания и расхода бюджета</div>
                         </div>
                         <div class="ads-benefits__card-back">
                            <p>Защищаем рекламу от скликивания и, расхода бюджета</p>
@@ -304,7 +306,7 @@
          </div>
       </section>
 
-      <section class="ads-calculator">
+      <section class="ads-calculator art-calculator">
          <div class="ads-calculator__body container">
             <div class="ads-calculator__head">
                <h2 class="ads-calculator__title section-title">Рассчитайте вашу прибыль <br>
@@ -316,362 +318,411 @@
                </div>
             </div>
             <div class="ads-calculator__tabs">
-               <div class="ads-calculator__tab active" data-calc-tab="1">По нагрузке на отдел продаж</div>
-               <div class="ads-calculator__tab" data-calc-tab="2">По желаемому бюджету</div>
-               <div class="ads-calculator__tab" data-calc-tab="3">По желаемой выручке</div>
+               <div class="ads-calculator__tab border-gradient border-rainbow active " data-calc-tab="1">По нагрузке на
+                  отдел продаж
+               </div>
+               <div class="ads-calculator__tab border-gradient border-rainbow" data-calc-tab="2">По желаемому бюджету
+               </div>
+               <div class="ads-calculator__tab border-gradient border-rainbow" data-calc-tab="3">По желаемой выручке
+               </div>
             </div>
+
             <div class="ads-calculator__block active" data-calc-block="1">
-               <div class="ads-calculator__card">
+               <div class="ads-calculator__card border-gradient">
                   <div class="ads-calculator__subtitle">Вводные данные:</div>
                   <div class="ads-calculator__row">
-                     <div class="ads-calculator__area">
-                        <div class="ads-calculator__label">Сколько лидов (обращений) сможете обработать?
+                     <div class="ads-calculator__area no-valid">
+                        <div class="ads-calculator__label gradient-text">Сколько лидов (обращений) сможете обработать?
                            <span class="tips">
                               <span class="tips__btn">?</span>
-                              <span class="tips__message">Подсказка</span>
+                              <span class="tips__message">Укажите объем лидов, который вы сможете обработать в течение
+                                 месяца</span>
                            </span>
                         </div>
-                        <input type="number" class="ads-calculator__input" inputmode="numeric"
-                           placeholder="Укажите кол-во">
+                        <div class="border-gradient">
+                           <input type="number" class="ads-calculator__input" inputmode="numeric"
+                              placeholder="Укажите кол-во">
+                        </div>
+                        <div class="ads-calculator__error-text">Неверное значение</div>
                      </div>
                   </div>
                   <div class="ads-calculator__row">
                      <div class="ads-calculator__area">
-                        <div class="ads-calculator__label">Средняя маржинальность:
+                        <div class="ads-calculator__label gradient-text">Средняя маржинальность:
                            <span class="tips">
                               <span class="tips__btn">?</span>
-                              <span class="tips__message">Подсказка</span>
+                              <span class="tips__message">Укажите среднюю рентабельность по вашей валовой прибыли</span>
                            </span>
                         </div>
-                        <input type="number" class="ads-calculator__input" inputmode="numeric"
-                           placeholder="Укажите в процентах">
+                        <div class="border-gradient">
+                           <input type="number" class="ads-calculator__input" inputmode="numeric"
+                              placeholder="Укажите в процентах">
+                        </div>
                      </div>
                      <div class="ads-calculator__area">
-                        <div class="ads-calculator__label">Средний чек:
+                        <div class="ads-calculator__label gradient-text">Средний чек:
                            <span class="tips">
                               <span class="tips__btn">?</span>
-                              <span class="tips__message">Подсказка</span>
+                              <span class="tips__message">Укажите среднюю сумму, которую вам приносит клиент в
+                                 месяц</span>
                            </span>
                         </div>
-                        <input type="number" class="ads-calculator__input" inputmode="numeric"
-                           placeholder="Укажите сумму в рублях">
+                        <div class="border-gradient">
+                           <input type="number" class="ads-calculator__input" inputmode="numeric"
+                              placeholder="Укажите сумму в рублях">
+                        </div>
                      </div>
                   </div>
                   <div class="ads-calculator__row">
                      <div class="ads-calculator__area">
-                        <div class="ads-calculator__label">Коэффициент рентабельности маркетинга (ROMI):
+                        <div class="ads-calculator__label gradient-text">Коэффициент рентабельности маркетинга (ROMI):
                            <span class="tips">
                               <span class="tips__btn">?</span>
-                              <span class="tips__message">Подсказка</span>
+                              <span class="tips__message">Укажите желаемый процент возврата инвестиций от вложений в
+                                 маркетинг</span>
                            </span>
                         </div>
-                        <input type="number" class="ads-calculator__input" inputmode="numeric"
-                           placeholder="Укажите в процентах">
+                        <div class="border-gradient">
+                           <input type="number" class="ads-calculator__input" inputmode="numeric"
+                              placeholder="Укажите в процентах">
+                        </div>
                      </div>
                   </div>
                   <div class="ads-calculator__row">
                      <div class="ads-calculator__area">
-                        <div class="ads-calculator__label">Средняя конверсия из обращения в продажу (%):
+                        <div class="ads-calculator__label gradient-text">Средняя конверсия из обращения в продажу (%):
                            <span class="tips">
                               <span class="tips__btn">?</span>
-                              <span class="tips__message">Подсказка</span>
+                              <span class="tips__message">Какой процент обратившихся к вам людей становятся клиентами и
+                                 заказывают товар/услугу</span>
                            </span>
                         </div>
-                        <input type="number" class="ads-calculator__input" inputmode="numeric"
-                           placeholder="Укажите в процентах">
+                        <div class="border-gradient">
+                           <input type="number" class="ads-calculator__input" inputmode="numeric"
+                              placeholder="Укажите в процентах">
+                        </div>
                      </div>
                   </div>
-                  <div class="ads-calculator__card-bg">
-                     <picture><source srcset="img/calc-bg-sm.webp" type="image/webp"><img src="img/calc-bg-sm.png" width="690" height="500" alt="bg"></picture>
-                  </div>
+                  <div class="ads-calculator__card-dec"></div>
+                  <div class="ads-calculator__card-dec"></div>
                </div>
-               <div class="ads-calculator__results disabled">
+               <div class="ads-calculator__results border-gradient">
                   <div class="ads-calculator__subtitle">Результат расчёта:</div>
                   <div class="ads-calculator__result">
                      <p>Бюджет на маркетинг в месяц: <span>— ₽</span></p>
                      <span class="tips">
                         <span class="tips__btn">?</span>
-                        <span class="tips__message">Подсказка</span>
+                        <span class="tips__message">Ориентировочный бюджет на ваш маркетинговый отдел, включая
+                           ФОТ</span>
                      </span>
                   </div>
                   <div class="ads-calculator__result">
                      <p>Допустимая стоимость клиента (CAC): <span>— ₽</span></p>
                      <span class="tips">
                         <span class="tips__btn">?</span>
-                        <span class="tips__message">Подсказка</span>
+                        <span class="tips__message">При заданных выше параметрах вы можете привлекать себе клиента не
+                           дороже указанной суммы</span>
                      </span>
                   </div>
                   <div class="ads-calculator__result">
                      <p>Допустимая стоимость лида (CPL): <span>— ₽</span></p>
                      <span class="tips">
                         <span class="tips__btn">?</span>
-                        <span class="tips__message">Подсказка</span>
+                        <span class="tips__message">При заданных выше параметрах вы можете привлекать себе заявку
+                           (обращение) не дороже указанной суммы</span>
                      </span>
                   </div>
                   <div class="ads-calculator__result">
                      <p>Необходимое кол-во клиентов/месяц: <span>— ₽</span></p>
                      <span class="tips">
                         <span class="tips__btn">?</span>
-                        <span class="tips__message">Подсказка</span>
+                        <span class="tips__message">Минимальное кол-во клиентов для обеспечения заданной выручки</span>
                      </span>
                   </div>
                   <div class="ads-calculator__result">
                      <p>Выручка в месяц: <span>— ₽</span></p>
                      <span class="tips">
                         <span class="tips__btn">?</span>
-                        <span class="tips__message">Подсказка</span>
+                        <span class="tips__message">Ориентировочная выручка, которая будет сформирована из заданных
+                           параметров</span>
                      </span>
                   </div>
                   <div class="ads-calculator__result">
-                     <p>Валовая прибыль: <span>— ₽</span></p>
+                     <p>Вaловая прибыль: <span>— ₽</span></p>
                      <span class="tips">
                         <span class="tips__btn">?</span>
-                        <span class="tips__message">Подсказка</span>
+                        <span class="tips__message">Ориентировочная валовая прибыль после вычета расходов на
+                           маркетинг</span>
                      </span>
                   </div>
-                  <button type="button" class="button-decore">Узнайте как получить этот результат!</button>
-                  <div class="ads-calculator__results-bg">
-                     <picture><source srcset="img/calc-bg-sm-mob.webp" type="image/webp"><img src="img/calc-bg-sm-mob.png" width="510" height="604" alt="bg"></picture>
-                  </div>
-               </div>
-               <div class="ads-calculator__block-bg">
-                  <picture><source srcset="img/calc-bg.webp" type="image/webp"><img src="img/calc-bg.png" width="1200" height="550" alt="bg"></picture>
+                  <button type="button" class="button-decore open-popup" data-popup="resultsPopup">Узнайте как получить
+                     результат!</button>
                </div>
             </div>
-            <div class="ads-calculator__block" data-calc-block="2">
-               <div class="ads-calculator__card">
+
+            <div class="ads-calculator__block " data-calc-block="2">
+               <div class="ads-calculator__card border-gradient">
                   <div class="ads-calculator__subtitle">Вводные данные:</div>
                   <div class="ads-calculator__row">
                      <div class="ads-calculator__area">
-                        <div class="ads-calculator__label">Сколько лидов (обращений) сможете обработать?
+                        <div class="ads-calculator__label gradient-text">Вложения в маркетинг:
                            <span class="tips">
                               <span class="tips__btn">?</span>
-                              <span class="tips__message">Подсказка</span>
+                              <span class="tips__message">Укажите объем бюджета, который вы можете потратить на
+                                 маркетинг, включая ФОТ</span>
                            </span>
                         </div>
-                        <input type="number" class="ads-calculator__input" inputmode="numeric"
-                           placeholder="Укажите кол-во">
+                        <div class="border-gradient">
+                           <input type="number" class="ads-calculator__input" inputmode="numeric"
+                              placeholder="Укажите кол-во">
+                        </div>
+                     </div>
+                     <div class="ads-calculator__area">
+                        <div class="ads-calculator__label gradient-text">Средний чек:
+                           <span class="tips">
+                              <span class="tips__btn">?</span>
+                              <span class="tips__message">Укажите среднюю сумму, которую вам приносит клиент в
+                                 месяц</span>
+                           </span>
+                        </div>
+                        <div class="border-gradient">
+                           <input type="number" class="ads-calculator__input" inputmode="numeric"
+                              placeholder="Укажите в процентах">
+                        </div>
                      </div>
                   </div>
                   <div class="ads-calculator__row">
                      <div class="ads-calculator__area">
-                        <div class="ads-calculator__label">Средняя маржинальность:
+                        <div class="ads-calculator__label gradient-text">Средняя маржинальность (%):
                            <span class="tips">
                               <span class="tips__btn">?</span>
-                              <span class="tips__message">Подсказка</span>
+                              <span class="tips__message">Укажите среднюю рентабельность по вашей валовой прибыли</span>
                            </span>
                         </div>
-                        <input type="number" class="ads-calculator__input" inputmode="numeric"
-                           placeholder="Укажите в процентах">
-                     </div>
-                     <div class="ads-calculator__area">
-                        <div class="ads-calculator__label">Средний чек:
-                           <span class="tips">
-                              <span class="tips__btn">?</span>
-                              <span class="tips__message">Подсказка</span>
-                           </span>
+                        <div class="border-gradient">
+                           <input type="number" class="ads-calculator__input" inputmode="numeric"
+                              placeholder="Укажите сумму в рублях">
                         </div>
-                        <input type="number" class="ads-calculator__input" inputmode="numeric"
-                           placeholder="Укажите сумму в рублях">
                      </div>
                   </div>
                   <div class="ads-calculator__row">
                      <div class="ads-calculator__area">
-                        <div class="ads-calculator__label">Коэффициент рентабельности маркетинга (ROMI):
+                        <div class="ads-calculator__label gradient-text">Коэффициент рентабельности маркетинга (ROMI):
                            <span class="tips">
                               <span class="tips__btn">?</span>
-                              <span class="tips__message">Подсказка</span>
+                              <span class="tips__message">Укажите желаемый процент возврата инвестиций от вложений в
+                                 маркетинг</span>
                            </span>
                         </div>
-                        <input type="number" class="ads-calculator__input" inputmode="numeric"
-                           placeholder="Укажите в процентах">
+                        <div class="border-gradient">
+                           <input type="number" class="ads-calculator__input" inputmode="numeric"
+                              placeholder="Укажите в процентах">
+                        </div>
                      </div>
                   </div>
                   <div class="ads-calculator__row">
                      <div class="ads-calculator__area">
-                        <div class="ads-calculator__label">Средняя конверсия из обращения в продажу (%):
+                        <div class="ads-calculator__label gradient-text">Средняя конверсия из обращения в продажу (%):
                            <span class="tips">
                               <span class="tips__btn">?</span>
-                              <span class="tips__message">Подсказка</span>
+                              <span class="tips__message">Какой процент обратившихся к вам людей становятся клиентами и
+                                 заказывают
+                                 товар/услугу</span>
                            </span>
                         </div>
-                        <input type="number" class="ads-calculator__input" inputmode="numeric"
-                           placeholder="Укажите в процентах">
+                        <div class="border-gradient">
+                           <input type="number" class="ads-calculator__input" inputmode="numeric"
+                              placeholder="Укажите в процентах">
+                        </div>
                      </div>
                   </div>
-                  <div class="ads-calculator__card-bg">
-                     <picture><source srcset="img/calc-bg-sm.webp" type="image/webp"><img src="img/calc-bg-sm.png" width="690" height="500" alt="bg"></picture>
-                  </div>
+                  <div class="ads-calculator__card-dec"></div>
+                  <div class="ads-calculator__card-dec"></div>
                </div>
-               <div class="ads-calculator__results disabled">
+               <div class="ads-calculator__results border-gradient">
                   <div class="ads-calculator__subtitle">Результат расчёта:</div>
                   <div class="ads-calculator__result">
-                     <p>Бюджет на маркетинг в месяц: <span>— ₽</span></p>
+                     <p>Необходимое кол-во лидов/месяц: <span>—</span></p>
                      <span class="tips">
                         <span class="tips__btn">?</span>
-                        <span class="tips__message">Подсказка</span>
+                        <span class="tips__message">Минимальное кол-во заявок для обеспечения оптимиальной загрузки
+                           бюджета</span>
                      </span>
                   </div>
                   <div class="ads-calculator__result">
-                     <p>Допустимая стоимость клиента (CAC): <span>— ₽</span></p>
+                     <p>Необходимое кол-во клиентов/месяц: <span>—</span></p>
                      <span class="tips">
                         <span class="tips__btn">?</span>
-                        <span class="tips__message">Подсказка</span>
+                        <span class="tips__message">Нужно будет обработать клиентов при заданных параметрах</span>
                      </span>
                   </div>
                   <div class="ads-calculator__result">
                      <p>Допустимая стоимость лида (CPL): <span>— ₽</span></p>
                      <span class="tips">
                         <span class="tips__btn">?</span>
-                        <span class="tips__message">Подсказка</span>
+                        <span class="tips__message">При заданных выше параметрах вы можете привлекать себе заявку
+                           (обращение) не дороже указанной суммы</span>
                      </span>
                   </div>
                   <div class="ads-calculator__result">
-                     <p>Необходимое кол-во клиентов/месяц: <span>— ₽</span></p>
+                     <p>Допустимая стоимость клиента (CAC): <span>— ₽</span></p>
                      <span class="tips">
                         <span class="tips__btn">?</span>
-                        <span class="tips__message">Подсказка</span>
+                        <span class="tips__message">При заданных выше параметрах вы можете привлекать себе клиента не
+                           дороже указанной суммы</span>
                      </span>
                   </div>
                   <div class="ads-calculator__result">
                      <p>Выручка в месяц: <span>— ₽</span></p>
                      <span class="tips">
                         <span class="tips__btn">?</span>
-                        <span class="tips__message">Подсказка</span>
+                        <span class="tips__message">Ориентировочная выручка, которая будет сформирована из заданных
+                           параметров</span>
                      </span>
                   </div>
                   <div class="ads-calculator__result">
-                     <p>Валовая прибыль: <span>— ₽</span></p>
+                     <p>Вaловая прибыль: <span>— ₽</span></p>
                      <span class="tips">
                         <span class="tips__btn">?</span>
-                        <span class="tips__message">Подсказка</span>
+                        <span class="tips__message">Ориентировочная валовая прибыль после вычета расходов на
+                           маркетинг</span>
                      </span>
                   </div>
-                  <button type="button" class="button-decore">Узнайте как получить этот результат!</button>
-                  <div class="ads-calculator__results-bg">
-                     <picture><source srcset="img/calc-bg-sm-mob.webp" type="image/webp"><img src="img/calc-bg-sm-mob.png" width="510" height="604" alt="bg"></picture>
-                  </div>
-               </div>
-               <div class="ads-calculator__block-bg">
-                  <picture><source srcset="img/calc-bg.webp" type="image/webp"><img src="img/calc-bg.png" width="1200" height="550" alt="bg"></picture>
+                  <button type="button" class="button-decore open-popup" data-popup="resultsPopup">Узнайте как получить
+                     результат!</button>
                </div>
             </div>
-            <div class="ads-calculator__block" data-calc-block="3">
-               <div class="ads-calculator__card">
+
+            <div class="ads-calculator__block " data-calc-block="3">
+               <div class="ads-calculator__card border-gradient">
                   <div class="ads-calculator__subtitle">Вводные данные:</div>
                   <div class="ads-calculator__row">
                      <div class="ads-calculator__area">
-                        <div class="ads-calculator__label">Сколько лидов (обращений) сможете обработать?
+                        <div class="ads-calculator__label gradient-text">Выручка в месяц:
                            <span class="tips">
                               <span class="tips__btn">?</span>
-                              <span class="tips__message">Подсказка</span>
+                              <span class="tips__message">Укажите объем выручки (оборот), которую вы хотели бы получать
+                                 (минимально 100 000 р.)</span>
                            </span>
                         </div>
-                        <input type="number" class="ads-calculator__input" inputmode="numeric"
-                           placeholder="Укажите кол-во">
+                        <div class="border-gradient">
+                           <input type="number" class="ads-calculator__input" inputmode="numeric"
+                              placeholder="Укажите кол-во">
+                        </div>
+                     </div>
+                     <div class="ads-calculator__area">
+                        <div class="ads-calculator__label gradient-text">Средний чек:
+                           <span class="tips">
+                              <span class="tips__btn">?</span>
+                              <span class="tips__message">Укажите среднюю сумму, которую вам приносит клиент в
+                                 месяц</span>
+                           </span>
+                        </div>
+                        <div class="border-gradient">
+                           <input type="number" class="ads-calculator__input" inputmode="numeric"
+                              placeholder="Укажите в процентах">
+                        </div>
                      </div>
                   </div>
                   <div class="ads-calculator__row">
                      <div class="ads-calculator__area">
-                        <div class="ads-calculator__label">Средняя маржинальность:
+                        <div class="ads-calculator__label gradient-text">Средняя маржинальность (%):
                            <span class="tips">
                               <span class="tips__btn">?</span>
-                              <span class="tips__message">Подсказка</span>
+                              <span class="tips__message">Укажите среднюю рентабельность по вашей валовой прибыли</span>
                            </span>
                         </div>
-                        <input type="number" class="ads-calculator__input" inputmode="numeric"
-                           placeholder="Укажите в процентах">
-                     </div>
-                     <div class="ads-calculator__area">
-                        <div class="ads-calculator__label">Средний чек:
-                           <span class="tips">
-                              <span class="tips__btn">?</span>
-                              <span class="tips__message">Подсказка</span>
-                           </span>
+                        <div class="border-gradient">
+                           <input type="number" class="ads-calculator__input" inputmode="numeric"
+                              placeholder="Укажите сумму в рублях">
                         </div>
-                        <input type="number" class="ads-calculator__input" inputmode="numeric"
-                           placeholder="Укажите сумму в рублях">
                      </div>
                   </div>
                   <div class="ads-calculator__row">
                      <div class="ads-calculator__area">
-                        <div class="ads-calculator__label">Коэффициент рентабельности маркетинга (ROMI):
+                        <div class="ads-calculator__label gradient-text">Планируемая доля расходов на маркетинг от
+                           выручки (%):
                            <span class="tips">
                               <span class="tips__btn">?</span>
-                              <span class="tips__message">Подсказка</span>
+                              <span class="tips__message">Укажите ориентировочный процент от выручки, который вы готовы
+                                 потратить на маркетинг</span>
                            </span>
                         </div>
-                        <input type="number" class="ads-calculator__input" inputmode="numeric"
-                           placeholder="Укажите в процентах">
+                        <div class="border-gradient">
+                           <input type="number" class="ads-calculator__input" inputmode="numeric"
+                              placeholder="Укажите в процентах">
+                        </div>
                      </div>
                   </div>
                   <div class="ads-calculator__row">
                      <div class="ads-calculator__area">
-                        <div class="ads-calculator__label">Средняя конверсия из обращения в продажу (%):
+                        <div class="ads-calculator__label gradient-text">Средняя конверсия из обращения в продажу (%):
                            <span class="tips">
                               <span class="tips__btn">?</span>
-                              <span class="tips__message">Подсказка</span>
+                              <span class="tips__message">Какой процент обратившихся к вам людей становятся клиентами и
+                                 заказывают
+                                 товар/услугу</span>
                            </span>
                         </div>
-                        <input type="number" class="ads-calculator__input" inputmode="numeric"
-                           placeholder="Укажите в процентах">
+                        <div class="border-gradient">
+                           <input type="number" class="ads-calculator__input" inputmode="numeric"
+                              placeholder="Укажите в процентах">
+                        </div>
                      </div>
                   </div>
-                  <div class="ads-calculator__card-bg">
-                     <picture><source srcset="img/calc-bg-sm.webp" type="image/webp"><img src="img/calc-bg-sm.png" width="690" height="500" alt="bg"></picture>
-                  </div>
+                  <div class="ads-calculator__card-dec"></div>
+                  <div class="ads-calculator__card-dec"></div>
                </div>
-               <div class="ads-calculator__results disabled">
+               <div class="ads-calculator__results border-gradient">
                   <div class="ads-calculator__subtitle">Результат расчёта:</div>
                   <div class="ads-calculator__result">
                      <p>Бюджет на маркетинг в месяц: <span>— ₽</span></p>
                      <span class="tips">
                         <span class="tips__btn">?</span>
-                        <span class="tips__message">Подсказка</span>
+                        <span class="tips__message">Ориентировочный бюджет на ваш маркетинговый отдел, включая
+                           ФОТ</span>
                      </span>
                   </div>
                   <div class="ads-calculator__result">
                      <p>Допустимая стоимость клиента (CAC): <span>— ₽</span></p>
                      <span class="tips">
                         <span class="tips__btn">?</span>
-                        <span class="tips__message">Подсказка</span>
+                        <span class="tips__message">При заданных выше параметрах вы можете привлекать себе клиента не
+                           дороже указанной суммы</span>
                      </span>
                   </div>
                   <div class="ads-calculator__result">
                      <p>Допустимая стоимость лида (CPL): <span>— ₽</span></p>
                      <span class="tips">
                         <span class="tips__btn">?</span>
-                        <span class="tips__message">Подсказка</span>
+                        <span class="tips__message">При заданных выше параметрах вы можете привлекать себе заявку
+                           (обращение) не дороже указанной суммы</span>
                      </span>
                   </div>
                   <div class="ads-calculator__result">
                      <p>Необходимое кол-во клиентов/месяц: <span>— ₽</span></p>
                      <span class="tips">
                         <span class="tips__btn">?</span>
-                        <span class="tips__message">Подсказка</span>
+                        <span class="tips__message">Минимальное кол-во клиентов для обеспечения заданной выручки</span>
                      </span>
                   </div>
                   <div class="ads-calculator__result">
-                     <p>Выручка в месяц: <span>— ₽</span></p>
+                     <p>Необходимое кол-во лидов/месяц: <span>— ₽</span></p>
                      <span class="tips">
                         <span class="tips__btn">?</span>
-                        <span class="tips__message">Подсказка</span>
+                        <span class="tips__message">Минимальное кол-во заявок для обеспечения заданной выручки</span>
                      </span>
                   </div>
                   <div class="ads-calculator__result">
-                     <p>Валовая прибыль: <span>— ₽</span></p>
+                     <p>Вaловая прибыль: <span>— ₽</span></p>
                      <span class="tips">
                         <span class="tips__btn">?</span>
-                        <span class="tips__message">Подсказка</span>
+                        <span class="tips__message">Ориентировочная валовая прибыль после вычета расходов на
+                           маркетинг</span>
                      </span>
                   </div>
-                  <button type="button" class="button-decore">Узнайте как получить этот результат!</button>
-                  <div class="ads-calculator__results-bg">
-                     <picture><source srcset="img/calc-bg-sm-mob.webp" type="image/webp"><img src="img/calc-bg-sm-mob.png" width="510" height="604" alt="bg"></picture>
-                  </div>
-               </div>
-               <div class="ads-calculator__block-bg">
-                  <picture><source srcset="img/calc-bg.webp" type="image/webp"><img src="img/calc-bg.png" width="1200" height="550" alt="bg"></picture>
+                  <button type="button" class="button-decore open-popup" data-popup="resultsPopup">Узнайте как получить
+                     результат!</button>
                </div>
             </div>
          </div>
@@ -679,10 +730,8 @@
 
       <section class="ads-types">
          <div class="ads-types__body container">
-            <h2 class="ads-types__title section-title">Какой вид контекстной рекламы заказать?</h2>
-            <div class="ads-types__subtitle">Контекстная реклама — это вид интернет-рекламы, которая показывается
-               в поисковой выдаче в соответствии с поисковым запросом, тематикой сайта, содержанием страниц и интересами
-               пользователя.</div>
+            <h2 class="ads-types__title section-title">Какой вид <br> контекстной рекламы заказать?</h2>
+
             <div class="ads-types__items">
                <div class="ads-types__item">
                   <div class="ads-types__num gradient-text">01</div>
@@ -818,8 +867,8 @@
                      <div class="ads-efficiency__slide swiper-slide">
                         <div class="ads-efficiency__road"></div>
                         <div class="ads-efficiency__card border-gradient">
-                           <div class="ads-efficiency__card-name">От kpi</div>
-                           <div class="ads-efficiency__card-text">Мы рассчитываем  стоимость привлечения клиента (CPL),
+                           <div class="ads-efficiency__card-name">От KPI</div>
+                           <div class="ads-efficiency__card-text">Мы рассчитываем стоимость привлечения клиента (CPL),
                               которая будет рентабельна для вашего бизнеса</div>
                         </div>
                      </div>
@@ -942,7 +991,7 @@
                      <div class="ads-screen__descr">Вам нужно увидеть цифры и выводы, чтобы сделать бизнес лучше
                         и прибыльнее. Именно это мы и сделаем для вас.</div>
                      <div class="ads-screen__button">
-                        <a href="" class="button-decore">Подробнее</a>
+                        <a href="about.html" class="button-decore">Подробнее</a>
                      </div>
                   </div>
                </div>
@@ -962,13 +1011,13 @@
                            </div>
                            <div class="ads-stages__info">
                               <div class="ads-stages__name" data-swiper-parallax="-200"
-                                 data-swiper-parallax-duration="1000">Знакомство</div>
+                                 data-swiper-parallax-duration="1000">01. Знакомство</div>
                               <div class="ads-stages__text" data-swiper-parallax="-200"
                                  data-swiper-parallax-duration="1200">Ведущий маркетолог уточнит ваши пожелания и
                                  составит
                                  бриф,
                                  чтобы лучше понимать ваш продукт и компанию.
-                                 Вместе поставим цели и согласуем Kpi</div>
+                                 Вместе поставим цели и согласуем KPI</div>
                            </div>
                            <div class="ads-stages__slide-bg">
                               <picture><source srcset="img/context-ads/lines-pattern.webp" type="image/webp"><img src="img/context-ads/lines-pattern.png" width="521" height="292" alt="bg"></picture>
@@ -977,16 +1026,16 @@
                         <div class="ads-stages__slide swiper-slide border-gradient">
                            <div class="ads-stages__icon" data-swiper-parallax="-200"
                               data-swiper-parallax-duration="800">
-                              <img src="img/context-ads/stage-1.svg" width="165" height="150" alt="icon">
+                              <img src="img/context-ads/stage-2.svg" width="165" height="150" alt="icon">
                            </div>
                            <div class="ads-stages__info">
                               <div class="ads-stages__name" data-swiper-parallax="-200"
-                                 data-swiper-parallax-duration="1000">Второй слайд</div>
+                                 data-swiper-parallax-duration="1000">02. Коммерческое предложение и предварительные
+                                 расчеты
+                              </div>
                               <div class="ads-stages__text" data-swiper-parallax="-200"
-                                 data-swiper-parallax-duration="1200">Lorem ipsum dolor sit amet consectetur adipisicing
-                                 elit.
-                                 Necessitatibus quas dolore soluta unde sed itaque, nihil iure natus eos, enim corrupti
-                                 dolorem corporis autem debitis minus maxime consectetur nulla obcaecati!</div>
+                                 data-swiper-parallax-duration="1200">Вы получите план работ с предварительными
+                                 расчетами по эффективности рекламы</div>
                            </div>
                            <div class="ads-stages__slide-bg">
                               <picture><source srcset="img/context-ads/lines-pattern.webp" type="image/webp"><img src="img/context-ads/lines-pattern.png" width="521" height="292" alt="bg"></picture>
@@ -995,21 +1044,217 @@
                         <div class="ads-stages__slide swiper-slide border-gradient">
                            <div class="ads-stages__icon" data-swiper-parallax="-200"
                               data-swiper-parallax-duration="800">
-                              <img src="img/context-ads/stage-1.svg" width="165" height="150" alt="icon">
+                              <img src="img/context-ads/stage-3.svg" width="165" height="150" alt="icon">
                            </div>
                            <div class="ads-stages__info">
                               <div class="ads-stages__name" data-swiper-parallax="-200"
-                                 data-swiper-parallax-duration="1000">Третий слайд</div>
+                                 data-swiper-parallax-duration="1000">03. Заключение договора и старт работ</div>
                               <div class="ads-stages__text" data-swiper-parallax="-200"
-                                 data-swiper-parallax-duration="1200">Necessitatibus quas dolore soluta unde sed itaque,
-                                 nihil iure
-                                 natus eos, enim corrupti dolorem corporis autem debitis
-                                 minus maxime consectetur nulla obcaecati!</div>
+                                 data-swiper-parallax-duration="1200">Подготовим и утвердим договор, запустим
+                                 бизнес-процессы в CRM Битрикс 24 со сроками выполнения каждой задачи</div>
                            </div>
                            <div class="ads-stages__slide-bg">
                               <picture><source srcset="img/context-ads/lines-pattern.webp" type="image/webp"><img src="img/context-ads/lines-pattern.png" width="521" height="292" alt="bg"></picture>
                            </div>
                         </div>
+
+                        <div class="ads-stages__slide swiper-slide border-gradient">
+                           <div class="ads-stages__icon" data-swiper-parallax="-200"
+                              data-swiper-parallax-duration="800">
+                              <img src="img/context-ads/stage-4.svg" width="165" height="150" alt="icon">
+                           </div>
+                           <div class="ads-stages__info">
+                              <div class="ads-stages__name" data-swiper-parallax="-200"
+                                 data-swiper-parallax-duration="1000">04. Анализ рынка</div>
+                              <div class="ads-stages__text" data-swiper-parallax="-200"
+                                 data-swiper-parallax-duration="1200">Изучим вашу целевую аудиторию и конкурентов, чтобы
+                                 сделать целевые рекламные кампании и выделиться на фоне других
+                                 объявлений</div>
+                           </div>
+                           <div class="ads-stages__slide-bg">
+                              <picture><source srcset="img/context-ads/lines-pattern.webp" type="image/webp"><img src="img/context-ads/lines-pattern.png" width="521" height="292" alt="bg"></picture>
+                           </div>
+                        </div>
+
+                        <div class="ads-stages__slide swiper-slide border-gradient">
+                           <div class="ads-stages__icon" data-swiper-parallax="-200"
+                              data-swiper-parallax-duration="800">
+                              <img src="img/context-ads/stage-5.svg" width="165" height="150" alt="icon">
+                           </div>
+                           <div class="ads-stages__info">
+                              <div class="ads-stages__name" data-swiper-parallax="-200"
+                                 data-swiper-parallax-duration="1000">05. Семантика</div>
+                              <div class="ads-stages__text" data-swiper-parallax="-200"
+                                 data-swiper-parallax-duration="1200">
+                                 <p>
+                                    Составим семантическое ядро по тематике бизнеса, используя профессиональные
+                                    инструменты, такие как комбинатор ключевых
+                                    слов, Yandex Wordstat, Google Trends, сервисы парсинга семантических ядер сайтов
+                                    конкурентов и другие.
+                                 </p>
+                                 <p>Подберем целевые ключевые фразы и оценим их по критериям:</p>
+                                 <ul>
+                                    <li>информационный / транзакционный</li>
+                                    <li>высококонкурентный / низкоконкурентный</li>
+                                    <li>высочастотный / среднечастотный / низкочастотный</li>
+                                    <li>подходит для поисковой рекламы / подходит для РСЯ / не подходит</li>
+                                    <li>по стоимости клика</li>
+                                 </ul>
+                                 <p>По желанию вы сможете ознакомиться с семантическим ядром и предложить свои варианты
+                                    ключевых слов.</p>
+                              </div>
+                           </div>
+                           <div class="ads-stages__slide-bg">
+                              <picture><source srcset="img/context-ads/lines-pattern.webp" type="image/webp"><img src="img/context-ads/lines-pattern.png" width="521" height="292" alt="bg"></picture>
+                           </div>
+                        </div>
+
+                        <div class="ads-stages__slide swiper-slide border-gradient">
+                           <div class="ads-stages__icon" data-swiper-parallax="-200"
+                              data-swiper-parallax-duration="800">
+                              <img src="img/context-ads/stage-6.svg" width="165" height="150" alt="icon">
+                           </div>
+                           <div class="ads-stages__info">
+                              <div class="ads-stages__name" data-swiper-parallax="-200"
+                                 data-swiper-parallax-duration="1000">06. Аналитика</div>
+                              <div class="ads-stages__text" data-swiper-parallax="-200"
+                                 data-swiper-parallax-duration="1200">
+                                 Перед запуском мы проверяем готовность настройки аналитики, это важно для понимания
+                                 эффективности рекламы. Мы сможем
+                                 внедрить аналитику своими силами, или составить рекомендации для внедрения на стороне
+                                 Заказчика.
+                              </div>
+                           </div>
+                           <div class="ads-stages__slide-bg">
+                              <picture><source srcset="img/context-ads/lines-pattern.webp" type="image/webp"><img src="img/context-ads/lines-pattern.png" width="521" height="292" alt="bg"></picture>
+                           </div>
+                        </div>
+
+                        <div class="ads-stages__slide swiper-slide border-gradient">
+                           <div class="ads-stages__icon" data-swiper-parallax="-200"
+                              data-swiper-parallax-duration="800">
+                              <img src="img/context-ads/stage-7.svg" width="165" height="150" alt="icon">
+                           </div>
+                           <div class="ads-stages__info">
+                              <div class="ads-stages__name" data-swiper-parallax="-200"
+                                 data-swiper-parallax-duration="1000">07. Посадочные страницы</div>
+                              <div class="ads-stages__text" data-swiper-parallax="-200"
+                                 data-swiper-parallax-duration="1200">Перед запуском контекстной рекламы маркетолог
+                                 проверяет посадочные страницы, насколько они готовы для будущего трафика
+                                 посетителей. Также мы определим узкие места страниц и дадим рекомендации по доработке
+                                 для повышения конверсии</div>
+                           </div>
+                           <div class="ads-stages__slide-bg">
+                              <picture><source srcset="img/context-ads/lines-pattern.webp" type="image/webp"><img src="img/context-ads/lines-pattern.png" width="521" height="292" alt="bg"></picture>
+                           </div>
+                        </div>
+
+                        <div class="ads-stages__slide swiper-slide border-gradient">
+                           <div class="ads-stages__icon" data-swiper-parallax="-200"
+                              data-swiper-parallax-duration="800">
+                              <img src="img/context-ads/stage-8.svg" width="165" height="150" alt="icon">
+                           </div>
+                           <div class="ads-stages__info">
+                              <div class="ads-stages__name" data-swiper-parallax="-200"
+                                 data-swiper-parallax-duration="1000">08. Создание рекламных кампаний и объявлений</div>
+                              <div class="ads-stages__text" data-swiper-parallax="-200"
+                                 data-swiper-parallax-duration="1200">
+                                 <p>На данном этом этапе специалист по контекстной рекламе готовит:</p>
+                                 <ul>
+                                    <li>структуру рекламного кабинета;</li>
+                                    <li>гео (охват по территориям показов);</li>
+                                    <li>временной таргетинг показов;</li>
+                                    <li>величины ставок;</li>
+                                    <li>начальный бюджет;</li>
+                                    <li>цели кампаний;</li>
+                                    <li>UTM-метки по собственным проверенным стандартам;</li>
+                                    <li>креативы, баннеры для десктопных и мобильных устройств;</li>
+                                    <li>УТП, визитки, акции, цены, быстрые ссылки и т.д</li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="ads-stages__slide-bg">
+                              <picture><source srcset="img/context-ads/lines-pattern.webp" type="image/webp"><img src="img/context-ads/lines-pattern.png" width="521" height="292" alt="bg"></picture>
+                           </div>
+                        </div>
+
+                        <div class="ads-stages__slide swiper-slide border-gradient">
+                           <div class="ads-stages__icon" data-swiper-parallax="-200"
+                              data-swiper-parallax-duration="800">
+                              <img src="img/context-ads/stage-9.svg" width="165" height="150" alt="icon">
+                           </div>
+                           <div class="ads-stages__info">
+                              <div class="ads-stages__name" data-swiper-parallax="-200"
+                                 data-swiper-parallax-duration="1000">09. Проверка рекламной кампании специалистом по
+                                 качеству</div>
+                              <div class="ads-stages__text" data-swiper-parallax="-200"
+                                 data-swiper-parallax-duration="1200">
+                                 Перед запуском кампанию проверит руководитель отдела рекламы и маркетолог проекта
+                              </div>
+                           </div>
+                           <div class="ads-stages__slide-bg">
+                              <picture><source srcset="img/context-ads/lines-pattern.webp" type="image/webp"><img src="img/context-ads/lines-pattern.png" width="521" height="292" alt="bg"></picture>
+                           </div>
+                        </div>
+
+                        <div class="ads-stages__slide swiper-slide border-gradient">
+                           <div class="ads-stages__icon" data-swiper-parallax="-200"
+                              data-swiper-parallax-duration="800">
+                              <img src="img/context-ads/stage-10.svg" width="165" height="150" alt="icon">
+                           </div>
+                           <div class="ads-stages__info">
+                              <div class="ads-stages__name" data-swiper-parallax="-200"
+                                 data-swiper-parallax-duration="1000">10. Доступы</div>
+                              <div class="ads-stages__text" data-swiper-parallax="-200"
+                                 data-swiper-parallax-duration="1200">
+                                 Перед запуском вы получаете доступ в ваш личный кабинет
+                              </div>
+                           </div>
+                           <div class="ads-stages__slide-bg">
+                              <picture><source srcset="img/context-ads/lines-pattern.webp" type="image/webp"><img src="img/context-ads/lines-pattern.png" width="521" height="292" alt="bg"></picture>
+                           </div>
+                        </div>
+
+                        <div class="ads-stages__slide swiper-slide border-gradient">
+                           <div class="ads-stages__icon" data-swiper-parallax="-200"
+                              data-swiper-parallax-duration="800">
+                              <img src="img/context-ads/stage-11.svg" width="165" height="150" alt="icon">
+                           </div>
+                           <div class="ads-stages__info">
+                              <div class="ads-stages__name" data-swiper-parallax="-200"
+                                 data-swiper-parallax-duration="1000">11. Пополнение аккаунта и тестовый запуск</div>
+                              <div class="ads-stages__text" data-swiper-parallax="-200"
+                                 data-swiper-parallax-duration="1200">
+                                 Первый запуск рекламных кампаний делается на небольшой бюджет для тестирования. После
+                                 теста и анализа результатов мы
+                                 вносим правки и запускаем по полной программе
+                              </div>
+                           </div>
+                           <div class="ads-stages__slide-bg">
+                              <picture><source srcset="img/context-ads/lines-pattern.webp" type="image/webp"><img src="img/context-ads/lines-pattern.png" width="521" height="292" alt="bg"></picture>
+                           </div>
+                        </div>
+
+                        <div class="ads-stages__slide swiper-slide border-gradient">
+                           <div class="ads-stages__icon" data-swiper-parallax="-200"
+                              data-swiper-parallax-duration="800">
+                              <img src="img/context-ads/stage-12.svg" width="165" height="150" alt="icon">
+                           </div>
+                           <div class="ads-stages__info">
+                              <div class="ads-stages__name" data-swiper-parallax="-200"
+                                 data-swiper-parallax-duration="1000">
+                                 12. Полный запуск
+                              </div>
+                              <div class="ads-stages__text" data-swiper-parallax="-200"
+                                 data-swiper-parallax-duration="1200">
+
+                              </div>
+                           </div>
+                           <div class="ads-stages__slide-bg">
+                              <picture><source srcset="img/context-ads/lines-pattern.webp" type="image/webp"><img src="img/context-ads/lines-pattern.png" width="521" height="292" alt="bg"></picture>
+                           </div>
+                        </div>
+
                      </div>
                   </div>
                   <div class="ads-stages__panel">
@@ -1029,6 +1274,17 @@
                   </div>
                   <div class="ads-stages__content-bg">
                      <img src="img/context-ads/stage-1.svg" width="491" height="446" alt="icon">
+                     <img src="img/context-ads/stage-2.svg" width="491" height="446" alt="icon">
+                     <img src="img/context-ads/stage-3.svg" width="491" height="446" alt="icon">
+                     <img src="img/context-ads/stage-4.svg" width="491" height="446" alt="icon">
+                     <img src="img/context-ads/stage-5.svg" width="491" height="446" alt="icon">
+                     <img src="img/context-ads/stage-6.svg" width="491" height="446" alt="icon">
+                     <img src="img/context-ads/stage-7.svg" width="491" height="446" alt="icon">
+                     <img src="img/context-ads/stage-8.svg" width="491" height="446" alt="icon">
+                     <img src="img/context-ads/stage-9.svg" width="491" height="446" alt="icon">
+                     <img src="img/context-ads/stage-10.svg" width="491" height="446" alt="icon">
+                     <img src="img/context-ads/stage-11.svg" width="491" height="446" alt="icon">
+                     <img src="img/context-ads/stage-12.svg" width="491" height="446" alt="icon">
                   </div>
                </div>
             </div>
@@ -1044,51 +1300,61 @@
                      <div class="ads-preview__block">
                         <div class="ads-preview__key border-gradient" data-id="1">
                            <span class="ads-preview__num">1</span>
-                           Точное вхождение ключевого в заголовок позволит <strong>понизить цену клика</strong>
+                           Точное вхождение ключевого слова в заголовок позволит <strong>понизить цену клика</strong>
                         </div>
                         <div class="ads-preview__value" data-id="1">
                            <span class="ads-preview__num">1</span>
-                           <picture><source srcset="img/context-ads/screen-1.webp" type="image/webp"><img src="img/context-ads/screen-1.png" width="861" height="419" alt="скрин"></picture>
+                           <picture><source srcset="img/context-ads/screen-1.webp" type="image/webp"><img src="img/context-ads/screen-1.png" width="861" height="419" alt="скрин" loading="lazy"></picture>
                         </div>
                      </div>
                      <div class="ads-preview__block">
                         <div class="ads-preview__key border-gradient" data-id="2">
                            <span class="ads-preview__num">2</span>
-                           Текст объявления, <strong>усливает интерес аудитории</strong>
+                           Текст объявления, <strong>усиливает интерес</strong> аудитории
                         </div>
                         <div class="ads-preview__value" data-id="2">
                            <span class="ads-preview__num">2</span>
-                           <picture><source srcset="img/context-ads/screen-1.webp" type="image/webp"><img src="img/context-ads/screen-1.png" width="861" height="419" alt="скрин"></picture>
+                           <picture><source srcset="img/context-ads/screen-2.webp" type="image/webp"><img src="img/context-ads/screen-2.png" width="861" height="419" alt="скрин" loading="lazy"></picture>
                         </div>
                      </div>
                      <div class="ads-preview__block">
                         <div class="ads-preview__key border-gradient" data-id="3">
                            <span class="ads-preview__num">3</span>
-                           Контакты делают объявление <strong>более информативным</strong>
+                           Контакты делают объявления <strong>более информативными</strong>
                         </div>
                         <div class="ads-preview__value" data-id="3">
                            <span class="ads-preview__num">3</span>
-                           <picture><source srcset="img/context-ads/screen-1.webp" type="image/webp"><img src="img/context-ads/screen-1.png" width="861" height="419" alt="скрин"></picture>
+                           <picture><source srcset="img/context-ads/screen-3.webp" type="image/webp"><img src="img/context-ads/screen-3.png" width="861" height="419" alt="скрин" loading="lazy"></picture>
                         </div>
                      </div>
                      <div class="ads-preview__block">
                         <div class="ads-preview__key border-gradient" data-id="4">
                            <span class="ads-preview__num">4</span>
-                           Увеличенный формат заголовка делает его <strong>более объемным</strong>
+                           Увеличенный формат заголовка делает объявление <strong>более объемным</strong>
                         </div>
                         <div class="ads-preview__value" data-id="4">
                            <span class="ads-preview__num">4</span>
-                           <picture><source srcset="img/context-ads/screen-1.webp" type="image/webp"><img src="img/context-ads/screen-1.png" width="861" height="419" alt="скрин"></picture>
+                           <picture><source srcset="img/context-ads/screen-4.webp" type="image/webp"><img src="img/context-ads/screen-4.png" width="861" height="419" alt="скрин" loading="lazy"></picture>
                         </div>
                      </div>
                      <div class="ads-preview__block">
                         <div class="ads-preview__key border-gradient" data-id="5">
                            <span class="ads-preview__num">5</span>
-                           Точное вхождение ключевого в заголовок позволит <strong>понизить цену клика</strong>
+                           Дополнительные преимущества <strong>подогревают аудиторию</strong>
                         </div>
                         <div class="ads-preview__value" data-id="5">
                            <span class="ads-preview__num">5</span>
-                           <picture><source srcset="img/context-ads/screen-1.webp" type="image/webp"><img src="img/context-ads/screen-1.png" width="861" height="419" alt="скрин"></picture>
+                           <picture><source srcset="img/context-ads/screen-5.webp" type="image/webp"><img src="img/context-ads/screen-5.png" width="861" height="419" alt="скрин" loading="lazy"></picture>
+                        </div>
+                     </div>
+                     <div class="ads-preview__block">
+                        <div class="ads-preview__key border-gradient" data-id="6">
+                           <span class="ads-preview__num">6</span>
+                           Быстрые ссылки <strong>визуально увеличивают</strong> объявление
+                        </div>
+                        <div class="ads-preview__value" data-id="6">
+                           <span class="ads-preview__num">6</span>
+                           <picture><source srcset="img/context-ads/screen-6.webp" type="image/webp"><img src="img/context-ads/screen-6.png" width="861" height="419" alt="скрин"></picture>
                         </div>
                      </div>
                   </div>
@@ -1195,14 +1461,13 @@
                   <div class="ads-team__card-name">Маркетолог</div>
                   <div class="ads-team__card-text">
                      <p class="ads-team__card-subtitle">Маркетолог</p>
-                     <p class="ads-team__card-descr">Исследует целевую аудиторию, состояние рынка и конкурентов.
-                        Составляет отчеты и разрабатывает
-                        стратегии продвижения,
-                        которые будут приносить наибольшую прибыль. Маркетолог изучает потребности покупателей, чтобы
-                        Ваш продукт был максимально привлекательным для потенциальных клиентов. Руководит командой,
-                        отвечает за реализацию поставленных целей, выполнение проекта в сроки, коммуникацию с заказчиком
-                        и оптимизацию бизнес-процессов. В обязанности маркетолога также входит планирование, мониторинг,
-                        контроль и делегирование.</p>
+                     <p class="ads-team__card-descr">Исследует целевую аудиторию, рынок и конкурентов. Разрабатывает
+                        стратегии продвижения для максимальной прибыли. Изучает
+                        потребности покупателей, чтобы сделать продукт привлекательным для клиентов. Руководит командой,
+                        контролирует выполнение
+                        задач, сроки, коммуникацию с заказчиком и оптимизацию процессов. В его обязанности входят
+                        планирование, мониторинг и
+                        делегирование.</p>
                   </div>
                </div>
                <div class="ads-team__card border-gradient">
@@ -1215,14 +1480,9 @@
                   <div class="ads-team__card-name">Специалист по контекстной рекламе</div>
                   <div class="ads-team__card-text">
                      <p class="ads-team__card-subtitle">Специалист по контекстной рекламе</p>
-                     <p class="ads-team__card-descr">Исследует целевую аудиторию, состояние рынка и конкурентов.
-                        Составляет отчеты и разрабатывает
-                        стратегии продвижения,
-                        которые будут приносить наибольшую прибыль. Маркетолог изучает потребности покупателей, чтобы
-                        Ваш продукт был максимально привлекательным для потенциальных клиентов. Руководит командой,
-                        отвечает за реализацию поставленных целей, выполнение проекта в сроки, коммуникацию с заказчиком
-                        и оптимизацию бизнес-процессов. В обязанности маркетолога также входит планирование, мониторинг,
-                        контроль и делегирование.</p>
+                     <p class="ads-team__card-descr">Планирует, настраивает, запускает, ведет и оптимизирует рекламные
+                        кампании. Контекстолог также занимается стратегической
+                        разработкой, оформлением кампаний контекстной рекламы и оценивает их эффективность.</p>
                   </div>
                </div>
                <div class="ads-team__card border-gradient">
@@ -1235,14 +1495,10 @@
                   <div class="ads-team__card-name">Копирайтер</div>
                   <div class="ads-team__card-text">
                      <p class="ads-team__card-subtitle">Копирайтер</p>
-                     <p class="ads-team__card-descr">Исследует целевую аудиторию, состояние рынка и конкурентов.
-                        Составляет отчеты и разрабатывает
-                        стратегии продвижения,
-                        которые будут приносить наибольшую прибыль. Маркетолог изучает потребности покупателей, чтобы
-                        Ваш продукт был максимально привлекательным для потенциальных клиентов. Руководит командой,
-                        отвечает за реализацию поставленных целей, выполнение проекта в сроки, коммуникацию с заказчиком
-                        и оптимизацию бизнес-процессов. В обязанности маркетолога также входит планирование, мониторинг,
-                        контроль и делегирование.</p>
+                     <p class="ads-team__card-descr">Пишет рекламные продающие тексты, слоганы и офферы. Также
+                        копирайтер генерирует идеи для продвижения вашего бренда,
+                        придумывает креативные названия, привлекающие внимание заголовки, направленные на целевую
+                        аудиторию.</p>
                   </div>
                </div>
                <div class="ads-team__card border-gradient">
@@ -1255,14 +1511,9 @@
                   <div class="ads-team__card-name">Веб-аналитик</div>
                   <div class="ads-team__card-text">
                      <p class="ads-team__card-subtitle">Веб-аналитик</p>
-                     <p class="ads-team__card-descr">Исследует целевую аудиторию, состояние рынка и конкурентов.
-                        Составляет отчеты и разрабатывает
-                        стратегии продвижения,
-                        которые будут приносить наибольшую прибыль. Маркетолог изучает потребности покупателей, чтобы
-                        Ваш продукт был максимально привлекательным для потенциальных клиентов. Руководит командой,
-                        отвечает за реализацию поставленных целей, выполнение проекта в сроки, коммуникацию с заказчиком
-                        и оптимизацию бизнес-процессов. В обязанности маркетолога также входит планирование, мониторинг,
-                        контроль и делегирование.</p>
+                     <p class="ads-team__card-descr">Собирает и анализирует информацию об активности и желаниях
+                        посетителей. На основе статистических данных предлагает
+                        выгодные решения для увеличения трафика и конверсии на вашем сайте.</p>
                   </div>
                </div>
                <div class="ads-team__card border-gradient">
@@ -1275,14 +1526,8 @@
                   <div class="ads-team__card-name">Дизайнер</div>
                   <div class="ads-team__card-text">
                      <p class="ads-team__card-subtitle">Дизайнер</p>
-                     <p class="ads-team__card-descr">Исследует целевую аудиторию, состояние рынка и конкурентов.
-                        Составляет отчеты и разрабатывает
-                        стратегии продвижения,
-                        которые будут приносить наибольшую прибыль. Маркетолог изучает потребности покупателей, чтобы
-                        Ваш продукт был максимально привлекательным для потенциальных клиентов. Руководит командой,
-                        отвечает за реализацию поставленных целей, выполнение проекта в сроки, коммуникацию с заказчиком
-                        и оптимизацию бизнес-процессов. В обязанности маркетолога также входит планирование, мониторинг,
-                        контроль и делегирование.</p>
+                     <p class="ads-team__card-descr">Создает эффектные баннеры и креативы. Дополнительно сможет
+                        доработать дизайн посадочных страниц.</p>
                   </div>
                </div>
                <div class="ads-team__card border-gradient">
@@ -1295,14 +1540,8 @@
                   <div class="ads-team__card-name">Специалист контроля качества</div>
                   <div class="ads-team__card-text">
                      <p class="ads-team__card-subtitle">Специалист контроля качества</p>
-                     <p class="ads-team__card-descr">Исследует целевую аудиторию, состояние рынка и конкурентов.
-                        Составляет отчеты и разрабатывает
-                        стратегии продвижения,
-                        которые будут приносить наибольшую прибыль. Маркетолог изучает потребности покупателей, чтобы
-                        Ваш продукт был максимально привлекательным для потенциальных клиентов. Руководит командой,
-                        отвечает за реализацию поставленных целей, выполнение проекта в сроки, коммуникацию с заказчиком
-                        и оптимизацию бизнес-процессов. В обязанности маркетолога также входит планирование, мониторинг,
-                        контроль и делегирование.</p>
+                     <p class="ads-team__card-descr">Оценивает риски и постоянно следит за соблюдением требований по
+                        качеству выполняемых работ.</p>
                   </div>
                </div>
             </div>
@@ -1364,65 +1603,47 @@
                      По каким KPI будет оцениваться эффективность работ?
                   </div>
                   <div class="art-faq__answer">
-                     Контекстная реклама должна быть не дорогой или дешевой , а оптимальной с точки зрения прибыли для
-                     вашего бизнеса. К примеру, средний чек составляет 20 000 р, маржинальность 50%, то есть, 10 000 р.
-                     Выделять на маркетинг вы готовы 40% от маржи. А это значит, что стоимость привлеченного клиента не
-                     должна быть больше 4 000 р. Зная показатели онлайн-конверсии с сайта и офлайн конверсии от отдела
-                     продаж, мы сможем определить оптимальную цену клика и рекламный бюджет, при котором стоимость
-                     привлечения клиента (CPL) будет максимально выгодной.
+                     <p>KPI маркетолог определит и установит вместе с вами.</p>
+                     <p>Чаще всего это:</p>
+                     <ul>
+                        <li>CPC (Cost-Per-Click) - стоимость клика.</li>
+                        <li>CTR (Click-Through Rate) — показатель кликабельности.</li>
+                        <li>CPL (Cost Per Lead) стоимость привлечения лида.</li>
+                        <li>CAC (Customer Acquisition Cost) стоимость привлечения клиента.</li>
+                        <li>LPO (Leads generated Per Offer) — количество лидов от конкретного вида рекламы.</li>
+                        <li>ROMI (Return on Marketing Investment) - окупаемость (возврат) инвестиций в маркетинг.</li>
+                     </ul>
                   </div>
                </div>
                <div class="art-faq__item">
                   <div class="art-faq__question">
-                     По каким KPI будет оцениваться эффективность работ?
+                     Сколько времени потребуется для старта?
                   </div>
-                  <div class="art-faq__answer">
-                     Контекстная реклама должна быть не дорогой или дешевой , а оптимальной с точки зрения прибыли для
-                     вашего бизнеса. К примеру, средний чек составляет 20 000 р, маржинальность 50%, то есть, 10 000 р.
-                     Выделять на маркетинг вы готовы 40% от маржи. А это значит, что стоимость привлеченного клиента не
-                     должна быть больше 4 000 р. Зная показатели онлайн-конверсии с сайта и офлайн конверсии от отдела
-                     продаж, мы сможем определить оптимальную цену клика и рекламный бюджет, при котором стоимость
-                     привлечения клиента (CPL) будет максимально выгодной.
-                  </div>
+                  <div class="art-faq__answer">Для начала сотрудничества потребуется около 3 дней на создание КП,
+                     подготовки договора и счета. После начальной оплаты
+                     сразу стартуем.</div>
                </div>
                <div class="art-faq__item">
                   <div class="art-faq__question">
                      Какие отчеты вы предоставляете?
                   </div>
-                  <div class="art-faq__answer">
-                     Контекстная реклама должна быть не дорогой или дешевой , а оптимальной с точки зрения прибыли для
-                     вашего бизнеса. К примеру, средний чек составляет 20 000 р, маржинальность 50%, то есть, 10 000 р.
-                     Выделять на маркетинг вы готовы 40% от маржи. А это значит, что стоимость привлеченного клиента не
-                     должна быть больше 4 000 р. Зная показатели онлайн-конверсии с сайта и офлайн конверсии от отдела
-                     продаж, мы сможем определить оптимальную цену клика и рекламный бюджет, при котором стоимость
-                     привлечения клиента (CPL) будет максимально выгодной.
-                  </div>
+                  <div class="art-faq__answer">У Вас будет доступ в Дашборд в онлайн-режиме. В конце отчетного периода
+                     мы предоставляем перечень проведенных работ,
+                     протестированных гипотез, выводы и предложения по улучшению.</div>
                </div>
                <div class="art-faq__item">
                   <div class="art-faq__question">
                      На чьем аккаунте будут вестись рекламные кампании?
                   </div>
-                  <div class="art-faq__answer">
-                     Контекстная реклама должна быть не дорогой или дешевой , а оптимальной с точки зрения прибыли для
-                     вашего бизнеса. К примеру, средний чек составляет 20 000 р, маржинальность 50%, то есть, 10 000 р.
-                     Выделять на маркетинг вы готовы 40% от маржи. А это значит, что стоимость привлеченного клиента не
-                     должна быть больше 4 000 р. Зная показатели онлайн-конверсии с сайта и офлайн конверсии от отдела
-                     продаж, мы сможем определить оптимальную цену клика и рекламный бюджет, при котором стоимость
-                     привлечения клиента (CPL) будет максимально выгодной.
-                  </div>
+                  <div class="art-faq__answer">Мы настраиваем рекламу на индивидуальных агентских аккаунтах, к которым у
+                     вас есть прямой доступ.</div>
                </div>
                <div class="art-faq__item">
                   <div class="art-faq__question">
                      Возможно ли, что заявок не будет?
                   </div>
-                  <div class="art-faq__answer">
-                     Контекстная реклама должна быть не дорогой или дешевой , а оптимальной с точки зрения прибыли для
-                     вашего бизнеса. К примеру, средний чек составляет 20 000 р, маржинальность 50%, то есть, 10 000 р.
-                     Выделять на маркетинг вы готовы 40% от маржи. А это значит, что стоимость привлеченного клиента не
-                     должна быть больше 4 000 р. Зная показатели онлайн-конверсии с сайта и офлайн конверсии от отдела
-                     продаж, мы сможем определить оптимальную цену клика и рекламный бюджет, при котором стоимость
-                     привлечения клиента (CPL) будет максимально выгодной.
-                  </div>
+                  <div class="art-faq__answer">Теоретически это возможно, но за годы практики у нас такого не было ни
+                     разу.</div>
                </div>
             </div>
          </div>
@@ -1671,8 +1892,8 @@
                   <div class="swiper-wrapper">
                      <div class="art-testimonials__slide swiper-slide">
                         <div class="art-testimonials__image">
-                           <a data-fancybox="testimonial-gallery" href="img/context-ads/certificate.png">
-                              <picture><source srcset="img/context-ads/certificate.webp" type="image/webp"><img src="img/context-ads/certificate.png" width="231" height="300" alt="сертификат"></picture>
+                           <a data-fancybox="testimonial-gallery" href="img/context-ads/testimonial-1.png">
+                              <picture><source srcset="img/context-ads/testimonial-1.webp" type="image/webp"><img src="img/context-ads/testimonial-1.png" width="231" height="300" alt="сертификат"></picture>
                            </a>
                         </div>
                         <div class="art-testimonials__info">
@@ -1693,45 +1914,44 @@
                      </div>
                      <div class="art-testimonials__slide swiper-slide">
                         <div class="art-testimonials__image">
-                           <a data-fancybox="testimonial-gallery" href="img/context-ads/certificate.png">
-                              <picture><source srcset="img/context-ads/certificate.webp" type="image/webp"><img src="img/context-ads/certificate.png" width="231" height="300" alt="сертификат"></picture>
+                           <a data-fancybox="testimonial-gallery" href="img/context-ads/testimonial-2.png">
+                              <picture><source srcset="img/context-ads/testimonial-2.webp" type="image/webp"><img src="img/context-ads/testimonial-2.png" width="231" height="300" alt="сертификат"></picture>
                            </a>
                         </div>
                         <div class="art-testimonials__info">
-                           <div class="art-testimonials__name">Ханисенко Б. Ю.</div>
-                           <div class="art-testimonials__role">Генеральный директор ООО "Бьюти Концепт"</div>
+                           <div class="art-testimonials__name">Савкин И. Н.</div>
+                           <div class="art-testimonials__role">Генеральный директор ООО "Эмеркон"</div>
                            <div class="art-testimonials__text">
-                              Настоящим письмом выражаем нашу искреннюю благодарность и признательность компании
-                              Artellet за
-                              длительное и плодотворное сотрудничество. Мы высоко ценим установившиеся между нами
-                              партнерские
-                              отношения и взаимопонимание. За последние три года в результате нашей совместной работы у
-                              нас резко
-                              повысилась проходимость клиентов и мы можем смело рекомендовать Вас потенциальным
-                              партнерам. Желаем
-                              Вам дальнейших успехов в работе и достижения поставленных целей!
-                           </div>
-                        </div>
-                     </div>
-                     <div class="art-testimonials__slide swiper-slide">
-                        <div class="art-testimonials__image">
-                           <a data-fancybox="testimonial-gallery" href="img/context-ads/certificate.png">
-                              <picture><source srcset="img/context-ads/certificate.webp" type="image/webp"><img src="img/context-ads/certificate.png" width="231" height="300" alt="сертификат"></picture>
-                           </a>
-                        </div>
-                        <div class="art-testimonials__info">
-                           <div class="art-testimonials__name">Ханисенко Б. Ю.</div>
-                           <div class="art-testimonials__role">Генеральный директор ООО "Бьюти Концепт"</div>
-                           <div class="art-testimonials__text">
-                              Настоящим письмом выражаем нашу искреннюю благодарность и признательность компании
-                              Artellet за
-                              длительное и плодотворное сотрудничество. Мы высоко ценим установившиеся между нами
-                              партнерские
-                              отношения и взаимопонимание. За последние три года в результате нашей совместной работы у
-                              нас резко
-                              повысилась проходимость клиентов и мы можем смело рекомендовать Вас потенциальным
-                              партнерам. Желаем
-                              Вам дальнейших успехов в работе и достижения поставленных целей!
+                              <p>
+                                 Выражаем благодарность компании Artellect за годы
+                                 плодотворного сотрудничества.
+                              </p>
+
+                              <p>
+                                 На протяжении 4 лет мы использовали комплексное продвижение маркетинга в cepe digital,
+                                 включающее в себя разработку
+                                 стратегии маркетинга, разработку сайтов, контекстную рекламу, SE0 продвижение,
+                                 продвижение
+                                 в отраслевых каталогах и на
+                                 картах, веб-аналитику и работу с социальными сетями.
+                              </p>
+
+                              <p>
+                                 Сотрудники компании не ограничились только маркетингом и помогли нам внедритьCRM,
+                                 организовать бизнес-процессы по обработке обращений, обучили колл-центр, а также
+                                 помогли с отстройкой финансовой
+                                 учетной политики и правильной визуализацией наших бизнес-показателей</p>
+
+                              <p>
+                                 Мы постоянно на связи с маркетологом проекта, который отвечает нам и в будни, и в
+                                 выходные.
+                              </p>
+
+                              <p>
+                                 От лица компании ООО"Эмеркон" я рекомендую команду Artellect к сотрудничеству, как
+                                 надежного и профессионального
+                                 партнера.
+                              </p>
                            </div>
                         </div>
                      </div>
@@ -1789,6 +2009,88 @@
                               персональных данных</a>
                         </p>
                         <button type="submit" class="button-decore" data-atropos-offset="10">Отправить</button>
+                     </div>
+                  </form>
+                  <div class="request-card__bg">
+                     <picture><source srcset="img/card-bg-dark.webp" type="image/webp"><img src="img/card-bg-dark.png" width="1126" height="524" alt="card bg"></picture>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+<div class="discount-popup popup" id="resultsPopup">
+   <div class="discount-popup__body popup__body">
+      <div class="atropos my-atropos2">
+         <div class="atropos-scale">
+            <div class="atropos-rotate">
+               <div class="atropos-inner request-card">
+                  <div class="request-card__title" data-atropos-offset="4">
+                     <span class="gradient-text">Заполните заявку</span> и мы свяжемся с вами
+                  </div>
+                  <div class="request-card__subtitle">
+                     Закажите наш аудит<br>
+                     Мы досконально проанализируем ваши рекламные кампании и дадим рекомендации
+                  </div>
+                  <form class="request-card__form">
+                     <div class="request-card__form-row">
+                        <div class="form-area border-rainbow" data-atropos-offset="4">
+                           <input type="text" class="form-area__input" placeholder="Введите ваше имя">
+                        </div>
+                        <div class="form-area border-rainbow" data-atropos-offset="4">
+                           <input type="text" inputmode="tel" class="form-area__input tel-mask"
+                              placeholder="+7 (495) *** - ** - **">
+                        </div>
+                     </div>
+                     <div class="request-card__form-row">
+                        <p class="policy-agree">Нажимая на кнопку я даю свое информированное согласие на <a
+                              href="">обработку
+                              персональных данных</a>
+                        </p>
+                        <button type="submit" class="button-decore" data-atropos-offset="10">Отправить</button>
+                     </div>
+                  </form>
+                  <div class="request-card__bg">
+                     <picture><source srcset="img/card-bg-dark.webp" type="image/webp"><img src="img/card-bg-dark.png" width="1126" height="524" alt="card bg"></picture>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+<div class="discount-popup popup" id="orderPopup">
+   <div class="discount-popup__body popup__body">
+      <div class="atropos my-atropos2">
+         <div class="atropos-scale">
+            <div class="atropos-rotate">
+               <div class="atropos-inner request-card">
+                  <div class="request-card__title" data-atropos-offset="4">
+                     <span class="gradient-text">Заполните заявку</span> для подробного аудита
+                  </div>
+                  <div class="request-card__subtitle">
+                     Закажите наш аудит<br>
+                     Мы досконально проанализируем ваши рекламные кампании и дадим рекомендации
+                  </div>
+                  <form class="request-card__form">
+                     <div class="request-card__form-row">
+                        <div class="form-area border-rainbow" data-atropos-offset="4">
+                           <input type="text" class="form-area__input" placeholder="Введите ваше имя">
+                        </div>
+                        <div class="form-area border-rainbow" data-atropos-offset="4">
+                           <input type="text" inputmode="tel" class="form-area__input tel-mask"
+                              placeholder="+7 (495) *** - ** - **">
+                        </div>
+                     </div>
+                     <div class="request-card__form-row">
+                        <p class="policy-agree">Нажимая на кнопку я даю свое информированное согласие на <a
+                              href="">обработку
+                              персональных данных</a>
+                        </p>
+                        <button type="submit" class="button-decore" data-atropos-offset="10">Заказать аудит</button>
                      </div>
                   </form>
                   <div class="request-card__bg">
@@ -1861,10 +2163,10 @@
          fill="currentColor" />
    </svg>
 </svg>
-   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20251004174523"></script>
-   <script src="https://cdn.jsdelivr.net/npm/atropos@2.0.2/atropos.min.js?_v=20251004174523"></script>
-   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js?_v=20251004174523"></script>
-   <script src="js/app.js?_v=20251004174523"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20251016110348"></script>
+   <script src="https://cdn.jsdelivr.net/npm/atropos@2.0.2/atropos.min.js?_v=20251016110348"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js?_v=20251016110348"></script>
+   <script src="js/app.js?_v=20251016110348"></script>
 </body>
 
 </html>

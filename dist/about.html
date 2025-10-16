@@ -5,6 +5,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
    <meta name="format-detection" content="telephone=no">
+   <meta name="robots" content="noindex, nofollow">
    <!-- Favicon -->
    <link rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png">
    <link rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png">
@@ -12,8 +13,8 @@
    <link rel="icon" type="image/png" sizes="512x512" href="img/fav/android-chrome-512x512.png">
    <link rel="apple-touch-icon" sizes="180x180" href="img/fav/apple-touch-icon.png">
    <link rel="icon" type="image/x-icon" href="img/fav/favicon.ico">
-   <!--<meta name="msapplication-TileColor" content="#000000">
-   <meta name="theme-color" content="#000000">-->
+   <meta name="msapplication-TileColor" content="#000000">
+   <meta name="theme-color" content="#000000">
    <!-- Meta Description -->
    <meta name="description" content="">
    <meta property="og:title" content="">
@@ -21,10 +22,10 @@
    <meta property="og:url" content="">
    <meta property="og:type" content="website">
    <!-- Styles -->
-   <link href="https://cdn.jsdelivr.net/npm/atropos@2.0.2/atropos.min.css?_v=20251004174523" rel="stylesheet">
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20251004174523" />
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css?_v=20251004174523">
-   <link rel="stylesheet" href="css/style.min.css?_v=20251004174523">
+   <link href="https://cdn.jsdelivr.net/npm/atropos@2.0.2/atropos.min.css?_v=20251016110348" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20251016110348" />
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css?_v=20251016110348">
+   <link rel="stylesheet" href="css/style.min.css?_v=20251016110348">
    <title>О нас</title>
 </head>
 
@@ -49,7 +50,10 @@
                   </div>
                </div>
                <div class="fv-about__circle">
-                  <picture><source srcset="img/circle.webp" type="image/webp"><img src="img/circle.png" width="1700" height="1700" alt="circle"></picture>
+                  <picture>
+                     <source media="(max-width: 767px)" srcset="img/circle-mob.png">
+                     <img src="img/circle.png" width="1700" height="1700" alt="circle">
+                  </picture>
                </div>
                <div class="fv-about__subtitle">
                   <p>Мы не будем заигрывать с банальностями и писать красивые речи. Давайте говорить честно и открыто.
@@ -76,7 +80,14 @@
                         <picture><source srcset="img/about/team-1.webp" type="image/webp"><img src="img/about/team-1.png" width="315" height="327" alt="Команда"></picture>
                      </div>
                      <div class="fv-about__card-candles">
-                        <img src="img/icons/candles.svg" width="39" height="24" alt="icon">
+                        <div class="art-checklist__subtitle-icon">
+                           <img src="img/icons/candle.svg" class="candle-1" width="6" height="30" alt="candle">
+                           <img src="img/icons/candle.svg" class="candle-2" width="6" height="30" alt="candle">
+                           <img src="img/icons/candle.svg" class="candle-3" width="6" height="30" alt="candle">
+                           <img src="img/icons/candle.svg" class="candle-4" width="6" height="30" alt="candle">
+                           <img src="img/icons/candle.svg" class="candle-5" width="6" height="30" alt="candle">
+                           <img src="img/icons/candle.svg" class="candle-6" width="6" height="30" alt="candle">
+                        </div>
                      </div>
                   </div>
                   <div class="fv-about__card-descr">
@@ -111,7 +122,14 @@
                         <picture><source srcset="img/about/team-2.webp" type="image/webp"><img src="img/about/team-2.png" width="315" height="327" alt="Команда"></picture>
                      </div>
                      <div class="fv-about__card-candles">
-                        <img src="img/icons/candles.svg" width="39" height="24" alt="icon">
+                        <div class="art-checklist__subtitle-icon">
+                           <img src="img/icons/candle.svg" class="candle-1" width="6" height="30" alt="candle">
+                           <img src="img/icons/candle.svg" class="candle-2" width="6" height="30" alt="candle">
+                           <img src="img/icons/candle.svg" class="candle-3" width="6" height="30" alt="candle">
+                           <img src="img/icons/candle.svg" class="candle-4" width="6" height="30" alt="candle">
+                           <img src="img/icons/candle.svg" class="candle-5" width="6" height="30" alt="candle">
+                           <img src="img/icons/candle.svg" class="candle-6" width="6" height="30" alt="candle">
+                        </div>
                      </div>
                   </div>
                   <div class="fv-about__card-descr">
@@ -263,7 +281,7 @@
                               <button class="art-work__card-level-btn border-gradient border-rainbow">Комплексные
                                  воронки </button>
                               <div class="art-work__card-level-text">
-                                 <p><span></span> для стартапов и небольших компаний.<br></p>
+                                 <p><span></span> для растущих компаний с отделом продаж и CRM.<br></p>
                                  <img src="img/about/level-2.gif" width="280" height="280" alt="gif">
                               </div>
                            </div>
@@ -271,7 +289,8 @@
                               <button class="art-work__card-level-btn border-gradient border-rainbow">Системный
                                  маркетинг</button>
                               <div class="art-work__card-level-text">
-                                 <p><span></span> для стартапов и небольших компаний.<br></p>
+                                 <p><span></span> для зрелых компаний, где важна глубокая аналитика и интеграция
+                                    маркетинга в бизнес-процессы.<br></p>
                                  <img src="img/about/level-3.gif" width="280" height="280" alt="gif">
                               </div>
                            </div>
@@ -290,34 +309,14 @@
                      </div>
                   </div>
                   <div class="art-work__card-about">
-                     <div class="art-work__card-descriptions">
-                        <div class="art-work__card-description" data-level="1">
-                           <p>В каждом из них заложен анализ конкурентов, аудитории, unit-экономики
-                              и подключение сквозной аналитики. И, конечно, за ваш проект отвечает профессиональный
-                              маркетолог, руководящий командой специалистов.</p>
-                           <p>Дополнительно мы предлагаем решения по цифровизации бизнеса и внедрению глубокой аналитики
-                              данных, чтобы маркетинг работал максимально эффективно. Если у вас медицинская клиника — у
-                              нас есть глубокая экспертиза в медицинском маркетинге.
-                           </p>
-                        </div>
-                        <div class="art-work__card-description" data-level="2">
-                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam numquam consectetur
-                              deleniti ut provident officia inventore, modi culpa tempora atque quam illo debitis, animi
-                              quibusdam in harum eius voluptatem quod?</p>
-                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam numquam consectetur
-                              deleniti ut provident officia inventore, modi culpa tempora atque quam illo debitis, animi
-                              quibusdam in harum eius voluptatem quod?
-                           </p>
-                        </div>
-                        <div class="art-work__card-description" data-level="3">
-                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam numquam consectetur
-                              deleniti ut provident officia inventore, modi culpa tempora atque quam illo debitis, animi
-                              quibusdam in harum eius voluptatem quod?</p>
-                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam numquam consectetur
-                              deleniti ut provident officia inventore, modi culpa tempora atque quam illo debitis, animi
-                              quibusdam in harum eius voluptatem quod?
-                           </p>
-                        </div>
+                     <div class="art-work__card-description">
+                        <p>В каждом из них заложен анализ конкурентов, аудитории, unit-экономики
+                           и подключение сквозной аналитики. И, конечно, за ваш проект отвечает профессиональный
+                           маркетолог, руководящий командой специалистов.</p>
+                        <p>Дополнительно мы предлагаем решения по цифровизации бизнеса и внедрению глубокой аналитики
+                           данных, чтобы маркетинг работал максимально эффективно. Если у вас медицинская клиника — у
+                           нас есть глубокая экспертиза в медицинском маркетинге.
+                        </p>
                      </div>
                   </div>
                </div>
@@ -370,7 +369,7 @@
                      </div>
                      <div class="art-team__slide-info border-gradient border-rainbow">
                         <div class="art-team__slide-name">Андрей Баранов</div>
-                        <div class="art-team__slide-role">[ Руководитель агенства (СЕО), cоосновтель ]</div>
+                        <div class="art-team__slide-role">[ Руководитель агенства (СЕО), Сооснователь ]</div>
                      </div>
                   </a>
                   <a href="" class="art-team__slide swiper-slide border-gradient">
@@ -392,8 +391,8 @@
                         <img src="img/logo-icon.svg" width="24" height="24" alt="artellect logo">
                      </div>
                      <div class="art-team__slide-info border-gradient border-rainbow">
-                        <div class="art-team__slide-name">Андрей Баранов</div>
-                        <div class="art-team__slide-role">[ Руководитель агенства (СЕО), cоосновтель ]</div>
+                        <div class="art-team__slide-name">Соловьева Елена</div>
+                        <div class="art-team__slide-role">[ Директор по развитию (CBDO) Сооснователь ]</div>
                      </div>
                   </a>
                   <a href="" class="art-team__slide swiper-slide border-gradient">
@@ -415,83 +414,15 @@
                         <img src="img/logo-icon.svg" width="24" height="24" alt="artellect logo">
                      </div>
                      <div class="art-team__slide-info border-gradient border-rainbow">
-                        <div class="art-team__slide-name">Андрей Баранов</div>
-                        <div class="art-team__slide-role">[ Руководитель агенства (СЕО), cоосновтель ]</div>
-                     </div>
-                  </a>
-                  <a href="" class="art-team__slide swiper-slide border-gradient">
-                     <div class="art-team__slide-photo">
-                        <picture><source srcset="img/about/teammate-1.webp" type="image/webp"><img src="img/about/teammate-1.png" width="311" height="366" alt="член команды"></picture>
-                        <div class="art-team__slide-photo-bg">
-                           <img src="img/about/teammate-bg.gif" width="408" height="366" alt="gif">
-                        </div>
-                     </div>
-                     <div class="art-team__slide-link">
-                        <img src="img/rot-text.svg" width="120" height="120" alt="Подробнее">
-                        <div class="art-team__slide-link-icon">
-                           <svg>
-                              <use xlink:href="#icon-arrow-right"></use>
-                           </svg>
-                        </div>
-                     </div>
-                     <div class="art-team__slide-logo">
-                        <img src="img/logo-icon.svg" width="24" height="24" alt="artellect logo">
-                     </div>
-                     <div class="art-team__slide-info border-gradient border-rainbow">
-                        <div class="art-team__slide-name">Андрей Баранов</div>
-                        <div class="art-team__slide-role">[ Руководитель агенства (СЕО), cоосновтель ]</div>
-                     </div>
-                  </a>
-                  <a href="" class="art-team__slide swiper-slide border-gradient">
-                     <div class="art-team__slide-photo">
-                        <picture><source srcset="img/about/teammate-2.webp" type="image/webp"><img src="img/about/teammate-2.png" width="311" height="366" alt="член команды"></picture>
-                        <div class="art-team__slide-photo-bg">
-                           <img src="img/about/teammate-bg.gif" width="408" height="366" alt="gif">
-                        </div>
-                     </div>
-                     <div class="art-team__slide-link">
-                        <img src="img/rot-text.svg" width="120" height="120" alt="Подробнее">
-                        <div class="art-team__slide-link-icon">
-                           <svg>
-                              <use xlink:href="#icon-arrow-right"></use>
-                           </svg>
-                        </div>
-                     </div>
-                     <div class="art-team__slide-logo">
-                        <img src="img/logo-icon.svg" width="24" height="24" alt="artellect logo">
-                     </div>
-                     <div class="art-team__slide-info border-gradient border-rainbow">
-                        <div class="art-team__slide-name">Андрей Баранов</div>
-                        <div class="art-team__slide-role">[ Руководитель агенства (СЕО), cоосновтель ]</div>
-                     </div>
-                  </a>
-                  <a href="" class="art-team__slide swiper-slide border-gradient">
-                     <div class="art-team__slide-photo">
-                        <picture><source srcset="img/about/teammate-3.webp" type="image/webp"><img src="img/about/teammate-3.png" width="311" height="366" alt="член команды"></picture>
-                        <div class="art-team__slide-photo-bg">
-                           <img src="img/about/teammate-bg.gif" width="408" height="366" alt="gif">
-                        </div>
-                     </div>
-                     <div class="art-team__slide-link">
-                        <img src="img/rot-text.svg" width="120" height="120" alt="Подробнее">
-                        <div class="art-team__slide-link-icon">
-                           <svg>
-                              <use xlink:href="#icon-arrow-right"></use>
-                           </svg>
-                        </div>
-                     </div>
-                     <div class="art-team__slide-logo">
-                        <img src="img/logo-icon.svg" width="24" height="24" alt="artellect logo">
-                     </div>
-                     <div class="art-team__slide-info border-gradient border-rainbow">
-                        <div class="art-team__slide-name">Андрей Баранов</div>
-                        <div class="art-team__slide-role">[ Руководитель агенства (СЕО), cоосновтель ]</div>
+                        <div class="art-team__slide-name">Павел Литвиненко</div>
+                        <div class="art-team__slide-role">[ Директор по маркетингу (CMO) ]</div>
                      </div>
                   </a>
                </div>
             </div>
             <div class="art-team__buttons">
-               <a href="" class="button-decore">Стать частью команды</a>
+               <button type="button" class="button-decore open-popup" data-popup="resultsPopup">Стать частью
+                  команды</button>
                <div class="art-team__slider-panel">
                   <div class="art-team__slider-pagination slider-pagination"></div>
                   <div class="art-team__slider-buttons">
@@ -546,6 +477,128 @@
 
    <div class="main-bg"><picture><source srcset="img/main-bg.webp" type="image/webp"><img src="img/main-bg.png" alt=""></picture></div>
    <div class="bg-noize"></div>
+   <div class="discount-popup popup" id="discountPopup">
+   <div class="discount-popup__body popup__body">
+      <div class="atropos my-atropos2">
+         <div class="atropos-scale">
+            <div class="atropos-rotate">
+               <div class="atropos-inner request-card">
+                  <div class="request-card__title" data-atropos-offset="4">
+                     <span class="gradient-text">10% скидка</span>на первый месяц сотрудничества
+                  </div>
+                  <div class="request-card__subtitle">
+                     Закажите наш аудит<br>
+                     Мы досконально проанализируем ваши рекламные кампании и дадим рекомендации
+                  </div>
+                  <form class="request-card__form">
+                     <div class="request-card__form-row">
+                        <div class="form-area border-rainbow" data-atropos-offset="4">
+                           <input type="text" class="form-area__input" placeholder="Введите ваше имя">
+                        </div>
+                        <div class="form-area border-rainbow" data-atropos-offset="4">
+                           <input type="text" inputmode="tel" class="form-area__input tel-mask"
+                              placeholder="+7 (495) *** - ** - **">
+                        </div>
+                     </div>
+                     <div class="request-card__form-row">
+                        <p class="policy-agree">Нажимая на кнопку я даю свое информированное согласие на <a
+                              href="">обработку
+                              персональных данных</a>
+                        </p>
+                        <button type="submit" class="button-decore" data-atropos-offset="10">Отправить</button>
+                     </div>
+                  </form>
+                  <div class="request-card__bg">
+                     <picture><source srcset="img/card-bg-dark.webp" type="image/webp"><img src="img/card-bg-dark.png" width="1126" height="524" alt="card bg"></picture>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+<div class="discount-popup popup" id="resultsPopup">
+   <div class="discount-popup__body popup__body">
+      <div class="atropos my-atropos2">
+         <div class="atropos-scale">
+            <div class="atropos-rotate">
+               <div class="atropos-inner request-card">
+                  <div class="request-card__title" data-atropos-offset="4">
+                     <span class="gradient-text">Заполните заявку</span> и мы свяжемся с вами
+                  </div>
+                  <div class="request-card__subtitle">
+                     Закажите наш аудит<br>
+                     Мы досконально проанализируем ваши рекламные кампании и дадим рекомендации
+                  </div>
+                  <form class="request-card__form">
+                     <div class="request-card__form-row">
+                        <div class="form-area border-rainbow" data-atropos-offset="4">
+                           <input type="text" class="form-area__input" placeholder="Введите ваше имя">
+                        </div>
+                        <div class="form-area border-rainbow" data-atropos-offset="4">
+                           <input type="text" inputmode="tel" class="form-area__input tel-mask"
+                              placeholder="+7 (495) *** - ** - **">
+                        </div>
+                     </div>
+                     <div class="request-card__form-row">
+                        <p class="policy-agree">Нажимая на кнопку я даю свое информированное согласие на <a
+                              href="">обработку
+                              персональных данных</a>
+                        </p>
+                        <button type="submit" class="button-decore" data-atropos-offset="10">Отправить</button>
+                     </div>
+                  </form>
+                  <div class="request-card__bg">
+                     <picture><source srcset="img/card-bg-dark.webp" type="image/webp"><img src="img/card-bg-dark.png" width="1126" height="524" alt="card bg"></picture>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+<div class="discount-popup popup" id="orderPopup">
+   <div class="discount-popup__body popup__body">
+      <div class="atropos my-atropos2">
+         <div class="atropos-scale">
+            <div class="atropos-rotate">
+               <div class="atropos-inner request-card">
+                  <div class="request-card__title" data-atropos-offset="4">
+                     <span class="gradient-text">Заполните заявку</span> для подробного аудита
+                  </div>
+                  <div class="request-card__subtitle">
+                     Закажите наш аудит<br>
+                     Мы досконально проанализируем ваши рекламные кампании и дадим рекомендации
+                  </div>
+                  <form class="request-card__form">
+                     <div class="request-card__form-row">
+                        <div class="form-area border-rainbow" data-atropos-offset="4">
+                           <input type="text" class="form-area__input" placeholder="Введите ваше имя">
+                        </div>
+                        <div class="form-area border-rainbow" data-atropos-offset="4">
+                           <input type="text" inputmode="tel" class="form-area__input tel-mask"
+                              placeholder="+7 (495) *** - ** - **">
+                        </div>
+                     </div>
+                     <div class="request-card__form-row">
+                        <p class="policy-agree">Нажимая на кнопку я даю свое информированное согласие на <a
+                              href="">обработку
+                              персональных данных</a>
+                        </p>
+                        <button type="submit" class="button-decore" data-atropos-offset="10">Заказать аудит</button>
+                     </div>
+                  </form>
+                  <div class="request-card__bg">
+                     <picture><source srcset="img/card-bg-dark.webp" type="image/webp"><img src="img/card-bg-dark.png" width="1126" height="524" alt="card bg"></picture>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
    <svg viewBox="0 0 33 30" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
    style="display: none;">
    <svg fill="none" viewBox="0 0 24 25" id="icon-arrow-left" xmlns="http://www.w3.org/2000/svg">
@@ -607,15 +660,15 @@
          fill="currentColor" />
    </svg>
 </svg>
-   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20251004174523"></script>
-   <script src="https://cdn.jsdelivr.net/npm/atropos@2.0.2/atropos.min.js?_v=20251004174523"></script>
-   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js?_v=20251004174523"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20251016110348"></script>
+   <script src="https://cdn.jsdelivr.net/npm/atropos@2.0.2/atropos.min.js?_v=20251016110348"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js?_v=20251016110348"></script>
 
-   <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js?_v=20251004174523"></script>
-   <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js?_v=20251004174523"></script>
+   <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js?_v=20251016110348"></script>
+   <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js?_v=20251016110348"></script>
 
 
-   <script src="js/app.js?_v=20251004174523"></script>
+   <script src="js/app.js?_v=20251016110348"></script>
 </body>
 
 </html>
