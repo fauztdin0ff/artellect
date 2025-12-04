@@ -143,6 +143,81 @@ __webpack_require__.r(__webpack_exports__);
 
 _modules_functions_js__WEBPACK_IMPORTED_MODULE_0__.isWebp();
 
+/*==========================================================================
+Header cards
+============================================================================*/
+const headerBody = document.querySelector('.header__body');
+const logoIcon = document.querySelector('.header__logo-icon');
+const logoText = document.querySelector('.header__logo-text');
+const phoneTime = document.querySelector('.header__phone-time');
+const menuTelegram = document.querySelector('.menu__telegram');
+const menuTelegramLine = document.querySelector('.menu__telegram-line');
+const headerTelegram = document.querySelector('.header__telegram');
+const START = 0;
+const END = 300;
+const MENU_LINE_START = 156;
+
+function clamp(v, min, max) {
+   return Math.min(Math.max(v, min), max);
+}
+
+function handleScroll() {
+   const scroll = window.scrollY;
+   const t = clamp(scroll / END, 0, 1);
+
+   // 1) header__body: высота 100 → 72
+   if (headerBody) {
+      const bodyH = 100 - (100 - 72) * t;
+      headerBody.style.height = bodyH + 'px';
+   }
+
+   // 2) icon width 52 → 24
+   if (logoIcon) {
+      const iconW = 52 - (52 - 24) * t;
+      logoIcon.style.width = iconW + 'px';
+   }
+
+   // logo-text opacity 1 → 0
+   if (logoText) {
+      const logoOpacity = 1 - t;
+      logoText.style.opacity = logoOpacity;
+   }
+
+   // 3) header__phone-time margin-top 0 → -10, opacity 1 → 0
+   if (phoneTime) {
+      phoneTime.style.marginTop = (-10 * t) + 'px';
+      phoneTime.style.opacity = 1 - t;
+   }
+
+   // 4) menu__telegram-line height 156 → 0
+   if (menuTelegramLine) {
+      const lineH = MENU_LINE_START - MENU_LINE_START * t;
+      menuTelegramLine.style.height = lineH + 'px';
+   }
+
+   // скрытие menu__telegram
+   if (menuTelegram) {
+      if (t === 1) {
+         menuTelegram.classList.add('hidden');
+      } else {
+         menuTelegram.classList.remove('hidden');
+      }
+   }
+
+   // 5) header__telegram
+   if (headerTelegram) {
+      if (t === 1) {
+         headerTelegram.classList.add('show');
+      } else {
+         headerTelegram.classList.remove('show');
+      }
+   }
+}
+
+window.addEventListener('scroll', handleScroll);
+handleScroll();
+
+
 /*---------------------------------------------------------------------------
 Work Cards
 ---------------------------------------------------------------------------*/

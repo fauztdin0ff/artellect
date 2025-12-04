@@ -22,14 +22,61 @@
    <meta property="og:url" content="">
    <meta property="og:type" content="website">
    <!-- Styles -->
-   <link href="https://cdn.jsdelivr.net/npm/atropos@2.0.2/atropos.min.css?_v=20251016120201" rel="stylesheet">
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20251016120201" />
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css?_v=20251016120201">
-   <link rel="stylesheet" href="css/style.min.css?_v=20251016120201">
+   <link href="https://cdn.jsdelivr.net/npm/atropos@2.0.2/atropos.min.css?_v=20251204174958" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20251204174958" />
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css?_v=20251204174958">
+   <link rel="stylesheet" href="css/style.min.css?_v=20251204174958">
    <title>Яндекс директ</title>
 </head>
 
 <body>
+   <header class="header">
+   <div class="header__body container">
+      <div class="header__logo">
+         <a href="index.html" class="header__logo-link" aria-label="На главную">
+            <img src="img/logo-icon.svg" class="header__logo-icon" width="52" height="52" alt="Artellect icon">
+         </a>
+         <div class="header__logo-text">
+            <img src="img/logo-text.svg" class="header__logo-name" width="102" height="19" alt="Artellect logo">
+            <p>бизнес-драйвер вашего успеха</p>
+         </div>
+      </div>
+      <div class="header__contacts">
+         <div class="header__phone">
+            <a href="tel:+74950212533" class="header__phone-link">
+               <svg>
+                  <use xlink:href="#icon-phone"></use>
+               </svg>
+               +7 495 021-25-33
+            </a>
+            <div class="header__phone-time"><span></span>вJOBываем пн-пт с 10.00 до 19.00</div>
+         </div>
+         <div class="header__telegram">
+            <div class="header__telegram-line"></div>
+            <a href="" class="header__telegram-link" aria-label="Telegram">
+               <svg>
+                  <use xlink:href="#icon-telegram"></use>
+               </svg>
+            </a>
+         </div>
+      </div>
+      <div class="header__menu menu">
+         <button type="button" class="menu__icon open-popup" data-popup="menuPopup">
+            <div class="menu__icon-line"></div>
+            <div class="menu__icon-line"></div>
+            <div class="menu__icon-line"></div>
+         </button>
+         <div class="menu__telegram">
+            <div class="menu__telegram-line"></div>
+            <a href="" class="menu__telegram-link" aria-label="Telegram">
+               <svg>
+                  <use xlink:href="#icon-telegram"></use>
+               </svg>
+            </a>
+         </div>
+      </div>
+   </div>
+</header>
    <main>
       <section class="ads-hero ya-hero">
          <div class="ads-hero__body container">
@@ -1192,10 +1239,103 @@
          </div>
       </section>
    </main>
-
+   <footer class="footer">
+   <div class="footer__body container">
+      <a href="home.html" class="footer__logo" aria-label="На главную">
+         <img src="img/logo-brand.svg" width="166" height="52" alt="logo">
+      </a>
+      <div class="footer__main">
+         <div class="footer__contacts">
+            <a href="tel:+74950212533" class="footer__contact">
+               <svg>
+                  <use xlink:href="#icon-phone"></use>
+               </svg>
+               +7 (495) 021-25-33
+            </a>
+            <a href="mailto:hello@artellect-agency.ru" class="footer__contact">
+               <svg>
+                  <use xlink:href="#icon-mail"></use>
+               </svg>
+               hello@artellect-agency.ru
+            </a>
+            <span class="footer__contact">
+               <svg>
+                  <use xlink:href="#icon-clock"></use>
+               </svg>
+               время работы пн-пт с 10.00 до 19.00
+            </span>
+         </div>
+         <nav class="footer__nav">
+            <ul>
+               <li><a href="/legal/privacypolicy/">Политика конфиденциальности</a></li>
+               <li><a href="mailto:andrey@artellect-agency.ru">Написать генеральному директору</a></li>
+            </ul>
+         </nav>
+         <div class="footer__requisites">
+            ИП Баранов Андрей Александрович <br>
+            ИНН - 771565300327<br>
+            ОГРН - 312774626400265
+         </div>
+      </div>
+      <div class="footer__info">
+         <div class="footer__copyright">© 2023 Artellect</div>
+      </div>
+   </div>
+</footer>
    <div class="main-bg"><picture><source srcset="img/main-bg.webp" type="image/webp"><img src="img/main-bg.png" alt=""></picture></div>
    <div class="bg-noize"></div>
-   <div class="discount-popup popup" id="discountPopup">
+   <div class="menu-popup popup" id="menuPopup">
+   <div class="menu-popup__body popup__body">
+      <div class="request-card">
+         <div class="menu-popup__logo">
+            <img src="img/logo-brand.svg" width="166" height="52" alt="logo">
+         </div>
+         <div class="menu-popup__main">
+            <div class="menu-popup__contacts">
+               <a href="tel:+74950212533" class="menu-popup__contact">
+                  <svg>
+                     <use xlink:href="#icon-phone"></use>
+                  </svg>
+                  +7 (495) 021-25-33
+               </a>
+               <a href="mailto:hello@artellect-agency.ru" class="menu-popup__contact">
+                  <svg>
+                     <use xlink:href="#icon-mail"></use>
+                  </svg>
+                  hello@artellect-agency.ru
+               </a>
+               <span class="menu-popup__contact">
+                  <svg>
+                     <use xlink:href="#icon-clock"></use>
+                  </svg>
+                  время работы пн-пт с 10.00 до 19.00
+               </span>
+            </div>
+            <nav class="menu-popup__nav">
+               <ul>
+                  <li><a href="">Услуги</a></li>
+                  <li><a href="">Консультация маркетолога</a></li>
+               </ul>
+            </nav>
+         </div>
+         <div class="menu-popup__write">
+            <a href="mailto:andrey@artellect-agency.ru">Написать генеральному директору</a>
+         </div>
+
+         <div class="request-card__bg">
+            <picture><source srcset="img/card-bg-dark.webp" type="image/webp"><img src="img/card-bg-dark.png" width="1126" height="524" alt="card bg"></picture>
+         </div>
+      </div>
+
+   </div>
+   <div class="menu-popup__close popup__close">
+      <svg>
+         <use xlink:href="#icon-close"></use>
+      </svg>
+   </div>
+</div>
+
+<div class="discount-popup popup" id="discountPopup">
    <div class="discount-popup__body popup__body">
       <div class="atropos my-atropos2">
          <div class="atropos-scale">
@@ -1329,6 +1469,10 @@
          d="M15.0667 16C13.2148 16 11.3852 15.5963 9.57778 14.7889C7.77037 13.9815 6.12593 12.837 4.64444 11.3556C3.16296 9.87407 2.01852 8.22963 1.21111 6.42222C0.403704 4.61481 0 2.78519 0 0.933333C0 0.666667 0.0888889 0.444444 0.266667 0.266667C0.444444 0.0888889 0.666667 0 0.933333 0H4.53333C4.74074 0 4.92593 0.0703704 5.08889 0.211111C5.25185 0.351852 5.34815 0.518519 5.37778 0.711111L5.95556 3.82222C5.98519 4.05926 5.97778 4.25926 5.93333 4.42222C5.88889 4.58519 5.80741 4.72593 5.68889 4.84444L3.53333 7.02222C3.82963 7.57037 4.18148 8.1 4.58889 8.61111C4.9963 9.12222 5.44444 9.61481 5.93333 10.0889C6.39259 10.5481 6.87407 10.9741 7.37778 11.3667C7.88148 11.7593 8.41481 12.1185 8.97778 12.4444L11.0667 10.3556C11.2 10.2222 11.3741 10.1222 11.5889 10.0556C11.8037 9.98889 12.0148 9.97037 12.2222 10L15.2889 10.6222C15.4963 10.6815 15.6667 10.7889 15.8 10.9444C15.9333 11.1 16 11.2741 16 11.4667V15.0667C16 15.3333 15.9111 15.5556 15.7333 15.7333C15.5556 15.9111 15.3333 16 15.0667 16Z"
          fill="currentColor" />
    </svg>
+   <svg fill="currentColor" viewBox="0 0 16 16" id="icon-mail" xmlns="http://www.w3.org/2000/svg">
+      <path
+         d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
+   </svg>
    <svg fill="none" viewBox="0 0 16 16" id="icon-clock" xmlns="http://www.w3.org/2000/svg">
       <path
          d="M10.64 11.76L11.76 10.64L8.8 7.68V4H7.2V8.32L10.64 11.76ZM8 16C6.89333 16 5.85333 15.79 4.88 15.37C3.90667 14.95 3.06 14.38 2.34 13.66C1.62 12.94 1.05 12.0933 0.63 11.12C0.21 10.1467 0 9.10667 0 8C0 6.89333 0.21 5.85333 0.63 4.88C1.05 3.90667 1.62 3.06 2.34 2.34C3.06 1.62 3.90667 1.05 4.88 0.63C5.85333 0.21 6.89333 0 8 0C9.10667 0 10.1467 0.21 11.12 0.63C12.0933 1.05 12.94 1.62 13.66 2.34C14.38 3.06 14.95 3.90667 15.37 4.88C15.79 5.85333 16 6.89333 16 8C16 9.10667 15.79 10.1467 15.37 11.12C14.95 12.0933 14.38 12.94 13.66 13.66C12.94 14.38 12.0933 14.95 11.12 15.37C10.1467 15.79 9.10667 16 8 16Z"
@@ -1378,10 +1522,10 @@
          fill="currentColor" />
    </svg>
 </svg>
-   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20251016120201"></script>
-   <script src="https://cdn.jsdelivr.net/npm/atropos@2.0.2/atropos.min.js?_v=20251016120201"></script>
-   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js?_v=20251016120201"></script>
-   <script src="js/app.js?_v=20251016120201"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20251204174958"></script>
+   <script src="https://cdn.jsdelivr.net/npm/atropos@2.0.2/atropos.min.js?_v=20251204174958"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js?_v=20251204174958"></script>
+   <script src="js/app.js?_v=20251204174958"></script>
 </body>
 
 </html>
