@@ -1,14 +1,4 @@
-/******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
-/******/ 	var __webpack_modules__ = ([
-/* 0 */,
-/* 1 */
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "isWebp": () => (/* binding */ isWebp)
-/* harmony export */ });
 // проверка поддержки webp, добавление класса webp или no-webp
 function isWebp() {
    //проверка поддержки webp
@@ -76,72 +66,6 @@ document.addEventListener("DOMContentLoaded", function () {
    }
 });
 
-
-/***/ })
-/******/ 	]);
-/************************************************************************/
-/******/ 	// The module cache
-/******/ 	var __webpack_module_cache__ = {};
-/******/ 	
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/ 		// Check if module is in cache
-/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
-/******/ 		if (cachedModule !== undefined) {
-/******/ 			return cachedModule.exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = __webpack_module_cache__[moduleId] = {
-/******/ 			// no module.id needed
-/******/ 			// no module.loaded needed
-/******/ 			exports: {}
-/******/ 		};
-/******/ 	
-/******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
-/******/ 	
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/ 	
-/************************************************************************/
-/******/ 	/* webpack/runtime/define property getters */
-/******/ 	(() => {
-/******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = (exports, definition) => {
-/******/ 			for(var key in definition) {
-/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
-/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
-/******/ 				}
-/******/ 			}
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
-/******/ 	(() => {
-/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/make namespace object */
-/******/ 	(() => {
-/******/ 		// define __esModule on exports
-/******/ 		__webpack_require__.r = (exports) => {
-/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
-/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
-/******/ 			}
-/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/************************************************************************/
-var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
-(() => {
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _modules_functions_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
-
-
-_modules_functions_js__WEBPACK_IMPORTED_MODULE_0__.isWebp();
 
 /*==========================================================================
 Header cards
@@ -501,32 +425,87 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 /*---------------------------------------------------------------------------
-Filter
+Filter 
 ---------------------------------------------------------------------------*/
 document.addEventListener("DOMContentLoaded", () => {
+
+   if (window.__artFiltersInited) return;
+   window.__artFiltersInited = true;
+
    const form = document.querySelector("#filter-form");
    const selectedContainer = document.querySelector(".art-filters__selected-items");
    const resetButton = document.querySelector(".art-filters__reset button[type=reset]");
    const selectedTitle = document.querySelector(".art-filters__selected-title");
 
-   if (!form || !selectedContainer || !resetButton || !selectedTitle) return;
+   if (!form || !selectedContainer || !selectedTitle) return;
 
    function updateVisibility() {
       const hasItems = selectedContainer.children.length > 0;
-      resetButton.style.display = hasItems ? "" : "none";
+      if (resetButton) resetButton.style.display = hasItems ? "" : "none";
       selectedTitle.style.display = hasItems ? "" : "none";
    }
 
-   function createSelectedItem(name, input) {
+   function emitChange(input) {
+      try {
+         input.dispatchEvent(new Event("change", { bubbles: true }));
+      } catch (e) {
+         const evt = document.createEvent("HTMLEvents");
+         evt.initEvent("change", true, false);
+         input.dispatchEvent(evt);
+      }
+   }
+
+   function syncCustomUIAfterUncheck(input) {
+      input.checked = false;
+      input.removeAttribute("checked");
+
+      const lbl = input.closest("label");
+      if (lbl) {
+         lbl.classList.remove("is-checked", "checked", "active");
+      }
+
+      const box = lbl?.querySelector(".theme-dropdown__box") ||
+         input.parentElement?.querySelector(".theme-dropdown__box");
+
+      if (box) {
+         box.classList.remove("is-checked", "checked", "active");
+         box.removeAttribute("aria-checked");
+      }
+   }
+
+   function hasSelectedItem(input) {
+      return [...selectedContainer.children].some(
+         item => item._linkedInput === input
+      );
+   }
+
+   function removeSelectedItemByInput(input) {
+      [...selectedContainer.children].forEach(item => {
+         if (item._linkedInput === input) item.remove();
+      });
+   }
+
+   function createSelectedItem(input) {
+      const name = input.dataset.name || input.value || "Выбрано";
+
       const item = document.createElement("div");
-      item.classList.add("art-filters__selected-item");
+      item.className = "art-filters__selected-item";
+
       item.innerHTML = `
-      ${name}
-      <span class="art-filters__selected-icon"></span>
-    `;
+         <span class="art-filters__selected-text">${name}</span>
+         <span class="art-filters__selected-icon" aria-hidden="true"></span>
+      `;
+
+      item._linkedInput = input;
 
       item.addEventListener("click", () => {
-         input.checked = false;
+         const targetInput = item._linkedInput;
+
+         if (targetInput) {
+            syncCustomUIAfterUncheck(targetInput);
+            emitChange(targetInput);
+         }
+
          item.remove();
          updateVisibility();
       });
@@ -534,40 +513,78 @@ document.addEventListener("DOMContentLoaded", () => {
       return item;
    }
 
-   form.querySelectorAll("input[type=checkbox][data-name]").forEach(input => {
-      input.addEventListener("change", () => {
-         const name = input.dataset.name;
+   function bindClickToSelectedItem(item, input) {
+      item._linkedInput = input;
+      item.addEventListener("click", () => {
+         const targetInput = item._linkedInput;
 
-         if (input.checked) {
-            const exists = [...selectedContainer.querySelectorAll(".art-filters__selected-item")]
-               .some(item => item.textContent.trim() === name);
-            if (!exists) {
-               selectedContainer.appendChild(createSelectedItem(name, input));
-            }
-         } else {
-            selectedContainer.querySelectorAll(".art-filters__selected-item").forEach(item => {
-               if (item.textContent.trim() === name) {
-                  item.remove();
-               }
-            });
+         if (targetInput) {
+            syncCustomUIAfterUncheck(targetInput);
+            emitChange(targetInput);
          }
 
+         item.remove();
          updateVisibility();
       });
+   }
+
+
+   function wireInputs(inputs) {
+      inputs.forEach(input => {
+         if (input.__filters_bound) return;
+         input.__filters_bound = true;
+
+         input.addEventListener("change", () => {
+            if (input.checked) {
+               if (!hasSelectedItem(input)) {
+                  selectedContainer.appendChild(createSelectedItem(input));
+               }
+            } else {
+               removeSelectedItemByInput(input);
+            }
+            updateVisibility();
+         });
+      });
+   }
+
+   const allCheckboxes = Array.from(form.querySelectorAll('input[type="checkbox"]'));
+   wireInputs(allCheckboxes);
+
+   allCheckboxes.forEach(input => {
+      if (input.checked) {
+         let existingItem = [...selectedContainer.children].find(
+            item => item.textContent.trim() === (input.dataset.name || input.value || "Выбрано")
+         );
+         if (existingItem) {
+            bindClickToSelectedItem(existingItem, input);
+         } else {
+            selectedContainer.appendChild(createSelectedItem(input));
+         }
+      }
    });
 
-   resetButton.addEventListener("click", () => {
+
+   function doFullReset() {
       selectedContainer.innerHTML = "";
+
       form.querySelectorAll("input[type=checkbox]").forEach(input => {
-         input.checked = false;
+         syncCustomUIAfterUncheck(input);
+         emitChange(input);
       });
+
       updateVisibility();
-   });
+   }
+
+   if (resetButton) {
+      resetButton.addEventListener("click", () => {
+         setTimeout(doFullReset, 0);
+      });
+   } else {
+      form.addEventListener("reset", () => setTimeout(doFullReset, 0));
+   }
 
    updateVisibility();
 });
-
-
 
 
 /*---------------------------------------------------------------------------
@@ -1553,8 +1570,3 @@ document.addEventListener("DOMContentLoaded", () => {
       animatePath(0);
    }
 });
-
-})();
-
-/******/ })()
-;
